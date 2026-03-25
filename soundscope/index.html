@@ -3,76 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - SoundScope - PineSoft</title>
+    <title>SoundScope — Real-time Spectrogram with AI Sound Recognition</title>
+    <meta name="description" content="See what you hear. Real-time audio spectrogram with AI-powered sound recognition. Identify 521 sound classes, record GPS-tagged sessions, explore 5 scientific colormaps.">
+
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:title" content="SoundScope — AI Sound Recognition">
+    <meta property="og:description" content="See what you hear. Real-time spectrogram with AI that identifies 521 sound types. Free on Google Play.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinesoft.dev/soundscope/">
+    <meta property="og:image" content="https://pinesoft.dev/images/soundscope_og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="PineSoft">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SoundScope — AI Sound Recognition">
+    <meta name="twitter:description" content="See what you hear. Real-time spectrogram with AI that identifies 521 sound types.">
+    <meta name="twitter:image" content="https://pinesoft.dev/images/soundscope_og.png">
+
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
-        h1 { color: #2196F3; }
-        h2 { color: #1976D2; margin-top: 2em; }
-        .updated { color: #999; font-size: 0.9em; }
-        a { color: #1976D2; }
+        :root {
+            --bg: #1B2A1B;
+            --bg2: #1E3320;
+            --card: #233A23;
+            --gold: #EDAE49;
+            --green: #2E7D32;
+            --green-light: #4CAF50;
+            --text: #E8E0D0;
+            --text2: #A8B5A0;
+            --text3: #7A8A72;
+            --border: rgba(237, 174, 73, 0.12);
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+        .section { padding: 3rem 0; }
+
+        /* Hero */
+        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(46,125,50,0.1), transparent 70%); }
+        .app-icon { width: 128px; height: 128px; border-radius: 28px; overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+        .app-icon img { width: 100%; height: 100%; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.15rem; color: var(--text2); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .store-btn img { height: 50px; }
+
+        /* Stats */
+        .stats { background: var(--bg2); padding: 2rem 0; }
+        .stats-row { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); }
+        .stat-lbl { font-size: 0.85rem; color: var(--text3); }
+
+        /* Features */
+        .section-title { font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 2rem; }
+        .section-title .g { color: var(--gold); }
+        .section-title .gr { color: var(--green); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+        .feat { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; }
+        .feat-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .feat h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .feat p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; }
+
+        /* Privacy */
+        .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
+        .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
+        .priv a { color: var(--green-light); text-decoration: none; }
+        .priv a:hover { color: var(--gold); }
+
+        /* CTA */
+        .cta { text-align: center; }
+        .cta-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--green); color: #fff; padding: 0.875rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: background 0.2s; }
+        .cta-btn:hover { background: var(--green-light); }
+        .cta-btn svg { width: 20px; height: 20px; }
+
+        /* Footer */
+        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; }
+        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+        footer a:hover { color: var(--gold); }
+        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.85rem; }
+            .subtitle { font-size: 1rem; }
+            .app-icon { width: 96px; height: 96px; border-radius: 22px; }
+            .stats-row { gap: 1.5rem; }
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy — SoundScope</h1>
-    <p class="updated">Last updated: March 23, 2026</p>
 
-    <p><strong>SoundScope</strong> is a mobile application developed by <strong>PineSoft</strong> (Marco Del Pin). This privacy policy describes how we collect, use, and share information when you use SoundScope.</p>
+    <section class="hero section">
+        <div class="container">
+            <div class="app-icon">
+                <img src="/images/soundscope_icon.png" alt="SoundScope icon" width="192" height="192">
+            </div>
+            <h1>SoundScope</h1>
+            <p class="subtitle">See what you hear. Real-time spectrogram with AI-powered sound recognition.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.soundscope" target="_blank" rel="noopener" class="store-btn">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+            </a>
+        </div>
+    </section>
 
-    <h2>Information We Collect</h2>
-    <p>SoundScope uses Google AdMob to display advertisements. AdMob may collect:</p>
-    <ul>
-        <li><strong>Advertising ID</strong>: A unique, anonymous identifier used to serve relevant ads.</li>
-        <li><strong>Device information</strong>: Device model, operating system version, and screen size for ad formatting.</li>
-        <li><strong>Usage data</strong>: Ad interaction data (views, clicks) for analytics.</li>
-    </ul>
+    <section class="stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat"><div class="stat-num">521</div><div class="stat-lbl">Sound Classes</div></div>
+                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">Languages</div></div>
+                <div class="stat"><div class="stat-num">5</div><div class="stat-lbl">Colormaps</div></div>
+                <div class="stat"><div class="stat-num">20kHz</div><div class="stat-lbl">Full Range</div></div>
+            </div>
+        </div>
+    </section>
 
-    <h3>Microphone Access</h3>
-    <p>SoundScope uses your device's microphone to capture audio for real-time spectrogram visualization and AI-powered sound recognition. <strong>Audio data is processed entirely on your device</strong> and is never transmitted, stored, or shared with any third party. No audio recordings are saved.</p>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Key</span> <span class="gr">Features</span></h2>
+            <div class="features">
+                <div class="feat">
+                    <div class="feat-icon">&#127926;</div>
+                    <h3>AI Sound Recognition</h3>
+                    <p>Powered by YAMNet, identifies 521 sound classes in real-time — birds, instruments, traffic, appliances and more.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127752;</div>
+                    <h3>Scientific Colormaps</h3>
+                    <p>5 perceptually uniform colormaps: Inferno, Viridis, Magma, Plasma, and Classic.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128225;</div>
+                    <h3>Full Spectrum</h3>
+                    <p>20 Hz to 20 kHz logarithmic spectrogram. Blackman-Harris windowing for -92 dB sidelobe suppression.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128205;</div>
+                    <h3>GPS Sound Recording</h3>
+                    <p>Tag detections with GPS. Record field sessions, view routes on a map, revisit discoveries.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128263;</div>
+                    <h3>Noise Suppression</h3>
+                    <p>Adaptive per-bin spectral subtraction removes background noise, revealing what matters.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127760;</div>
+                    <h3>9 Languages</h3>
+                    <p>Full interface and all 521 detection labels in EN, IT, DE, FR, ES, PT, JA, KO, ZH.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p>We do not collect personal information such as your name, email address, or phone number. App preferences are stored locally on your device only.</p>
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Your</span> <span class="gr">Privacy</span></h2>
+            <div class="priv">
+                <p>All audio is processed locally on your device. No audio data is ever transmitted. GPS data (when enabled) is stored locally and never shared.</p>
+                <a href="privacy-policy/">Full Privacy Policy &rarr;</a>
+            </div>
+        </div>
+    </section>
 
-    <h2>How We Use Information</h2>
-    <p>Information collected through AdMob is used solely for:</p>
-    <ul>
-        <li>Displaying advertisements within SoundScope</li>
-        <li>Measuring ad performance and analytics</li>
-    </ul>
+    <section class="section cta">
+        <div class="container">
+            <h2 class="section-title">Try <span class="g">Sound</span><span class="gr">Scope</span></h2>
+            <p style="color: var(--text2); margin-bottom: 2rem;">Free on Google Play. No account required.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.soundscope" class="cta-btn" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.196 12l2.502-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+                Get SoundScope on Google Play
+            </a>
+        </div>
+    </section>
 
-    <h2>Third-Party Services</h2>
-    <p>SoundScope uses the following third-party services that may collect data:</p>
-    <ul>
-        <li><strong>Google AdMob</strong>: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-    </ul>
+    <footer>
+        <div>
+            <a href="privacy-policy/">Privacy Policy</a>
+            <a href="mailto:privacy@pinesoft.dev">Contact</a>
+            <a href="https://play.google.com/store/apps/developer?id=PineSoft" target="_blank" rel="noopener">Google Play</a>
+        </div>
+        <div class="copy">&copy; 2026 PineSoft. All rights reserved.</div>
+    </footer>
 
-    <h2>Your Choices</h2>
-    <ul>
-        <li><strong>Microphone</strong>: You can revoke microphone permission at any time through your device settings. SoundScope will not function without microphone access.</li>
-        <li><strong>Ad personalization</strong>: You can opt out of personalized ads through your device settings (Settings &gt; Google &gt; Ads &gt; Opt out of Ads Personalization).</li>
-        <li><strong>Consent</strong>: On first launch, you will be asked for consent to data collection for advertising purposes (EEA/UK users).</li>
-    </ul>
-
-    <h2>Children's Privacy</h2>
-    <p>SoundScope is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
-
-    <h2>Data Retention</h2>
-    <p>We do not store any personal data on our servers. All app data (preferences, saved samples) is stored locally on your device and can be deleted by uninstalling the app.</p>
-
-    <h2>GDPR Rights (EEA/UK Users)</h2>
-    <p>If you are in the European Economic Area or United Kingdom, you have the right to:</p>
-    <ul>
-        <li>Access, correct, or delete your personal data</li>
-        <li>Withdraw consent at any time</li>
-        <li>Object to data processing</li>
-        <li>Lodge a complaint with a supervisory authority</li>
-    </ul>
-
-    <h2>Changes to This Policy</h2>
-    <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.</p>
-
-    <h2>Contact Us</h2>
-    <p>If you have questions about this privacy policy, contact us at: <strong>support@pinesoft.dev</strong></p>
-
-    <hr>
-    <p><small><a href="/pinesoft-privacy/privacy-policy.html">General PineSoft Privacy Policy</a> | <a href="https://pinesoft.dev">pinesoft.dev</a></small></p>
 </body>
 </html>
