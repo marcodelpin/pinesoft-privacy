@@ -3,69 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PineSoft - Privacy Policy</title>
+    <title>PineSoft — Mobile Apps &amp; Games</title>
+    <meta name="description" content="PineSoft builds mobile apps and games. SoundScope: AI-powered sound recognition. Gyro Games: tilt-controlled arcade fun.">
+    <meta name="theme-color" content="#1B2A1B">
+
+    <meta property="og:title" content="PineSoft — Mobile Apps & Games">
+    <meta property="og:description" content="SoundScope: AI sound recognition. Gyro Games: tilt-controlled arcade fun. Free on Google Play.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinesoft.dev/">
+    <meta property="og:image" content="https://pinesoft.dev/images/soundscope_og.png">
+
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
-        h1 { color: #8F7A66; }
-        h2 { color: #776E65; margin-top: 2em; }
-        .updated { color: #999; font-size: 0.9em; }
+        :root {
+            --bg: #1B2A1B;
+            --bg2: #1E3320;
+            --card: #233A23;
+            --gold: #EDAE49;
+            --green: #2E7D32;
+            --green-light: #4CAF50;
+            --text: #E8E0D0;
+            --text2: #A8B5A0;
+            --text3: #7A8A72;
+            --border: rgba(237, 174, 73, 0.12);
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+        .section { padding: 3rem 0; }
+
+        /* Hero */
+        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(46,125,50,0.1), transparent 70%); }
+        .logo-icon { margin: 0 auto 1.5rem; }
+        .logo-icon svg { width: 80px; height: 80px; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        h1 .pine { color: var(--green-light); }
+        h1 .soft { color: var(--gold); }
+        .tagline { font-size: 1.15rem; color: var(--text2); max-width: 500px; margin: 0 auto; }
+
+        /* Section titles */
+        .section-title { font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 2rem; }
+        .section-title .g { color: var(--green-light); }
+        .section-title .gr { color: var(--gold); }
+
+        /* App cards */
+        .app-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 1.5rem; }
+        .app-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; display: flex; gap: 1.25rem; align-items: flex-start; text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; }
+        .app-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+        .app-card-icon { width: 80px; height: 80px; border-radius: 18px; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 16px rgba(0,0,0,0.3); }
+        .app-card-icon img { width: 100%; height: 100%; object-fit: cover; }
+        .app-card-info h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.25rem; }
+        .app-card-info .app-type { font-size: 0.8rem; color: var(--gold); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+        .app-card-info p { font-size: 0.9rem; color: var(--text2); line-height: 1.6; }
+
+        /* Stats */
+        .stats { background: var(--bg2); padding: 2rem 0; }
+        .stats-row { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); }
+        .stat-lbl { font-size: 0.85rem; color: var(--text3); }
+
+        /* Privacy */
+        .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
+        .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
+        .priv a { color: var(--green-light); text-decoration: none; }
+        .priv a:hover { color: var(--gold); }
+
+        /* Footer */
+        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; }
+        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+        footer a:hover { color: var(--gold); }
+        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.85rem; }
+            .tagline { font-size: 1rem; }
+            .app-cards { grid-template-columns: 1fr; }
+            .stats-row { gap: 1.5rem; }
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: March 9, 2026</p>
 
-    <p>PineSoft ("we", "our", "us") operates mobile applications including 2048 Puzzle Game and Gyro 2048. This policy describes how we collect, use, and share information.</p>
+    <section class="hero section">
+        <div class="container">
+            <div class="logo-icon">
+                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+                    <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+                    <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+                    <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+                </svg>
+            </div>
+            <h1><span class="pine">Pine</span><span class="soft">Soft</span></h1>
+            <p class="tagline">Mobile apps and games. Built with care.</p>
+        </div>
+    </section>
 
-    <h2>Information We Collect</h2>
-    <p>Our apps use Google AdMob to display advertisements. AdMob may collect:</p>
-    <ul>
-        <li><strong>Advertising ID</strong>: A unique, anonymous identifier used to serve relevant ads.</li>
-        <li><strong>Device information</strong>: Device model, operating system version, and screen size for ad formatting.</li>
-        <li><strong>Device sensors</strong>: Gyro 2048 uses your device's gyroscope sensor locally for gameplay controls. Sensor data is not transmitted or stored.</li>
-        <li><strong>Usage data</strong>: Ad interaction data (views, clicks) for analytics.</li>
-    </ul>
-    <p>We do not collect personal information such as your name, email address, or phone number. Game scores and preferences are stored locally on your device only.</p>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Our</span> <span class="gr">Apps</span></h2>
+            <div class="app-cards">
+                <a href="/soundscope/" class="app-card">
+                    <div class="app-card-icon">
+                        <img src="/images/soundscope_icon.png" alt="SoundScope icon" width="80" height="80">
+                    </div>
+                    <div class="app-card-info">
+                        <div class="app-type">Audio Tool</div>
+                        <h3>SoundScope</h3>
+                        <p>Real-time spectrogram with AI-powered sound recognition. Identify 521 sound classes, create Spectrogram Art, record GPS sound walks.</p>
+                    </div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.pinesoft.gyro2048" target="_blank" rel="noopener" class="app-card">
+                    <div class="app-card-icon">
+                        <img src="/images/gyro_2048_icon.png" alt="Gyro 2048 icon" width="80" height="80">
+                    </div>
+                    <div class="app-card-info">
+                        <div class="app-type">Gyro Game</div>
+                        <h3>Gyro 2048</h3>
+                        <p>The classic 2048 puzzle, controlled by tilting your phone. Merge tiles, chase high scores, feel the physics.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <h2>How We Use Information</h2>
-    <p>Information collected through AdMob is used solely for:</p>
-    <ul>
-        <li>Displaying advertisements within our apps</li>
-        <li>Measuring ad performance and analytics</li>
-    </ul>
+    <section class="stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat"><div class="stat-num">2</div><div class="stat-lbl">Apps</div></div>
+                <div class="stat"><div class="stat-num">521</div><div class="stat-lbl">Sound Classes</div></div>
+                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">Languages</div></div>
+                <div class="stat"><div class="stat-num">0</div><div class="stat-lbl">Data Collected</div></div>
+            </div>
+        </div>
+    </section>
 
-    <h2>Third-Party Services</h2>
-    <p>Our apps use the following third-party services that may collect data:</p>
-    <ul>
-        <li><strong>Google AdMob</strong>: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-    </ul>
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Your</span> <span class="gr">Privacy</span></h2>
+            <div class="priv">
+                <p>All PineSoft apps process data locally on your device. We don't collect personal information, track your location, or sell your data. Ads are served via Google AdMob with full consent controls.</p>
+                <a href="/privacy-policy.html">General Privacy Policy &rarr;</a>
+            </div>
+        </div>
+    </section>
 
-    <h2>Your Choices</h2>
-    <p>You can manage your ad preferences:</p>
-    <ul>
-        <li><strong>Ad personalization</strong>: You can opt out of personalized ads through your device settings (Settings &gt; Google &gt; Ads &gt; Opt out of Ads Personalization).</li>
-        <li><strong>Consent</strong>: On first launch, you will be asked for consent to data collection for advertising purposes (EEA/UK users).</li>
-    </ul>
+    <section class="section" style="text-align: center;">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Find Us On</span> <span class="gr">Google Play</span></h2>
+            <a href="https://play.google.com/store/apps/developer?id=PineSoft" target="_blank" rel="noopener" style="display: inline-block; transition: transform 0.2s;">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="PineSoft on Google Play" style="height: 72px;">
+            </a>
+        </div>
+    </section>
 
-    <h2>Children's Privacy</h2>
-    <p>Our apps are not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+    <footer>
+        <div>
+            <a href="/privacy-policy.html">Privacy Policy</a>
+            <a href="mailto:support@pinesoft.dev">Contact</a>
+            <a href="https://play.google.com/store/apps/developer?id=PineSoft" target="_blank" rel="noopener">Google Play</a>
+        </div>
+        <div class="copy">&copy; 2026 PineSoft. All rights reserved.</div>
+    </footer>
 
-    <h2>Data Retention</h2>
-    <p>We do not store any personal data on our servers. All game data (scores, preferences) is stored locally on your device and can be deleted by uninstalling the app.</p>
-
-    <h2>GDPR Rights (EEA/UK Users)</h2>
-    <p>If you are in the European Economic Area or United Kingdom, you have the right to:</p>
-    <ul>
-        <li>Access, correct, or delete your personal data</li>
-        <li>Withdraw consent at any time</li>
-        <li>Object to data processing</li>
-        <li>Lodge a complaint with a supervisory authority</li>
-    </ul>
-
-    <h2>Changes to This Policy</h2>
-    <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.</p>
-
-    <h2>Contact Us</h2>
-    <p>If you have questions about this privacy policy, contact us at: <strong>privacy@pinesoft.dev</strong></p>
 </body>
 </html>
