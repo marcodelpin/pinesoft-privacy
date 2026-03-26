@@ -3,99 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy — Gyro 2048 by PineSoft</title>
-    <meta name="description" content="Privacy Policy for Gyro 2048 by PineSoft. How we handle your data, sensor access, and advertising.">
+    <title>Gyro 2048 — Tilt Puzzle by PineSoft</title>
+    <meta name="description" content="Control the classic 2048 puzzle with your phone's gyroscope! Tilt to slide tiles, merge numbers, reach 2048. Free on Google Play.">
+    <meta name="theme-color" content="#1B2A1B">
+
+    <meta property="og:title" content="Gyro 2048 — Tilt Puzzle">
+    <meta property="og:description" content="Tilt your phone to merge tiles and reach 2048! Gyroscope-controlled puzzle. Free on Google Play.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinesoft.dev/gyro-2048/">
+    <meta property="og:image" content="https://pinesoft.dev/images/gyro_2048_icon.png">
+    <meta property="og:site_name" content="PineSoft">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Gyro 2048 — Tilt Puzzle">
+    <meta name="twitter:description" content="Tilt your phone to merge tiles and reach 2048! Free on Google Play.">
+
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
-        h1 { color: #8F7A66; }
-        h2 { color: #776E65; margin-top: 2em; }
-        h3 { color: #776E65; margin-top: 1.5em; }
-        .updated { color: #999; font-size: 0.9em; }
-        a { color: #776E65; }
-        .summary-table { width: 100%; border-collapse: collapse; margin: 1em 0; }
-        .summary-table th, .summary-table td { padding: 8px 12px; border: 1px solid #ddd; text-align: left; }
-        .summary-table th { background: #f5f5f5; }
-        .back-link { font-size: 0.9em; }
+        :root {
+            --bg: #1B2A1B;
+            --bg2: #1E3320;
+            --card: #233A23;
+            --gold: #EDAE49;
+            --green: #2E7D32;
+            --green-light: #4CAF50;
+            --text: #E8E0D0;
+            --text2: #A8B5A0;
+            --text3: #7A8A72;
+            --border: rgba(237, 174, 73, 0.12);
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+        .section { padding: 3rem 0; }
+
+        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(46,125,50,0.1), transparent 70%); }
+        .app-icon { width: 128px; height: 128px; border-radius: 28px; overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+        .app-icon img { width: 100%; height: 100%; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.15rem; color: var(--text2); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .store-btn { display: inline-block; transition: transform 0.2s; }
+        .store-btn:hover { transform: scale(1.05); }
+        .store-btn img { height: 80px; }
+
+        .stats { background: var(--bg2); padding: 2rem 0; }
+        .stats-row { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); }
+        .stat-lbl { font-size: 0.85rem; color: var(--text3); }
+
+        .section-title { font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 2rem; }
+        .section-title .g { color: var(--green-light); }
+        .section-title .gr { color: var(--gold); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+        .feat { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; }
+        .feat-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .feat h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .feat p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; }
+
+        .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
+        .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
+        .priv a { color: var(--green-light); text-decoration: none; }
+        .priv a:hover { color: var(--gold); }
+
+        .cta { text-align: center; }
+        .cta-store { display: inline-block; transition: transform 0.2s; }
+        .cta-store:hover { transform: scale(1.05); }
+        .cta-store img { height: 72px; }
+
+        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; }
+        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+        footer a:hover { color: var(--gold); }
+        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.85rem; }
+            .subtitle { font-size: 1rem; }
+            .app-icon { width: 96px; height: 96px; border-radius: 22px; }
+            .stats-row { gap: 1.5rem; }
+            .store-btn img { height: 64px; }
+            .cta-store img { height: 60px; }
+        }
     </style>
 </head>
 <body>
-    <p class="back-link"><a href="/">&larr; Back to PineSoft</a></p>
 
-    <h1>Privacy Policy — Gyro 2048</h1>
-    <p class="updated">Last updated: March 26, 2026</p>
+    <section class="hero section">
+        <div class="container">
+            <div class="app-icon">
+                <img src="/images/gyro_2048_icon.png" alt="Gyro 2048 icon" width="192" height="192">
+            </div>
+            <h1>Gyro 2048</h1>
+            <p class="subtitle">Tilt your phone to merge tiles and reach 2048. The classic puzzle, controlled by gravity.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.gyro2048" target="_blank" rel="noopener" class="store-btn">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+            </a>
+        </div>
+    </section>
 
-    <p><strong>Gyro 2048</strong> is a mobile application developed by <strong>PineSoft</strong>. This privacy policy describes how we collect, use, and share information when you use Gyro 2048.</p>
+    <section class="stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat"><div class="stat-num">5</div><div class="stat-lbl">Sensitivity Levels</div></div>
+                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">Languages</div></div>
+                <div class="stat"><div class="stat-num">20</div><div class="stat-lbl">Gyro Games Suite</div></div>
+            </div>
+        </div>
+    </section>
 
-    <h2>What Gyro 2048 Does</h2>
-    <p>Gyro 2048 is a tilt-controlled puzzle game. You merge numbered tiles by tilting your phone, combining them to reach 2048 and beyond.</p>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Key</span> <span class="gr">Features</span></h2>
+            <div class="features">
+                <div class="feat">
+                    <div class="feat-icon">&#128241;</div>
+                    <h3>Gyroscope Controls</h3>
+                    <p>Tilt your phone to slide tiles in any direction. No tapping needed — just lean and let gravity do the work.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127919;</div>
+                    <h3>5 Sensitivity Levels</h3>
+                    <p>From Relaxed to Expert. Find the perfect balance between precision and speed for your play style.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128260;</div>
+                    <h3>Auto-Recalibration</h3>
+                    <p>Drift compensation adapts to your posture automatically. Play on the couch, in bed, or at your desk.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128079;</div>
+                    <h3>Touch Mode</h3>
+                    <p>Prefer swipes? Switch to classic touch controls anytime from Settings. Your choice.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127942;</div>
+                    <h3>Leaderboards &amp; Achievements</h3>
+                    <p>Google Play Games integration. Compete globally, unlock achievements, track your best scores.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127760;</div>
+                    <h3>9 Languages</h3>
+                    <p>Full interface in EN, IT, DE, FR, ES, PT, JA, KO, ZH.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h2>Sensor Access</h2>
-    <p>Gyro 2048 uses your device's gyroscope and accelerometer sensors for tilt-based gameplay controls:</p>
-    <ul>
-        <li>Sensor data is processed <strong>entirely on your device</strong> in real-time</li>
-        <li><strong>No sensor data is ever recorded, stored, or transmitted</strong> to external servers</li>
-        <li>When you close the app, sensor access stops immediately</li>
-    </ul>
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Your</span> <span class="gr">Privacy</span></h2>
+            <div class="priv">
+                <p>Gyro 2048 uses your gyroscope and accelerometer for gameplay only. Sensor data is processed on-device and never transmitted. No personal data collected.</p>
+                <a href="privacy-policy/">Full Privacy Policy &rarr;</a>
+            </div>
+        </div>
+    </section>
 
-    <h2>Information We Collect</h2>
-    <p>Gyro 2048 uses Google AdMob to display advertisements. AdMob may collect:</p>
-    <ul>
-        <li><strong>Advertising ID</strong>: A unique, anonymous identifier used to serve relevant ads</li>
-        <li><strong>Device information</strong>: Device model, OS version, and screen size for ad formatting</li>
-        <li><strong>Usage data</strong>: Ad interaction data (views, clicks) for analytics</li>
-    </ul>
-    <p>We do not collect personal information such as your name, email address, or phone number. Game scores and preferences are stored locally on your device only.</p>
+    <section class="section cta">
+        <div class="container">
+            <h2 class="section-title">Try <span class="g">Gyro</span> <span class="gr">2048</span></h2>
+            <p style="color: var(--text2); margin-bottom: 2rem;">Free on Google Play. No account required.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.gyro2048" target="_blank" rel="noopener" class="cta-store">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+            </a>
+        </div>
+    </section>
 
-    <h2>Data Collection Summary</h2>
-    <table class="summary-table">
-        <tr><th>Data Type</th><th>Collected?</th><th>Stored Where</th><th>Transmitted?</th></tr>
-        <tr><td>Gyroscope / Accelerometer</td><td>Processed in real-time</td><td>Never stored</td><td>Never</td></tr>
-        <tr><td>Game scores / preferences</td><td>Yes</td><td>Device only</td><td>Never</td></tr>
-        <tr><td>Personal information</td><td>No</td><td>N/A</td><td>N/A</td></tr>
-        <tr><td>Advertising ID</td><td>By Google AdMob</td><td>Google servers</td><td>To Google</td></tr>
-    </table>
+    <footer>
+        <div>
+            <a href="privacy-policy/">Privacy Policy</a>
+            <a href="mailto:support@pinesoft.dev">Contact</a>
+            <a href="/">PineSoft</a>
+            <a href="https://play.google.com/store/apps/developer?id=PineSoft" target="_blank" rel="noopener">Google Play</a>
+        </div>
+        <div class="copy">&copy; 2026 PineSoft. All rights reserved.</div>
+    </footer>
 
-    <h2>How We Use Information</h2>
-    <p>Information collected through AdMob is used solely for:</p>
-    <ul>
-        <li>Displaying advertisements within Gyro 2048</li>
-        <li>Measuring ad performance and analytics</li>
-    </ul>
-
-    <h2>Third-Party Services</h2>
-    <ul>
-        <li><strong>Google AdMob</strong>: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-        <li><strong>Google Play Services</strong>: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-    </ul>
-
-    <h2>Your Choices</h2>
-    <ul>
-        <li><strong>Ad personalization</strong>: You can opt out of personalized ads through your device settings (Settings &gt; Google &gt; Ads &gt; Opt out of Ads Personalization).</li>
-        <li><strong>Consent</strong>: On first launch, you will be asked for consent to data collection for advertising purposes (EEA/UK users).</li>
-    </ul>
-
-    <h2>Children's Privacy</h2>
-    <p>Gyro 2048 is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
-
-    <h2>Data Retention</h2>
-    <p>We do not store any personal data on our servers. All game data (scores, preferences) is stored locally on your device and can be deleted by uninstalling the app.</p>
-
-    <h2>GDPR Rights (EEA/UK Users)</h2>
-    <p>If you are in the European Economic Area or United Kingdom, you have the right to:</p>
-    <ul>
-        <li>Access, correct, or delete your personal data</li>
-        <li>Withdraw consent at any time</li>
-        <li>Object to data processing</li>
-        <li>Lodge a complaint with a supervisory authority</li>
-    </ul>
-
-    <h2>Changes to This Policy</h2>
-    <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.</p>
-
-    <h2>Contact Us</h2>
-    <p>If you have questions about this privacy policy, contact us at: <strong><a href="mailto:support@pinesoft.dev">support@pinesoft.dev</a></strong></p>
-
-    <hr>
-    <p><small><a href="/privacy-policy.html">General PineSoft Privacy Policy</a> | <a href="https://pinesoft.dev">pinesoft.dev</a></small></p>
 </body>
 </html>
