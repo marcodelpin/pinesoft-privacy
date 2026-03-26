@@ -85,6 +85,13 @@
         .coming-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
         .coming-card p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; }
 
+        /* Screenshots */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto; }
+        .gallery-item { border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid var(--border); transition: transform 0.2s; }
+        .gallery-item:hover { transform: scale(1.03); }
+        .gallery-item img { width: 100%; height: auto; display: block; }
+        .gallery-caption { padding: 0.75rem 1rem; background: var(--card); font-size: 0.85rem; color: var(--text2); text-align: center; }
+
         /* Privacy */
         .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
         .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
@@ -110,6 +117,7 @@
             .stats-row { gap: 1.5rem; }
             .store-btn img { height: 64px; }
             .cta-store img { height: 60px; }
+            .gallery { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
         }
     </style>
 </head>
@@ -187,6 +195,31 @@
                     <div class="feat-icon">&#128241;</div>
                     <h3>Home Screen Widget</h3>
                     <p>See the last detected sound at a glance without opening the app.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Spectrogram</span> <span class="gr">Art</span></h2>
+            <p style="color: var(--text2); text-align: center; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Play a sound file and watch hidden images appear on your friend's spectrogram. A fun way to share visual messages through sound.</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="/images/soundscope/spec_logo.png" alt="SoundScope spectrogram showing a diamond shape" loading="lazy">
+                    <div class="gallery-caption">Diamond shape on spectrogram</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/soundscope/spec_pinesoft_2x.png" alt="PineSoft logo rendered as spectrogram art" loading="lazy">
+                    <div class="gallery-caption">PineSoft logo as Spectrogram Art</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/soundscope/screenshot_settings.png" alt="SoundScope settings screen" loading="lazy">
+                    <div class="gallery-caption">Settings &amp; AI Detection</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/soundscope/screenshot_help.png" alt="SoundScope help and about screen" loading="lazy">
+                    <div class="gallery-caption">Help &amp; About</div>
                 </div>
             </div>
         </div>
