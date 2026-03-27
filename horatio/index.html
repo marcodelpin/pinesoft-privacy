@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horatio — Digital Preservation of Rare Liturgical Texts</title>
+    <meta name="description" content="Preserve and read texts in rare, endangered, and classical languages. Offline liturgical reader with multiple calendar systems.">
+
+    <meta property="og:title" content="Horatio — Rare Liturgical Text Reader">
+    <meta property="og:description" content="Digital preservation of liturgical texts in endangered languages. Multiple calendar systems, offline reading, BMD format.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinesoft.dev/horatio/">
+    <meta property="og:site_name" content="PineSoft">
+
+    <style>
+        :root {
+            --bg: #121212;
+            --surface: #1E1E1E;
+            --card: #262626;
+            --accent: #F59E0B;
+            --rubric: #E8544B;
+            --text: #E8E8E8;
+            --muted: #A0A0A0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2.5em; margin-bottom: 8px; }
+        h1 span { color: var(--accent); }
+        .subtitle { color: var(--muted); font-size: 1.1em; margin-bottom: 32px; }
+        h2 { color: var(--accent); font-size: 1.3em; margin: 32px 0 12px; letter-spacing: 1px; }
+        .card { background: var(--card); border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 24px 0; }
+        .feature { background: var(--surface); border-radius: 8px; padding: 16px; }
+        .feature-icon { font-size: 2em; margin-bottom: 8px; }
+        .feature h3 { color: var(--accent); font-size: 1em; margin-bottom: 4px; }
+        .feature p { color: var(--muted); font-size: 0.9em; }
+        .languages { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+        .lang { background: var(--surface); border-radius: 20px; padding: 6px 14px; font-size: 0.85em; }
+        .privacy { margin-top: 48px; }
+        .privacy h2 { color: var(--rubric); }
+        .privacy p, .privacy ul { color: var(--muted); margin-bottom: 12px; }
+        .privacy ul { padding-left: 20px; }
+        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--card); color: var(--muted); font-size: 0.85em; }
+        a { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span>Horatio</span></h1>
+        <p class="subtitle">Digital preservation of texts in rare, endangered, and classical languages</p>
+
+        <div class="card">
+            <p>Many languages are alive in daily prayer and conversation, but their written traditions are disappearing. Horatio preserves these texts in a modern, offline-first reader with liturgical calendar awareness.</p>
+        </div>
+
+        <h2>FEATURES</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📖</div>
+                <h3>BMD Reader</h3>
+                <p>Rich text rendering with rubrics, psalm notation, and verse numbering</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📅</div>
+                <h3>9 Calendar Engines</h3>
+                <p>Roman, Coptic, Mozarabic, Ethiopian, Jewish, Islamic, Academic + religious orders</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌐</div>
+                <h3>Multilingual</h3>
+                <p>UI in 5 languages, content in 10+ scripts including RTL</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📴</div>
+                <h3>Offline First</h3>
+                <p>All content works without internet connection</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔍</div>
+                <h3>Full-Text Search</h3>
+                <p>FTS5 search across all installed texts with snippet highlighting</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📦</div>
+                <h3>Content Packs</h3>
+                <p>Modular text packages — install only the languages you need</p>
+            </div>
+        </div>
+
+        <h2>LANGUAGES</h2>
+        <div class="languages">
+            <span class="lang">Latin</span>
+            <span class="lang">Italian</span>
+            <span class="lang">Arabic</span>
+            <span class="lang">Greek</span>
+            <span class="lang">Hebrew</span>
+            <span class="lang">Syriac</span>
+            <span class="lang">Coptic</span>
+            <span class="lang">Ge'ez</span>
+            <span class="lang">Maltese</span>
+            <span class="lang">Gothic</span>
+        </div>
+
+        <div class="privacy">
+            <h2>PRIVACY POLICY</h2>
+            <p><strong>Horatio</strong> is developed by <strong>Marco Del Pin</strong> (PineSoft).</p>
+            <p>This app is designed with privacy in mind:</p>
+            <ul>
+                <li><strong>No ads</strong> — the app contains no advertising</li>
+                <li><strong>No tracking</strong> — no analytics, no telemetry, no user profiling</li>
+                <li><strong>No account required</strong> — all features work without registration</li>
+                <li><strong>No internet required</strong> — all content is stored locally on your device</li>
+                <li><strong>No data collection</strong> — we do not collect, store, or share any personal data</li>
+                <li><strong>No third-party services</strong> — no Firebase, no Google Analytics, no crash reporting</li>
+            </ul>
+            <p>The app stores content packs, reading progress, and user preferences locally on your device only. This data is never transmitted to any server.</p>
+            <p>If you choose to use the optional text-to-speech feature, audio is generated locally using your device's built-in TTS engine.</p>
+            <p><strong>In-app purchases</strong>: Optional tip jar (coffee/supporter/patron). No content is locked behind payments — all texts are free.</p>
+            <p>For questions about this privacy policy, contact: <a href="mailto:support@pinesoft.dev">support@pinesoft.dev</a></p>
+            <p><em>Last updated: March 2026</em></p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 PineSoft — Marco Del Pin. All rights reserved.</p>
+            <p><a href="https://pinesoft.dev">pinesoft.dev</a> · <a href="https://pinesoft.dev/privacy-policy">General Privacy Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>
