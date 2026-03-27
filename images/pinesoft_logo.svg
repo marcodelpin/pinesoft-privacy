@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- PineSoft Logo: Geometric Pine Tree -->
+  <!-- 3 stacked triangles + trunk -->
+
+  <!-- Trunk -->
+  <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+
+  <!-- Bottom layer (widest) -->
+  <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+
+  <!-- Middle layer -->
+  <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+
+  <!-- Top layer (narrowest) -->
+  <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+
+  <!-- Subtle depth lines between layers -->
+  <line x1="120" y1="280" x2="392" y2="280" stroke="#1B5E20" stroke-width="2" opacity="0.3"/>
+  <line x1="160" y1="180" x2="352" y2="180" stroke="#1B5E20" stroke-width="2" opacity="0.3"/>
+</svg>
