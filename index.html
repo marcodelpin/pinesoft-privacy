@@ -1,180 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PineSoft — Mobile Apps &amp; Games</title>
-    <meta name="description" content="PineSoft builds mobile apps and games. SoundScope: AI-powered sound recognition. Gyro Games: tilt-controlled arcade fun.">
-    <meta name="theme-color" content="#1B2A1B">
-
-    <meta property="og:title" content="PineSoft — Mobile Apps & Games">
-    <meta property="og:description" content="SoundScope: AI sound recognition. Gyro Games: tilt-controlled arcade fun. Free on Google Play.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pinesoft.dev/">
-    <meta property="og:image" content="https://pinesoft.dev/images/soundscope_og.png">
-
-    <style>
-        :root {
-            --bg: #1B2A1B;
-            --bg2: #1E3320;
-            --card: #233A23;
-            --gold: #EDAE49;
-            --green: #2E7D32;
-            --green-light: #4CAF50;
-            --text: #E8E0D0;
-            --text2: #A8B5A0;
-            --text3: #7A8A72;
-            --border: rgba(237, 174, 73, 0.12);
-        }
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-        .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
-        .section { padding: 3rem 0; }
-
-        /* Hero */
-        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(46,125,50,0.1), transparent 70%); }
-        .logo-icon { margin: 0 auto 1.5rem; }
-        .logo-icon svg { width: 80px; height: 80px; }
-        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
-        h1 .pine { color: var(--green-light); }
-        h1 .soft { color: var(--gold); }
-        .tagline { font-size: 1.15rem; color: var(--text2); max-width: 500px; margin: 0 auto; }
-
-        /* Section titles */
-        .section-title { font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 2rem; }
-        .section-title .g { color: var(--green-light); }
-        .section-title .gr { color: var(--gold); }
-
-        /* App cards */
-        .app-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 1.5rem; }
-        .app-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; display: flex; gap: 1.25rem; align-items: flex-start; text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; }
-        .app-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
-        .app-card-icon { width: 80px; height: 80px; border-radius: 18px; overflow: hidden; flex-shrink: 0; box-shadow: 0 4px 16px rgba(0,0,0,0.3); }
-        .app-card-icon img { width: 100%; height: 100%; object-fit: cover; }
-        .app-card-info h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.25rem; }
-        .app-card-info .app-type { font-size: 0.8rem; color: var(--gold); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
-        .app-card-info p { font-size: 0.9rem; color: var(--text2); line-height: 1.6; }
-
-        /* Stats */
-        .stats { background: var(--bg2); padding: 2rem 0; }
-        .stats-row { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
-        .stat { text-align: center; }
-        .stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); }
-        .stat-lbl { font-size: 0.85rem; color: var(--text3); }
-
-        /* Privacy */
-        .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
-        .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
-        .priv a { color: var(--green-light); text-decoration: none; }
-        .priv a:hover { color: var(--gold); }
-
-        /* Footer */
-        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; }
-        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
-        footer a:hover { color: var(--gold); }
-        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 1.85rem; }
-            .tagline { font-size: 1rem; }
-            .app-cards { grid-template-columns: 1fr; }
-            .stats-row { gap: 1.5rem; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PineSoft — Mobile Apps &amp; Gyroscope Games</title>
+  <meta name="description" content="PineSoft creates innovative mobile apps and gyroscope-controlled games. Audio analysis, rare language preservation, and 20 tilt-to-play games.">
+  <meta name="theme-color" content="#1B2A1B">
+  <meta property="og:title" content="PineSoft — Mobile Apps &amp; Gyroscope Games">
+  <meta property="og:description" content="Innovative mobile apps and gyroscope-controlled games for Android. Audio analysis, rare language preservation, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/gyro_2048_feature.png">
+  <link rel="icon" type="image/svg+xml" href="images/pinesoft_logo.svg">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <section class="hero section">
-        <div class="container">
-            <div class="logo-icon">
-                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
-                    <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
-                    <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
-                    <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
-                </svg>
-            </div>
-            <h1><span class="pine">Pine</span><span class="soft">Soft</span></h1>
-            <p class="tagline">Mobile apps and games. Built with care.</p>
-        </div>
-    </section>
+  <!-- ===== Header / Nav ===== -->
+  <header>
+    <nav>
+      <a href="/" class="nav-logo">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+          <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+          <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+          <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+        </svg>
+        <span class="nav-logo-text"><span class="pine">Pine</span><span class="soft">Soft</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/games/">Games</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="/reading/">Reading</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title"><span class="g">Our</span> <span class="gr">Apps</span></h2>
-            <div class="app-cards">
-                <a href="/soundscope/" class="app-card">
-                    <div class="app-card-icon">
-                        <img src="/images/soundscope_icon.png" alt="SoundScope icon" width="80" height="80">
-                    </div>
-                    <div class="app-card-info">
-                        <div class="app-type">Audio Tool</div>
-                        <h3>SoundScope</h3>
-                        <p>Real-time spectrogram with AI-powered sound recognition. Identify 521 sound classes, create Spectrogram Art, record GPS sound walks.</p>
-                    </div>
-                </a>
-                <a href="/gyro-2048/" class="app-card">
-                    <div class="app-card-icon">
-                        <img src="/images/gyro_2048_icon.png" alt="Gyro 2048 icon" width="80" height="80">
-                    </div>
-                    <div class="app-card-info">
-                        <div class="app-type">Gyro Game</div>
-                        <h3>Gyro 2048</h3>
-                        <p>The classic 2048 puzzle, controlled by tilting your phone. Merge tiles, chase high scores, feel the physics.</p>
-                    </div>
-                </a>
-                <a href="/horatio/" class="app-card">
-                    <div class="app-card-icon">
-                        <img src="/images/horatio_icon.png" alt="Horatio icon" width="80" height="80">
-                    </div>
-                    <div class="app-card-info">
-                        <div class="app-type">Books &amp; Reference</div>
-                        <h3>Horatio</h3>
-                        <p>Digital preservation of texts in rare, endangered, and classical languages. 9 calendar systems, 10+ scripts, fully offline.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+  <!-- ===== Hero ===== -->
+  <section class="hero section">
+    <div class="container">
+      <div class="hero-logo">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+          <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+          <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+          <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+          <line x1="120" y1="280" x2="392" y2="280" stroke="#1B5E20" stroke-width="2" opacity="0.3"/>
+          <line x1="160" y1="180" x2="352" y2="180" stroke="#1B5E20" stroke-width="2" opacity="0.3"/>
+        </svg>
+      </div>
+      <h1 class="hero-brand"><span class="pine">Pine</span><span class="soft">Soft</span></h1>
+      <p class="hero-tagline">Innovative mobile apps and gyroscope-powered games</p>
+      <a href="https://play.google.com/store/apps/developer?id=PineSoft" class="cta-button">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.196 12l2.502-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+        Find us on Google Play
+      </a>
+    </div>
+  </section>
 
-    <section class="stats">
-        <div class="container">
-            <div class="stats-row">
-                <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Apps</div></div>
-                <div class="stat"><div class="stat-num">521</div><div class="stat-lbl">Sound Classes</div></div>
-                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">Languages</div></div>
-                <div class="stat"><div class="stat-num">0</div><div class="stat-lbl">Data Collected</div></div>
-            </div>
-        </div>
-    </section>
+  <!-- ===== Sections Hub ===== -->
+  <section class="section" id="sections">
+    <div class="container">
+      <div class="section-hub">
 
-    <section class="section" style="background: var(--bg2);">
-        <div class="container">
-            <h2 class="section-title"><span class="g">Your</span> <span class="gr">Privacy</span></h2>
-            <div class="priv">
-                <p>All PineSoft apps process data locally on your device. We don't collect personal information, track your location, or sell your data. Ads are served via Google AdMob with full consent controls.</p>
-                <a href="/privacy-policy/">General Privacy Policy &rarr;</a>
-            </div>
-        </div>
-    </section>
+        <a href="/games/" class="hub-card">
+          <div class="hub-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="14" width="40" height="24" rx="4" fill="var(--bg-card-hover)" stroke="var(--green)" stroke-width="2"/>
+              <circle cx="15" cy="26" r="6" fill="var(--green)" opacity="0.3"/>
+              <circle cx="15" cy="26" r="2" fill="var(--green)"/>
+              <line x1="15" y1="21" x2="15" y2="31" stroke="var(--green)" stroke-width="1.5"/>
+              <line x1="10" y1="26" x2="20" y2="26" stroke="var(--green)" stroke-width="1.5"/>
+              <circle cx="35" cy="24" r="2.5" fill="var(--gold)"/>
+              <circle cx="31" cy="28" r="2.5" fill="var(--gold)" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3 class="hub-card-title">Games</h3>
+          <p class="hub-card-count">20 games</p>
+          <p class="hub-card-desc">Gyroscope-controlled tilt-to-play games. Puzzle, skill, action, and more.</p>
+        </a>
 
-    <section class="section" style="text-align: center;">
-        <div class="container">
-            <h2 class="section-title"><span class="g">Find Us On</span> <span class="gr">Google Play</span></h2>
-            <a href="/play/" target="_blank" rel="noopener" style="display: inline-block; transition: transform 0.2s;">
-                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="PineSoft on Google Play" style="height: 72px;">
-            </a>
-        </div>
-    </section>
+        <a href="/tools/" class="hub-card">
+          <div class="hub-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6 L30 18 L42 20 L33 29 L35 42 L24 36 L13 42 L15 29 L6 20 L18 18 Z" fill="var(--bg-card-hover)" stroke="var(--green)" stroke-width="2"/>
+              <circle cx="24" cy="24" r="6" fill="var(--green)" opacity="0.3"/>
+              <path d="M21 24 L23 26 L27 22" stroke="var(--gold)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="hub-card-title">Tools</h3>
+          <p class="hub-card-count">2 apps</p>
+          <p class="hub-card-desc">Audio analysis, music tuning, and utility apps.</p>
+        </a>
 
-    <footer>
-        <div>
-            <a href="/privacy-policy/">Privacy Policy</a>
-            <a href="mailto:support@pinesoft.dev">Contact</a>
-            <a href="/play/" target="_blank" rel="noopener">Google Play</a>
+        <a href="/reading/" class="hub-card">
+          <div class="hub-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 8 L24 12 L40 8 L40 38 L24 42 L8 38 Z" fill="var(--bg-card-hover)" stroke="var(--green)" stroke-width="2"/>
+              <line x1="24" y1="12" x2="24" y2="42" stroke="var(--green)" stroke-width="1.5"/>
+              <line x1="13" y1="18" x2="21" y2="20" stroke="var(--gold)" stroke-width="1.5" opacity="0.6"/>
+              <line x1="13" y1="23" x2="21" y2="25" stroke="var(--gold)" stroke-width="1.5" opacity="0.4"/>
+              <line x1="27" y1="20" x2="35" y2="18" stroke="var(--gold)" stroke-width="1.5" opacity="0.6"/>
+              <line x1="27" y1="25" x2="35" y2="23" stroke="var(--gold)" stroke-width="1.5" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3 class="hub-card-title">Reading</h3>
+          <p class="hub-card-count">1 app</p>
+          <p class="hub-card-desc">Digital preservation of rare, endangered, and classical languages.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span class="pine">Pine</span><span class="soft">Soft</span></h2>
+      <div class="about-content">
+        <p>PineSoft creates innovative mobile apps and gyroscope-controlled games. From AI-powered audio analysis
+           to digital preservation of rare languages, and 20 tilt-to-play games that turn your phone into a controller.</p>
+        <p>All our products are family-friendly with no adult advertisements, supporting multiple languages
+           so users around the world can enjoy the experience in their native language.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-number">20+</div>
+            <div class="about-feature-label">Apps</div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-number">9</div>
+            <div class="about-feature-label">Languages</div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-number">3</div>
+            <div class="about-feature-label">Categories</div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-number">0</div>
+            <div class="about-feature-label">Adult Ads</div>
+          </div>
         </div>
-        <div class="copy">&copy; 2026 PineSoft. All rights reserved.</div>
-    </footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand"><span class="pine">Pine</span><span class="soft">Soft</span></div>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="mailto:privacy@pinesoft.dev">Contact</a></li>
+          <li><a href="https://play.google.com/store/apps/developer?id=PineSoft" target="_blank" rel="noopener">Google Play</a></li>
+        </ul>
+        <div class="footer-copy">&copy; 2026 PineSoft. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+  </script>
 
 </body>
 </html>

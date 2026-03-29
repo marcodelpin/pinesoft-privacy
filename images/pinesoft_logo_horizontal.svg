@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200">
+  <!-- PineSoft Logo Horizontal: tree left, text right at trunk level -->
+
+  <!-- Pine tree (left side, scale 0.37) -->
+  <!-- trunk original: y=390..462, center=426. After scale+translate: y≈150..176, center≈163 -->
+  <g transform="translate(10, 5) scale(0.37)">
+    <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+    <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+    <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+    <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+  </g>
+
+  <!-- Text baseline aligned with trunk center (~y163) -->
+  <text x="200" y="170" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="68" font-weight="700">
+    <tspan fill="#2E7D32">Pine</tspan><tspan fill="#EDAE49">Soft</tspan>
+  </text>
+</svg>
