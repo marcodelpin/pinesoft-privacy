@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{privacy.horatio.title}} | PineSoft</title>
+  <meta name="description" content="{{privacy.horatio.meta_description}}">
+  <meta name="theme-color" content="#1B2A1B">
+  <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="stylesheet" href="/style.css">
+{{hreflang}}
+  <style>
+    .privacy-content { max-width: 700px; margin: 0 auto; padding: 2rem 0; }
+    .privacy-content h2 { color: var(--gold); margin-top: 2rem; margin-bottom: 0.75rem; font-size: 1.25rem; }
+    .privacy-content p, .privacy-content ul { color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.8; }
+    .privacy-content ul { padding-left: 1.5rem; }
+    .privacy-content li { margin-bottom: 0.5rem; }
+    .privacy-content a { color: var(--green-light); }
+    .privacy-content a:hover { color: var(--gold); }
+    .privacy-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    .privacy-content th, .privacy-content td { padding: 0.75rem 1rem; text-align: left; border: 1px solid var(--border); font-size: 0.9rem; }
+    .privacy-content th { background: var(--bg-card); font-weight: 600; color: var(--text-primary); }
+    .privacy-content td { color: var(--text-secondary); }
+    .back-link { display: inline-block; margin-bottom: 2rem; color: var(--green-light); text-decoration: none; font-size: 0.9rem; }
+    .back-link:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+{{> nav}}
+
+  <section class="section">
+    <div class="container">
+      <div class="privacy-content">
+        <a href="/{{lang}}/reading/horatio/" class="back-link">&larr; {{privacy.horatio.back_link}}</a>
+        <h1 class="section-title"><span class="pine">{{privacy.horatio.heading}}</span></h1>
+        <p><strong>{{privacy.horatio.app_label}}</strong> Horatio<br>
+           <strong>{{privacy.horatio.developer_label}}</strong> PineSoft<br>
+           <strong>{{privacy.horatio.last_updated_label}}</strong> {{privacy.horatio.last_updated_date}}</p>
+
+        <p><strong>Horatio</strong> {{privacy.horatio.intro}}</p>
+
+        <h2>{{privacy.horatio.data_summary_heading}}</h2>
+        <table>
+            <thead>
+                <tr><th>{{privacy.horatio.table_data_type}}</th><th>{{privacy.horatio.table_collected}}</th><th>{{privacy.horatio.table_purpose}}</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>{{privacy.horatio.row_personal_type}}</td><td>{{privacy.horatio.row_personal_collected}}</td><td>{{privacy.horatio.row_personal_purpose}}</td></tr>
+                <tr><td>{{privacy.horatio.row_location_type}}</td><td>{{privacy.horatio.row_location_collected}}</td><td>{{privacy.horatio.row_location_purpose}}</td></tr>
+                <tr><td>{{privacy.horatio.row_audio_type}}</td><td>{{privacy.horatio.row_audio_collected}}</td><td>{{privacy.horatio.row_audio_purpose}}</td></tr>
+                <tr><td>{{privacy.horatio.row_sensors_type}}</td><td>{{privacy.horatio.row_sensors_collected}}</td><td>{{privacy.horatio.row_sensors_purpose}}</td></tr>
+                <tr><td>{{privacy.horatio.row_preferences_type}}</td><td>{{privacy.horatio.row_preferences_collected}}</td><td>{{privacy.horatio.row_preferences_purpose}}</td></tr>
+                <tr><td>{{privacy.horatio.row_content_type}}</td><td>{{privacy.horatio.row_content_collected}}</td><td>{{privacy.horatio.row_content_purpose}}</td></tr>
+                <tr><td>{{privacy.horatio.row_search_type}}</td><td>{{privacy.horatio.row_search_collected}}</td><td>{{privacy.horatio.row_search_purpose}}</td></tr>
+                <tr><td>{{privacy.horatio.row_crash_type}}</td><td>{{privacy.horatio.row_crash_collected}}</td><td>{{privacy.horatio.row_crash_purpose}}</td></tr>
+                <tr><td>{{privacy.horatio.row_ads_type}}</td><td>{{privacy.horatio.row_ads_collected}}</td><td>{{privacy.horatio.row_ads_purpose}}</td></tr>
+            </tbody>
+        </table>
+
+        <h2>{{privacy.horatio.how_used_heading}}</h2>
+        <p>{{privacy.horatio.how_used_intro}}</p>
+        <ul>
+            <li>{{privacy.horatio.how_used_preferences}}</li>
+            <li>{{privacy.horatio.how_used_content_packs}}</li>
+            <li>{{privacy.horatio.how_used_search}}</li>
+        </ul>
+
+        <h2>{{privacy.horatio.third_party_heading}}</h2>
+        <p>{{privacy.horatio.third_party_intro}}</p>
+        <ul>
+            <li>{{privacy.horatio.third_party_no_admob}}</li>
+            <li>{{privacy.horatio.third_party_no_firebase}}</li>
+            <li>{{privacy.horatio.third_party_no_tracking}}</li>
+        </ul>
+
+        <h2>{{privacy.horatio.data_sharing_heading}}</h2>
+        <p>{{privacy.horatio.data_sharing_text}}</p>
+
+        <h2>{{privacy.horatio.data_retention_heading}}</h2>
+        <p>{{privacy.horatio.data_retention_text}}</p>
+
+        <h2>{{privacy.horatio.children_heading}}</h2>
+        <p>{{privacy.horatio.children_text}}</p>
+
+        <h2>{{privacy.horatio.rights_heading}}</h2>
+        <p>{{privacy.horatio.rights_intro}}</p>
+        <p>{{privacy.horatio.rights_questions}}</p>
+
+        <h2>{{privacy.horatio.iap_heading}}</h2>
+        <p>{{privacy.horatio.iap_text}} (<a href="https://policies.google.com/privacy">Google</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>). {{privacy.horatio.iap_no_payment_info}}</p>
+
+        <h2>{{privacy.horatio.changes_heading}}</h2>
+        <p>{{privacy.horatio.changes_text}}</p>
+
+        <h2>{{privacy.horatio.contact_heading}}</h2>
+        <p>{{privacy.horatio.contact_text}}<br>
+          <a href="mailto:support@pinesoft.dev" style="color: var(--gold);">support@pinesoft.dev</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+{{> footer}}
+{{> nav-script}}
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{privacy.general.title}} | PineSoft</title>
+  <meta name="description" content="{{privacy.general.meta_description}}">
+  <meta name="theme-color" content="#1B2A1B">
+  <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="stylesheet" href="/style.css">
+{{hreflang}}
+  <style>
+    .privacy-content { max-width: 700px; margin: 0 auto; padding: 2rem 0; }
+    .privacy-content h2 { color: var(--gold); margin-top: 2rem; margin-bottom: 0.75rem; font-size: 1.25rem; }
+    .privacy-content p, .privacy-content ul { color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.8; }
+    .privacy-content ul { padding-left: 1.5rem; }
+    .privacy-content li { margin-bottom: 0.5rem; }
+    .privacy-content a { color: var(--green-light); }
+    .privacy-content a:hover { color: var(--gold); }
+    .back-link { display: inline-block; margin-bottom: 2rem; color: var(--green-light); text-decoration: none; font-size: 0.9rem; }
+    .back-link:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+{{> nav}}
+
+  <section class="section">
+    <div class="container">
+      <div class="privacy-content">
+        <a href="/{{lang}}/" class="back-link">&larr; {{privacy.general.back_link}}</a>
+        <h1 class="section-title"><span class="pine">{{privacy.general.heading}}</span></h1>
+        <p><strong>{{privacy.general.developer_label}}</strong> PineSoft<br>
+           <strong>{{privacy.general.last_updated_label}}</strong> {{privacy.general.last_updated_date}}</p>
+
+        <p><strong>PineSoft</strong> {{privacy.general.intro}}</p>
+        <ul>
+            <li><strong><a href="/{{lang}}/tools/soundscope/">SoundScope</a></strong> — {{privacy.general.app_soundscope}}</li>
+            <li><strong><a href="/{{lang}}/games/gyro-2048/">Gyro 2048</a></strong> — {{privacy.general.app_gyro2048}}</li>
+            <li><strong><a href="/{{lang}}/reading/horatio/">Horatio</a></strong> — {{privacy.general.app_horatio}}</li>
+        </ul>
+        <p>{{privacy.general.intro_specific}}</p>
+
+        <h2>{{privacy.general.info_collect_heading}}</h2>
+        <p>{{privacy.general.info_collect_intro}}</p>
+        <ul>
+            <li><strong>{{privacy.general.advertising_id_label}}</strong>: {{privacy.general.advertising_id_desc}}</li>
+            <li><strong>{{privacy.general.device_info_label}}</strong>: {{privacy.general.device_info_desc}}</li>
+            <li><strong>{{privacy.general.usage_data_label}}</strong>: {{privacy.general.usage_data_desc}}</li>
+        </ul>
+        <p>{{privacy.general.no_personal_info}}</p>
+
+        <h2>{{privacy.general.how_use_heading}}</h2>
+        <p>{{privacy.general.how_use_intro}}</p>
+        <ul>
+            <li>{{privacy.general.how_use_ads}}</li>
+            <li>{{privacy.general.how_use_analytics}}</li>
+        </ul>
+
+        <h2>{{privacy.general.third_party_heading}}</h2>
+        <p>{{privacy.general.third_party_intro}}</p>
+        <ul>
+            <li><strong>Google AdMob</strong>: <a href="https://policies.google.com/privacy">{{privacy.general.google_privacy_policy}}</a></li>
+        </ul>
+
+        <h2>{{privacy.general.your_choices_heading}}</h2>
+        <p>{{privacy.general.your_choices_intro}}</p>
+        <ul>
+            <li><strong>{{privacy.general.ad_personalization_label}}</strong>: {{privacy.general.ad_personalization_desc}}</li>
+            <li><strong>{{privacy.general.consent_label}}</strong>: {{privacy.general.consent_desc}}</li>
+        </ul>
+
+        <h2>{{privacy.general.children_heading}}</h2>
+        <p>{{privacy.general.children_text}}</p>
+
+        <h2>{{privacy.general.data_retention_heading}}</h2>
+        <p>{{privacy.general.data_retention_text}}</p>
+
+        <h2>{{privacy.general.gdpr_heading}}</h2>
+        <p>{{privacy.general.gdpr_intro}}</p>
+        <ul>
+            <li>{{privacy.general.gdpr_access}}</li>
+            <li>{{privacy.general.gdpr_withdraw}}</li>
+            <li>{{privacy.general.gdpr_object}}</li>
+            <li>{{privacy.general.gdpr_complaint}}</li>
+        </ul>
+
+        <h2>{{privacy.general.changes_heading}}</h2>
+        <p>{{privacy.general.changes_text}}</p>
+
+        <h2>{{privacy.general.contact_heading}}</h2>
+        <p>{{privacy.general.contact_text}}<br>
+          <a href="mailto:support@pinesoft.dev" style="color: var(--gold);">support@pinesoft.dev</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+{{> footer}}
+{{> nav-script}}
+
+</body>
+</html>

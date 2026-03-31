@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PineSoft — モバイルアプリ＆ジャイロスコープゲーム</title>
+  <meta name="description" content="PineSoftは革新的なモバイルアプリとジャイロスコープ操作ゲームを開発しています。音声分析、希少言語の保存、20種類の傾きで遊ぶゲーム。">
+  <meta name="theme-color" content="#1B2A1B">
+  <meta property="og:title" content="PineSoft — モバイルアプリ＆ジャイロスコープゲーム">
+  <meta property="og:description" content="PineSoftは革新的なモバイルアプリとジャイロスコープ操作ゲームを開発しています。音声分析、希少言語の保存、20種類の傾きで遊ぶゲーム。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://pinesoft.dev/images/gyro_2048_feature.png">
+  <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/">
+  <link rel="alternate" hreflang="en" href="https://pinesoft.dev/en/">
+  <link rel="alternate" hreflang="es" href="https://pinesoft.dev/es/">
+  <link rel="alternate" hreflang="fr" href="https://pinesoft.dev/fr/">
+  <link rel="alternate" hreflang="it" href="https://pinesoft.dev/it/">
+  <link rel="alternate" hreflang="ja" href="https://pinesoft.dev/ja/">
+  <link rel="alternate" hreflang="ko" href="https://pinesoft.dev/ko/">
+  <link rel="alternate" hreflang="pt" href="https://pinesoft.dev/pt/">
+  <link rel="alternate" hreflang="zh" href="https://pinesoft.dev/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/ja/" class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+          <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+          <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+          <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+        </svg>
+        <span class="nav-logo-text"><span class="pine">Pine</span><span class="soft">Soft</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/ja/games/">ゲーム</a></li>
+        <li><a href="/ja/tools/">ツール</a></li>
+        <li><a href="/ja/reading/">リーディング</a></li>
+        <li><a href="/ja/#about">概要</a></li>
+      </ul>
+      <div class="lang-switcher" id="langSwitcher">
+        <a href="/de/">DE</a> <a href="/en/">EN</a> <a href="/es/">ES</a> <a href="/fr/">FR</a> <a href="/it/">IT</a> <a href="/ja/" class="active">JA</a> <a href="/ko/">KO</a> <a href="/pt/">PT</a> <a href="/zh/">ZH</a>
+      </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+
+  <section class="hero section">
+    <div class="container">
+      <div class="hero-logo">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+          <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+          <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+          <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+          <line x1="120" y1="280" x2="392" y2="280" stroke="#1B5E20" stroke-width="2" opacity="0.3"/>
+          <line x1="160" y1="180" x2="352" y2="180" stroke="#1B5E20" stroke-width="2" opacity="0.3"/>
+        </svg>
+      </div>
+      <h1 class="hero-brand"><span class="pine">Pine</span><span class="soft">Soft</span></h1>
+      <p class="hero-tagline">革新的なモバイルアプリとジャイロスコープ操作ゲーム</p>
+      <a href="https://play.google.com/store/apps/developer?id=PineSoft+Dev" class="cta-button">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.196 12l2.502-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+        Google Playで見つけてください
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="sections">
+    <div class="container">
+      <div class="section-hub">
+
+        <a href="/ja/games/" class="hub-card">
+          <div class="hub-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="14" width="40" height="24" rx="4" fill="var(--bg-card-hover)" stroke="var(--green)" stroke-width="2"/>
+              <circle cx="15" cy="26" r="6" fill="var(--green)" opacity="0.3"/>
+              <circle cx="15" cy="26" r="2" fill="var(--green)"/>
+              <line x1="15" y1="21" x2="15" y2="31" stroke="var(--green)" stroke-width="1.5"/>
+              <line x1="10" y1="26" x2="20" y2="26" stroke="var(--green)" stroke-width="1.5"/>
+              <circle cx="35" cy="24" r="2.5" fill="var(--gold)"/>
+              <circle cx="31" cy="28" r="2.5" fill="var(--gold)" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3 class="hub-card-title">ゲーム</h3>
+          <p class="hub-card-count">20ゲーム</p>
+          <p class="hub-card-desc">ジャイロスコープで操作する傾き操作ゲーム。パズル、スキル、アクションなど。</p>
+        </a>
+
+        <a href="/ja/tools/" class="hub-card">
+          <div class="hub-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6 L30 18 L42 20 L33 29 L35 42 L24 36 L13 42 L15 29 L6 20 L18 18 Z" fill="var(--bg-card-hover)" stroke="var(--green)" stroke-width="2"/>
+              <circle cx="24" cy="24" r="6" fill="var(--green)" opacity="0.3"/>
+              <path d="M21 24 L23 26 L27 22" stroke="var(--gold)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="hub-card-title">ツール</h3>
+          <p class="hub-card-count">2アプリ</p>
+          <p class="hub-card-desc">音声分析、音楽チューニング、ユーティリティアプリ。</p>
+        </a>
+
+        <a href="/ja/reading/" class="hub-card">
+          <div class="hub-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 8 L24 12 L40 8 L40 38 L24 42 L8 38 Z" fill="var(--bg-card-hover)" stroke="var(--green)" stroke-width="2"/>
+              <line x1="24" y1="12" x2="24" y2="42" stroke="var(--green)" stroke-width="1.5"/>
+              <line x1="13" y1="18" x2="21" y2="20" stroke="var(--gold)" stroke-width="1.5" opacity="0.6"/>
+              <line x1="13" y1="23" x2="21" y2="25" stroke="var(--gold)" stroke-width="1.5" opacity="0.4"/>
+              <line x1="27" y1="20" x2="35" y2="18" stroke="var(--gold)" stroke-width="1.5" opacity="0.6"/>
+              <line x1="27" y1="25" x2="35" y2="23" stroke="var(--gold)" stroke-width="1.5" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3 class="hub-card-title">リーディング</h3>
+          <p class="hub-card-count">1アプリ</p>
+          <p class="hub-card-desc">希少言語、絶滅危惧言語、古典言語のデジタル保存。</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title">概要 <span class="pine">Pine</span><span class="soft">Soft</span></h2>
+      <div class="about-content">
+        <p>PineSoftは革新的なモバイルアプリとジャイロスコープ操作ゲームを開発しています。AI搭載の音声分析から希少言語のデジタル保存、スマートフォンをコントローラーに変える20種類の傾き操作ゲームまで。</p>
+        <p>すべての製品はファミリー向けで、成人向け広告は一切なく、多言語に対応しているため、世界中のユーザーが母国語で体験を楽しむことができます。</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-number">20+</div>
+            <div class="about-feature-label">アプリ</div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-number">9</div>
+            <div class="about-feature-label">言語</div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-number">3</div>
+            <div class="about-feature-label">カテゴリ</div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-number">0</div>
+            <div class="about-feature-label">成人向け広告</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand"><span class="pine">Pine</span><span class="soft">Soft</span></div>
+        <ul class="footer-links">
+          <li><a href="/ja/privacy-policy/">プライバシーポリシー</a></li>
+          <li><a href="mailto:support@pinesoft.dev">お問い合わせ</a></li>
+          <li><a href="https://play.google.com/store/apps/developer?id=PineSoft+Dev" target="_blank" rel="noopener">Google Play</a></li>
+        </ul>
+        <div class="footer-copy">&copy; 2026 PineSoft. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+  </script>
+
+
+</body>
+</html>

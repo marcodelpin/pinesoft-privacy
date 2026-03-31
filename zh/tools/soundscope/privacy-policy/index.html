@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 — SoundScope | PineSoft</title>
+  <meta name="description" content="PineSoft SoundScope的隐私政策。我们如何处理您的数据、麦克风访问和GPS录制。">
+  <meta name="theme-color" content="#1B2A1B">
+  <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="en" href="https://pinesoft.dev/en/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="es" href="https://pinesoft.dev/es/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="fr" href="https://pinesoft.dev/fr/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="it" href="https://pinesoft.dev/it/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="ja" href="https://pinesoft.dev/ja/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="ko" href="https://pinesoft.dev/ko/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="pt" href="https://pinesoft.dev/pt/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="zh" href="https://pinesoft.dev/zh/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/tools/soundscope/privacy-policy/">
+  <style>
+    .privacy-content {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    .privacy-content h2 {
+      color: var(--gold);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+    .privacy-content p, .privacy-content ul {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+    .privacy-content ul {
+      padding-left: 1.5rem;
+    }
+    .privacy-content li {
+      margin-bottom: 0.5rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--green-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .back-link:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/zh/" class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+          <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+          <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+          <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+        </svg>
+        <span class="nav-logo-text"><span class="pine">Pine</span><span class="soft">Soft</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/zh/games/">游戏</a></li>
+        <li><a href="/zh/tools/">工具</a></li>
+        <li><a href="/zh/reading/">阅读</a></li>
+        <li><a href="/zh/#about">关于</a></li>
+      </ul>
+      <div class="lang-switcher" id="langSwitcher">
+        <a href="/de/tools/soundscope/privacy-policy/">DE</a> <a href="/en/tools/soundscope/privacy-policy/">EN</a> <a href="/es/tools/soundscope/privacy-policy/">ES</a> <a href="/fr/tools/soundscope/privacy-policy/">FR</a> <a href="/it/tools/soundscope/privacy-policy/">IT</a> <a href="/ja/tools/soundscope/privacy-policy/">JA</a> <a href="/ko/tools/soundscope/privacy-policy/">KO</a> <a href="/pt/tools/soundscope/privacy-policy/">PT</a> <a href="/zh/tools/soundscope/privacy-policy/" class="active">ZH</a>
+      </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="privacy-content">
+        <a href="/zh/tools/soundscope/" class="back-link">&larr; 返回SoundScope</a>
+        <h1 class="section-title"><span class="pine">隐私政策</span></h1>
+        <p><strong>应用：</strong> SoundScope<br>
+           <strong>开发者：</strong> PineSoft<br>
+           <strong>最后更新：</strong> 2026年3月</p>
+
+        <h2>SoundScope的功能</h2>
+        <p>SoundScope是一款实时音频频谱图和声音识别应用。它使用设备的麦克风来可视化音频频率，并通过设备上的AI识别声音。</p>
+
+        <h2>麦克风访问</h2>
+        <p>SoundScope需要麦克风访问权限才能运行。所有音频完全在设备上处理：</p>
+        <ul>
+          <li>音频实时捕获、分析和显示</li>
+          <li>声音分类（YAMNet，521个类别）通过TensorFlow Lite在本地运行</li>
+          <li>音频录制仅限手动——您必须明确点击录制按钮才能保存音频</li>
+          <li>录制仅在应用处于前台时有效——无后台录制</li>
+          <li>录制的音频在设备上本地存储，从不传输到外部服务器</li>
+          <li>关闭应用时，音频捕获立即停止</li>
+        </ul>
+
+        <h2>GPS和位置</h2>
+        <p>SoundScope提供可选的GPS声音录制功能：</p>
+        <ul>
+          <li>位置数据仅在您明确启动GPS录制会话时收集</li>
+          <li>GPS坐标以JSON格式在设备上本地存储</li>
+          <li>位置数据从不传输到外部服务器</li>
+          <li>您可以随时从应用内删除录制的会话</li>
+        </ul>
+
+        <h2>保存的声音样本</h2>
+        <p>当您保存声音样本时，音频片段在设备上本地存储。保存的样本永远不会被上传或共享，除非您明确选择使用设备的分享功能来分享它们。</p>
+
+        <h2>广告</h2>
+        <p>SoundScope通过Google AdMob展示广告。AdMob可能使用匿名设备标识符来投放相关广告。我们不投放成人或不适当的广告。所有广告均适合全家。</p>
+        <p>您可以在以下位置查看Google AdMob的隐私做法： <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--green-light);">Google AdMob Privacy</a></p>
+
+        <h2>数据共享</h2>
+        <p>我们不会向第三方出售、共享或传输任何个人数据。音频、GPS和声音样本数据完全保留在您的设备上。</p>
+
+        <h2>数据收集摘要</h2>
+        <ul>
+          <li><strong>音频：</strong> 本地处理，从不存储或传输</li>
+          <li><strong>GPS：</strong> 用户启动录制时本地存储，从不传输</li>
+          <li><strong>声音样本：</strong> 本地存储，从不上传</li>
+          <li><strong>个人信息：</strong> 未收集</li>
+          <li><strong>设备标识符：</strong> 仅由Google AdMob用于广告投放和平台用于匿名崩溃报告</li>
+        </ul>
+
+        <h2>数据保留</h2>
+        <p>音频实时处理，从不存储。GPS录制和保存的声音样本在设备上本地存储。卸载应用会删除所有本地存储的数据。您也可以随时从应用内删除单个录制。</p>
+
+        <h2>儿童隐私</h2>
+        <p>SoundScope设计为适合全家。我们不会故意收集13岁以下儿童的个人信息。该应用符合COPPA要求。</p>
+
+        <h2>第三方服务</h2>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--green-light);">Google Play Services</a></li>
+          <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--green-light);">Google AdMob</a></li>
+        </ul>
+
+        <h2>您的权利（GDPR / CCPA）</h2>
+        <p>SoundScope不在外部服务器上收集个人数据。音频和GPS数据完全保留在您的设备上。外部处理的唯一数据是Google AdMob的匿名广告标识符。</p>
+        <p>根据GDPR（EEA/UK）和CCPA（加州），您有权：</p>
+        <ul>
+          <li>访问、更正或删除任何个人数据</li>
+          <li>选择退出个性化广告（通过设备设置）</li>
+          <li>请求数据可携带性</li>
+          <li>向当地数据保护机构提出投诉</li>
+        </ul>
+        <p>要行使这些权利，请联系我们 <a href="mailto:support@pinesoft.dev" style="color: var(--green-light);">support@pinesoft.dev</a>.</p>
+
+        <h2>政策变更</h2>
+        <p>我们可能会不时更新本隐私政策。变更将在此页面上发布，并附有更新的修订日期。</p>
+
+        <h2>联系方式</h2>
+        <p>如果您对本隐私政策或SoundScope的数据做法有疑问，请联系我们：<br>
+          <a href="mailto:support@pinesoft.dev" style="color: var(--gold);">support@pinesoft.dev</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand"><span class="pine">Pine</span><span class="soft">Soft</span></div>
+        <ul class="footer-links">
+          <li><a href="/zh/privacy-policy/">隐私政策</a></li>
+          <li><a href="mailto:support@pinesoft.dev">联系我们</a></li>
+          <li><a href="https://play.google.com/store/apps/developer?id=PineSoft+Dev" target="_blank" rel="noopener">Google Play</a></li>
+        </ul>
+        <div class="footer-copy">&copy; 2026 PineSoft. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+  </script>
+
+
+</body>
+</html>

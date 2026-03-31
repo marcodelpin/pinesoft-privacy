@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyro 2048 — 기울여서 플레이 | PineSoft</title>
+    <meta name="description" content="클래식 2048 퍼즐을 자이로스코프 조작으로 재해석. 스마트폰을 기울여 타일을 밀고, 숫자를 합치고, 2048에 도달하세요. Google Play에서 무료.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gyro 2048 — 기울여서 플레이">
+    <meta property="og:description" content="클래식 2048 퍼즐에 자이로스코프 조작을 적용. 스마트폰을 기울여서 플레이. Google Play에서 무료.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinesoft.dev/games/gyro-2048/">
+    <meta property="og:image" content="https://pinesoft.dev/images/gyro_2048_feature.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="500">
+    <meta property="og:site_name" content="PineSoft">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gyro 2048 — 기울여서 플레이">
+    <meta name="twitter:description" content="클래식 2048 퍼즐에 자이로스코프 조작을 적용. 스마트폰을 기울여서 플레이. Google Play에서 무료.">
+    <meta name="twitter:image" content="https://pinesoft.dev/images/gyro_2048_feature.png">
+
+    <meta name="theme-color" content="#1B2A1B">
+    <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/games/gyro-2048/">
+  <link rel="alternate" hreflang="en" href="https://pinesoft.dev/en/games/gyro-2048/">
+  <link rel="alternate" hreflang="es" href="https://pinesoft.dev/es/games/gyro-2048/">
+  <link rel="alternate" hreflang="fr" href="https://pinesoft.dev/fr/games/gyro-2048/">
+  <link rel="alternate" hreflang="it" href="https://pinesoft.dev/it/games/gyro-2048/">
+  <link rel="alternate" hreflang="ja" href="https://pinesoft.dev/ja/games/gyro-2048/">
+  <link rel="alternate" hreflang="ko" href="https://pinesoft.dev/ko/games/gyro-2048/">
+  <link rel="alternate" hreflang="pt" href="https://pinesoft.dev/pt/games/gyro-2048/">
+  <link rel="alternate" hreflang="zh" href="https://pinesoft.dev/zh/games/gyro-2048/">
+  <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/games/gyro-2048/">
+
+    <style>
+        :root {
+            --bg: #1B2A1B;
+            --bg2: #1E3320;
+            --card: #233A23;
+            --gold: #EDAE49;
+            --green: #2E7D32;
+            --green-light: #4CAF50;
+            --text: #E8E0D0;
+            --text2: #A8B5A0;
+            --text3: #7A8A72;
+            --border: rgba(237, 174, 73, 0.12);
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+        .section { padding: 3rem 0; }
+
+        /* Hero */
+        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(46,125,50,0.1), transparent 70%); }
+        .app-icon { width: 128px; height: 128px; border-radius: 28px; overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+        .app-icon img { width: 100%; height: 100%; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.15rem; color: var(--text2); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .store-btn { display: inline-block; transition: transform 0.2s; }
+        .store-btn:hover { transform: scale(1.05); }
+        .store-btn img { height: 80px; }
+
+        /* Stats */
+        .stats { background: var(--bg2); padding: 2rem 0; }
+        .stats-row { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); }
+        .stat-lbl { font-size: 0.85rem; color: var(--text3); }
+
+        /* Features */
+        .section-title { font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 2rem; }
+        .section-title .g { color: var(--green); }
+        .section-title .gr { color: var(--gold); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+        .feat { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; }
+        .feat-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .feat h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .feat p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; }
+
+        /* Feature graphic */
+        .feature-graphic { max-width: 700px; margin: 0 auto 2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid var(--border); }
+        .feature-graphic img { width: 100%; height: auto; display: block; }
+
+        /* Screenshots */
+        .gallery { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; max-width: 800px; margin: 0 auto; }
+        .gallery-item { border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid var(--border); transition: transform 0.2s; max-width: 260px; }
+        .gallery-item:hover { transform: scale(1.03); }
+        .gallery-item img { width: 100%; height: auto; display: block; }
+        .gallery-caption { padding: 0.75rem 1rem; background: var(--card); font-size: 0.85rem; color: var(--text2); text-align: center; }
+
+        /* Privacy */
+        .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
+        .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
+        .priv a { color: var(--green-light); text-decoration: none; }
+        .priv a:hover { color: var(--gold); }
+
+        /* CTA */
+        .cta { text-align: center; }
+        .cta-store { display: inline-block; transition: transform 0.2s; }
+        .cta-store:hover { transform: scale(1.05); }
+        .cta-store img { height: 72px; }
+
+        /* Footer */
+        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; }
+        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+        footer a:hover { color: var(--gold); }
+        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.85rem; }
+            .subtitle { font-size: 1rem; }
+            .app-icon { width: 96px; height: 96px; border-radius: 22px; }
+            .stats-row { gap: 1.5rem; }
+            .store-btn img { height: 64px; }
+            .cta-store img { height: 60px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero section">
+        <div class="container">
+            <div class="app-icon">
+                <img src="/images/gyro_2048_icon.png" alt="Gyro 2048 icon" width="192" height="192">
+            </div>
+            <h1>Gyro 2048</h1>
+            <p class="subtitle">클래식 2048 퍼즐을 자이로스코프 조작으로 재해석. 스마트폰을 기울여서 플레이.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.gyro2048" target="_blank" rel="noopener" class="store-btn">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Play에서 다운로드">
+            </a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat"><div class="stat-num">2048</div><div class="stat-lbl">목표 숫자</div></div>
+                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">언어</div></div>
+                <div class="stat"><div class="stat-num">2</div><div class="stat-lbl">조작 모드</div></div>
+                <div class="stat"><div class="stat-num">0</div><div class="stat-lbl">성인 광고</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <div class="feature-graphic">
+                <img src="/images/gyro_2048_feature.png" alt="Gyro 2048 gameplay" width="1024" height="500" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">주요</span> <span class="gr">기능</span></h2>
+            <div class="features">
+                <div class="feat">
+                    <div class="feat-icon">&#128241;</div>
+                    <h3>자이로스코프 조작</h3>
+                    <p>스마트폰을 기울여 타일을 슬라이드. 기기의 모션 센서를 사용하는 완전히 새로운 2048 플레이 방식.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128070;</div>
+                    <h3>터치 대체 조작</h3>
+                    <p>자이로스코프가 없나요? 문제없습니다. 클래식 터치 조작으로 스와이프하여 플레이. 언제든지 모드를 전환할 수 있습니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127942;</div>
+                    <h3>Google Play Games</h3>
+                    <p>리더보드에서 경쟁하고 업적을 달성하세요. 전 세계 플레이어와 점수를 비교해 보세요.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128200;</div>
+                    <h3>점수 추적</h3>
+                    <p>현재 점수와 역대 최고 점수를 추적. 게임 진행 상황이 자동으로 저장됩니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127760;</div>
+                    <h3>9개 언어</h3>
+                    <p>영어, 이탈리아어, 독일어, 프랑스어, 스페인어, 포르투갈어, 일본어, 한국어, 중국어의 완전한 인터페이스.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128106;</div>
+                    <h3>가족 친화적</h3>
+                    <p>성인 광고 없음, 인앱 구매 불필요. 모든 연령대에 안전.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="g">스크린</span><span class="gr">샷</span></h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="/images/gyro_2048_screenshot.png" alt="Gyro 2048 gameplay screenshot" loading="lazy">
+                    <div class="gallery-caption">게임플레이</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">당신의</span> <span class="gr">개인정보</span></h2>
+            <div class="priv">
+                <p>Gyro 2048은 자이로스코프 데이터를 기기에서 로컬로 처리합니다. 모션 데이터가 기록, 저장 또는 외부 서버로 전송되는 일은 절대 없습니다.</p>
+                <a href="/ko/games/gyro-2048/privacy-policy/">전체 개인정보 처리방침 &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta">
+        <div class="container">
+            <h2 class="section-title">플레이 <span class="g">Gyro</span> <span class="gr">2048</span></h2>
+            <p style="color: var(--text2); margin-bottom: 2rem;">Google Play에서 무료. 계정 불필요.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.gyro2048" target="_blank" rel="noopener" class="cta-store">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Play에서 다운로드">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="/ko/">PineSoft</a>
+            <a href="/ko/games/gyro-2048/privacy-policy/">개인정보 처리방침</a>
+            <a href="mailto:support@pinesoft.dev">문의</a>
+            <a href="https://play.google.com/store/apps/developer?id=PineSoft+Dev" target="_blank" rel="noopener">Google Play</a>
+        </div>
+        <div class="copy">&copy; 2026 PineSoft. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>

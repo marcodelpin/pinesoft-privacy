@@ -114,6 +114,33 @@ nav {
   color: var(--gold);
 }
 
+/* ===== Language Switcher ===== */
+.lang-switcher {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.lang-switcher a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.lang-switcher a:hover {
+  color: var(--gold);
+}
+
+.lang-switcher a.active {
+  color: var(--bg-primary);
+  background: var(--green);
+}
+
 .nav-hamburger {
   display: none;
   background: none;
@@ -642,6 +669,20 @@ footer {
 
   .nav-hamburger {
     display: block;
+  }
+
+  .lang-switcher {
+    position: absolute;
+    top: 100%;
+    right: 1.25rem;
+    margin-left: 0;
+    background: rgba(27, 42, 27, 0.97);
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    flex-wrap: wrap;
+    max-width: 200px;
+    justify-content: center;
   }
 
   .hero-brand {

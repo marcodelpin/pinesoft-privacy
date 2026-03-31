@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 처리방침 — SoundScope | PineSoft</title>
+  <meta name="description" content="PineSoft SoundScope의 개인정보 처리방침. 데이터, 마이크 접근 및 GPS 녹음 처리 방법.">
+  <meta name="theme-color" content="#1B2A1B">
+  <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="en" href="https://pinesoft.dev/en/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="es" href="https://pinesoft.dev/es/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="fr" href="https://pinesoft.dev/fr/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="it" href="https://pinesoft.dev/it/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="ja" href="https://pinesoft.dev/ja/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="ko" href="https://pinesoft.dev/ko/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="pt" href="https://pinesoft.dev/pt/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="zh" href="https://pinesoft.dev/zh/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/tools/soundscope/privacy-policy/">
+  <style>
+    .privacy-content {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    .privacy-content h2 {
+      color: var(--gold);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+    .privacy-content p, .privacy-content ul {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+    .privacy-content ul {
+      padding-left: 1.5rem;
+    }
+    .privacy-content li {
+      margin-bottom: 0.5rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--green-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .back-link:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/ko/" class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+          <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+          <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+          <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+        </svg>
+        <span class="nav-logo-text"><span class="pine">Pine</span><span class="soft">Soft</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/ko/games/">게임</a></li>
+        <li><a href="/ko/tools/">도구</a></li>
+        <li><a href="/ko/reading/">독서</a></li>
+        <li><a href="/ko/#about">소개</a></li>
+      </ul>
+      <div class="lang-switcher" id="langSwitcher">
+        <a href="/de/tools/soundscope/privacy-policy/">DE</a> <a href="/en/tools/soundscope/privacy-policy/">EN</a> <a href="/es/tools/soundscope/privacy-policy/">ES</a> <a href="/fr/tools/soundscope/privacy-policy/">FR</a> <a href="/it/tools/soundscope/privacy-policy/">IT</a> <a href="/ja/tools/soundscope/privacy-policy/">JA</a> <a href="/ko/tools/soundscope/privacy-policy/" class="active">KO</a> <a href="/pt/tools/soundscope/privacy-policy/">PT</a> <a href="/zh/tools/soundscope/privacy-policy/">ZH</a>
+      </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="privacy-content">
+        <a href="/ko/tools/soundscope/" class="back-link">&larr; SoundScope로 돌아가기</a>
+        <h1 class="section-title"><span class="pine">개인정보 처리방침</span></h1>
+        <p><strong>앱:</strong> SoundScope<br>
+           <strong>개발자:</strong> PineSoft<br>
+           <strong>최종 업데이트:</strong> 2026년 3월</p>
+
+        <h2>SoundScope의 기능</h2>
+        <p>SoundScope는 실시간 오디오 스펙트로그램 및 음향 인식 앱입니다. 기기의 마이크를 사용하여 오디오 주파수를 시각화하고 기기 내 AI로 소리를 식별합니다.</p>
+
+        <h2>마이크 접근</h2>
+        <p>SoundScope는 기능을 위해 마이크 접근이 필요합니다. 모든 오디오는 기기에서 완전히 처리됩니다:</p>
+        <ul>
+          <li>오디오가 실시간으로 캡처, 분석 및 표시됩니다</li>
+          <li>음향 분류(YAMNet, 521클래스)가 TensorFlow Lite를 통해 로컬로 실행됩니다</li>
+          <li>오디오 녹음은 수동으로만 — 녹음 버튼을 명시적으로 탭해야 합니다</li>
+          <li>녹음은 앱이 포그라운드에 있을 때만 작동 — 백그라운드 녹음 없음</li>
+          <li>녹음된 오디오는 기기에 로컬로 저장되며 외부 서버로 전송되지 않습니다</li>
+          <li>앱을 닫으면 오디오 캡처가 즉시 중지됩니다</li>
+        </ul>
+
+        <h2>GPS 및 위치</h2>
+        <p>SoundScope는 선택적 GPS 사운드 녹음 기능을 제공합니다:</p>
+        <ul>
+          <li>위치 데이터는 GPS 녹음 세션을 명시적으로 시작할 때만 수집됩니다</li>
+          <li>GPS 좌표는 기기에 JSON 형식으로 로컬 저장됩니다</li>
+          <li>위치 데이터는 외부 서버로 전송되지 않습니다</li>
+          <li>앱 내에서 언제든지 녹음된 세션을 삭제할 수 있습니다</li>
+        </ul>
+
+        <h2>저장된 사운드 샘플</h2>
+        <p>사운드 샘플을 저장하면 오디오 스니펫이 기기에 로컬로 저장됩니다. 저장된 샘플은 기기의 공유 기능을 사용하여 명시적으로 공유하지 않는 한 업로드되거나 공유되지 않습니다.</p>
+
+        <h2>광고</h2>
+        <p>SoundScope는 Google AdMob을 통해 광고를 표시합니다. AdMob은 관련성 높은 광고를 게재하기 위해 익명 기기 식별자를 사용할 수 있습니다. 성인용 또는 부적절한 광고는 게재하지 않습니다. 모든 광고는 가족 친화적입니다.</p>
+        <p>Google AdMob의 개인정보 보호 관행은 다음에서 확인할 수 있습니다: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--green-light);">Google AdMob Privacy</a></p>
+
+        <h2>데이터 공유</h2>
+        <p>개인 데이터를 제3자에게 판매, 공유 또는 전송하지 않습니다. 오디오, GPS 및 사운드 샘플 데이터는 기기에 완전히 남아 있습니다.</p>
+
+        <h2>데이터 수집 요약</h2>
+        <ul>
+          <li><strong>오디오:</strong> 로컬로 처리, 저장 또는 전송 안 함</li>
+          <li><strong>GPS:</strong> 사용자가 녹음을 시작하면 로컬 저장, 전송 안 함</li>
+          <li><strong>사운드 샘플:</strong> 로컬 저장, 업로드 안 함</li>
+          <li><strong>개인 정보:</strong> 수집 안 함</li>
+          <li><strong>기기 식별자:</strong> Google AdMob의 광고 제공 및 플랫폼의 익명 충돌 보고에만 사용</li>
+        </ul>
+
+        <h2>데이터 보관</h2>
+        <p>오디오는 실시간으로 처리되며 저장되지 않습니다. GPS 녹음과 저장된 사운드 샘플은 기기에 로컬로 저장됩니다. 앱을 삭제하면 로컬에 저장된 모든 데이터가 제거됩니다. 앱 내에서 언제든지 개별 녹음을 삭제할 수도 있습니다.</p>
+
+        <h2>아동 개인정보 보호</h2>
+        <p>SoundScope는 가족 친화적으로 설계되었습니다. 13세 미만 아동으로부터 의도적으로 개인 정보를 수집하지 않습니다. 앱은 COPPA 요건을 준수합니다.</p>
+
+        <h2>제3자 서비스</h2>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--green-light);">Google Play Services</a></li>
+          <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--green-light);">Google AdMob</a></li>
+        </ul>
+
+        <h2>사용자 권리(GDPR / CCPA)</h2>
+        <p>SoundScope는 외부 서버에서 개인 데이터를 수집하지 않습니다. 오디오와 GPS 데이터는 기기에 완전히 남아 있습니다. 외부에서 처리되는 유일한 데이터는 Google AdMob의 익명 광고 식별자입니다.</p>
+        <p>GDPR(EEA/UK) 및 CCPA(캘리포니아)에 따라 다음 권리가 있습니다:</p>
+        <ul>
+          <li>개인 데이터 접근, 수정 또는 삭제</li>
+          <li>맞춤 광고 비활성화(기기 설정 통해)</li>
+          <li>데이터 이동성 요청</li>
+          <li>지역 데이터 보호 기관에 불만 제기</li>
+        </ul>
+        <p>이러한 권리를 행사하려면 다음으로 연락해 주세요 <a href="mailto:support@pinesoft.dev" style="color: var(--green-light);">support@pinesoft.dev</a>.</p>
+
+        <h2>이 방침의 변경</h2>
+        <p>이 개인정보 처리방침은 수시로 업데이트될 수 있습니다. 변경 사항은 업데이트된 수정 날짜와 함께 이 페이지에 게시됩니다.</p>
+
+        <h2>연락처</h2>
+        <p>이 개인정보 처리방침 또는 SoundScope의 데이터 관행에 대한 질문이 있으시면 다음으로 연락해 주세요:<br>
+          <a href="mailto:support@pinesoft.dev" style="color: var(--gold);">support@pinesoft.dev</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand"><span class="pine">Pine</span><span class="soft">Soft</span></div>
+        <ul class="footer-links">
+          <li><a href="/ko/privacy-policy/">개인정보 처리방침</a></li>
+          <li><a href="mailto:support@pinesoft.dev">문의</a></li>
+          <li><a href="https://play.google.com/store/apps/developer?id=PineSoft+Dev" target="_blank" rel="noopener">Google Play</a></li>
+        </ul>
+        <div class="footer-copy">&copy; 2026 PineSoft. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+  </script>
+
+
+</body>
+</html>

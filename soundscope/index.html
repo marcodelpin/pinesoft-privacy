@@ -2,11 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/tools/soundscope/">
-  <link rel="canonical" href="/tools/soundscope/">
-  <title>Redirecting to SoundScope</title>
+  <meta http-equiv="refresh" content="3;url=/en/tools/soundscope/">
+  <link rel="canonical" href="https://pinesoft.dev/en/tools/soundscope/">
+  <title>Redirecting</title>
 </head>
 <body>
-  <p>Moved to <a href="/tools/soundscope/">/tools/soundscope/</a></p>
+  <script>
+    (function() {
+      var supported = ["de","en","es","fr","it","ja","ko","pt","zh"];
+      var userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase().split('-')[0];
+      var target = supported.indexOf(userLang) !== -1 ? userLang : 'en';
+      window.location.replace('/' + target + '/tools/soundscope/');
+    })();
+  </script>
+  <p>Redirecting to <a href="/en/tools/soundscope/">English</a>...</p>
 </body>
 </html>

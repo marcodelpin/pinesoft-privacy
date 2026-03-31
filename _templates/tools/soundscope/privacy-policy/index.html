@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{privacy.soundscope.title}} | PineSoft</title>
+  <meta name="description" content="{{privacy.soundscope.meta_description}}">
+  <meta name="theme-color" content="#1B2A1B">
+  <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="stylesheet" href="/style.css">
+{{hreflang}}
+  <style>
+    .privacy-content {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    .privacy-content h2 {
+      color: var(--gold);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+    .privacy-content p, .privacy-content ul {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+    .privacy-content ul {
+      padding-left: 1.5rem;
+    }
+    .privacy-content li {
+      margin-bottom: 0.5rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--green-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .back-link:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+{{> nav}}
+
+  <section class="section">
+    <div class="container">
+      <div class="privacy-content">
+        <a href="/{{lang}}/tools/soundscope/" class="back-link">&larr; {{privacy.soundscope.back_link}}</a>
+        <h1 class="section-title"><span class="pine">{{privacy.soundscope.heading}}</span></h1>
+        <p><strong>{{privacy.soundscope.app_label}}</strong> SoundScope<br>
+           <strong>{{privacy.soundscope.developer_label}}</strong> PineSoft<br>
+           <strong>{{privacy.soundscope.last_updated_label}}</strong> {{privacy.soundscope.last_updated_date}}</p>
+
+        <h2>{{privacy.soundscope.what_does_heading}}</h2>
+        <p>{{privacy.soundscope.what_does_text}}</p>
+
+        <h2>{{privacy.soundscope.microphone_heading}}</h2>
+        <p>{{privacy.soundscope.microphone_intro}}</p>
+        <ul>
+          <li>{{privacy.soundscope.mic_realtime}}</li>
+          <li>{{privacy.soundscope.mic_classification}}</li>
+          <li>{{privacy.soundscope.mic_manual_record}}</li>
+          <li>{{privacy.soundscope.mic_foreground_only}}</li>
+          <li>{{privacy.soundscope.mic_local_storage}}</li>
+          <li>{{privacy.soundscope.mic_close_stops}}</li>
+        </ul>
+
+        <h2>{{privacy.soundscope.gps_heading}}</h2>
+        <p>{{privacy.soundscope.gps_intro}}</p>
+        <ul>
+          <li>{{privacy.soundscope.gps_explicit}}</li>
+          <li>{{privacy.soundscope.gps_local}}</li>
+          <li>{{privacy.soundscope.gps_never_transmitted}}</li>
+          <li>{{privacy.soundscope.gps_delete}}</li>
+        </ul>
+
+        <h2>{{privacy.soundscope.samples_heading}}</h2>
+        <p>{{privacy.soundscope.samples_text}}</p>
+
+        <h2>{{privacy.soundscope.advertising_heading}}</h2>
+        <p>{{privacy.soundscope.advertising_text}}</p>
+        <p>{{privacy.soundscope.advertising_review}} <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--green-light);">Google AdMob Privacy</a></p>
+
+        <h2>{{privacy.soundscope.data_sharing_heading}}</h2>
+        <p>{{privacy.soundscope.data_sharing_text}}</p>
+
+        <h2>{{privacy.soundscope.data_summary_heading}}</h2>
+        <ul>
+          <li><strong>{{privacy.soundscope.summary_audio_label}}</strong> {{privacy.soundscope.summary_audio_desc}}</li>
+          <li><strong>{{privacy.soundscope.summary_gps_label}}</strong> {{privacy.soundscope.summary_gps_desc}}</li>
+          <li><strong>{{privacy.soundscope.summary_samples_label}}</strong> {{privacy.soundscope.summary_samples_desc}}</li>
+          <li><strong>{{privacy.soundscope.summary_personal_label}}</strong> {{privacy.soundscope.summary_personal_desc}}</li>
+          <li><strong>{{privacy.soundscope.summary_device_label}}</strong> {{privacy.soundscope.summary_device_desc}}</li>
+        </ul>
+
+        <h2>{{privacy.soundscope.data_retention_heading}}</h2>
+        <p>{{privacy.soundscope.data_retention_text}}</p>
+
+        <h2>{{privacy.soundscope.children_heading}}</h2>
+        <p>{{privacy.soundscope.children_text}}</p>
+
+        <h2>{{privacy.soundscope.third_party_heading}}</h2>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--green-light);">Google Play Services</a></li>
+          <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--green-light);">Google AdMob</a></li>
+        </ul>
+
+        <h2>{{privacy.soundscope.rights_heading}}</h2>
+        <p>{{privacy.soundscope.rights_intro}}</p>
+        <p>{{privacy.soundscope.rights_under_law}}</p>
+        <ul>
+          <li>{{privacy.soundscope.rights_access}}</li>
+          <li>{{privacy.soundscope.rights_opt_out}}</li>
+          <li>{{privacy.soundscope.rights_portability}}</li>
+          <li>{{privacy.soundscope.rights_complaint}}</li>
+        </ul>
+        <p>{{privacy.soundscope.rights_exercise}} <a href="mailto:support@pinesoft.dev" style="color: var(--green-light);">support@pinesoft.dev</a>.</p>
+
+        <h2>{{privacy.soundscope.changes_heading}}</h2>
+        <p>{{privacy.soundscope.changes_text}}</p>
+
+        <h2>{{privacy.soundscope.contact_heading}}</h2>
+        <p>{{privacy.soundscope.contact_text}}<br>
+          <a href="mailto:support@pinesoft.dev" style="color: var(--gold);">support@pinesoft.dev</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+{{> footer}}
+{{> nav-script}}
+
+</body>
+</html>

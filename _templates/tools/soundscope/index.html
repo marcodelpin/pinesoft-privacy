@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundScope — {{landing.soundscope.meta_title}}</title>
+    <meta name="description" content="{{landing.soundscope.meta_description}}">
+
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:title" content="SoundScope — {{landing.soundscope.og_title}}">
+    <meta property="og:description" content="{{landing.soundscope.og_description}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinesoft.dev/tools/soundscope/">
+    <meta property="og:image" content="https://pinesoft.dev/images/soundscope_og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="PineSoft">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SoundScope — {{landing.soundscope.og_title}}">
+    <meta name="twitter:description" content="{{landing.soundscope.twitter_description}}">
+    <meta name="twitter:image" content="https://pinesoft.dev/images/soundscope_og.png">
+
+    <meta name="theme-color" content="#1B2A1B">
+    <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+{{hreflang}}
+
+    <style>
+        :root {
+            --bg: #1B2A1B;
+            --bg2: #1E3320;
+            --card: #233A23;
+            --gold: #EDAE49;
+            --green: #2E7D32;
+            --green-light: #4CAF50;
+            --text: #E8E0D0;
+            --text2: #A8B5A0;
+            --text3: #7A8A72;
+            --border: rgba(237, 174, 73, 0.12);
+            --coming: #5C6BC0;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+        .section { padding: 3rem 0; }
+
+        /* Hero */
+        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(46,125,50,0.1), transparent 70%); }
+        .app-icon { width: 128px; height: 128px; border-radius: 28px; overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+        .app-icon img { width: 100%; height: 100%; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.15rem; color: var(--text2); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .store-btn { display: inline-block; transition: transform 0.2s; }
+        .store-btn:hover { transform: scale(1.05); }
+        .store-btn img { height: 80px; }
+
+        /* Stats */
+        .stats { background: var(--bg2); padding: 2rem 0; }
+        .stats-row { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); }
+        .stat-lbl { font-size: 0.85rem; color: var(--text3); }
+
+        /* Features */
+        .section-title { font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 2rem; }
+        .section-title .g { color: var(--green); }
+        .section-title .gr { color: var(--gold); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+        .feat { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; }
+        .feat-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .feat h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .feat p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; }
+        .feat-new { position: relative; }
+        .feat-new::after { content: 'NEW'; position: absolute; top: 12px; right: 12px; background: var(--gold); color: var(--bg); font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; letter-spacing: 0.5px; }
+
+        /* What's New */
+        .whats-new { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 700px; margin: 0 auto; }
+        .version-block { margin-bottom: 1.5rem; }
+        .version-block:last-child { margin-bottom: 0; }
+        .version-tag { color: var(--gold); font-weight: 600; margin-bottom: 0.5rem; }
+        .version-list { color: var(--text2); padding-left: 1.25rem; line-height: 2; }
+
+        /* Coming Soon */
+        .coming-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+        .coming-card { background: var(--card); border: 1px solid rgba(92, 107, 192, 0.2); border-radius: 14px; padding: 1.5rem; position: relative; }
+        .coming-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--coming), var(--gold)); border-radius: 14px 14px 0 0; }
+        .coming-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .coming-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .coming-card p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; }
+
+        /* Screenshots */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto; }
+        .gallery-item { border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid var(--border); transition: transform 0.2s; }
+        .gallery-item:hover { transform: scale(1.03); }
+        .gallery-item img { width: 100%; height: auto; display: block; }
+        .gallery-caption { padding: 0.75rem 1rem; background: var(--card); font-size: 0.85rem; color: var(--text2); text-align: center; }
+
+        /* Privacy */
+        .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
+        .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
+        .priv a { color: var(--green-light); text-decoration: none; }
+        .priv a:hover { color: var(--gold); }
+
+        /* CTA */
+        .cta { text-align: center; }
+        .cta-store { display: inline-block; transition: transform 0.2s; }
+        .cta-store:hover { transform: scale(1.05); }
+        .cta-store img { height: 72px; }
+
+        /* Footer */
+        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; }
+        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+        footer a:hover { color: var(--gold); }
+        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.85rem; }
+            .subtitle { font-size: 1rem; }
+            .app-icon { width: 96px; height: 96px; border-radius: 22px; }
+            .stats-row { gap: 1.5rem; }
+            .store-btn img { height: 64px; }
+            .cta-store img { height: 60px; }
+            .gallery { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero section">
+        <div class="container">
+            <div class="app-icon">
+                <img src="/images/soundscope_icon.png" alt="SoundScope icon" width="192" height="192">
+            </div>
+            <h1>SoundScope</h1>
+            <p class="subtitle">{{landing.soundscope.subtitle}}</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.soundscope" target="_blank" rel="noopener" class="store-btn">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="{{common.get_on_play}}">
+            </a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat"><div class="stat-num">521</div><div class="stat-lbl">{{landing.soundscope.stat_classes}}</div></div>
+                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">{{landing.soundscope.stat_languages}}</div></div>
+                <div class="stat"><div class="stat-num">5</div><div class="stat-lbl">{{landing.soundscope.stat_colormaps}}</div></div>
+                <div class="stat"><div class="stat-num">20kHz</div><div class="stat-lbl">{{landing.soundscope.stat_range}}</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">{{landing.soundscope.features_key}}</span> <span class="gr">{{landing.soundscope.features_word}}</span></h2>
+            <div class="features">
+                <div class="feat">
+                    <div class="feat-icon">&#127926;</div>
+                    <h3>{{landing.soundscope.feat_ai_title}}</h3>
+                    <p>{{landing.soundscope.feat_ai_desc}}</p>
+                </div>
+                <div class="feat feat-new">
+                    <div class="feat-icon">&#127912;</div>
+                    <h3>Spectrogram Art</h3>
+                    <p>{{landing.soundscope.feat_art_desc}}</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127752;</div>
+                    <h3>{{landing.soundscope.feat_colormap_title}}</h3>
+                    <p>{{landing.soundscope.feat_colormap_desc}}</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128225;</div>
+                    <h3>{{landing.soundscope.feat_spectrum_title}}</h3>
+                    <p>{{landing.soundscope.feat_spectrum_desc}}</p>
+                </div>
+                <div class="feat feat-new">
+                    <div class="feat-icon">&#128205;</div>
+                    <h3>{{landing.soundscope.feat_gps_title}}</h3>
+                    <p>{{landing.soundscope.feat_gps_desc}}</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128263;</div>
+                    <h3>{{landing.soundscope.feat_noise_title}}</h3>
+                    <p>{{landing.soundscope.feat_noise_desc}}</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127911;</div>
+                    <h3>{{landing.soundscope.feat_presets_title}}</h3>
+                    <p>{{landing.soundscope.feat_presets_desc}}</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127760;</div>
+                    <h3>{{landing.soundscope.feat_lang_title}}</h3>
+                    <p>{{landing.soundscope.feat_lang_desc}}</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#9899;</div>
+                    <h3>{{landing.soundscope.feat_recording_title}}</h3>
+                    <p>{{landing.soundscope.feat_recording_desc}}</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128241;</div>
+                    <h3>{{landing.soundscope.feat_widget_title}}</h3>
+                    <p>{{landing.soundscope.feat_widget_desc}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Spectrogram</span> <span class="gr">Art</span></h2>
+            <p style="color: var(--text2); text-align: center; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">{{landing.soundscope.art_intro}}</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="/images/soundscope/spec_logo.png" alt="SoundScope spectrogram showing a diamond shape" loading="lazy">
+                    <div class="gallery-caption">{{landing.soundscope.art_caption_diamond}}</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/soundscope/spec_pinesoft_2x.png" alt="PineSoft logo rendered as spectrogram art" loading="lazy">
+                    <div class="gallery-caption">{{landing.soundscope.art_caption_logo}}</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/soundscope/screenshot_help.png" alt="SoundScope help and about screen" loading="lazy">
+                    <div class="gallery-caption">{{landing.soundscope.art_caption_help}}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">{{landing.soundscope.whatsnew_whats}}</span> <span class="gr">{{landing.soundscope.whatsnew_new}}</span></h2>
+            <div class="whats-new">
+                <div class="version-block">
+                    <p class="version-tag">{{landing.soundscope.version_latest}}</p>
+                    <ul class="version-list">
+                        <li>{{landing.soundscope.changelog_art}}</li>
+                        <li>{{landing.soundscope.changelog_gps}}</li>
+                        <li>{{landing.soundscope.changelog_range}}</li>
+                        <li>{{landing.soundscope.changelog_presets}}</li>
+                        <li>{{landing.soundscope.changelog_scroll}}</li>
+                        <li>{{landing.soundscope.changelog_widget}}</li>
+                        <li>{{landing.soundscope.changelog_db}}</li>
+                    </ul>
+                </div>
+                <div class="version-block">
+                    <p class="version-tag">{{landing.soundscope.version_earlier}}</p>
+                    <ul class="version-list">
+                        <li>{{landing.soundscope.changelog_detection}}</li>
+                        <li>{{landing.soundscope.changelog_pitch}}</li>
+                        <li>{{landing.soundscope.changelog_colormaps}}</li>
+                        <li>{{landing.soundscope.changelog_noise}}</li>
+                        <li>{{landing.soundscope.changelog_languages}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="g">{{landing.soundscope.coming_word}}</span> <span class="gr">{{landing.soundscope.coming_soon}}</span></h2>
+            <div class="coming-grid">
+                <div class="coming-card">
+                    <div class="coming-icon">&#128038;</div>
+                    <h3>{{landing.soundscope.coming_bird_title}}</h3>
+                    <p>{{landing.soundscope.coming_bird_desc}}</p>
+                </div>
+                <div class="coming-card">
+                    <div class="coming-icon">&#128202;</div>
+                    <h3>{{landing.soundscope.coming_slm_title}}</h3>
+                    <p>{{landing.soundscope.coming_slm_desc}}</p>
+                </div>
+                <div class="coming-card">
+                    <div class="coming-icon">&#128260;</div>
+                    <h3>{{landing.soundscope.coming_bg_title}}</h3>
+                    <p>{{landing.soundscope.coming_bg_desc}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">{{landing.soundscope.privacy_your}}</span> <span class="gr">{{landing.soundscope.privacy_word}}</span></h2>
+            <div class="priv">
+                <p>{{landing.soundscope.privacy_text}}</p>
+                <a href="/{{lang}}/tools/soundscope/privacy-policy/">{{landing.soundscope.privacy_link}} &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta">
+        <div class="container">
+            <h2 class="section-title">{{landing.soundscope.cta_try}} <span class="g">Sound</span><span class="gr">Scope</span></h2>
+            <p style="color: var(--text2); margin-bottom: 2rem;">{{landing.soundscope.cta_free}}</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.soundscope" target="_blank" rel="noopener" class="cta-store">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="{{common.get_on_play}}">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="/{{lang}}/">PineSoft</a>
+            <a href="/{{lang}}/tools/soundscope/privacy-policy/">{{footer.privacy}}</a>
+            <a href="mailto:support@pinesoft.dev">{{footer.contact}}</a>
+            <a href="https://play.google.com/store/apps/developer?id=PineSoft+Dev" target="_blank" rel="noopener">Google Play</a>
+        </div>
+        <div class="copy">&copy; 2026 PineSoft. {{footer.rights}}</div>
+    </footer>
+
+</body>
+</html>

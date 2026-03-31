@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialité — SoundScope | PineSoft</title>
+  <meta name="description" content="Politique de confidentialité de SoundScope par PineSoft. Comment nous gérons vos données, l'accès au microphone et l'enregistrement GPS.">
+  <meta name="theme-color" content="#1B2A1B">
+  <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="en" href="https://pinesoft.dev/en/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="es" href="https://pinesoft.dev/es/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="fr" href="https://pinesoft.dev/fr/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="it" href="https://pinesoft.dev/it/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="ja" href="https://pinesoft.dev/ja/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="ko" href="https://pinesoft.dev/ko/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="pt" href="https://pinesoft.dev/pt/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="zh" href="https://pinesoft.dev/zh/tools/soundscope/privacy-policy/">
+  <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/tools/soundscope/privacy-policy/">
+  <style>
+    .privacy-content {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    .privacy-content h2 {
+      color: var(--gold);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+    .privacy-content p, .privacy-content ul {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+    .privacy-content ul {
+      padding-left: 1.5rem;
+    }
+    .privacy-content li {
+      margin-bottom: 0.5rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--green-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .back-link:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/fr/" class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+          <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+          <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+          <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+        </svg>
+        <span class="nav-logo-text"><span class="pine">Pine</span><span class="soft">Soft</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/fr/games/">Jeux</a></li>
+        <li><a href="/fr/tools/">Outils</a></li>
+        <li><a href="/fr/reading/">Lecture</a></li>
+        <li><a href="/fr/#about">À propos</a></li>
+      </ul>
+      <div class="lang-switcher" id="langSwitcher">
+        <a href="/de/tools/soundscope/privacy-policy/">DE</a> <a href="/en/tools/soundscope/privacy-policy/">EN</a> <a href="/es/tools/soundscope/privacy-policy/">ES</a> <a href="/fr/tools/soundscope/privacy-policy/" class="active">FR</a> <a href="/it/tools/soundscope/privacy-policy/">IT</a> <a href="/ja/tools/soundscope/privacy-policy/">JA</a> <a href="/ko/tools/soundscope/privacy-policy/">KO</a> <a href="/pt/tools/soundscope/privacy-policy/">PT</a> <a href="/zh/tools/soundscope/privacy-policy/">ZH</a>
+      </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="privacy-content">
+        <a href="/fr/tools/soundscope/" class="back-link">&larr; Retour à SoundScope</a>
+        <h1 class="section-title"><span class="pine">Politique de confidentialité</span></h1>
+        <p><strong>App :</strong> SoundScope<br>
+           <strong>Développeur :</strong> PineSoft<br>
+           <strong>Dernière mise à jour :</strong> Mars 2026</p>
+
+        <h2>Ce que fait SoundScope</h2>
+        <p>SoundScope est une application de spectrogramme audio en temps réel et de reconnaissance sonore. Elle utilise le microphone de votre appareil pour visualiser les fréquences audio et identifier les sons à l'aide de l'IA embarquée.</p>
+
+        <h2>Accès au microphone</h2>
+        <p>SoundScope nécessite l'accès au microphone pour fonctionner. Tout l'audio est traité entièrement sur votre appareil :</p>
+        <ul>
+          <li>L'audio est capturé, analysé et affiché en temps réel</li>
+          <li>La classification sonore (YAMNet, 521 classes) s'exécute localement via TensorFlow Lite</li>
+          <li>L'enregistrement audio est uniquement manuel — vous devez appuyer explicitement sur un bouton d'enregistrement pour sauvegarder l'audio</li>
+          <li>L'enregistrement ne fonctionne que lorsque l'app est au premier plan — pas d'enregistrement en arrière-plan</li>
+          <li>L'audio enregistré est stocké localement sur votre appareil et n'est jamais transmis à des serveurs externes</li>
+          <li>Lorsque vous fermez l'app, la capture audio s'arrête immédiatement</li>
+        </ul>
+
+        <h2>GPS et localisation</h2>
+        <p>SoundScope offre une fonctionnalité optionnelle d'enregistrement sonore GPS :</p>
+        <ul>
+          <li>Les données de localisation ne sont collectées que lorsque vous démarrez explicitement une session d'enregistrement GPS</li>
+          <li>Les coordonnées GPS sont stockées localement sur votre appareil au format JSON</li>
+          <li>Les données de localisation ne sont jamais transmises à des serveurs externes</li>
+          <li>Vous pouvez supprimer les sessions enregistrées à tout moment depuis l'app</li>
+        </ul>
+
+        <h2>Échantillons sonores sauvegardés</h2>
+        <p>Lorsque vous sauvegardez un échantillon sonore, l'extrait audio est stocké localement sur votre appareil. Les échantillons sauvegardés ne sont jamais téléchargés ni partagés, sauf si vous choisissez explicitement de les partager via la fonction de partage de votre appareil.</p>
+
+        <h2>Publicité</h2>
+        <p>SoundScope affiche des publicités via Google AdMob. AdMob peut utiliser des identifiants anonymes de l'appareil pour diffuser des publicités pertinentes. Nous ne diffusons pas de publicités pour adultes ou inappropriées. Toutes les publicités sont adaptées aux familles.</p>
+        <p>Vous pouvez consulter les pratiques de confidentialité de Google AdMob à : <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--green-light);">Google AdMob Privacy</a></p>
+
+        <h2>Partage des données</h2>
+        <p>Nous ne vendons, ne partageons ni ne transmettons de données personnelles à des tiers. Les données audio, GPS et les échantillons sonores restent entièrement sur votre appareil.</p>
+
+        <h2>Résumé de la collecte de données</h2>
+        <ul>
+          <li><strong>Audio :</strong> Traité localement, jamais stocké ni transmis</li>
+          <li><strong>GPS :</strong> Stocké localement lorsque l'utilisateur démarre l'enregistrement, jamais transmis</li>
+          <li><strong>Échantillons sonores :</strong> Stockés localement, jamais téléchargés</li>
+          <li><strong>Informations personnelles :</strong> Non collectées</li>
+          <li><strong>Identifiants de l'appareil :</strong> Utilisés uniquement par Google AdMob pour la diffusion publicitaire et par la plateforme pour les rapports de plantage anonymes</li>
+        </ul>
+
+        <h2>Conservation des données</h2>
+        <p>L'audio est traité en temps réel et jamais stocké. Les enregistrements GPS et les échantillons sonores sauvegardés sont stockés localement sur votre appareil. La désinstallation de l'app supprime toutes les données stockées localement. Vous pouvez également supprimer des enregistrements individuels depuis l'app à tout moment.</p>
+
+        <h2>Confidentialité des enfants</h2>
+        <p>SoundScope est conçu pour être adapté aux familles. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 13 ans. L'app est conforme aux exigences COPPA.</p>
+
+        <h2>Services tiers</h2>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--green-light);">Google Play Services</a></li>
+          <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--green-light);">Google AdMob</a></li>
+        </ul>
+
+        <h2>Vos droits (GDPR / CCPA)</h2>
+        <p>SoundScope ne collecte pas de données personnelles sur des serveurs externes. Les données audio et GPS restent entièrement sur votre appareil. Les seules données traitées en externe sont les identifiants publicitaires anonymes par Google AdMob.</p>
+        <p>Sous le GDPR (EEE/Royaume-Uni) et le CCPA (Californie), vous avez le droit de :</p>
+        <ul>
+          <li>Accéder, rectifier ou supprimer toute donnée personnelle</li>
+          <li>Refuser la publicité personnalisée (via les paramètres de l'appareil)</li>
+          <li>Demander la portabilité des données</li>
+          <li>Déposer une plainte auprès de votre autorité locale de protection des données</li>
+        </ul>
+        <p>Pour exercer ces droits, contactez-nous à <a href="mailto:support@pinesoft.dev" style="color: var(--green-light);">support@pinesoft.dev</a>.</p>
+
+        <h2>Modifications de cette politique</h2>
+        <p>Nous pouvons mettre à jour cette politique de confidentialité de temps en temps. Les modifications seront publiées sur cette page avec une date de révision mise à jour.</p>
+
+        <h2>Contact</h2>
+        <p>Si vous avez des questions sur cette politique de confidentialité ou les pratiques de données de SoundScope, contactez-nous à :<br>
+          <a href="mailto:support@pinesoft.dev" style="color: var(--gold);">support@pinesoft.dev</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand"><span class="pine">Pine</span><span class="soft">Soft</span></div>
+        <ul class="footer-links">
+          <li><a href="/fr/privacy-policy/">Politique de confidentialité</a></li>
+          <li><a href="mailto:support@pinesoft.dev">Contact</a></li>
+          <li><a href="https://play.google.com/store/apps/developer?id=PineSoft+Dev" target="_blank" rel="noopener">Google Play</a></li>
+        </ul>
+        <div class="footer-copy">&copy; 2026 PineSoft. Tous droits réservés.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundScope — AI音声認識搭載リアルタイムスペクトログラム</title>
+    <meta name="description" content="聞こえる音を目で見る。AI搭載の音声認識付きリアルタイム音声スペクトログラム。521種類の音声クラスを識別、Spectrogram Artを作成、5種類の科学的colormapsを探索。">
+
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:title" content="SoundScope — AI音声認識">
+    <meta property="og:description" content="聞こえる音を目で見る。521種類の音を識別するAI搭載リアルタイムスペクトログラム。Google Playで無料。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinesoft.dev/tools/soundscope/">
+    <meta property="og:image" content="https://pinesoft.dev/images/soundscope_og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="PineSoft">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SoundScope — AI音声認識">
+    <meta name="twitter:description" content="聞こえる音を目で見る。521種類の音を識別するAI搭載リアルタイムスペクトログラム。">
+    <meta name="twitter:image" content="https://pinesoft.dev/images/soundscope_og.png">
+
+    <meta name="theme-color" content="#1B2A1B">
+    <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/tools/soundscope/">
+  <link rel="alternate" hreflang="en" href="https://pinesoft.dev/en/tools/soundscope/">
+  <link rel="alternate" hreflang="es" href="https://pinesoft.dev/es/tools/soundscope/">
+  <link rel="alternate" hreflang="fr" href="https://pinesoft.dev/fr/tools/soundscope/">
+  <link rel="alternate" hreflang="it" href="https://pinesoft.dev/it/tools/soundscope/">
+  <link rel="alternate" hreflang="ja" href="https://pinesoft.dev/ja/tools/soundscope/">
+  <link rel="alternate" hreflang="ko" href="https://pinesoft.dev/ko/tools/soundscope/">
+  <link rel="alternate" hreflang="pt" href="https://pinesoft.dev/pt/tools/soundscope/">
+  <link rel="alternate" hreflang="zh" href="https://pinesoft.dev/zh/tools/soundscope/">
+  <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/tools/soundscope/">
+
+    <style>
+        :root {
+            --bg: #1B2A1B;
+            --bg2: #1E3320;
+            --card: #233A23;
+            --gold: #EDAE49;
+            --green: #2E7D32;
+            --green-light: #4CAF50;
+            --text: #E8E0D0;
+            --text2: #A8B5A0;
+            --text3: #7A8A72;
+            --border: rgba(237, 174, 73, 0.12);
+            --coming: #5C6BC0;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+        .section { padding: 3rem 0; }
+
+        /* Hero */
+        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(46,125,50,0.1), transparent 70%); }
+        .app-icon { width: 128px; height: 128px; border-radius: 28px; overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+        .app-icon img { width: 100%; height: 100%; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.15rem; color: var(--text2); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .store-btn { display: inline-block; transition: transform 0.2s; }
+        .store-btn:hover { transform: scale(1.05); }
+        .store-btn img { height: 80px; }
+
+        /* Stats */
+        .stats { background: var(--bg2); padding: 2rem 0; }
+        .stats-row { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); }
+        .stat-lbl { font-size: 0.85rem; color: var(--text3); }
+
+        /* Features */
+        .section-title { font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 2rem; }
+        .section-title .g { color: var(--green); }
+        .section-title .gr { color: var(--gold); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+        .feat { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; }
+        .feat-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .feat h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .feat p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; }
+        .feat-new { position: relative; }
+        .feat-new::after { content: 'NEW'; position: absolute; top: 12px; right: 12px; background: var(--gold); color: var(--bg); font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; letter-spacing: 0.5px; }
+
+        /* What's New */
+        .whats-new { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 700px; margin: 0 auto; }
+        .version-block { margin-bottom: 1.5rem; }
+        .version-block:last-child { margin-bottom: 0; }
+        .version-tag { color: var(--gold); font-weight: 600; margin-bottom: 0.5rem; }
+        .version-list { color: var(--text2); padding-left: 1.25rem; line-height: 2; }
+
+        /* Coming Soon */
+        .coming-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+        .coming-card { background: var(--card); border: 1px solid rgba(92, 107, 192, 0.2); border-radius: 14px; padding: 1.5rem; position: relative; }
+        .coming-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--coming), var(--gold)); border-radius: 14px 14px 0 0; }
+        .coming-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .coming-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .coming-card p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; }
+
+        /* Screenshots */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto; }
+        .gallery-item { border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid var(--border); transition: transform 0.2s; }
+        .gallery-item:hover { transform: scale(1.03); }
+        .gallery-item img { width: 100%; height: auto; display: block; }
+        .gallery-caption { padding: 0.75rem 1rem; background: var(--card); font-size: 0.85rem; color: var(--text2); text-align: center; }
+
+        /* Privacy */
+        .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
+        .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
+        .priv a { color: var(--green-light); text-decoration: none; }
+        .priv a:hover { color: var(--gold); }
+
+        /* CTA */
+        .cta { text-align: center; }
+        .cta-store { display: inline-block; transition: transform 0.2s; }
+        .cta-store:hover { transform: scale(1.05); }
+        .cta-store img { height: 72px; }
+
+        /* Footer */
+        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; }
+        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+        footer a:hover { color: var(--gold); }
+        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.85rem; }
+            .subtitle { font-size: 1rem; }
+            .app-icon { width: 96px; height: 96px; border-radius: 22px; }
+            .stats-row { gap: 1.5rem; }
+            .store-btn img { height: 64px; }
+            .cta-store img { height: 60px; }
+            .gallery { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero section">
+        <div class="container">
+            <div class="app-icon">
+                <img src="/images/soundscope_icon.png" alt="SoundScope icon" width="192" height="192">
+            </div>
+            <h1>SoundScope</h1>
+            <p class="subtitle">聞こえる音を目で見る。AI搭載の音声認識付きリアルタイムスペクトログラム。</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.soundscope" target="_blank" rel="noopener" class="store-btn">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Playで入手">
+            </a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat"><div class="stat-num">521</div><div class="stat-lbl">音声クラス</div></div>
+                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">言語</div></div>
+                <div class="stat"><div class="stat-num">5</div><div class="stat-lbl">Colormaps</div></div>
+                <div class="stat"><div class="stat-num">20kHz</div><div class="stat-lbl">Full Range</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">主な</span> <span class="gr">機能</span></h2>
+            <div class="features">
+                <div class="feat">
+                    <div class="feat-icon">&#127926;</div>
+                    <h3>AI音声認識</h3>
+                    <p>YAMNet搭載で、521種類の音声クラスをリアルタイムで識別 — 鳥、楽器、交通、家電など。</p>
+                </div>
+                <div class="feat feat-new">
+                    <div class="feat-icon">&#127912;</div>
+                    <h3>Spectrogram Art</h3>
+                    <p>画像を音に変換！別のスマートフォンのスペクトログラムにアートとして表示される形状を再生。9種類の内蔵プリセット、またはProで独自の画像をアップロード。</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127752;</div>
+                    <h3>科学的Colormaps</h3>
+                    <p>5種類の知覚的に均一なcolormaps：Inferno、Viridis、Magma、Plasma、Classic。</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128225;</div>
+                    <h3>フルスペクトラム</h3>
+                    <p>20 Hzから20 kHzの対数スペクトログラムと適応型周波数ラベル。Blackman-Harrisウィンドウで-92 dBのサイドローブ抑制。</p>
+                </div>
+                <div class="feat feat-new">
+                    <div class="feat-icon">&#128205;</div>
+                    <h3>GPS音声記録</h3>
+                    <p>GPS座標付きで屋外のサウンドウォークを記録。ルートに沿って検出された音をマップ上に表示。Pro機能。</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128263;</div>
+                    <h3>ノイズ抑制</h3>
+                    <p>適応型ビン別スペクトル減算により背景ノイズを除去し、重要な音を明らかにします。</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127911;</div>
+                    <h3>周波数プリセット</h3>
+                    <p>Birding、Speech、Music、Full Rangeモードを素早く切り替えて、聞きたい音に集中。</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127760;</div>
+                    <h3>9言語</h3>
+                    <p>完全なインターフェースと521の検出ラベルすべてをEN、IT、DE、FR、ES、PT、JA、KO、ZHで提供。</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#9899;</div>
+                    <h3>音声録音</h3>
+                    <p>ワンタップでWAVファイルとして音声を録音。録音はデバイスにローカル保存され、アップロードや共有されることはありません。</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128241;</div>
+                    <h3>ホーム画面ウィジェット</h3>
+                    <p>アプリを開かずに、最後に検出された音をひと目で確認。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Spectrogram</span> <span class="gr">Art</span></h2>
+            <p style="color: var(--text2); text-align: center; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">音声ファイルを再生して、友達のスペクトログラムに隠された画像が表示されるのを見ましょう。音を通じて視覚的なメッセージを共有する楽しい方法です。</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="/images/soundscope/spec_logo.png" alt="SoundScope spectrogram showing a diamond shape" loading="lazy">
+                    <div class="gallery-caption">スペクトログラム上のダイヤモンド形状</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/soundscope/spec_pinesoft_2x.png" alt="PineSoft logo rendered as spectrogram art" loading="lazy">
+                    <div class="gallery-caption">Spectrogram ArtとしてのPineSoftロゴ</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/soundscope/screenshot_help.png" alt="SoundScope help and about screen" loading="lazy">
+                    <div class="gallery-caption">ヘルプと概要</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">新機能</span> <span class="gr"></span></h2>
+            <div class="whats-new">
+                <div class="version-block">
+                    <p class="version-tag">最新版</p>
+                    <ul class="version-list">
+                        <li>Spectrogram Art — 画像を音として再生、スペクトログラムで形状を表示</li>
+                        <li>GPS音声記録（マップビューと検出ピン付き）</li>
+                        <li>適応型周波数ラベル付きフル20 kHz範囲</li>
+                        <li>周波数プリセット：Birding、Speech、Music、Full Range</li>
+                        <li>新しい検出時に検出ラベルが最新のものにスクロール</li>
+                        <li>最後に検出された音のホーム画面ウィジェット</li>
+                        <li>dBレベルメーターの精度向上</li>
+                    </ul>
+                </div>
+                <div class="version-block">
+                    <p class="version-tag">以前のバージョン</p>
+                    <ul class="version-list">
+                        <li>コンパクトおよびオーバーレイ表示モード付きAI音声検出</li>
+                        <li>基本音検出（音楽ピッチ）</li>
+                        <li>5種類の科学的colormaps：Inferno、Viridis、Magma、Plasma、Classic</li>
+                        <li>適応型ノイズ抑制（自動・手動モード）</li>
+                        <li>インターフェースと521の検出ラベルすべてに9言語対応</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="g">近日</span> <span class="gr">公開</span></h2>
+            <div class="coming-grid">
+                <div class="coming-card">
+                    <div class="coming-icon">&#128038;</div>
+                    <h3>鳥類種識別</h3>
+                    <p>14,795種の鳥を鳴き声で識別。AIカスケード：YAMNetが「鳥」を検出し、専門のニューラルネットワークが正確な種を特定。</p>
+                </div>
+                <div class="coming-card">
+                    <div class="coming-icon">&#128202;</div>
+                    <h3>騒音計</h3>
+                    <p>GPSマップ上のノイズヒートマップ付き校正済みdBメーター。ルートに沿ってどのエリアが最も騒がしいか確認。</p>
+                </div>
+                <div class="coming-card">
+                    <div class="coming-icon">&#128260;</div>
+                    <h3>バックグラウンド録音</h3>
+                    <p>フォアグラウンドサービスでバックグラウンドでの音声とGPSデータの記録を継続。検出を見逃しません。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">あなたの</span> <span class="gr">プライバシー</span></h2>
+            <div class="priv">
+                <p>すべての音声はデバイス上でローカルに処理されます。オプションの録音はデバイス上にのみ保存され、アップロードや共有されることはありません。</p>
+                <a href="/ja/tools/soundscope/privacy-policy/">プライバシーポリシー全文 &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta">
+        <div class="container">
+            <h2 class="section-title">試す <span class="g">Sound</span><span class="gr">Scope</span></h2>
+            <p style="color: var(--text2); margin-bottom: 2rem;">Google Playで無料。アカウント不要。</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.soundscope" target="_blank" rel="noopener" class="cta-store">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Playで入手">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="/ja/">PineSoft</a>
+            <a href="/ja/tools/soundscope/privacy-policy/">プライバシーポリシー</a>
+            <a href="mailto:support@pinesoft.dev">お問い合わせ</a>
+            <a href="https://play.google.com/store/apps/developer?id=PineSoft+Dev" target="_blank" rel="noopener">Google Play</a>
+        </div>
+        <div class="copy">&copy; 2026 PineSoft. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>
