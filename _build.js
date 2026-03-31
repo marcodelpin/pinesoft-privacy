@@ -74,9 +74,10 @@ function generateHreflang(pagePath) {
   return lines.join('\n');
 }
 
-// Generate language switcher HTML
+// Generate language switcher HTML (EN first, then alphabetical)
 function generateLangSwitcher(pagePath, currentLang) {
-  return languages.map(lang => {
+  const sorted = ['en', ...languages.filter(l => l !== 'en').sort()];
+  return sorted.map(lang => {
     const cls = lang === currentLang ? ' class="active"' : '';
     return `<a href="/${lang}/${pagePath}"${cls}>${lang.toUpperCase()}</a>`;
   }).join(' ');
