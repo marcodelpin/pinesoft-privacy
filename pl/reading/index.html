@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Czytanie — PineSoft</title>
+  <meta name="description" content="Cyfrowa ochrona tekstów w rzadkich, zagrożonych i klasycznych językach. Książki i aplikacje referencyjne od PineSoft.">
+  <meta name="theme-color" content="#1B2A1B">
+  <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" hreflang="ar" href="https://pinesoft.dev/ar/reading/">
+  <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/reading/">
+  <link rel="alternate" hreflang="en" href="https://pinesoft.dev/en/reading/">
+  <link rel="alternate" hreflang="es" href="https://pinesoft.dev/es/reading/">
+  <link rel="alternate" hreflang="fr" href="https://pinesoft.dev/fr/reading/">
+  <link rel="alternate" hreflang="hi" href="https://pinesoft.dev/hi/reading/">
+  <link rel="alternate" hreflang="it" href="https://pinesoft.dev/it/reading/">
+  <link rel="alternate" hreflang="ja" href="https://pinesoft.dev/ja/reading/">
+  <link rel="alternate" hreflang="ko" href="https://pinesoft.dev/ko/reading/">
+  <link rel="alternate" hreflang="nl" href="https://pinesoft.dev/nl/reading/">
+  <link rel="alternate" hreflang="pl" href="https://pinesoft.dev/pl/reading/">
+  <link rel="alternate" hreflang="pt" href="https://pinesoft.dev/pt/reading/">
+  <link rel="alternate" hreflang="ru" href="https://pinesoft.dev/ru/reading/">
+  <link rel="alternate" hreflang="sv" href="https://pinesoft.dev/sv/reading/">
+  <link rel="alternate" hreflang="tr" href="https://pinesoft.dev/tr/reading/">
+  <link rel="alternate" hreflang="zh" href="https://pinesoft.dev/zh/reading/">
+  <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/reading/">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/pl/" class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+          <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+          <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+          <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+        </svg>
+        <span class="nav-logo-text"><span class="pine">Pine</span><span class="soft">Soft</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/pl/games/">Gry</a></li>
+        <li><a href="/pl/tools/">Narzędzia</a></li>
+        <li><a href="/pl/reading/">Czytanie</a></li>
+        <li><a href="/pl/#about">O nas</a></li>
+      </ul>
+      <div class="lang-switcher" id="langSwitcher">
+        <a href="/en/reading/">EN</a> <a href="/ar/reading/">AR</a> <a href="/de/reading/">DE</a> <a href="/es/reading/">ES</a> <a href="/fr/reading/">FR</a> <a href="/hi/reading/">HI</a> <a href="/it/reading/">IT</a> <a href="/ja/reading/">JA</a> <a href="/ko/reading/">KO</a> <a href="/nl/reading/">NL</a> <a href="/pl/reading/" class="active">PL</a> <a href="/pt/reading/">PT</a> <a href="/ru/reading/">RU</a> <a href="/sv/reading/">SV</a> <a href="/tr/reading/">TR</a> <a href="/zh/reading/">ZH</a>
+      </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+
+  <section class="section">
+    <div class="container">
+      <p class="breadcrumb"><a href="/pl/">Strona główna</a> &rsaquo; Czytanie</p>
+      <h1 class="section-title"><span class="pine">Czytanie</span> &amp; Lektury</h1>
+      <p class="section-subtitle">Cyfrowa ochrona rzadkich i klasycznych tekstów.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="app-grid">
+
+        <a href="/pl/reading/horatio/" class="app-card">
+          <div class="app-card-icon">
+            <img src="/images/horatio_icon.png" alt="Horatio" loading="lazy">
+          </div>
+          <div class="app-card-info">
+            <div class="app-card-header">
+              <h3>Horatio</h3>
+              <span class="badge-coming-soon">Wkrótce</span>
+            </div>
+            <p class="app-card-category">Książki i lektury</p>
+            <p class="app-card-desc">Cyfrowa ochrona tekstów w rzadkich, zagrożonych i klasycznych językach. 9 systemów kalendarzowych, ponad 10 pism, pełna praca offline.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand"><span class="pine">Pine</span><span class="soft">Soft</span></div>
+        <ul class="footer-links">
+          <li><a href="/pl/privacy-policy/">Polityka prywatności</a></li>
+          <li><a href="mailto:support@pinesoft.dev">Kontakt</a></li>
+          <li><a href="https://play.google.com/store/apps/developer?id=PineSoft+Dev" target="_blank" rel="noopener">Google Play</a></li>
+        </ul>
+        <div class="footer-copy">&copy; 2026 PineSoft. Wszelkie prawa zastrzeżone.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+  </script>
+
+
+</body>
+</html>

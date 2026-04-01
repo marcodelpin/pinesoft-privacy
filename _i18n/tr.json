@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "games": "Oyunlar",
+    "tools": "Ara\u00e7lar",
+    "reading": "Okuma",
+    "about": "Hakk\u0131nda"
+  },
+  "footer": {
+    "privacy": "Gizlilik Politikas\u0131",
+    "contact": "\u0130leti\u015fim",
+    "rights": "T\u00fcm haklar\u0131 sakl\u0131d\u0131r."
+  },
+  "common": {
+    "soon": "Yak\u0131nda",
+    "live": "Mevcut",
+    "learn_more": "Daha fazla",
+    "get_on_play": "Google Play'den indirin",
+    "coming_soon": "\u00c7ok Yak\u0131nda"
+  },
+  "home": {
+    "tagline_short": "Mobil Uygulamalar ve Jiroskop Oyunlar\u0131",
+    "tagline": "Yenilik\u00e7i mobil uygulamalar ve jiroskop kontroll\u00fc oyunlar",
+    "meta_description": "PineSoft yenilik\u00e7i mobil uygulamalar ve jiroskop kontroll\u00fc oyunlar yarat\u0131r. Ses analizi, nadir dil koruma ve 20 e\u011fme-oyna oyunu.",
+    "find_on_play": "Bizi Google Play'de bulun",
+    "games_count": "20 oyun",
+    "games_desc": "Jiroskop kontroll\u00fc oyunlar. Bulmaca, beceri, aksiyon ve daha fazlas\u0131.",
+    "tools_count": "2 uygulama",
+    "tools_desc": "Ses analizi, m\u00fczik ak\u00f6r\u00fc ve yard\u0131mc\u0131 uygulamalar.",
+    "reading_count": "1 uygulama",
+    "reading_desc": "Nadir, tehlike alt\u0131ndaki ve klasik dillerin dijital korumas\u0131.",
+    "about_p1": "PineSoft yenilik\u00e7i mobil uygulamalar ve jiroskop kontroll\u00fc oyunlar yarat\u0131r. AI destekli ses analizinden nadir dillerin dijital korumas\u0131na ve telefonunuzu kumandaya d\u00f6n\u00fc\u015ft\u00fcren 20 oyuna.",
+    "about_p2": "T\u00fcm \u00fcr\u00fcnlerimiz aile dostu, yeti\u015fkin reklams\u0131z ve \u00e7ok dilli deste\u011fe sahiptir.",
+    "apps": "Uygulamalar",
+    "languages": "Diller",
+    "categories": "Kategoriler",
+    "adult_ads": "Yeti\u015fkin Reklamlar"
+  },
+  "games": {
+    "title": "Oyunlar",
+    "gyroscope": "Jiroskop",
+    "meta_description": "PineSoft'tan jiroskop kontroll\u00fc oyunlar. 20 oyun: bulmaca, beceri, aksiyon ve de\u011ferlendirme.",
+    "subtitle": "Telefonunuzu e\u011fin ve oynay\u0131n. Jiroskopunuzu kumandaya d\u00f6n\u00fc\u015ft\u00fcren 20 oyun.",
+    "live_on_play": "Play Store'da",
+    "catalog": "Oyun Katalo\u011fu",
+    "all": "T\u00fcm\u00fc",
+    "puzzle": "Bulmaca",
+    "skill": "Beceri",
+    "action": "Aksiyon",
+    "assessment": "De\u011ferlendirme",
+    "gyro2048_desc": "Klasik 2048 bulmacas\u0131 jiroskop kontrol\u00fcyle yeniden tasarland\u0131. Telefonunuzu e\u011ferek bloklar\u0131 kayd\u0131r\u0131n, say\u0131lar\u0131 birle\u015ftirin ve 2048'e ula\u015f\u0131n."
+  },
+  "tools": {
+    "title": "Ara\u00e7lar",
+    "utilities": "Yard\u0131mc\u0131lar",
+    "meta_description": "PineSoft'tan ses analizi ve m\u00fczik ara\u00e7lar\u0131.",
+    "subtitle": "Ses analizi, m\u00fczik ve verimlilik uygulamalar\u0131.",
+    "soundscope": {
+      "category": "M\u00fczik ve Ses",
+      "desc": "AI ses tan\u0131ma ile ger\u00e7ek zamanl\u0131 ses spektrogram\u0131. 521 ses s\u0131n\u0131f\u0131n\u0131 tan\u0131mlar."
+    },
+    "polytuner": {
+      "category": "M\u00fczik ve Ses",
+      "desc": "Ger\u00e7ek zamanl\u0131 perde alg\u0131lamal\u0131 polifonik gitar ak\u00f6r\u00fc."
+    }
+  },
+  "reading": {
+    "title": "Okuma",
+    "reference": "Ba\u015fvuru",
+    "meta_description": "Nadir, tehlike alt\u0131ndaki ve klasik dillerdeki metinlerin dijital korumas\u0131. PineSoft.",
+    "subtitle": "Nadir ve klasik metinlerin dijital korumas\u0131.",
+    "horatio": {
+      "category": "Kitaplar ve Ba\u015fvuru",
+      "desc": "Nadir, tehlike alt\u0131ndaki ve klasik dillerdeki metinlerin dijital korumas\u0131. 9 takvim sistemi, 10+ yaz\u0131, tamamen \u00e7evrimd\u0131\u015f\u0131."
+    }
+  }
+}

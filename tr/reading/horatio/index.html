@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horatio — Rare Liturgical Texts | PineSoft</title>
+    <meta name="description" content="Digital preservation of texts in rare, endangered, and classical languages. 9 calendar systems, 10+ scripts, fully offline. By PineSoft.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Horatio — Rare Liturgical Texts">
+    <meta property="og:description" content="Preserve and read texts in rare, endangered, and classical languages. 9 calendar systems, 10+ scripts, fully offline.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinesoft.dev/reading/horatio/">
+    <meta property="og:image" content="https://pinesoft.dev/images/horatio_icon.png">
+    <meta property="og:site_name" content="PineSoft">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Horatio — Rare Liturgical Texts">
+    <meta name="twitter:description" content="Preserve and read texts in rare, endangered, and classical languages. Fully offline.">
+    <meta name="twitter:image" content="https://pinesoft.dev/images/horatio_icon.png">
+
+    <meta name="theme-color" content="#1B2A1B">
+    <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="alternate" hreflang="ar" href="https://pinesoft.dev/ar/reading/horatio/">
+  <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/reading/horatio/">
+  <link rel="alternate" hreflang="en" href="https://pinesoft.dev/en/reading/horatio/">
+  <link rel="alternate" hreflang="es" href="https://pinesoft.dev/es/reading/horatio/">
+  <link rel="alternate" hreflang="fr" href="https://pinesoft.dev/fr/reading/horatio/">
+  <link rel="alternate" hreflang="hi" href="https://pinesoft.dev/hi/reading/horatio/">
+  <link rel="alternate" hreflang="it" href="https://pinesoft.dev/it/reading/horatio/">
+  <link rel="alternate" hreflang="ja" href="https://pinesoft.dev/ja/reading/horatio/">
+  <link rel="alternate" hreflang="ko" href="https://pinesoft.dev/ko/reading/horatio/">
+  <link rel="alternate" hreflang="nl" href="https://pinesoft.dev/nl/reading/horatio/">
+  <link rel="alternate" hreflang="pl" href="https://pinesoft.dev/pl/reading/horatio/">
+  <link rel="alternate" hreflang="pt" href="https://pinesoft.dev/pt/reading/horatio/">
+  <link rel="alternate" hreflang="ru" href="https://pinesoft.dev/ru/reading/horatio/">
+  <link rel="alternate" hreflang="sv" href="https://pinesoft.dev/sv/reading/horatio/">
+  <link rel="alternate" hreflang="tr" href="https://pinesoft.dev/tr/reading/horatio/">
+  <link rel="alternate" hreflang="zh" href="https://pinesoft.dev/zh/reading/horatio/">
+  <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/reading/horatio/">
+
+    <style>
+        :root {
+            --bg: #1B2A1B;
+            --bg2: #1E3320;
+            --card: #233A23;
+            --gold: #EDAE49;
+            --green: #2E7D32;
+            --green-light: #4CAF50;
+            --text: #E8E0D0;
+            --text2: #A8B5A0;
+            --text3: #7A8A72;
+            --border: rgba(237, 174, 73, 0.12);
+            --coming: #5C6BC0;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+        .section { padding: 3rem 0; }
+
+        /* Hero */
+        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(46,125,50,0.1), transparent 70%); }
+        .app-icon { width: 128px; height: 128px; border-radius: 28px; overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+        .app-icon img { width: 100%; height: 100%; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.15rem; color: var(--text2); margin-bottom: 2rem; max-width: 550px; margin-left: auto; margin-right: auto; }
+        .badge-soon { display: inline-block; background: var(--coming); color: #fff; font-size: 0.8rem; font-weight: 700; padding: 0.4rem 1.2rem; border-radius: 20px; letter-spacing: 0.05em; text-transform: uppercase; }
+
+        /* Stats */
+        .stats { background: var(--bg2); padding: 2rem 0; }
+        .stats-row { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); }
+        .stat-lbl { font-size: 0.85rem; color: var(--text3); }
+
+        /* Features */
+        .section-title { font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 2rem; }
+        .section-title .g { color: var(--green); }
+        .section-title .gr { color: var(--gold); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+        .feat { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; }
+        .feat-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .feat h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .feat p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; }
+
+        /* Scripts showcase */
+        .scripts-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-top: 1rem; }
+        .script-tag { background: var(--card); border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; color: var(--text2); }
+
+        /* Privacy */
+        .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
+        .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
+        .priv a { color: var(--green-light); text-decoration: none; }
+        .priv a:hover { color: var(--gold); }
+
+        /* Footer */
+        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; }
+        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+        footer a:hover { color: var(--gold); }
+        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.85rem; }
+            .subtitle { font-size: 1rem; }
+            .app-icon { width: 96px; height: 96px; border-radius: 22px; }
+            .stats-row { gap: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero section">
+        <div class="container">
+            <div class="app-icon">
+                <img src="/images/horatio_icon.png" alt="Horatio icon" width="192" height="192">
+            </div>
+            <h1>Horatio</h1>
+            <p class="subtitle">Preserve and read texts in rare, endangered, and classical languages. Fully offline, no account required.</p>
+            <span class="badge-soon">Çok Yakında</span>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">Calendar Systems</div></div>
+                <div class="stat"><div class="stat-num">10+</div><div class="stat-lbl">Writing Scripts</div></div>
+                <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Bible Translations</div></div>
+                <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">Offline</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Key</span> <span class="gr">Features</span></h2>
+            <div class="features">
+                <div class="feat">
+                    <div class="feat-icon">&#128214;</div>
+                    <h3>Rare Language Texts</h3>
+                    <p>Liturgical and classical texts in languages with declining or halted editorial production. Digital preservation for future generations.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128197;</div>
+                    <h3>9 Calendar Systems</h3>
+                    <p>Roman, Coptic, Mozarabic, Ethiopian, Jewish, Islamic, Academic, Religious Orders, and Diocesan calendars.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128218;</div>
+                    <h3>Bible Translations</h3>
+                    <p>Vulgata Clementina (Latin), Martini 1781, and Diodati 1607. Browse by Testament, Category, Book, and Chapter.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#9998;</div>
+                    <h3>Multi-Script Support</h3>
+                    <p>Latin, Arabic, Hebrew, Syriac, Coptic, Ge'ez, Greek, Gothic, Armenian, Devanagari, and more.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128269;</div>
+                    <h3>Full-Text Search</h3>
+                    <p>Search across all installed texts with instant results. Find any passage, verse, or prayer.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128230;</div>
+                    <h3>Content Packs</h3>
+                    <p>Modular installation — download only the languages and texts you need. Lightweight and efficient.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127761;</div>
+                    <h3>Dark Theme</h3>
+                    <p>Designed for contemplative reading. Easy on the eyes, day or night.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128274;</div>
+                    <h3>Private & Offline</h3>
+                    <p>No account, no tracking, no ads. All content processed and stored locally on your device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Supported</span> <span class="gr">Scripts</span></h2>
+            <p style="color: var(--text2); text-align: center; margin-bottom: 1.5rem;">Read texts in their original writing systems with bundled Noto Sans fonts.</p>
+            <div class="scripts-grid">
+                <span class="script-tag">Latin</span>
+                <span class="script-tag">Arabic</span>
+                <span class="script-tag">Hebrew</span>
+                <span class="script-tag">Syriac</span>
+                <span class="script-tag">Coptic</span>
+                <span class="script-tag">Ge'ez</span>
+                <span class="script-tag">Greek</span>
+                <span class="script-tag">Gothic</span>
+                <span class="script-tag">Armenian</span>
+                <span class="script-tag">Devanagari</span>
+                <span class="script-tag">Maltese</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Your</span> <span class="gr">Privacy</span></h2>
+            <div class="priv">
+                <p>Horatio is completely offline. No data is collected, transmitted, or shared. No account required, no ads, no tracking.</p>
+                <a href="/tr/reading/horatio/privacy-policy/">Full Privacy Policy &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="/tr/">PineSoft</a>
+            <a href="/tr/reading/horatio/privacy-policy/">Gizlilik Politikası</a>
+            <a href="mailto:support@pinesoft.dev">İletişim</a>
+        </div>
+        <div class="copy">&copy; 2026 PineSoft. Tüm hakları saklıdır.</div>
+    </footer>
+
+</body>
+</html>

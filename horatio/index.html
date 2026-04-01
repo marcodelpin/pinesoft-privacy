@@ -9,7 +9,7 @@
 <body>
   <script>
     (function() {
-      var supported = ["de","en","es","fr","it","ja","ko","pt","zh"];
+      var supported = ["ar","de","en","es","fr","hi","it","ja","ko","nl","pl","pt","ru","sv","tr","zh"];
       var userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase().split('-')[0];
       var target = supported.indexOf(userLang) !== -1 ? userLang : 'en';
       window.location.replace('/' + target + '/reading/horatio/');
