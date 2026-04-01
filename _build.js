@@ -74,9 +74,10 @@ function generateHreflang(pagePath) {
   return lines.join('\n');
 }
 
-// Generate language switcher HTML (EN first, then alphabetical)
+// Generate language switcher HTML — European languages first, then rest by speakers
 function generateLangSwitcher(pagePath, currentLang) {
-  const sorted = ['en', ...languages.filter(l => l !== 'en').sort()];
+  const order = ['en', 'es', 'fr', 'de', 'it', 'pt', 'ru', 'pl', 'nl', 'sv', 'tr', 'zh', 'hi', 'ar', 'ja', 'ko'];
+  const sorted = order.filter(l => languages.includes(l));
   return sorted.map(lang => {
     const cls = lang === currentLang ? ' class="active"' : '';
     return `<a href="/${lang}/${pagePath}"${cls}>${lang.toUpperCase()}</a>`;
