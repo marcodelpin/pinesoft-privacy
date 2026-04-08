@@ -34,7 +34,11 @@
     "apps": "应用",
     "languages": "语言",
     "categories": "分类",
-    "adult_ads": "成人广告"
+    "adult_ads": "成人广告",
+    "business_title": "运营模式",
+    "business_p1": "PineSoft是一家位于意大利的独立移动应用开发商，在Google Play和Apple App Store上发布应用和游戏。我们的应用免费下载，通过Google AdMob提供非侵入式横幅广告支持，并提供可选的应用内购买以解锁去除广告和Pro功能等高级特性。",
+    "business_p2": "我们使用Google Ads平台进行用户获取活动，通过Google搜索、YouTube和Google展示广告网络向新用户推广我们的应用。Google Ads API使我们能够以编程方式管理这些活动、监控绩效指标并高效优化广告支出。",
+    "business_p3": "如有咨询、合作或API相关问题，请通过support@pinesoft.dev联系我们。"
   },
   "games": {
     "title": "游戏",

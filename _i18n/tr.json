@@ -34,7 +34,11 @@
     "apps": "Uygulamalar",
     "languages": "Diller",
     "categories": "Kategoriler",
-    "adult_ads": "Yeti\u015fkin Reklamlar\u0131"
+    "adult_ads": "Yeti\u015fkin Reklamlar\u0131",
+    "business_title": "Nasıl Çalışıyoruz",
+    "business_p1": "PineSoft, İtalya merkezli bağımsız bir mobil uygulama geliştiricisidir ve Google Play ile Apple App Store'da uygulamalar ve oyunlar yayınlamaktadır. Uygulamalarımız ücretsizdir, Google AdMob aracılığıyla göze batmayan banner reklamlarla desteklenmekte ve reklam kaldırma ile Pro özellikleri gibi premium işlevleri açmak için isteğe bağlı uygulama içi satın almalar sunulmaktadır.",
+    "business_p2": "Kullanıcı edinme kampanyaları yürütmek için Google Ads platformunu kullanıyor, uygulamalarımızı Google Arama, YouTube ve Google Görüntülü Reklam Ağı üzerinden yeni kullanıcılara tanıtıyoruz. Google Ads API, bu kampanyaları programatik olarak yönetmemizi, performans metriklerini izlememizi ve reklam harcamalarımızı verimli bir şekilde optimize etmemizi sağlıyor.",
+    "business_p3": "Sorularınız, ortaklıklar veya API ile ilgili konular için support@pinesoft.dev adresinden bize ulaşın."
   },
   "games": {
     "title": "Oyunlar",

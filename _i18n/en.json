@@ -34,7 +34,11 @@
     "apps": "Apps",
     "languages": "Languages",
     "categories": "Categories",
-    "adult_ads": "Adult Ads"
+    "adult_ads": "Adult Ads",
+    "business_title": "How We Operate",
+    "business_p1": "PineSoft is an independent mobile app developer based in Italy, publishing apps and games on Google Play and the Apple App Store. Our apps are free to download, supported by non-intrusive banner advertisements served through Google AdMob, with optional in-app purchases to unlock premium features such as ad removal and Pro capabilities.",
+    "business_p2": "We use the Google Ads platform to run user acquisition campaigns, promoting our apps to new users across Google Search, YouTube, and the Google Display Network. The Google Ads API allows us to programmatically manage these campaigns, monitor performance metrics, and optimize our advertising spend efficiently.",
+    "business_p3": "For inquiries, partnerships, or API-related questions, contact us at support@pinesoft.dev."
   },
   "games": {
     "title": "Games",
