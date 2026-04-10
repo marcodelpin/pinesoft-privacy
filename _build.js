@@ -142,6 +142,15 @@ for (const templatePath of templates) {
   const pageDir = pagePath === '.' ? '' : pagePath + '/';
 
   for (const lang of languages) {
+    const isHoratioPage = pageDir.startsWith('reading/horatio');
+    // Horatio-only languages: only generate Horatio pages, redirect everything else to English
+    if (HORATIO_ONLY_LANGS.has(lang) && !isHoratioPage) {
+      const outDir = path.join(SITE_DIR, lang, pagePath === '.' ? '' : pagePath);
+      fs.mkdirSync(outDir, { recursive: true });
+      fs.writeFileSync(path.join(outDir, 'index.html'), generateRedirect(pageDir), 'utf8');
+      generated++;
+      continue;
+    }
     const html = replaceKeys(templateContent, lang, pageDir);
     const outDir = path.join(SITE_DIR, lang, pagePath === '.' ? '' : pagePath);
     fs.mkdirSync(outDir, { recursive: true });
