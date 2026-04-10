@@ -74,9 +74,9 @@ function generateHreflang(pagePath) {
   return lines.join('\n');
 }
 
-// Generate language switcher HTML — European languages first, then rest by speakers
+// Generate language switcher HTML — EN, IT, LA first (Horatio identity), then European, then rest
 function generateLangSwitcher(pagePath, currentLang) {
-  const order = ['en', 'es', 'fr', 'de', 'it', 'pt', 'ru', 'pl', 'nl', 'sv', 'tr', 'zh', 'hi', 'ar', 'ja', 'ko'];
+  const order = ['en', 'it', 'la', 'es', 'fr', 'de', 'pt', 'el', 'ru', 'pl', 'nl', 'sv', 'tr', 'ka', 'mt', 'he', 'zh', 'hi', 'ar', 'ja', 'ko'];
   const sorted = order.filter(l => languages.includes(l));
   return sorted.map(lang => {
     const cls = lang === currentLang ? ' class="active"' : '';

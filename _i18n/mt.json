@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Ewlenija",
+    "games": "Log\u0127ob",
+    "tools": "G\u0127odod",
+    "reading": "Qari",
+    "about": "Dwarna"
+  },
+  "footer": {
+    "privacy": "Politika tal-Privatezza",
+    "contact": "Kuntatt",
+    "rights": "Id-drittijiet kollha ri\u017cervati."
+  },
+  "common": {
+    "soon": "Dalwaqt",
+    "live": "Disponibbli",
+    "learn_more": "Kun af iktar",
+    "get_on_play": "Aqbad minn Google Play",
+    "coming_soon": "Dalwaqt \u0120ej"
+  },
+  "reading": {
+    "title": "Qari",
+    "reference": "Referenza",
+    "meta_description": "Preservazzjoni di\u0121itali ta' testi f'ilsna rari, fil-periklu u klassi\u010bi. PineSoft.",
+    "subtitle": "Preservazzjoni di\u0121itali ta' testi rari u klassi\u010bi.",
+    "horatio": {
+      "category": "Kotba u Referenza",
+      "desc": "Preservazzjoni di\u0121itali ta' testi f'ilsna rari, fil-periklu u klassi\u010bi. 9 sistemi ta' kalendarju, 10+ skritturi, kompletament offline."
+    }
+  },
+  "landing": {
+    "horatio": {
+      "tagline": "Testi Litur\u0121i\u010bi Rari",
+      "meta_description": "Preservazzjoni di\u0121itali ta' testi f'ilsna rari, fil-periklu u klassi\u010bi. 9 sistemi ta' kalendarju, 10+ skritturi, kompletament offline. Minn PineSoft.",
+      "og_description": "Ippreserva u aqra testi f'ilsna rari, fil-periklu u klassi\u010bi. Kompletament offline.",
+      "twitter_description": "Ippreserva u aqra testi f'ilsna rari, fil-periklu u klassi\u010bi. Kompletament offline.",
+      "subtitle": "Ippreserva u aqra testi f'ilsna rari, fil-periklu u klassi\u010bi. Kompletament offline, l-ebda kont me\u0127tie\u0121.",
+      "stat_calendars": "Sistemi ta' kalendarju",
+      "stat_scripts": "Skritturi",
+      "stat_bibles": "Traduzzjonijiet tal-Bibbja",
+      "stat_offline": "Offline",
+      "features_key": "Karatteristi\u010bi",
+      "features_word": "ewlenin",
+      "feat_texts_title": "Testi f'ilsna rari",
+      "feat_texts_desc": "Testi litur\u0121i\u010bi u klassi\u010bi f'ilsna b'produzzjoni editorjali li qed tonqos jew waqfet. Preservazzjoni di\u0121itali g\u0127all-\u0121enerazzjonijiet futuri.",
+      "feat_calendars_title": "9 sistemi ta' kalendarju",
+      "feat_calendars_desc": "Ruman, Koptiku, Mo\u017carabiku, Etjopiku, Lhudi, I\u017clamiku, Akkademiku, Ordnijiet Reli\u0121ju\u017ci u Djo\u010be\u017can.",
+      "feat_bible_title": "Traduzzjonijiet tal-Bibbja",
+      "feat_bible_desc": "Vulgata Clementina (Latin), Martini 1781 u Diodati 1607. Fittex skont Testment, Kategorija, Ktieb u Kapitlu.",
+      "feat_multiscript_title": "Appo\u0121\u0121 g\u0127al diversi skritturi",
+      "feat_multiscript_desc": "Latin, G\u0127arbi, Ebrajk, Sirjak, Koptiku, Ge'ez, Grieg, Gotiku, Armen, Devanagari u aktar.",
+      "feat_search_title": "Tfittxija s\u0127i\u0127a",
+      "feat_search_desc": "Fittex fi\u010b-\u010bentru tat-testi kollha installati b'ri\u017cultati immedjati.",
+      "feat_packs_title": "Pakketti tal-kontenut",
+      "feat_packs_desc": "Installazzjoni modulari \u2014 ni\u017c\u017cel biss l-ilsna u t-testi li g\u0127andek b\u017connhom.",
+      "feat_dark_title": "Tema skura",
+      "feat_dark_desc": "Iddisinjata g\u0127al qari kontemplattiv. Komda g\u0127all-g\u0127ajnejn, billejl u binhar.",
+      "feat_private_title": "Privat u offline",
+      "feat_private_desc": "L-ebda kont, l-ebda tra\u010b\u010bar, l-ebda riklami. Il-kontenut kollu ji\u0121i pro\u010bessat u ma\u0127\u017cun lokalment fuq it-tag\u0127mir tieg\u0127ek.",
+      "scripts_supported": "Skritturi",
+      "scripts_word": "appo\u0121\u0121jati",
+      "scripts_intro": "Aqra t-testi fis-sistemi ta' kitba ori\u0121inali tag\u0127hom bil-fonts Noto Sans inklu\u017ci.",
+      "languages_modern": "Testi disponibbli fil-: Latin, Taljan, \u0120or\u0121jan, G\u0127arbi, Koptiku, Sirjak, Ebrajk, Grieg, Malti u aktar.",
+      "packs_available": "Pakketti",
+      "packs_word": "disponibbli",
+      "packs_intro": "Installa biss l-ilsna u t-testi li g\u0127andek b\u017connhom. Il-pakketti kollha b'xejn u ja\u0127dmu kompletament offline.",
+      "packs_bundled": "Inklu\u017c",
+      "packs_in_app": "Fl-App",
+      "packs_note": "Fittex u installa pakketti mill-Mani\u0121er tal-Pakketti \u0121ewwa l-app.",
+      "packs_more": "Aktar pakketti ta' lsien dalwaqt \u0121ejjin",
+      "packs_create_link": "O\u0127loq il-pakkett tieg\u0127ek \u2192",
+      "pack_georgian_desc": "Litur\u0121ija tas-Sig\u0127at fi skrittura \u0120or\u0121jana",
+      "pack_coptic_desc": "Van\u0121elu ta' San Mark bil-Koptiku",
+      "pack_syriac_desc": "Korpus litur\u0121iku tal-Peshitta",
+      "pack_hebrew_desc": "G\u0127a\u017cliet mit-Torah u l-Profeti",
+      "pack_arabic_desc": "Qari litur\u0121iku bl-G\u0127arbi",
+      "pack_greek_desc": "Testi Griegi klassi\u010bi u bibli\u010bi",
+      "pack_maltese_desc": "Talb tradizzjonali Maltin",
+      "pack_psalter_desc": "Salmi Latini mill-Vulgata",
+      "pack_vulgata_desc": "Bibbja Latina s\u0127i\u0127a",
+      "pack_martini_desc": "Bibbja Taljana Kattolika (1781)",
+      "pack_diodati_desc": "Bibbja Taljana Protestanta (1607)",
+      "privacy_your": "Il-Privatezza",
+      "privacy_word": "Tieg\u0127ek",
+      "privacy_text": "Horatio ja\u0127dem kompletament offline. L-ebda data tin\u0121abar, tintbag\u0127at jew tin\u0107ared. L-ebda kont me\u0127tie\u0121, l-ebda riklami, l-ebda tra\u010b\u010bar.",
+      "privacy_link": "Politika tal-privatezza s\u0127i\u0127a"
+    }
+  }
+}
