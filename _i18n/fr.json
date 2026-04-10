@@ -75,7 +75,7 @@
     "subtitle": "Préservation numérique de textes rares et classiques.",
     "horatio": {
       "category": "Livres et référence",
-      "desc": "Préservation numérique de textes en langues rares, menacées et classiques. 9 systèmes calendaires, 10+ écritures, entièrement hors ligne."
+      "desc": "Préservation numérique de textes en langues rares, menacées et classiques. 11 paquets de contenu, 12 écritures, entièrement hors ligne."
     }
   },
   "landing": {
@@ -187,6 +187,7 @@
       "stat_calendars": "Systèmes calendaires",
       "stat_scripts": "Systèmes d'écriture",
       "stat_bibles": "Traductions bibliques",
+      "stat_packs": "Paquets",
       "stat_offline": "Hors ligne",
       "features_key": "Fonctionnalités",
       "features_word": "clés",

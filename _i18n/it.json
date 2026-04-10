@@ -75,7 +75,7 @@
     "subtitle": "Conservazione digitale di testi rari e classici.",
     "horatio": {
       "category": "Libri e Consultazione",
-      "desc": "Conservazione digitale di testi in lingue rare, in via di estinzione e classiche. 9 sistemi di calendario, 10+ scritture, completamente offline."
+      "desc": "Conservazione digitale di testi in lingue rare, in via di estinzione e classiche. 11 pacchetti, 12 scritture, 9 calendari, completamente offline."
     }
   },
   "landing": {
@@ -187,6 +187,7 @@
       "stat_calendars": "Sistemi di calendario",
       "stat_scripts": "Sistemi di scrittura",
       "stat_bibles": "Traduzioni bibliche",
+      "stat_packs": "Pacchetti",
       "stat_offline": "Offline",
       "features_key": "Funzionalità",
       "features_word": "principali",

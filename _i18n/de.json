@@ -75,7 +75,7 @@
     "subtitle": "Digitale Bewahrung seltener und klassischer Texte.",
     "horatio": {
       "category": "Bücher & Nachschlagewerke",
-      "desc": "Digitale Bewahrung von Texten in seltenen, bedrohten und klassischen Sprachen. 9 Kalendersysteme, 10+ Schriftsysteme, vollständig offline."
+      "desc": "Digitale Bewahrung von Texten in seltenen, bedrohten und klassischen Sprachen. 11 Inhaltspakete, 12 Schriftsysteme, vollständig offline."
     }
   },
   "landing": {
@@ -187,6 +187,7 @@
       "stat_calendars": "Kalendersysteme",
       "stat_scripts": "Schriftsysteme",
       "stat_bibles": "Bibelübersetzungen",
+      "stat_packs": "Inhaltspakete",
       "stat_offline": "Offline",
       "features_key": "Wichtige",
       "features_word": "Funktionen",

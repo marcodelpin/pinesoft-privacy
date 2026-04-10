@@ -75,7 +75,7 @@
     "subtitle": "Preservação digital de textos raros e clássicos.",
     "horatio": {
       "category": "Livros e referência",
-      "desc": "Preservação digital de textos em línguas raras, ameaçadas e clássicas. 9 sistemas de calendário, 10+ sistemas de escrita, totalmente offline."
+      "desc": "Preservação digital de textos em línguas raras, ameaçadas e clássicas. 11 pacotes de conteúdo, 12 sistemas de escrita, totalmente offline."
     }
   },
   "landing": {
@@ -187,6 +187,7 @@
       "stat_calendars": "Sistemas de calendário",
       "stat_scripts": "Sistemas de escrita",
       "stat_bibles": "Traduções bíblicas",
+      "stat_packs": "Pacotes",
       "stat_offline": "Offline",
       "features_key": "Recursos",
       "features_word": "principais",

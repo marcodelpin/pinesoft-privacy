@@ -75,7 +75,7 @@
     "subtitle": "Digital preservation of rare and classical texts.",
     "horatio": {
       "category": "Books & Reference",
-      "desc": "Digital preservation of texts in rare, endangered, and classical languages. 9 calendar systems, 10+ scripts, fully offline."
+      "desc": "Digital preservation of texts in rare, endangered, and classical languages. 11 content packs, 12 scripts, 9 calendars, fully offline."
     }
   },
   "landing": {
@@ -187,6 +187,7 @@
       "stat_calendars": "Calendar Systems",
       "stat_scripts": "Writing Scripts",
       "stat_bibles": "Bible Translations",
+      "stat_packs": "Content Packs",
       "stat_offline": "Offline",
       "features_key": "Key",
       "features_word": "Features",
