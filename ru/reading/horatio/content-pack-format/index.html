@@ -38,10 +38,12 @@
         .nav-links { display: flex; list-style: none; gap: 1.5rem; }
         .nav-links a { color: var(--text2); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
         .nav-links a:hover { color: var(--gold); }
-        .lang-switcher { display: flex; gap: 0.25rem; align-items: center; margin-left: 1rem; }
+        .lang-switcher { display: flex; flex-wrap: wrap; gap: 0.25rem; justify-content: center; padding: 0.4rem 1.25rem; border-top: 1px solid var(--border); background: rgba(245,237,218,0.92); }
         .lang-switcher a { color: var(--text3); text-decoration: none; font-size: 0.7rem; font-weight: 600; padding: 0.15rem 0.35rem; border-radius: 4px; transition: color 0.2s, background 0.2s; }
         .lang-switcher a:hover { color: var(--gold); }
         .lang-switcher a.active { color: #FDF8EE; background: var(--green); }
+        header nav { flex-wrap: wrap; }
+        header .lang-switcher { width: 100%; margin-left: 0; order: 10; }
         .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.25rem; }
         .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); margin: 5px 0; transition: all 0.3s; }
 
