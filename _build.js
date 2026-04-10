@@ -77,6 +77,7 @@ function generateHreflang(pagePath) {
 // Generate language switcher HTML — Horatio pages get extra content languages
 const CORE_LANGS = ['en', 'it', 'es', 'fr', 'de', 'pt', 'ru', 'pl', 'nl', 'sv', 'tr', 'zh', 'hi', 'ar', 'ja', 'ko'];
 const HORATIO_LANGS = ['en', 'it', 'la', 'es', 'fr', 'de', 'pt', 'el', 'ru', 'pl', 'nl', 'sv', 'tr', 'ka', 'mt', 'he', 'zh', 'hi', 'ar', 'ja', 'ko'];
+const HORATIO_ONLY_LANGS = new Set(['la', 'el', 'ka', 'mt', 'he']);
 
 function generateLangSwitcher(pagePath, currentLang) {
   const isHoratio = pagePath.startsWith('reading/horatio');
@@ -103,6 +104,9 @@ function replaceKeys(html, lang, pagePath) {
   });
 
   // Replace special variables
+  // nav_lang: for Horatio-only languages, nav links point to English
+  const navLang = HORATIO_ONLY_LANGS.has(lang) ? 'en' : lang;
+  html = html.replace(/\{\{nav_lang\}\}/g, navLang);
   html = html.replace(/\{\{lang\}\}/g, lang);
   html = html.replace(/\{\{path\}\}/g, pagePath);
   html = html.replace(/\{\{hreflang\}\}/g, generateHreflang(pagePath));
