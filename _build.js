@@ -74,9 +74,13 @@ function generateHreflang(pagePath) {
   return lines.join('\n');
 }
 
-// Generate language switcher HTML — EN, IT, LA first (Horatio identity), then European, then rest
+// Generate language switcher HTML — Horatio pages get extra content languages
+const CORE_LANGS = ['en', 'it', 'es', 'fr', 'de', 'pt', 'ru', 'pl', 'nl', 'sv', 'tr', 'zh', 'hi', 'ar', 'ja', 'ko'];
+const HORATIO_LANGS = ['en', 'it', 'la', 'es', 'fr', 'de', 'pt', 'el', 'ru', 'pl', 'nl', 'sv', 'tr', 'ka', 'mt', 'he', 'zh', 'hi', 'ar', 'ja', 'ko'];
+
 function generateLangSwitcher(pagePath, currentLang) {
-  const order = ['en', 'it', 'la', 'es', 'fr', 'de', 'pt', 'el', 'ru', 'pl', 'nl', 'sv', 'tr', 'ka', 'mt', 'he', 'zh', 'hi', 'ar', 'ja', 'ko'];
+  const isHoratio = pagePath.startsWith('reading/horatio');
+  const order = isHoratio ? HORATIO_LANGS : CORE_LANGS;
   const sorted = order.filter(l => languages.includes(l));
   return sorted.map(lang => {
     const cls = lang === currentLang ? ' class="active"' : '';
