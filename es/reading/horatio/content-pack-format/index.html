@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Pack Format — Horatio | PineSoft</title>
+    <meta name="description" content="Technical specification for creating Horatio Content Packs (.htx). Build your own language packs for liturgical and classical texts.">
+    <meta name="theme-color" content="#1B2A1B">
+    <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+
+    <style>
+        :root {
+            --bg: #1B2A1B;
+            --bg2: #1E3320;
+            --card: #233A23;
+            --gold: #EDAE49;
+            --green: #2E7D32;
+            --green-light: #4CAF50;
+            --text: #E8E0D0;
+            --text2: #A8B5A0;
+            --text3: #7A8A72;
+            --border: rgba(237, 174, 73, 0.12);
+            --code-bg: #1a2e1a;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 1.25rem; }
+        .section { padding: 2.5rem 0; }
+
+        /* Header */
+        .doc-header { text-align: center; padding: 3rem 0 2rem; border-bottom: 1px solid var(--border); }
+        .doc-header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .doc-header .subtitle { color: var(--text2); font-size: 1.05rem; }
+        .back-link { display: inline-block; margin-bottom: 1rem; color: var(--green-light); text-decoration: none; font-size: 0.9rem; }
+        .back-link:hover { color: var(--gold); }
+
+        /* Content */
+        h2 { font-size: 1.4rem; font-weight: 700; color: var(--gold); margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+        h3 { font-size: 1.1rem; font-weight: 600; color: var(--green-light); margin: 1.5rem 0 0.75rem; }
+        p { margin-bottom: 1rem; color: var(--text2); }
+        strong { color: var(--text); }
+
+        /* Code */
+        code { background: var(--code-bg); padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.88rem; font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace; color: var(--green-light); }
+        pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; overflow-x: auto; margin: 1rem 0 1.5rem; }
+        pre code { background: none; padding: 0; font-size: 0.85rem; color: var(--text); }
+
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; }
+        th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        th { color: var(--gold); font-weight: 600; background: var(--bg2); }
+        td { color: var(--text2); }
+        td code { font-size: 0.82rem; }
+
+        /* Lists */
+        ul, ol { margin: 0.5rem 0 1rem 1.5rem; color: var(--text2); }
+        li { margin-bottom: 0.4rem; }
+
+        /* Cards/notes */
+        .note { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0 1.5rem; }
+        .note p { margin-bottom: 0.5rem; }
+        .note p:last-child { margin-bottom: 0; }
+        .note-title { color: var(--gold); font-weight: 600; margin-bottom: 0.5rem; }
+
+        /* TOC */
+        .toc { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+        .toc h3 { margin-top: 0; color: var(--gold); }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li { margin-bottom: 0.3rem; }
+        .toc a { color: var(--green-light); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { color: var(--gold); }
+
+        /* Footer */
+        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; }
+        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+        footer a:hover { color: var(--gold); }
+        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
+
+        @media (max-width: 768px) {
+            .doc-header h1 { font-size: 1.5rem; }
+            pre { padding: 0.75rem; }
+            th, td { padding: 0.4rem 0.5rem; font-size: 0.82rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="doc-header">
+        <div class="container">
+            <a href="/en/reading/horatio/" class="back-link">&larr; Back to Horatio</a>
+            <h1>Content Pack Format</h1>
+            <p class="subtitle">Technical specification for creating Horatio .htx Content Packs</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <nav class="toc">
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#structure">Pack Structure</a></li>
+                <li><a href="#manifest">manifest.json</a></li>
+                <li><a href="#codes-map">codes_map.json</a></li>
+                <li><a href="#bmd">BMD Markup</a></li>
+                <li><a href="#rpl">RPL Replacement System</a></li>
+                <li><a href="#frontmatter">Fragment Frontmatter</a></li>
+                <li><a href="#languages">Language &amp; Script Codes</a></li>
+                <li><a href="#building">Building a Pack</a></li>
+                <li><a href="#checklist">Submission Checklist</a></li>
+            </ul>
+        </nav>
+
+        <section class="section" id="overview">
+            <h2>Overview</h2>
+            <p>A <strong>Content Pack</strong> (<code>.htx</code>) is a ZIP archive containing liturgical, biblical, or classical texts in a structured format. Horatio loads and indexes these packs for offline reading, full-text search, and calendar-based daily navigation.</p>
+            <p>Packs are self-contained: each pack bundles its texts, metadata, and code mappings. No external dependencies are required.</p>
+            <div class="note">
+                <p class="note-title">Design Principles</p>
+                <p><strong>Offline-first:</strong> All content works without internet connectivity.</p>
+                <p><strong>Modular:</strong> Users install only the languages and texts they need.</p>
+                <p><strong>Preservation:</strong> Focus on languages with declining or halted editorial production.</p>
+            </div>
+        </section>
+
+        <section class="section" id="structure">
+            <h2>Pack Structure</h2>
+            <p>A <code>.htx</code> file is a standard ZIP archive with this directory layout:</p>
+<pre><code>my-pack.htx
+  manifest.json          # Required: pack metadata
+  codes_map.json         # Required: code-to-file mapping
+  texts/                 # Text fragments (BMD or plain)
+    ps.001.bmd
+    ps.002.bmd
+    ...
+  RPL/                   # Optional: replacement patterns
+    MEM;0117.bmd
+    AL0;0.bmd
+    AL0;1.bmd</code></pre>
+            <p>The <code>texts/</code> directory can use subdirectories for organization (e.g., <code>texts/psalms/</code>, <code>texts/readings/</code>). File paths in <code>codes_map.json</code> are relative to the pack root.</p>
+        </section>
+
+        <section class="section" id="manifest">
+            <h2>manifest.json</h2>
+            <p>The manifest describes the pack and its contents. All fields marked <strong>required</strong> must be present.</p>
+<pre><code>{
+  "id": "georgian-breviary-sample",
+  "version": "1.0.0",
+  "name": "Georgian Breviary",
+  "description": "Liturgy of the Hours in Georgian (Mkhedruli script)",
+  "language": "kat",
+  "script": "georgian",
+  "text_direction": "ltr",
+  "author": "PineSoft",
+  "period": "Modern",
+  "genre": "liturgical",
+  "difficulty": "intermediate",
+  "fragment_count": 42,
+  "has_translations": ["lat"],
+  "has_morphology": false,
+  "has_audio": false,
+  "required_fonts": ["NotoSansGeorgian"],
+  "min_app_version": "1.0.0",
+  "pack_size_bytes": 85200,
+  "checksum_blake3": "a1b2c3d4...",
+  "preservation_status": "vulnerable"
+}</code></pre>
+
+            <h3>Field Reference</h3>
+            <table>
+                <tr><th>Field</th><th>Type</th><th>Required</th><th>Description</th></tr>
+                <tr><td><code>id</code></td><td>string</td><td>Yes</td><td>Unique identifier, kebab-case. Must match the pack's root directory name.</td></tr>
+                <tr><td><code>version</code></td><td>string</td><td>Yes</td><td>Semantic version (e.g., <code>"1.0.0"</code>).</td></tr>
+                <tr><td><code>name</code></td><td>string</td><td>Yes</td><td>Human-readable pack name.</td></tr>
+                <tr><td><code>description</code></td><td>string</td><td>No</td><td>Short description of the pack's contents.</td></tr>
+                <tr><td><code>language</code></td><td>string</td><td>Yes</td><td>ISO 639-3 language code (e.g., <code>"kat"</code> for Georgian, <code>"cop"</code> for Coptic).</td></tr>
+                <tr><td><code>script</code></td><td>string</td><td>Yes</td><td>Writing system (e.g., <code>"georgian"</code>, <code>"coptic"</code>, <code>"syriac"</code>).</td></tr>
+                <tr><td><code>text_direction</code></td><td>string</td><td>No</td><td><code>"ltr"</code> (default) or <code>"rtl"</code> for Hebrew, Arabic, Syriac.</td></tr>
+                <tr><td><code>author</code></td><td>string</td><td>No</td><td>Pack creator or source institution.</td></tr>
+                <tr><td><code>period</code></td><td>string</td><td>No</td><td>Historical period of the texts.</td></tr>
+                <tr><td><code>genre</code></td><td>string</td><td>No</td><td>Content genre: <code>"liturgical"</code>, <code>"biblical"</code>, <code>"classical"</code>, <code>"prayer"</code>.</td></tr>
+                <tr><td><code>difficulty</code></td><td>string</td><td>No</td><td><code>"beginner"</code>, <code>"intermediate"</code>, or <code>"advanced"</code>.</td></tr>
+                <tr><td><code>fragment_count</code></td><td>integer</td><td>No</td><td>Number of text fragments in the pack.</td></tr>
+                <tr><td><code>has_translations</code></td><td>string[]</td><td>No</td><td>ISO 639-3 codes of available translation languages.</td></tr>
+                <tr><td><code>has_morphology</code></td><td>boolean</td><td>No</td><td>Whether morphological annotations are included.</td></tr>
+                <tr><td><code>has_audio</code></td><td>boolean</td><td>No</td><td>Whether audio recordings are included.</td></tr>
+                <tr><td><code>required_fonts</code></td><td>string[]</td><td>No</td><td>Font families required to render the texts. Horatio bundles Noto Sans variants.</td></tr>
+                <tr><td><code>min_app_version</code></td><td>string</td><td>No</td><td>Minimum Horatio version required.</td></tr>
+                <tr><td><code>pack_size_bytes</code></td><td>integer</td><td>No</td><td>Uncompressed size of the pack in bytes.</td></tr>
+                <tr><td><code>checksum_blake3</code></td><td>string</td><td>No</td><td>BLAKE3 hash of the pack for integrity verification.</td></tr>
+                <tr><td><code>preservation_status</code></td><td>string</td><td>No</td><td><code>"critical"</code>, <code>"endangered"</code>, <code>"vulnerable"</code>, or <code>"safe"</code>.</td></tr>
+            </table>
+
+            <h3>Optional CLEDR Fields</h3>
+            <p>For liturgical packs following the CLEDR schema (CatholicOS Liturgical Event Data Registry):</p>
+            <table>
+                <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+                <tr><td><code>community_contact</code></td><td>string</td><td>Contact for the language community.</td></tr>
+                <tr><td><code>source_institution</code></td><td>string</td><td>Institution that curated the texts.</td></tr>
+                <tr><td><code>source</code></td><td>string</td><td>Source type: <code>"CRG"</code>, <code>"MR"</code>, or <code>"LOCALE"</code>.</td></tr>
+                <tr><td><code>missal_editions</code></td><td>string[]</td><td>Applicable Missale Romanum editions: <code>"mr1970"</code>, <code>"mr2002"</code>, <code>"mr2008"</code>.</td></tr>
+                <tr><td><code>external_ids</code></td><td>object</td><td>Cross-references: <code>{"romcal": "...", "litcal_api": "..."}</code>.</td></tr>
+                <tr><td><code>dublin_core</code></td><td>object</td><td>Dublin Core metadata for archive interoperability.</td></tr>
+            </table>
+        </section>
+
+        <section class="section" id="codes-map">
+            <h2>codes_map.json</h2>
+            <p>Maps short codes to text files. This file enables calendar-based lookup and navigation.</p>
+<pre><code>{
+  "mapping": {
+    "ps.001": {
+      "file": "texts/ps.001.bmd",
+      "title": "Psalmus 1 — Beatus vir"
+    },
+    "ps.002": {
+      "file": "texts/ps.002.bmd",
+      "title": "Psalmus 2 — Quare fremuerunt gentes"
+    },
+    "0117": {
+      "file": "texts/sanctorale/0117.bmd",
+      "title": "S. Antonii Abbatis",
+      "cledr_id": "anthony_of_egypt_abbot",
+      "rank": "MEMORIA",
+      "type": "SANCTORALE"
+    }
+  }
+}</code></pre>
+
+            <h3>Code Conventions</h3>
+            <table>
+                <tr><th>Pattern</th><th>Usage</th><th>Examples</th></tr>
+                <tr><td><code>ps.NNN</code></td><td>Psalms</td><td><code>ps.001</code>, <code>ps.150</code></td></tr>
+                <tr><td><code>MMDD</code></td><td>Fixed feasts (month-day)</td><td><code>0117</code> (Jan 17), <code>1225</code> (Dec 25)</td></tr>
+                <tr><td><code>PAS0</code>...<code>PAS7</code></td><td>Easter and octave</td><td><code>PAS0</code> = Easter Sunday</td></tr>
+                <tr><td><code>ADV1</code>...<code>ADV4</code></td><td>Advent Sundays</td><td><code>ADV1</code> = First Sunday of Advent</td></tr>
+                <tr><td><code>QUA0</code>...<code>QUA6</code></td><td>Lent</td><td><code>QUA0</code> = Ash Wednesday</td></tr>
+                <tr><td><code>ORD1</code>...<code>ORD34</code></td><td>Ordinary Time weeks</td><td><code>ORD1</code> = Week 1</td></tr>
+            </table>
+
+            <h3>Entry Fields</h3>
+            <table>
+                <tr><th>Field</th><th>Required</th><th>Description</th></tr>
+                <tr><td><code>file</code></td><td>Yes</td><td>Path to the text file, relative to pack root.</td></tr>
+                <tr><td><code>title</code></td><td>Yes</td><td>Display title for the fragment.</td></tr>
+                <tr><td><code>cledr_id</code></td><td>No</td><td>CLEDR canonical identifier (snake_case English).</td></tr>
+                <tr><td><code>rank</code></td><td>No</td><td>Liturgical rank: <code>SOLLEMNITAS</code>, <code>FESTUM</code>, <code>MEMORIA</code>, <code>FERIA</code>.</td></tr>
+                <tr><td><code>type</code></td><td>No</td><td><code>TEMPORALE</code>, <code>SANCTORALE</code>, or <code>LOCALE</code>.</td></tr>
+            </table>
+        </section>
+
+        <section class="section" id="bmd">
+            <h2>BMD Markup</h2>
+            <p><strong>BMD</strong> (Bible MarkDown) is a lightweight markup extending Markdown for biblical and liturgical notation. Originally developed for ePrex (2015). Files use the <code>.bmd</code> extension.</p>
+
+            <h3>Block Elements</h3>
+            <table>
+                <tr><th>Syntax</th><th>Renders As</th><th>Description</th></tr>
+                <tr><td><code># Title</code></td><td>Heading (red)</td><td>Section heading, level 1</td></tr>
+                <tr><td><code>## Subtitle</code></td><td>Heading (red)</td><td>Section heading, level 2</td></tr>
+                <tr><td><code>### Sub-subtitle</code></td><td>Heading (red)</td><td>Section heading, level 3</td></tr>
+                <tr><td><code>{Rubric text}</code></td><td>Red italic</td><td>Liturgical instruction or direction</td></tr>
+                <tr><td><code>{V.} Text</code></td><td>Versicle</td><td>Verse indicator (V./)</td></tr>
+                <tr><td><code>{R.} Text</code></td><td>Response</td><td>Response indicator (R./)</td></tr>
+                <tr><td><code>{Ant.} Text</code></td><td>Antiphon label</td><td>Antiphon introduction</td></tr>
+                <tr><td>2-space indent</td><td>Continuation</td><td>Verse continuation from previous line</td></tr>
+            </table>
+
+            <h3>Psalm Notation</h3>
+            <table>
+                <tr><th>Syntax</th><th>Meaning</th><th>Rendering</th></tr>
+                <tr><td><code>text *</code></td><td>Flexa (half-verse pause)</td><td>Pause point in recitation, asterisk</td></tr>
+                <tr><td><code>text +</code></td><td>Mid-verse pause</td><td>Renders as <code>&dagger;</code> (dagger/crux)</td></tr>
+            </table>
+            <p>The asterisk or plus sign must be preceded by a space and appear at the end of the line.</p>
+
+            <h3>Inline Markup</h3>
+            <table>
+                <tr><th>Syntax</th><th>Renders As</th><th>Description</th></tr>
+                <tr><td><code>//text//</code></td><td><em>Italic</em></td><td>Subtitle or emphasis</td></tr>
+                <tr><td><code>$text$</code></td><td><strong>Bold</strong></td><td>Strong emphasis</td></tr>
+                <tr><td><code>^text^</code></td><td><sup>Superscript</sup></td><td>Biblical cross-reference</td></tr>
+                <tr><td><code>{text}</code></td><td>Red text</td><td>Inline rubric</td></tr>
+            </table>
+
+            <h3>Example BMD File</h3>
+<pre><code># Psalmus 22
+
+{Ant.} Dominus pascit me, et nihil mihi deerit.
+
+Dominus pascit me, et nihil mihi deerit; *
+  in pascuis virentibus me collocat,
+
+Ad aquas tranquillitatis conducit me, *
+  reficit animam meam.
+
+Deducit me per semitas iustitiae *
+  propter nomen suum.
+
+{V.} Gloria Patri et Filio et Spiritui Sancto.
+{R.} Sicut erat in principio et nunc et semper.</code></pre>
+        </section>
+
+        <section class="section" id="rpl">
+            <h2>RPL Replacement System</h2>
+            <p>The <strong>RPL</strong> (Replacement) system allows texts to include placeholders that are filled dynamically based on the liturgical calendar. RPL files live in the <code>RPL/</code> directory.</p>
+
+            <h3>File Naming</h3>
+            <table>
+                <tr><th>Pattern</th><th>Purpose</th><th>Example</th></tr>
+                <tr><td><code>MEM;MMDD.bmd</code></td><td>Memorial name for date</td><td><code>MEM;0117.bmd</code> (Jan 17 &rarr; St. Anthony)</td></tr>
+                <tr><td><code>AL#;0.bmd</code></td><td>Alleluia removed (Lent)</td><td><code>AL0;0.bmd</code></td></tr>
+                <tr><td><code>AL#;1.bmd</code></td><td>Alleluia present (Easter)</td><td><code>AL0;1.bmd</code></td></tr>
+            </table>
+
+            <h3>RPL File Format</h3>
+            <p>Each line contains a token-replacement pair, separated by <code>|</code>:</p>
+<pre><code>@MEMORIA@|sant'Antonio abate
+@COMMEMORAZIONE@|nella memoria di sant'Antonio</code></pre>
+            <p>In your BMD texts, use the token (e.g., <code>@MEMORIA@</code>) where the replacement should appear. The app substitutes the token with the replacement at runtime based on the current date.</p>
+        </section>
+
+        <section class="section" id="frontmatter">
+            <h2>Fragment Frontmatter</h2>
+            <p>Individual text files can include optional YAML frontmatter between <code>---</code> delimiters:</p>
+<pre><code>---
+title: Psalmus 22
+work: Psalterium
+language: lat
+script: latin
+---
+
+# Psalmus 22
+Dominus pascit me...</code></pre>
+
+            <table>
+                <tr><th>Field</th><th>Description</th></tr>
+                <tr><td><code>title</code></td><td>Display title (overrides codes_map title).</td></tr>
+                <tr><td><code>work</code></td><td>Parent work or collection name.</td></tr>
+                <tr><td><code>language</code></td><td>ISO 639-3 code for this specific fragment.</td></tr>
+                <tr><td><code>script</code></td><td>Writing system for this fragment.</td></tr>
+            </table>
+        </section>
+
+        <section class="section" id="languages">
+            <h2>Language &amp; Script Codes</h2>
+            <p>Use <strong>ISO 639-3</strong> codes for language identification. Common codes for Horatio packs:</p>
+            <table>
+                <tr><th>Code</th><th>Language</th><th>Script</th><th>Direction</th></tr>
+                <tr><td><code>lat</code></td><td>Latin</td><td><code>latin</code></td><td>LTR</td></tr>
+                <tr><td><code>ita</code></td><td>Italian</td><td><code>latin</code></td><td>LTR</td></tr>
+                <tr><td><code>kat</code></td><td>Georgian</td><td><code>georgian</code></td><td>LTR</td></tr>
+                <tr><td><code>cop</code></td><td>Coptic</td><td><code>coptic</code></td><td>LTR</td></tr>
+                <tr><td><code>syc</code></td><td>Classical Syriac</td><td><code>syriac</code></td><td>RTL</td></tr>
+                <tr><td><code>heb</code></td><td>Hebrew</td><td><code>hebrew</code></td><td>RTL</td></tr>
+                <tr><td><code>grc</code></td><td>Ancient Greek</td><td><code>greek</code></td><td>LTR</td></tr>
+                <tr><td><code>ell</code></td><td>Modern Greek</td><td><code>greek</code></td><td>LTR</td></tr>
+                <tr><td><code>ara</code></td><td>Arabic</td><td><code>arabic</code></td><td>RTL</td></tr>
+                <tr><td><code>mlt</code></td><td>Maltese</td><td><code>latin</code></td><td>LTR</td></tr>
+                <tr><td><code>gez</code></td><td>Ge'ez (Ethiopic)</td><td><code>ethiopic</code></td><td>LTR</td></tr>
+                <tr><td><code>got</code></td><td>Gothic</td><td><code>gothic</code></td><td>LTR</td></tr>
+                <tr><td><code>hye</code></td><td>Armenian</td><td><code>armenian</code></td><td>LTR</td></tr>
+                <tr><td><code>san</code></td><td>Sanskrit</td><td><code>devanagari</code></td><td>LTR</td></tr>
+                <tr><td><code>rus</code></td><td>Russian</td><td><code>cyrillic</code></td><td>LTR</td></tr>
+                <tr><td><code>chu</code></td><td>Church Slavonic</td><td><code>cyrillic</code></td><td>LTR</td></tr>
+            </table>
+
+            <h3>Bundled Fonts</h3>
+            <p>Horatio bundles Noto Sans font variants for the following scripts. If your pack uses a script not listed here, specify the required font in <code>required_fonts</code>.</p>
+            <div class="note">
+                <p>Bundled: Noto Sans (Latin, Cyrillic, Greek), Noto Sans Arabic, Noto Sans Hebrew, Noto Sans Syriac, Noto Sans Coptic, Noto Sans Ethiopic, Noto Sans Georgian, Noto Sans Armenian, Noto Sans Devanagari, Noto Sans Gothic.</p>
+            </div>
+        </section>
+
+        <section class="section" id="building">
+            <h2>Building a Pack</h2>
+
+            <h3>Step 1: Create the Directory Structure</h3>
+<pre><code>mkdir my-pack
+mkdir my-pack/texts</code></pre>
+
+            <h3>Step 2: Write manifest.json</h3>
+            <p>Start with the <a href="#manifest" style="color: var(--green-light);">manifest template above</a>. Set your <code>id</code>, <code>language</code>, <code>script</code>, and other metadata.</p>
+
+            <h3>Step 3: Create Text Fragments</h3>
+            <p>Write your texts as <code>.bmd</code> files using the <a href="#bmd" style="color: var(--green-light);">BMD markup</a>. Place them in the <code>texts/</code> directory.</p>
+
+            <h3>Step 4: Build codes_map.json</h3>
+            <p>Create a mapping entry for each text fragment. The <code>file</code> path is relative to the pack root.</p>
+
+            <h3>Step 5: Package as .htx</h3>
+<pre><code># From the pack directory:
+cd my-pack
+zip -r ../my-pack.htx manifest.json codes_map.json texts/</code></pre>
+
+            <h3>Step 6: Install and Test</h3>
+            <p>Import the <code>.htx</code> file in Horatio using the Pack Manager's "Import .htx" button. Verify that:</p>
+            <ul>
+                <li>The pack appears in the Pack Manager with correct metadata</li>
+                <li>All fragments are readable and correctly formatted</li>
+                <li>RTL text direction works correctly (if applicable)</li>
+                <li>Special characters and diacritics render properly</li>
+                <li>Full-text search indexes the content</li>
+            </ul>
+        </section>
+
+        <section class="section" id="checklist">
+            <h2>Submission Checklist</h2>
+            <p>Before sharing your pack, verify:</p>
+            <ul>
+                <li><code>manifest.json</code> has a unique <code>id</code>, correct <code>language</code> (ISO 639-3), and <code>script</code></li>
+                <li><code>codes_map.json</code> maps every text file</li>
+                <li>All <code>file</code> paths in codes_map actually exist in the archive</li>
+                <li><code>fragment_count</code> matches the actual number of entries</li>
+                <li>Text files use UTF-8 encoding</li>
+                <li>BMD markup is well-formed (matched <code>{}</code>, <code>//</code>, <code>$$</code>, <code>^^</code>)</li>
+                <li><code>text_direction</code> is <code>"rtl"</code> for Hebrew, Arabic, Syriac</li>
+                <li>BLAKE3 checksum is computed and set in <code>checksum_blake3</code></li>
+                <li>The <code>.htx</code> file opens successfully in Horatio's Pack Manager</li>
+            </ul>
+
+            <div class="note">
+                <p class="note-title">Contributing Packs</p>
+                <p>We welcome contributions of texts in rare and endangered languages. Contact us at <a href="mailto:support@pinesoft.dev" style="color: var(--green-light);">support@pinesoft.dev</a> to discuss inclusion in Horatio's official pack catalog.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div>
+            <a href="/en/reading/horatio/">Horatio</a>
+            <a href="/en/">PineSoft</a>
+            <a href="mailto:support@pinesoft.dev">Contact</a>
+        </div>
+        <div class="copy">&copy; 2026 PineSoft. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>

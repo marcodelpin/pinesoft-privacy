@@ -212,7 +212,27 @@
       "privacy_your": "Your",
       "privacy_word": "Privacy",
       "privacy_text": "Horatio is completely offline. No data is collected, transmitted, or shared. No account required, no ads, no tracking.",
-      "privacy_link": "Full Privacy Policy"
+      "privacy_link": "Full Privacy Policy",
+      "languages_modern": "Texts available in: Latin, Italian, Georgian, Arabic, Coptic, Syriac, Hebrew, Greek, Maltese, and more.",
+      "packs_available": "Available",
+      "packs_word": "Packs",
+      "packs_intro": "Install only the languages and texts you need. All packs are free and work completely offline.",
+      "packs_bundled": "Bundled",
+      "packs_in_app": "In-App",
+      "packs_note": "Browse and install packs from the Pack Manager inside the app.",
+      "packs_more": "More language packs coming soon",
+      "packs_create_link": "Create your own pack \u2192",
+      "pack_georgian_desc": "Liturgy of the Hours in Georgian script",
+      "pack_coptic_desc": "Gospel of Mark in Coptic",
+      "pack_syriac_desc": "Peshitta liturgical corpus",
+      "pack_hebrew_desc": "Torah and Prophets selections",
+      "pack_arabic_desc": "Arabic liturgical readings",
+      "pack_greek_desc": "Classical and Biblical Greek texts",
+      "pack_maltese_desc": "Traditional Maltese prayers",
+      "pack_psalter_desc": "Latin Psalms from the Vulgate",
+      "pack_vulgata_desc": "Complete Latin Bible",
+      "pack_martini_desc": "Catholic Italian Bible (1781)",
+      "pack_diodati_desc": "Protestant Italian Bible (1607)"
     }
   },
   "privacy": {

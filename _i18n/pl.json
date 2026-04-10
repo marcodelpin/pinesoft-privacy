@@ -212,7 +212,27 @@
       "privacy_your": "Twoja",
       "privacy_word": "prywatno\u015b\u0107",
       "privacy_text": "Horatio dzia\u0142a ca\u0142kowicie offline. \u017badne dane nie s\u0105 gromadzone, przesy\u0142ane ani udost\u0119pniane. Nie wymaga konta, brak reklam, brak \u015bledzenia.",
-      "privacy_link": "Pe\u0142na polityka prywatno\u015bci"
+      "privacy_link": "Pe\u0142na polityka prywatno\u015bci",
+      "languages_modern": "Teksty dost\u0119pne w: \u0142acinie, w\u0142oskim, gruzi\u0144skim, arabskim, koptyjskim, syryjskim, hebrajskim, greckim, malta\u0144skim i innych.",
+      "packs_available": "Dost\u0119pne",
+      "packs_word": "pakiety",
+      "packs_intro": "Zainstaluj tylko j\u0119zyki i teksty, kt\u00f3rych potrzebujesz. Wszystkie pakiety s\u0105 bezp\u0142atne i dzia\u0142aj\u0105 ca\u0142kowicie offline.",
+      "packs_bundled": "Do\u0142\u0105czony",
+      "packs_in_app": "W aplikacji",
+      "packs_note": "Przegl\u0105daj i instaluj pakiety z Mened\u017cera pakiet\u00f3w w aplikacji.",
+      "packs_more": "Wi\u0119cej pakiet\u00f3w j\u0119zykowych wkr\u00f3tce",
+      "packs_create_link": "Stw\u00f3rz w\u0142asny pakiet \u2192",
+      "pack_georgian_desc": "Liturgia godzin w pi\u015bmie gruzi\u0144skim",
+      "pack_coptic_desc": "Ewangelia Marka po koptyjsku",
+      "pack_syriac_desc": "Liturgiczny korpus Peszitty",
+      "pack_hebrew_desc": "Wyb\u00f3r z Tory i Prorok\u00f3w",
+      "pack_arabic_desc": "Arabskie czytania liturgiczne",
+      "pack_greek_desc": "Klasyczne i biblijne teksty greckie",
+      "pack_maltese_desc": "Tradycyjne modlitwy malta\u0144skie",
+      "pack_psalter_desc": "\u0141aci\u0144skie Psalmy z Wulgaty",
+      "pack_vulgata_desc": "Kompletna \u0142aci\u0144ska Biblia",
+      "pack_martini_desc": "Katolicka Biblia w\u0142oska (1781)",
+      "pack_diodati_desc": "Protestancka Biblia w\u0142oska (1607)"
     }
   },
   "privacy": {

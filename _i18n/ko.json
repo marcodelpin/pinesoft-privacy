@@ -212,7 +212,27 @@
       "privacy_your": "당신의",
       "privacy_word": "개인정보",
       "privacy_text": "Horatio는 완전 오프라인입니다. 데이터 수집, 전송 또는 공유가 없습니다. 계정 불필요, 광고 없음, 추적 없음.",
-      "privacy_link": "전체 개인정보 처리방침"
+      "privacy_link": "전체 개인정보 처리방침",
+      "languages_modern": "라틴어, 이탈리아어, 조지아어, 아랍어, 콥트어, 시리아어, 히브리어, 그리스어, 몰타어 등의 텍스트를 이용할 수 있습니다.",
+      "packs_available": "사용 가능한",
+      "packs_word": "팩",
+      "packs_intro": "필요한 언어와 텍스트만 설치하세요. 모든 팩은 무료이며 완전히 오프라인으로 작동합니다.",
+      "packs_bundled": "기본 포함",
+      "packs_in_app": "앱 내",
+      "packs_note": "앱 내 팩 관리자에서 팩을 탐색하고 설치하세요.",
+      "packs_more": "더 많은 언어 팩이 곧 출시됩니다",
+      "packs_create_link": "나만의 팩 만들기 →",
+      "pack_georgian_desc": "조지아 문자의 성무일도",
+      "pack_coptic_desc": "콥트어 마르코 복음서",
+      "pack_syriac_desc": "페시타 전례 모음집",
+      "pack_hebrew_desc": "토라와 선지서 발췌",
+      "pack_arabic_desc": "아랍어 전례 독서",
+      "pack_greek_desc": "고전 및 성서 그리스어 텍스트",
+      "pack_maltese_desc": "전통 몰타 기도문",
+      "pack_psalter_desc": "불가타의 라틴어 시편",
+      "pack_vulgata_desc": "완전한 라틴어 성경",
+      "pack_martini_desc": "가톨릭 이탈리아어 성경 (1781)",
+      "pack_diodati_desc": "개신교 이탈리아어 성경 (1607)"
     }
   },
   "privacy": {

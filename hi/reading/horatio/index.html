@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horatio — Rare Liturgical Texts | PineSoft</title>
-    <meta name="description" content="Digital preservation of texts in rare, endangered, and classical languages. 9 calendar systems, 10+ scripts, fully offline. By PineSoft.">
+    <title>Horatio — दुर्लभ लिटर्जिकल पाठ | PineSoft</title>
+    <meta name="description" content="दुर्लभ, लुप्तप्राय और शास्त्रीय भाषाओं में पाठ्यों का डिजिटल संरक्षण. 9 कैलेंडर, 10+ लिपि, पूरी तरह ऑफलाइन. PineSoft.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Horatio — Rare Liturgical Texts">
-    <meta property="og:description" content="Preserve and read texts in rare, endangered, and classical languages. 9 calendar systems, 10+ scripts, fully offline.">
+    <meta property="og:title" content="Horatio — दुर्लभ लिटर्जिकल पाठ">
+    <meta property="og:description" content="दुर्लभ, लुप्तप्राय और शास्त्रीय भाषाओं में पाठ्यों को संरक्षित करें और पढ़ें. पूरी तरह ऑफलाइन.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pinesoft.dev/reading/horatio/">
     <meta property="og:image" content="https://pinesoft.dev/images/horatio_icon.png">
@@ -16,8 +16,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Horatio — Rare Liturgical Texts">
-    <meta name="twitter:description" content="Preserve and read texts in rare, endangered, and classical languages. Fully offline.">
+    <meta name="twitter:title" content="Horatio — दुर्लभ लिटर्जिकल पाठ">
+    <meta name="twitter:description" content="दुर्लभ, लुप्तप्राय और शास्त्रीय भाषाओं में पाठ्यों को संरक्षित करें और पढ़ें. पूरी तरह ऑफलाइन.">
     <meta name="twitter:image" content="https://pinesoft.dev/images/horatio_icon.png">
 
     <meta name="theme-color" content="#1B2A1B">
@@ -89,6 +89,21 @@
         .script-tag { background: var(--card); border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; color: var(--text2); }
 
         /* Privacy */
+        /* Packs */
+        .packs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+        .pack-card { display: flex; align-items: center; gap: 1rem; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; transition: border-color 0.2s; }
+        .pack-card:hover { border-color: var(--gold); }
+        .pack-avatar { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
+        .pack-body { flex: 1; min-width: 0; }
+        .pack-body h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 2px; }
+        .pack-body p { font-size: 0.8rem; color: var(--text2); line-height: 1.4; }
+        .pack-badge { font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 10px; font-weight: 600; white-space: nowrap; }
+        .pack-badge.bundled { background: rgba(46,125,50,0.2); color: var(--green-light); }
+        .pack-badge.inapp { background: rgba(92,107,192,0.2); color: #7986CB; }
+        .packs-more { text-align: center; color: var(--gold); font-size: 0.9rem; margin-top: 1.5rem; font-style: italic; }
+        .packs-note { text-align: center; color: var(--text3); font-size: 0.85rem; margin-top: 0.75rem; }
+
+        /* Privacy */
         .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
         .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
         .priv a { color: var(--green-light); text-decoration: none; }
@@ -116,7 +131,7 @@
                 <img src="/images/horatio_icon.png" alt="Horatio icon" width="192" height="192">
             </div>
             <h1>Horatio</h1>
-            <p class="subtitle">Preserve and read texts in rare, endangered, and classical languages. Fully offline, no account required.</p>
+            <p class="subtitle">दुर्लभ, लुप्तप्राय और शास्त्रीय भाषाओं में पाठ्यों को संरक्षित करें और पढ़ें. पूरी तरह ऑफलाइन, खाता आवश्यक नहीं.</p>
             <span class="badge-soon">जल्द आ रहा है</span>
         </div>
     </section>
@@ -124,57 +139,57 @@
     <section class="stats">
         <div class="container">
             <div class="stats-row">
-                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">Calendar Systems</div></div>
-                <div class="stat"><div class="stat-num">10+</div><div class="stat-lbl">Writing Scripts</div></div>
-                <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Bible Translations</div></div>
-                <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">Offline</div></div>
+                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">कैलेंडर प्रणालियाँ</div></div>
+                <div class="stat"><div class="stat-num">10+</div><div class="stat-lbl">लिपियाँ</div></div>
+                <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">बाइबल अनुवाद</div></div>
+                <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">ऑफलाइन</div></div>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2 class="section-title"><span class="g">Key</span> <span class="gr">Features</span></h2>
+            <h2 class="section-title"><span class="g">प्रमुख</span> <span class="gr">विशेषताएँ</span></h2>
             <div class="features">
                 <div class="feat">
                     <div class="feat-icon">&#128214;</div>
-                    <h3>Rare Language Texts</h3>
-                    <p>Liturgical and classical texts in languages with declining or halted editorial production. Digital preservation for future generations.</p>
+                    <h3>दुर्लभ भाषाओं में पाठ</h3>
+                    <p>घटती या रुकी हुई संपादकीय गतिविधि वाली भाषाओं में लिटर्जिकल और शास्त्रीय पाठ. आने वाली पीढ़ियों के लिए डिजिटल संरक्षण.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#128197;</div>
-                    <h3>9 Calendar Systems</h3>
-                    <p>Roman, Coptic, Mozarabic, Ethiopian, Jewish, Islamic, Academic, Religious Orders, and Diocesan calendars.</p>
+                    <h3>9 कैलेंडर प्रणालियाँ</h3>
+                    <p>रोमन, कॉप्टिक, मोज़ारेबिक, इथियोपियन, यहूदी, इस्लामी, शैक्षिक, धार्मिक संघों और धर्मप्रांतीय कैलेंडर.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#128218;</div>
-                    <h3>Bible Translations</h3>
-                    <p>Vulgata Clementina (Latin), Martini 1781, and Diodati 1607. Browse by Testament, Category, Book, and Chapter.</p>
+                    <h3>बाइबल अनुवाद</h3>
+                    <p>Vulgata Clementina (लैटिन), Martini 1781 और Diodati 1607. विधान, श्रेणी, पुस्तक और अध्याय के अनुसार खोजें.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#9998;</div>
-                    <h3>Multi-Script Support</h3>
-                    <p>Latin, Arabic, Hebrew, Syriac, Coptic, Ge'ez, Greek, Gothic, Armenian, Devanagari, and more.</p>
+                    <h3>बहु-लिपि समर्थन</h3>
+                    <p>लैटिन, अरबी, हिब्रू, सीरियाई, कॉप्टिक, गीज़, ग्रीक, गॉथिक, आर्मेनियाई, देवनागरी और अन्य.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#128269;</div>
-                    <h3>Full-Text Search</h3>
-                    <p>Search across all installed texts with instant results. Find any passage, verse, or prayer.</p>
+                    <h3>पूर्ण-पाठ खोज</h3>
+                    <p>सभी स्थापित पाठ्यों में तुरंत परिणामों के साथ खोजें. कोई भी अंश, जात या प्रार्थना खोजें.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#128230;</div>
-                    <h3>Content Packs</h3>
-                    <p>Modular installation — download only the languages and texts you need. Lightweight and efficient.</p>
+                    <h3>सामग्री पैक</h3>
+                    <p>मॉड्यूलर स्थापना — केवल वही भाषाएँ और पाठ डाउनलोड करें जो आपको चाहिए. हल्का और कुशल.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#127761;</div>
-                    <h3>Dark Theme</h3>
-                    <p>Designed for contemplative reading. Easy on the eyes, day or night.</p>
+                    <h3>डार्क थीम</h3>
+                    <p>चिंतनशील पठन के लिए डिज़ाइन किया गया. दिन और रात आँखों के लिए आरामदायक.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#128274;</div>
-                    <h3>Private & Offline</h3>
-                    <p>No account, no tracking, no ads. All content processed and stored locally on your device.</p>
+                    <h3>निजी और ऑफलाइन</h3>
+                    <p>कोई खाता नहीं, कोई ट्रैकिंग नहीं, कोई विज्ञापन नहीं. सभी सामग्री आपके डिवाइस पर स्थानीय रूप से संसाधित और संग्रहीत होती है.</p>
                 </div>
             </div>
         </div>
@@ -182,8 +197,8 @@
 
     <section class="section" style="background: var(--bg2);">
         <div class="container">
-            <h2 class="section-title"><span class="g">Supported</span> <span class="gr">Scripts</span></h2>
-            <p style="color: var(--text2); text-align: center; margin-bottom: 1.5rem;">Read texts in their original writing systems with bundled Noto Sans fonts.</p>
+            <h2 class="section-title"><span class="g">समर्थित</span> <span class="gr">लिपियाँ</span></h2>
+            <p style="color: var(--text2); text-align: center; margin-bottom: 1.5rem;">बंडलेड Noto Sans फ़ॉन्ट्स के साथ मूल लिपि प्रणालियों में पाठ पढ़ें.</p>
             <div class="scripts-grid">
                 <span class="script-tag">Latin</span>
                 <span class="script-tag">Arabic</span>
@@ -194,18 +209,119 @@
                 <span class="script-tag">Greek</span>
                 <span class="script-tag">Gothic</span>
                 <span class="script-tag">Armenian</span>
+                <span class="script-tag">Georgian (Mkhedruli)</span>
                 <span class="script-tag">Devanagari</span>
                 <span class="script-tag">Maltese</span>
             </div>
+            <p style="color: var(--text3); text-align: center; margin-top: 1.5rem; font-size: 0.85rem;">लैटिन, इतालवी, जॉर्जियन, अरबी, कॉप्टिक, सीरियाई, हिब्रू, ग्रीक, माल्टीज़ आदि भाषाओं में पाठ उपलब्ध हैं.</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2 class="section-title"><span class="g">Your</span> <span class="gr">Privacy</span></h2>
+            <h2 class="section-title"><span class="g">उपलब्ध</span> <span class="gr">पैक</span></h2>
+            <p style="color: var(--text2); text-align: center; margin-bottom: 2rem;">केवल वही भाषाएँ और पाठ इंस्टॉल करें जो आपको चाहिए. सभी पैक निःशुल्क हैं और पूरी तरह ऑफलाइन काम करते हैं.</p>
+            <div class="packs-grid">
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #5C6BC0;">KA</div>
+                    <div class="pack-body">
+                        <h4>Georgian Breviary</h4>
+                        <p>जॉर्जियन लिपि में घंटों की प्रार्थना</p>
+                    </div>
+                    <span class="pack-badge bundled">शामिल</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #8D6E63;">CO</div>
+                    <div class="pack-body">
+                        <h4>Coptic Mark</h4>
+                        <p>कॉप्टिक में मरकुस का सुसमाचार</p>
+                    </div>
+                    <span class="pack-badge bundled">शामिल</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #E65100;">SY</div>
+                    <div class="pack-body">
+                        <h4>Syriac Peshitta</h4>
+                        <p>पेशित्ता पूजा-विधि संग्रह</p>
+                    </div>
+                    <span class="pack-badge bundled">शामिल</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #1565C0;">HE</div>
+                    <div class="pack-body">
+                        <h4>Hebrew Tanakh</h4>
+                        <p>तोराह और नबियों से चयन</p>
+                    </div>
+                    <span class="pack-badge bundled">शामिल</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #2E7D32;">AR</div>
+                    <div class="pack-body">
+                        <h4>Arabic Readings</h4>
+                        <p>अरबी पूजा-विधि पाठ</p>
+                    </div>
+                    <span class="pack-badge bundled">शामिल</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #6A1B9A;">EL</div>
+                    <div class="pack-body">
+                        <h4>Greek Classical</h4>
+                        <p>शास्त्रीय और बाइबल यूनानी पाठ</p>
+                    </div>
+                    <span class="pack-badge bundled">शामिल</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #AD1457;">MT</div>
+                    <div class="pack-body">
+                        <h4>Maltese Prayers</h4>
+                        <p>पारंपरिक माल्टीज़ प्रार्थनाएँ</p>
+                    </div>
+                    <span class="pack-badge bundled">शामिल</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #827717;">LA</div>
+                    <div class="pack-body">
+                        <h4>Vulgate Psalter</h4>
+                        <p>वल्गेट से लैटिन भजन</p>
+                    </div>
+                    <span class="pack-badge bundled">शामिल</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #C62828;">LA</div>
+                    <div class="pack-body">
+                        <h4>Vulgata Clementina</h4>
+                        <p>संपूर्ण लैटिन बाइबल</p>
+                    </div>
+                    <span class="pack-badge inapp">ऐप में</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #00695C;">IT</div>
+                    <div class="pack-body">
+                        <h4>Martini 1781</h4>
+                        <p>कैथोलिक इतालवी बाइबल (1781)</p>
+                    </div>
+                    <span class="pack-badge inapp">ऐप में</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #37474F;">IT</div>
+                    <div class="pack-body">
+                        <h4>Diodati 1607</h4>
+                        <p>प्रोटेस्टेंट इतालवी बाइबल (1607)</p>
+                    </div>
+                    <span class="pack-badge inapp">ऐप में</span>
+                </div>
+            </div>
+            <p class="packs-more">और भाषा पैक जल्द आ रहे हैं</p>
+            <p class="packs-note">ऐप के अंदर पैक मैनेजर से पैक ब्राउज़ और इंस्टॉल करें. <a href="/hi/reading/horatio/content-pack-format/" style="color: var(--green-light); text-decoration: none;">अपना पैक बनाएं →</a></p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">आपकी</span> <span class="gr">गोपनीयता</span></h2>
             <div class="priv">
-                <p>Horatio is completely offline. No data is collected, transmitted, or shared. No account required, no ads, no tracking.</p>
-                <a href="/hi/reading/horatio/privacy-policy/">Full Privacy Policy &rarr;</a>
+                <p>Horatio पूरी तरह ऑफलाइन है. कोई डेटा नहीं एकत्र किया, प्रेषित या साझा किया जाता है. खाता आवश्यक नहीं, विज्ञापन नहीं, ट्रैकिंग नहीं.</p>
+                <a href="/hi/reading/horatio/privacy-policy/">पूर्ण गोपनीयता नीति &rarr;</a>
             </div>
         </div>
     </section>

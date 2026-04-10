@@ -89,6 +89,21 @@
         .script-tag { background: var(--card); border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; color: var(--text2); }
 
         /* Privacy */
+        /* Packs */
+        .packs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+        .pack-card { display: flex; align-items: center; gap: 1rem; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; transition: border-color 0.2s; }
+        .pack-card:hover { border-color: var(--gold); }
+        .pack-avatar { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
+        .pack-body { flex: 1; min-width: 0; }
+        .pack-body h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 2px; }
+        .pack-body p { font-size: 0.8rem; color: var(--text2); line-height: 1.4; }
+        .pack-badge { font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 10px; font-weight: 600; white-space: nowrap; }
+        .pack-badge.bundled { background: rgba(46,125,50,0.2); color: var(--green-light); }
+        .pack-badge.inapp { background: rgba(92,107,192,0.2); color: #7986CB; }
+        .packs-more { text-align: center; color: var(--gold); font-size: 0.9rem; margin-top: 1.5rem; font-style: italic; }
+        .packs-note { text-align: center; color: var(--text3); font-size: 0.85rem; margin-top: 0.75rem; }
+
+        /* Privacy */
         .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
         .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
         .priv a { color: var(--green-light); text-decoration: none; }
@@ -194,9 +209,110 @@
                 <span class="script-tag">Greek</span>
                 <span class="script-tag">Gothic</span>
                 <span class="script-tag">Armenian</span>
+                <span class="script-tag">Georgian (Mkhedruli)</span>
                 <span class="script-tag">Devanagari</span>
                 <span class="script-tag">Maltese</span>
             </div>
+            <p style="color: var(--text3); text-align: center; margin-top: 1.5rem; font-size: 0.85rem;">Texter tillgängliga på: latin, italienska, georgiska, arabiska, koptiska, syriska, hebreiska, grekiska, maltesiska och fler.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Tillgängliga</span> <span class="gr">paket</span></h2>
+            <p style="color: var(--text2); text-align: center; margin-bottom: 2rem;">Installera bara de språk och texter du behöver. Alla paket är gratis och fungerar helt offline.</p>
+            <div class="packs-grid">
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #5C6BC0;">KA</div>
+                    <div class="pack-body">
+                        <h4>Georgian Breviary</h4>
+                        <p>Tidegärden i georgisk skrift</p>
+                    </div>
+                    <span class="pack-badge bundled">Inkluderat</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #8D6E63;">CO</div>
+                    <div class="pack-body">
+                        <h4>Coptic Mark</h4>
+                        <p>Markusevangeliet på koptiska</p>
+                    </div>
+                    <span class="pack-badge bundled">Inkluderat</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #E65100;">SY</div>
+                    <div class="pack-body">
+                        <h4>Syriac Peshitta</h4>
+                        <p>Peshitta liturgisk korpus</p>
+                    </div>
+                    <span class="pack-badge bundled">Inkluderat</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #1565C0;">HE</div>
+                    <div class="pack-body">
+                        <h4>Hebrew Tanakh</h4>
+                        <p>Urval ur Tora och Profeterna</p>
+                    </div>
+                    <span class="pack-badge bundled">Inkluderat</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #2E7D32;">AR</div>
+                    <div class="pack-body">
+                        <h4>Arabic Readings</h4>
+                        <p>Arabiska liturgiska läsningar</p>
+                    </div>
+                    <span class="pack-badge bundled">Inkluderat</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #6A1B9A;">EL</div>
+                    <div class="pack-body">
+                        <h4>Greek Classical</h4>
+                        <p>Klassiska och bibliska grekiska texter</p>
+                    </div>
+                    <span class="pack-badge bundled">Inkluderat</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #AD1457;">MT</div>
+                    <div class="pack-body">
+                        <h4>Maltese Prayers</h4>
+                        <p>Traditionella maltesiska böner</p>
+                    </div>
+                    <span class="pack-badge bundled">Inkluderat</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #827717;">LA</div>
+                    <div class="pack-body">
+                        <h4>Vulgate Psalter</h4>
+                        <p>Latinska psalmer från Vulgata</p>
+                    </div>
+                    <span class="pack-badge bundled">Inkluderat</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #C62828;">LA</div>
+                    <div class="pack-body">
+                        <h4>Vulgata Clementina</h4>
+                        <p>Komplett latinsk Bibel</p>
+                    </div>
+                    <span class="pack-badge inapp">I appen</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #00695C;">IT</div>
+                    <div class="pack-body">
+                        <h4>Martini 1781</h4>
+                        <p>Katolsk italiensk Bibel (1781)</p>
+                    </div>
+                    <span class="pack-badge inapp">I appen</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #37474F;">IT</div>
+                    <div class="pack-body">
+                        <h4>Diodati 1607</h4>
+                        <p>Protestantisk italiensk Bibel (1607)</p>
+                    </div>
+                    <span class="pack-badge inapp">I appen</span>
+                </div>
+            </div>
+            <p class="packs-more">Fler språkpaket kommer snart</p>
+            <p class="packs-note">Bläddra och installera paket från Pakethanteraren i appen. <a href="/sv/reading/horatio/content-pack-format/" style="color: var(--green-light); text-decoration: none;">Skapa ditt eget paket →</a></p>
         </div>
     </section>
 

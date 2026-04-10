@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horatio — Rare Liturgical Texts | PineSoft</title>
-    <meta name="description" content="Digital preservation of texts in rare, endangered, and classical languages. 9 calendar systems, 10+ scripts, fully offline. By PineSoft.">
+    <title>Horatio — Редкие литургические тексты | PineSoft</title>
+    <meta name="description" content="Цифровое сохранение текстов на редких, исчезающих и классических языках. 9 календарных систем, 10+ письменностей, полностью офлайн. PineSoft.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Horatio — Rare Liturgical Texts">
-    <meta property="og:description" content="Preserve and read texts in rare, endangered, and classical languages. 9 calendar systems, 10+ scripts, fully offline.">
+    <meta property="og:title" content="Horatio — Редкие литургические тексты">
+    <meta property="og:description" content="Сохраняйте и читайте тексты на редких, исчезающих и классических языках. Полностью офлайн.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pinesoft.dev/reading/horatio/">
     <meta property="og:image" content="https://pinesoft.dev/images/horatio_icon.png">
@@ -16,8 +16,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Horatio — Rare Liturgical Texts">
-    <meta name="twitter:description" content="Preserve and read texts in rare, endangered, and classical languages. Fully offline.">
+    <meta name="twitter:title" content="Horatio — Редкие литургические тексты">
+    <meta name="twitter:description" content="Сохраняйте и читайте тексты на редких, исчезающих и классических языках. Полностью офлайн.">
     <meta name="twitter:image" content="https://pinesoft.dev/images/horatio_icon.png">
 
     <meta name="theme-color" content="#1B2A1B">
@@ -89,6 +89,21 @@
         .script-tag { background: var(--card); border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; color: var(--text2); }
 
         /* Privacy */
+        /* Packs */
+        .packs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+        .pack-card { display: flex; align-items: center; gap: 1rem; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; transition: border-color 0.2s; }
+        .pack-card:hover { border-color: var(--gold); }
+        .pack-avatar { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
+        .pack-body { flex: 1; min-width: 0; }
+        .pack-body h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 2px; }
+        .pack-body p { font-size: 0.8rem; color: var(--text2); line-height: 1.4; }
+        .pack-badge { font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 10px; font-weight: 600; white-space: nowrap; }
+        .pack-badge.bundled { background: rgba(46,125,50,0.2); color: var(--green-light); }
+        .pack-badge.inapp { background: rgba(92,107,192,0.2); color: #7986CB; }
+        .packs-more { text-align: center; color: var(--gold); font-size: 0.9rem; margin-top: 1.5rem; font-style: italic; }
+        .packs-note { text-align: center; color: var(--text3); font-size: 0.85rem; margin-top: 0.75rem; }
+
+        /* Privacy */
         .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
         .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
         .priv a { color: var(--green-light); text-decoration: none; }
@@ -116,7 +131,7 @@
                 <img src="/images/horatio_icon.png" alt="Horatio icon" width="192" height="192">
             </div>
             <h1>Horatio</h1>
-            <p class="subtitle">Preserve and read texts in rare, endangered, and classical languages. Fully offline, no account required.</p>
+            <p class="subtitle">Сохраняйте и читайте тексты на редких, исчезающих и классических языках. Полностью офлайн, учётная запись не требуется.</p>
             <span class="badge-soon">Скоро будет</span>
         </div>
     </section>
@@ -124,57 +139,57 @@
     <section class="stats">
         <div class="container">
             <div class="stats-row">
-                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">Calendar Systems</div></div>
-                <div class="stat"><div class="stat-num">10+</div><div class="stat-lbl">Writing Scripts</div></div>
-                <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Bible Translations</div></div>
-                <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">Offline</div></div>
+                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">Календарных систем</div></div>
+                <div class="stat"><div class="stat-num">10+</div><div class="stat-lbl">Письменностей</div></div>
+                <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Переводов Библии</div></div>
+                <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">Офлайн</div></div>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2 class="section-title"><span class="g">Key</span> <span class="gr">Features</span></h2>
+            <h2 class="section-title"><span class="g">Основные</span> <span class="gr">функции</span></h2>
             <div class="features">
                 <div class="feat">
                     <div class="feat-icon">&#128214;</div>
-                    <h3>Rare Language Texts</h3>
-                    <p>Liturgical and classical texts in languages with declining or halted editorial production. Digital preservation for future generations.</p>
+                    <h3>Тексты на редких языках</h3>
+                    <p>Литургические и классические тексты на языках с сокращающейся или прекратившейся издательской деятельностью. Цифровое сохранение для будущих поколений.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#128197;</div>
-                    <h3>9 Calendar Systems</h3>
-                    <p>Roman, Coptic, Mozarabic, Ethiopian, Jewish, Islamic, Academic, Religious Orders, and Diocesan calendars.</p>
+                    <h3>9 календарных систем</h3>
+                    <p>Римский, коптский, мозарабский, эфиопский, иудейский, исламский, академический, орденский и епархиальный календари.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#128218;</div>
-                    <h3>Bible Translations</h3>
-                    <p>Vulgata Clementina (Latin), Martini 1781, and Diodati 1607. Browse by Testament, Category, Book, and Chapter.</p>
+                    <h3>Переводы Библии</h3>
+                    <p>Vulgata Clementina (латинская), Martini 1781 и Diodati 1607. Просмотр по Завету, Категории, Книге и Главе.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#9998;</div>
-                    <h3>Multi-Script Support</h3>
-                    <p>Latin, Arabic, Hebrew, Syriac, Coptic, Ge'ez, Greek, Gothic, Armenian, Devanagari, and more.</p>
+                    <h3>Поддержка множества письменностей</h3>
+                    <p>Латиница, арабское письмо, иврит, сирийское письмо, коптское, эфиопское, греческое, готское, армянское, деванагари и другие.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#128269;</div>
-                    <h3>Full-Text Search</h3>
-                    <p>Search across all installed texts with instant results. Find any passage, verse, or prayer.</p>
+                    <h3>Полнотекстовый поиск</h3>
+                    <p>Поиск по всем установленным текстам с мгновенными результатами. Найдите любой отрывок, стих или молитву.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#128230;</div>
-                    <h3>Content Packs</h3>
-                    <p>Modular installation — download only the languages and texts you need. Lightweight and efficient.</p>
+                    <h3>Пакеты содержимого</h3>
+                    <p>Модульная установка — скачивайте только нужные языки и тексты. Легко и эффективно.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#127761;</div>
-                    <h3>Dark Theme</h3>
-                    <p>Designed for contemplative reading. Easy on the eyes, day or night.</p>
+                    <h3>Тёмная тема</h3>
+                    <p>Разработана для созерцательного чтения. Комфортно для глаз днём и ночью.</p>
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#128274;</div>
-                    <h3>Private & Offline</h3>
-                    <p>No account, no tracking, no ads. All content processed and stored locally on your device.</p>
+                    <h3>Приватно и офлайн</h3>
+                    <p>Без аккаунта, без отслеживания, без рекламы. Всё содержимое обрабатывается и хранится локально на вашем устройстве.</p>
                 </div>
             </div>
         </div>
@@ -182,8 +197,8 @@
 
     <section class="section" style="background: var(--bg2);">
         <div class="container">
-            <h2 class="section-title"><span class="g">Supported</span> <span class="gr">Scripts</span></h2>
-            <p style="color: var(--text2); text-align: center; margin-bottom: 1.5rem;">Read texts in their original writing systems with bundled Noto Sans fonts.</p>
+            <h2 class="section-title"><span class="g">Поддерживаемые</span> <span class="gr">письменности</span></h2>
+            <p style="color: var(--text2); text-align: center; margin-bottom: 1.5rem;">Читайте тексты в оригинальных системах письма с встроенными шрифтами Noto Sans.</p>
             <div class="scripts-grid">
                 <span class="script-tag">Latin</span>
                 <span class="script-tag">Arabic</span>
@@ -194,18 +209,119 @@
                 <span class="script-tag">Greek</span>
                 <span class="script-tag">Gothic</span>
                 <span class="script-tag">Armenian</span>
+                <span class="script-tag">Georgian (Mkhedruli)</span>
                 <span class="script-tag">Devanagari</span>
                 <span class="script-tag">Maltese</span>
             </div>
+            <p style="color: var(--text3); text-align: center; margin-top: 1.5rem; font-size: 0.85rem;">Тексты доступны на: латыни, итальянском, грузинском, арабском, коптском, сирийском, иврите, греческом, мальтийском и других языках.</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2 class="section-title"><span class="g">Your</span> <span class="gr">Privacy</span></h2>
+            <h2 class="section-title"><span class="g">Доступные</span> <span class="gr">пакеты</span></h2>
+            <p style="color: var(--text2); text-align: center; margin-bottom: 2rem;">Устанавливайте только нужные языки и тексты. Все пакеты бесплатны и работают полностью офлайн.</p>
+            <div class="packs-grid">
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #5C6BC0;">KA</div>
+                    <div class="pack-body">
+                        <h4>Georgian Breviary</h4>
+                        <p>Литургия часов на грузинском письме</p>
+                    </div>
+                    <span class="pack-badge bundled">Встроен</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #8D6E63;">CO</div>
+                    <div class="pack-body">
+                        <h4>Coptic Mark</h4>
+                        <p>Евангелие от Марка на коптском</p>
+                    </div>
+                    <span class="pack-badge bundled">Встроен</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #E65100;">SY</div>
+                    <div class="pack-body">
+                        <h4>Syriac Peshitta</h4>
+                        <p>Литургический корпус Пешитты</p>
+                    </div>
+                    <span class="pack-badge bundled">Встроен</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #1565C0;">HE</div>
+                    <div class="pack-body">
+                        <h4>Hebrew Tanakh</h4>
+                        <p>Избранное из Торы и Пророков</p>
+                    </div>
+                    <span class="pack-badge bundled">Встроен</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #2E7D32;">AR</div>
+                    <div class="pack-body">
+                        <h4>Arabic Readings</h4>
+                        <p>Арабские литургические чтения</p>
+                    </div>
+                    <span class="pack-badge bundled">Встроен</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #6A1B9A;">EL</div>
+                    <div class="pack-body">
+                        <h4>Greek Classical</h4>
+                        <p>Классические и библейские греческие тексты</p>
+                    </div>
+                    <span class="pack-badge bundled">Встроен</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #AD1457;">MT</div>
+                    <div class="pack-body">
+                        <h4>Maltese Prayers</h4>
+                        <p>Традиционные мальтийские молитвы</p>
+                    </div>
+                    <span class="pack-badge bundled">Встроен</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #827717;">LA</div>
+                    <div class="pack-body">
+                        <h4>Vulgate Psalter</h4>
+                        <p>Латинские псалмы из Вульгаты</p>
+                    </div>
+                    <span class="pack-badge bundled">Встроен</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #C62828;">LA</div>
+                    <div class="pack-body">
+                        <h4>Vulgata Clementina</h4>
+                        <p>Полная латинская Библия</p>
+                    </div>
+                    <span class="pack-badge inapp">В приложении</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #00695C;">IT</div>
+                    <div class="pack-body">
+                        <h4>Martini 1781</h4>
+                        <p>Католическая итальянская Библия (1781)</p>
+                    </div>
+                    <span class="pack-badge inapp">В приложении</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #37474F;">IT</div>
+                    <div class="pack-body">
+                        <h4>Diodati 1607</h4>
+                        <p>Протестантская итальянская Библия (1607)</p>
+                    </div>
+                    <span class="pack-badge inapp">В приложении</span>
+                </div>
+            </div>
+            <p class="packs-more">Скоро появятся новые языковые пакеты</p>
+            <p class="packs-note">Просматривайте и устанавливайте пакеты из Менеджера пакетов в приложении. <a href="/ru/reading/horatio/content-pack-format/" style="color: var(--green-light); text-decoration: none;">Создайте свой пакет →</a></p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Ваша</span> <span class="gr">конфиденциальность</span></h2>
             <div class="priv">
-                <p>Horatio is completely offline. No data is collected, transmitted, or shared. No account required, no ads, no tracking.</p>
-                <a href="/ru/reading/horatio/privacy-policy/">Full Privacy Policy &rarr;</a>
+                <p>Horatio полностью офлайн. Никакие данные не собираются, не передаются и не передаются третьим лицам. Без аккаунта, без рекламы, без отслеживания.</p>
+                <a href="/ru/reading/horatio/privacy-policy/">Полная политика конфиденциальности &rarr;</a>
             </div>
         </div>
     </section>

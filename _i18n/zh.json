@@ -212,7 +212,27 @@
       "privacy_your": "您的",
       "privacy_word": "隐私",
       "privacy_text": "Horatio完全离线。不收集、传输或分享任何数据。无需账户，无广告，无追踪。",
-      "privacy_link": "完整隐私政策"
+      "privacy_link": "完整隐私政策",
+      "languages_modern": "提供拉丁语、意大利语、格鲁吉亚语、阿拉伯语、科普特语、叙利亚语、希伯来语、希腊语、马耳他语等语言的文本。",
+      "packs_available": "可用",
+      "packs_word": "语言包",
+      "packs_intro": "只安装您需要的语言和文本。所有语言包均免费，完全离线运行。",
+      "packs_bundled": "内置",
+      "packs_in_app": "应用内",
+      "packs_note": "在应用内的包管理器中浏览和安装语言包。",
+      "packs_more": "更多语言包即将推出",
+      "packs_create_link": "创建您自己的语言包 →",
+      "pack_georgian_desc": "格鲁吉亚文字的日课经",
+      "pack_coptic_desc": "科普特语马可福音",
+      "pack_syriac_desc": "叙利亚语别西大礼仪文集",
+      "pack_hebrew_desc": "摩西五经和先知书精选",
+      "pack_arabic_desc": "阿拉伯语礼仪读经",
+      "pack_greek_desc": "古典和圣经希腊语文本",
+      "pack_maltese_desc": "马耳他传统祈祷文",
+      "pack_psalter_desc": "武加大译本拉丁语诗篇",
+      "pack_vulgata_desc": "完整拉丁语圣经",
+      "pack_martini_desc": "天主教意大利语圣经（1781年）",
+      "pack_diodati_desc": "新教意大利语圣经（1607年）"
     }
   },
   "privacy": {

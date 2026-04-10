@@ -89,6 +89,21 @@
         .script-tag { background: var(--card); border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; color: var(--text2); }
 
         /* Privacy */
+        /* Packs */
+        .packs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+        .pack-card { display: flex; align-items: center; gap: 1rem; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; transition: border-color 0.2s; }
+        .pack-card:hover { border-color: var(--gold); }
+        .pack-avatar { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
+        .pack-body { flex: 1; min-width: 0; }
+        .pack-body h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 2px; }
+        .pack-body p { font-size: 0.8rem; color: var(--text2); line-height: 1.4; }
+        .pack-badge { font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 10px; font-weight: 600; white-space: nowrap; }
+        .pack-badge.bundled { background: rgba(46,125,50,0.2); color: var(--green-light); }
+        .pack-badge.inapp { background: rgba(92,107,192,0.2); color: #7986CB; }
+        .packs-more { text-align: center; color: var(--gold); font-size: 0.9rem; margin-top: 1.5rem; font-style: italic; }
+        .packs-note { text-align: center; color: var(--text3); font-size: 0.85rem; margin-top: 0.75rem; }
+
+        /* Privacy */
         .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
         .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
         .priv a { color: var(--green-light); text-decoration: none; }
@@ -194,9 +209,110 @@
                 <span class="script-tag">Greek</span>
                 <span class="script-tag">Gothic</span>
                 <span class="script-tag">Armenian</span>
+                <span class="script-tag">Georgian (Mkhedruli)</span>
                 <span class="script-tag">Devanagari</span>
                 <span class="script-tag">Maltese</span>
             </div>
+            <p style="color: var(--text3); text-align: center; margin-top: 1.5rem; font-size: 0.85rem;">提供拉丁语、意大利语、格鲁吉亚语、阿拉伯语、科普特语、叙利亚语、希伯来语、希腊语、马耳他语等语言的文本。</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">可用</span> <span class="gr">语言包</span></h2>
+            <p style="color: var(--text2); text-align: center; margin-bottom: 2rem;">只安装您需要的语言和文本。所有语言包均免费，完全离线运行。</p>
+            <div class="packs-grid">
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #5C6BC0;">KA</div>
+                    <div class="pack-body">
+                        <h4>Georgian Breviary</h4>
+                        <p>格鲁吉亚文字的日课经</p>
+                    </div>
+                    <span class="pack-badge bundled">内置</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #8D6E63;">CO</div>
+                    <div class="pack-body">
+                        <h4>Coptic Mark</h4>
+                        <p>科普特语马可福音</p>
+                    </div>
+                    <span class="pack-badge bundled">内置</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #E65100;">SY</div>
+                    <div class="pack-body">
+                        <h4>Syriac Peshitta</h4>
+                        <p>叙利亚语别西大礼仪文集</p>
+                    </div>
+                    <span class="pack-badge bundled">内置</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #1565C0;">HE</div>
+                    <div class="pack-body">
+                        <h4>Hebrew Tanakh</h4>
+                        <p>摩西五经和先知书精选</p>
+                    </div>
+                    <span class="pack-badge bundled">内置</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #2E7D32;">AR</div>
+                    <div class="pack-body">
+                        <h4>Arabic Readings</h4>
+                        <p>阿拉伯语礼仪读经</p>
+                    </div>
+                    <span class="pack-badge bundled">内置</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #6A1B9A;">EL</div>
+                    <div class="pack-body">
+                        <h4>Greek Classical</h4>
+                        <p>古典和圣经希腊语文本</p>
+                    </div>
+                    <span class="pack-badge bundled">内置</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #AD1457;">MT</div>
+                    <div class="pack-body">
+                        <h4>Maltese Prayers</h4>
+                        <p>马耳他传统祈祷文</p>
+                    </div>
+                    <span class="pack-badge bundled">内置</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #827717;">LA</div>
+                    <div class="pack-body">
+                        <h4>Vulgate Psalter</h4>
+                        <p>武加大译本拉丁语诗篇</p>
+                    </div>
+                    <span class="pack-badge bundled">内置</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #C62828;">LA</div>
+                    <div class="pack-body">
+                        <h4>Vulgata Clementina</h4>
+                        <p>完整拉丁语圣经</p>
+                    </div>
+                    <span class="pack-badge inapp">应用内</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #00695C;">IT</div>
+                    <div class="pack-body">
+                        <h4>Martini 1781</h4>
+                        <p>天主教意大利语圣经（1781年）</p>
+                    </div>
+                    <span class="pack-badge inapp">应用内</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #37474F;">IT</div>
+                    <div class="pack-body">
+                        <h4>Diodati 1607</h4>
+                        <p>新教意大利语圣经（1607年）</p>
+                    </div>
+                    <span class="pack-badge inapp">应用内</span>
+                </div>
+            </div>
+            <p class="packs-more">更多语言包即将推出</p>
+            <p class="packs-note">在应用内的包管理器中浏览和安装语言包。 <a href="/zh/reading/horatio/content-pack-format/" style="color: var(--green-light); text-decoration: none;">创建您自己的语言包 →</a></p>
         </div>
     </section>
 

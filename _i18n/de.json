@@ -212,7 +212,27 @@
       "privacy_your": "Ihr",
       "privacy_word": "Datenschutz",
       "privacy_text": "Horatio ist vollständig offline. Es werden keine Daten gesammelt, übertragen oder geteilt. Kein Konto erforderlich, keine Werbung, kein Tracking.",
-      "privacy_link": "Vollständige Datenschutzerklärung"
+      "privacy_link": "Vollständige Datenschutzerklärung",
+      "languages_modern": "Texte verfügbar in: Latein, Italienisch, Georgisch, Arabisch, Koptisch, Syrisch, Hebräisch, Griechisch, Maltesisch und mehr.",
+      "packs_available": "Verfügbare",
+      "packs_word": "Pakete",
+      "packs_intro": "Installieren Sie nur die Sprachen und Texte, die Sie benötigen. Alle Pakete sind kostenlos und funktionieren komplett offline.",
+      "packs_bundled": "Enthalten",
+      "packs_in_app": "In-App",
+      "packs_note": "Pakete im Paket-Manager der App durchsuchen und installieren.",
+      "packs_more": "Weitere Sprachpakete folgen",
+      "packs_create_link": "Eigenes Paket erstellen \u2192",
+      "pack_georgian_desc": "Stundengebet in georgischer Schrift",
+      "pack_coptic_desc": "Markusevangelium auf Koptisch",
+      "pack_syriac_desc": "Liturgischer Peshitta-Korpus",
+      "pack_hebrew_desc": "Auswahl aus Tora und Propheten",
+      "pack_arabic_desc": "Arabische liturgische Lesungen",
+      "pack_greek_desc": "Klassische und biblische griechische Texte",
+      "pack_maltese_desc": "Traditionelle maltesische Gebete",
+      "pack_psalter_desc": "Lateinische Psalmen aus der Vulgata",
+      "pack_vulgata_desc": "Vollständige lateinische Bibel",
+      "pack_martini_desc": "Katholische italienische Bibel (1781)",
+      "pack_diodati_desc": "Protestantische italienische Bibel (1607)"
     }
   },
   "privacy": {

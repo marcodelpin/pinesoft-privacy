@@ -212,7 +212,27 @@
       "privacy_your": "Sua",
       "privacy_word": "Privacidade",
       "privacy_text": "Horatio é completamente offline. Nenhum dado é coletado, transmitido ou compartilhado. Nenhuma conta necessária, sem anúncios, sem rastreamento.",
-      "privacy_link": "Política de privacidade completa"
+      "privacy_link": "Política de privacidade completa",
+      "languages_modern": "Textos disponíveis em: latim, italiano, georgiano, árabe, copta, siríaco, hebraico, grego, maltês e mais.",
+      "packs_available": "Pacotes",
+      "packs_word": "disponíveis",
+      "packs_intro": "Instale apenas os idiomas e textos de que precisa. Todos os pacotes são gratuitos e funcionam completamente offline.",
+      "packs_bundled": "Incluído",
+      "packs_in_app": "No App",
+      "packs_note": "Navegue e instale pacotes pelo Gestor de Pacotes dentro do app.",
+      "packs_more": "Mais pacotes de idiomas em breve",
+      "packs_create_link": "Crie o seu próprio pacote \u2192",
+      "pack_georgian_desc": "Liturgia das Horas em escrita georgiana",
+      "pack_coptic_desc": "Evangelho de Marcos em copta",
+      "pack_syriac_desc": "Corpus litúrgico da Peshitta",
+      "pack_hebrew_desc": "Seleções da Torá e dos Profetas",
+      "pack_arabic_desc": "Leituras litúrgicas em árabe",
+      "pack_greek_desc": "Textos gregos clássicos e bíblicos",
+      "pack_maltese_desc": "Orações tradicionais maltesas",
+      "pack_psalter_desc": "Salmos latinos da Vulgata",
+      "pack_vulgata_desc": "Bíblia latina completa",
+      "pack_martini_desc": "Bíblia italiana católica (1781)",
+      "pack_diodati_desc": "Bíblia italiana protestante (1607)"
     }
   },
   "privacy": {

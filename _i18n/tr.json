@@ -212,7 +212,27 @@
       "privacy_your": "Gizlili\u011finiz",
       "privacy_word": "",
       "privacy_text": "Horatio tamamen \u00e7evrimd\u0131\u015f\u0131d\u0131r. Hi\u00e7bir veri toplanmaz, iletilmez veya payla\u015f\u0131lmaz. Hesap gerekmez, reklam yok, izleme yok.",
-      "privacy_link": "Tam Gizlilik Politikas\u0131"
+      "privacy_link": "Tam Gizlilik Politikas\u0131",
+      "languages_modern": "Metinler \u015fu dillerde mevcuttur: Latince, \u0130talyanca, G\u00fcrc\u00fcce, Arap\u00e7a, K\u0131pt\u00e7e, S\u00fcryanice, \u0130branice, Yunanca, Maltaca ve daha fazlas\u0131.",
+      "packs_available": "Mevcut",
+      "packs_word": "Paketler",
+      "packs_intro": "Yaln\u0131zca ihtiyac\u0131n\u0131z olan dilleri ve metinleri y\u00fckleyin. T\u00fcm paketler \u00fccretsiz ve tamamen \u00e7evrimd\u0131\u015f\u0131 \u00e7al\u0131\u015f\u0131r.",
+      "packs_bundled": "Dahili",
+      "packs_in_app": "Uygulama \u0130\u00e7i",
+      "packs_note": "Uygulama i\u00e7indeki Paket Y\u00f6neticisi'nden paketlere g\u00f6z at\u0131n ve y\u00fckleyin.",
+      "packs_more": "Daha fazla dil paketi yak\u0131nda",
+      "packs_create_link": "Kendi paketinizi olu\u015fturun \u2192",
+      "pack_georgian_desc": "G\u00fcrc\u00fc yaz\u0131s\u0131nda Saatlerin Lit\u00fcrjisi",
+      "pack_coptic_desc": "K\u0131pt\u00e7e Markos \u0130ncili",
+      "pack_syriac_desc": "Pe\u015fitta lit\u00fcrjik k\u00fclliyat",
+      "pack_hebrew_desc": "Tevrat ve Peygamberlerden se\u00e7meler",
+      "pack_arabic_desc": "Arap\u00e7a lit\u00fcrjik okumalar",
+      "pack_greek_desc": "Klasik ve \u0130ncil Yunancias\u0131 metinleri",
+      "pack_maltese_desc": "Geleneksel Malta dualar\u0131",
+      "pack_psalter_desc": "Vulgata'dan Latince Mezmurlar",
+      "pack_vulgata_desc": "Tam Latince \u0130ncil",
+      "pack_martini_desc": "Katolik \u0130talyanca \u0130ncil (1781)",
+      "pack_diodati_desc": "Protestan \u0130talyanca \u0130ncil (1607)"
     }
   },
   "privacy": {

@@ -212,7 +212,27 @@
       "privacy_your": "Je",
       "privacy_word": "privacy",
       "privacy_text": "Horatio is volledig offline. Er worden geen gegevens verzameld, verzonden of gedeeld. Geen account vereist, geen advertenties, geen tracking.",
-      "privacy_link": "Volledig privacybeleid"
+      "privacy_link": "Volledig privacybeleid",
+      "languages_modern": "Teksten beschikbaar in: Latijn, Italiaans, Georgisch, Arabisch, Koptisch, Syrisch, Hebreeuws, Grieks, Maltees en meer.",
+      "packs_available": "Beschikbare",
+      "packs_word": "Pakketten",
+      "packs_intro": "Installeer alleen de talen en teksten die u nodig heeft. Alle pakketten zijn gratis en werken volledig offline.",
+      "packs_bundled": "Inbegrepen",
+      "packs_in_app": "In-App",
+      "packs_note": "Blader door pakketten en installeer ze vanuit de Pakketbeheerder in de app.",
+      "packs_more": "Meer taalpakketten binnenkort beschikbaar",
+      "packs_create_link": "Maak uw eigen pakket \u2192",
+      "pack_georgian_desc": "Getijdengebed in Georgisch schrift",
+      "pack_coptic_desc": "Evangelie van Marcus in het Koptisch",
+      "pack_syriac_desc": "Liturgisch Peshitta-corpus",
+      "pack_hebrew_desc": "Selecties uit Tora en Profeten",
+      "pack_arabic_desc": "Arabische liturgische lezingen",
+      "pack_greek_desc": "Klassieke en Bijbelse Griekse teksten",
+      "pack_maltese_desc": "Traditionele Maltese gebeden",
+      "pack_psalter_desc": "Latijnse Psalmen uit de Vulgaat",
+      "pack_vulgata_desc": "Volledige Latijnse Bijbel",
+      "pack_martini_desc": "Katholieke Italiaanse Bijbel (1781)",
+      "pack_diodati_desc": "Protestantse Italiaanse Bijbel (1607)"
     }
   },
   "privacy": {

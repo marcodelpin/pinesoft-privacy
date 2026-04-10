@@ -212,7 +212,27 @@
       "privacy_your": "Din",
       "privacy_word": "integritet",
       "privacy_text": "Horatio \u00e4r helt offline. Ingen data samlas in, \u00f6verf\u00f6rs eller delas. Inget konto kr\u00e4vs, ingen reklam, ingen sp\u00e5rning.",
-      "privacy_link": "Fullst\u00e4ndig integritetspolicy"
+      "privacy_link": "Fullst\u00e4ndig integritetspolicy",
+      "languages_modern": "Texter tillg\u00e4ngliga p\u00e5: latin, italienska, georgiska, arabiska, koptiska, syriska, hebreiska, grekiska, maltesiska och fler.",
+      "packs_available": "Tillg\u00e4ngliga",
+      "packs_word": "paket",
+      "packs_intro": "Installera bara de spr\u00e5k och texter du beh\u00f6ver. Alla paket \u00e4r gratis och fungerar helt offline.",
+      "packs_bundled": "Inkluderat",
+      "packs_in_app": "I appen",
+      "packs_note": "Bl\u00e4ddra och installera paket fr\u00e5n Pakethanteraren i appen.",
+      "packs_more": "Fler spr\u00e5kpaket kommer snart",
+      "packs_create_link": "Skapa ditt eget paket \u2192",
+      "pack_georgian_desc": "Tideg\u00e4rden i georgisk skrift",
+      "pack_coptic_desc": "Markusevangeliet p\u00e5 koptiska",
+      "pack_syriac_desc": "Peshitta liturgisk korpus",
+      "pack_hebrew_desc": "Urval ur Tora och Profeterna",
+      "pack_arabic_desc": "Arabiska liturgiska l\u00e4sningar",
+      "pack_greek_desc": "Klassiska och bibliska grekiska texter",
+      "pack_maltese_desc": "Traditionella maltesiska b\u00f6ner",
+      "pack_psalter_desc": "Latinska psalmer fr\u00e5n Vulgata",
+      "pack_vulgata_desc": "Komplett latinsk Bibel",
+      "pack_martini_desc": "Katolsk italiensk Bibel (1781)",
+      "pack_diodati_desc": "Protestantisk italiensk Bibel (1607)"
     }
   },
   "privacy": {
