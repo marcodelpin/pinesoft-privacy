@@ -51,6 +51,7 @@
             --bg: #F5F0E6;
             --bg2: #EDE8DD;
             --card: #FFFDF5;
+            --card-rgb: 255, 253, 245;
             --gold: #FDB913;
             --accent: #F59E0B;
             --rubric: #E8544B;
@@ -69,6 +70,7 @@
             --bg: #121212;
             --bg2: #1E1E1E;
             --card: #262626;
+            --card-rgb: 38, 38, 38;
             --gold: #FDB913;
             --accent: #F59E0B;
             --rubric: #E8544B;
@@ -92,7 +94,7 @@
         body { font-family: 'Georgia', 'Palatino Linotype', 'Book Antiqua', serif; background: var(--bg); color: var(--text); line-height: 1.6; background-image: url("/images/horatio_marble_light.png"); background-size: cover; background-attachment: fixed; background-position: center; transition: background-color 0.3s, color 0.3s; }
         [data-theme="dark"] body { background-image: url("/images/horatio_marble_dark.png"); }
         .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
-        .section { padding: 3rem 0; }
+        .section { padding: 2rem; max-width: 900px; margin: 2rem auto; background: rgba(var(--card-rgb), 0.85); backdrop-filter: blur(8px); border-radius: 16px; border: 1px solid var(--border); }
 
         /* Nav */
         header { position: sticky; top: 0; z-index: 100; background: var(--header-bg); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
@@ -125,7 +127,7 @@
         [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
         /* Hero */
-        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(245,158,11,0.08), transparent 70%); }
+        .hero { text-align: center; padding: 4rem 1.25rem 3rem; background: none; border: none; backdrop-filter: none; }
         .app-icon { width: 128px; height: 128px; border-radius: 28px; overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25); }
         .app-icon img { width: 100%; height: 100%; }
         h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
@@ -133,7 +135,7 @@
         .badge-soon { display: inline-block; background: var(--coming); color: #FDF8EE; font-size: 0.8rem; font-weight: 700; padding: 0.4rem 1.2rem; border-radius: 20px; letter-spacing: 0.05em; text-transform: uppercase; }
 
         /* Stats */
-        .stats { background: var(--bg2); padding: 2rem 0; }
+        .stats { padding: 1.5rem 2rem; max-width: 900px; margin: 2rem auto; background: rgba(var(--card-rgb), 0.85); backdrop-filter: blur(8px); border-radius: 16px; border: 1px solid var(--border); }
         .stats-row { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
         .stat { text-align: center; }
         .stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); }
@@ -315,7 +317,7 @@
         </div>
     </section>
 
-    <section class="section" style="background: var(--bg2);">
+    <section class="section">
         <div class="container">
             <h2 class="section-title"><span class="g">მხარდაჭერილი</span> <span class="gr">დამწერლობები</span></h2>
             <p style="color: var(--text2); text-align: center; margin-bottom: 1.5rem;">წაიკითხეთ ტექსტები მათი ორიგინალური დამწერლობის სისტემებში Noto Sans შრიფტებით.</p>

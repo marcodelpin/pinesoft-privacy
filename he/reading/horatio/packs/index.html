@@ -46,6 +46,7 @@
             --bg2: #EDE8DD;
             --bg3: #E5E0D5;
             --card: #FFFDF5;
+            --card-rgb: 255, 253, 245;
             --card-hover: #FFF8E8;
             --gold: #FDB913;
             --gold-dim: #C9A84C;
@@ -71,6 +72,7 @@
             --bg2: #1E1E1E;
             --bg3: #262626;
             --card: #262626;
+            --card-rgb: 38, 38, 38;
             --card-hover: #303030;
             --gold: #FDB913;
             --gold-dim: #F59E0B;
@@ -109,6 +111,7 @@
             background-image: url("/images/horatio_marble_dark.png");
         }
         .container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+        .content-card { max-width: 1100px; margin: 2rem auto; background: rgba(var(--card-rgb), 0.85); backdrop-filter: blur(8px); border-radius: 16px; border: 1px solid var(--border); padding: 2rem; }
 
         /* Nav */
         header { position: sticky; top: 0; z-index: 100; background: var(--header-bg); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
@@ -159,7 +162,7 @@
         .stat-lbl { font-size: 0.8rem; color: var(--text3); }
 
         /* Filters */
-        .filters { padding: 0 0 2rem; }
+        .filters { padding-bottom: 0; }
         .search-box {
             display: flex; align-items: center; gap: 0.75rem;
             background: var(--bg2); border: 1px solid var(--border); border-radius: 10px;
@@ -323,8 +326,8 @@
         </div>
     </section>
 
-    <section class="filters">
-        <div class="container">
+    <section class="filters content-card">
+        <div>
             <div class="search-box">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
                 <input type="text" id="searchInput" placeholder="Search packs by name, language, or description..." autocomplete="off">
@@ -362,8 +365,8 @@
         </div>
     </section>
 
-    <section>
-        <div class="container">
+    <section class="content-card">
+        <div>
             <div class="packs-grid" id="packsGrid"></div>
             <div class="no-results" id="noResults" style="display:none;">No packs match your current filters.</div>
         </div>
