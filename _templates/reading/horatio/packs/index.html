@@ -14,32 +14,66 @@
     <meta property="og:image" content="https://pinesoft.dev/images/horatio_icon.png">
     <meta property="og:site_name" content="PineSoft">
 
-    <meta name="theme-color" content="#1A1207">
+    <meta name="theme-color" content="#F5F0E6">
     <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
 {{hreflang}}
 
     <style>
+        /* Light mode (parchment) — default */
         :root {
-            --bg: #F5EDDA;
-            --bg2: #EDE4CF;
-            --bg3: #E5DBC4;
+            --bg: #F5F0E6;
+            --bg2: #EDE8DD;
+            --bg3: #E5E0D5;
             --card: #FFFDF5;
             --card-hover: #FFF8E8;
-            --gold: #8B6914;
+            --gold: #FDB913;
             --gold-dim: #C9A84C;
+            --accent: #F59E0B;
             --brown: #5C4033;
-            --text: #3E2C1A;
-            --text2: #6B5440;
-            --text3: #8A7A64;
-            --border: rgba(92, 64, 51, 0.15);
-            --border-hover: rgba(92, 64, 51, 0.35);
+            --text: #2C2419;
+            --text2: #6B5D4D;
+            --text3: #9A8E7D;
+            --border: rgba(108, 93, 77, 0.15);
+            --border-hover: rgba(108, 93, 77, 0.35);
             --green: #4CAF50;
             --blue: #42A5F5;
             --orange: #FF9800;
             --purple: #AB47BC;
             --amber: #FFB300;
             --red: #EF5350;
+            --header-bg: rgba(245,240,230,0.92);
+            --noise-opacity: 0.03;
         }
+        /* Dark mode */
+        [data-theme="dark"] {
+            --bg: #121212;
+            --bg2: #1E1E1E;
+            --bg3: #262626;
+            --card: #262626;
+            --card-hover: #303030;
+            --gold: #FDB913;
+            --gold-dim: #F59E0B;
+            --accent: #F59E0B;
+            --brown: #F59E0B;
+            --text: #E8E8E8;
+            --text2: #A0A0A0;
+            --text3: #707070;
+            --border: rgba(255,255,255,0.1);
+            --border-hover: rgba(255,255,255,0.2);
+            --green: #4CAF50;
+            --blue: #42A5F5;
+            --orange: #FF9800;
+            --purple: #AB47BC;
+            --amber: #FFB300;
+            --red: #EF5350;
+            --header-bg: rgba(18,18,18,0.95);
+            --noise-opacity: 0.02;
+        }
+        [data-theme="dark"] .nav-logo-text .pine { color: #E8E8E8; }
+        [data-theme="dark"] .lang-switcher a.active { background: var(--accent); color: #121212; }
+        [data-theme="dark"] .pack-delivery.bundled { background: rgba(160,160,160,0.2); color: #A0A0A0; }
+        [data-theme="dark"] .pack-delivery.onDemand { background: rgba(245,158,11,0.2); color: var(--accent); }
+        [data-theme="dark"] select.filter-select option { background: #1E1E1E; color: #E8E8E8; }
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: 'Georgia', 'Palatino Linotype', 'Book Antiqua', serif;
@@ -47,31 +81,42 @@
             color: var(--text);
             line-height: 1.6;
             background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+            transition: background-color 0.3s, color 0.3s;
         }
         .container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
 
         /* Nav */
-        header { position: sticky; top: 0; z-index: 100; background: rgba(26,18,7,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+        header { position: sticky; top: 0; z-index: 100; background: var(--header-bg); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
         nav { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; max-width: 1100px; margin: 0 auto; }
         .nav-logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
         .nav-logo svg { width: 36px; height: 36px; }
         .nav-logo-text { font-size: 1.25rem; font-weight: 700; }
-        .nav-logo-text .pine { color: #5C4033; }
+        .nav-logo-text .pine { color: var(--brown); }
         .nav-logo-text .soft { color: var(--gold); }
         .nav-links { display: flex; list-style: none; gap: 1.5rem; }
         .nav-links a { color: var(--text2); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
-        .nav-links a:hover { color: var(--gold); }
-        .lang-switcher { display: flex; flex-wrap: wrap; gap: 0.25rem; justify-content: center; padding: 0.4rem 1.25rem; border-top: 1px solid var(--border); background: rgba(26,18,7,0.95); }
+        .nav-links a:hover { color: var(--accent); }
+        .lang-switcher { display: flex; flex-wrap: wrap; gap: 0.25rem; justify-content: center; padding: 0.4rem 1.25rem; border-top: 1px solid var(--border); background: var(--header-bg); }
         .lang-switcher a { color: var(--text3); text-decoration: none; font-size: 0.7rem; font-weight: 600; padding: 0.15rem 0.35rem; border-radius: 4px; transition: color 0.2s, background 0.2s; }
-        .lang-switcher a:hover { color: var(--gold); }
+        .lang-switcher a:hover { color: var(--accent); }
         .lang-switcher a.active { color: var(--bg); background: var(--gold); }
         header nav { flex-wrap: wrap; }
         header .lang-switcher { width: 100%; margin-left: 0; order: 10; }
         .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.25rem; }
         .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); margin: 5px 0; transition: all 0.3s; }
 
+        /* Theme toggle */
+        .theme-toggle { background: none; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; padding: 0.35rem 0.5rem; display: flex; align-items: center; justify-content: center; transition: border-color 0.2s, background 0.2s; margin-left: 0.5rem; }
+        .theme-toggle:hover { border-color: var(--accent); background: rgba(245,158,11,0.08); }
+        .theme-toggle svg { width: 20px; height: 20px; color: var(--text2); transition: color 0.2s; }
+        .theme-toggle:hover svg { color: var(--accent); }
+        .theme-toggle .icon-sun { display: none; }
+        .theme-toggle .icon-moon { display: block; }
+        [data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+        [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
         /* Hero */
-        .hero { text-align: center; padding: 3rem 0 2rem; background: radial-gradient(ellipse at center top, rgba(201,168,76,0.06), transparent 70%); }
+        .hero { text-align: center; padding: 3rem 0 2rem; background: radial-gradient(ellipse at center top, rgba(245,158,11,0.06), transparent 70%); }
         .hero-back { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--text3); text-decoration: none; font-size: 0.85rem; margin-bottom: 1.5rem; transition: color 0.2s; }
         .hero-back:hover { color: var(--gold); }
         h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
@@ -126,6 +171,7 @@
         }
         select.filter-select:focus { border-color: var(--gold); }
         select.filter-select option { background: var(--bg2); color: var(--text); }
+        [data-theme="dark"] select.filter-select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23707070' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); }
 
         .results-count { font-size: 0.85rem; color: var(--text3); margin-bottom: 1rem; }
 
@@ -203,7 +249,7 @@
             .packs-grid { grid-template-columns: 1fr; }
             h1 { font-size: 1.6rem; }
             .stats-banner { gap: 1.25rem; padding: 0.75rem 1.25rem; }
-            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(26,18,7,0.97); flex-direction: column; padding: 1rem 1.25rem; gap: 0.75rem; border-bottom: 1px solid var(--border); }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--header-bg); flex-direction: column; padding: 1rem 1.25rem; gap: 0.75rem; border-bottom: 1px solid var(--border); }
             .nav-links.open { display: flex; }
             .nav-hamburger { display: block; }
             .lang-switcher { display: none; }
@@ -406,6 +452,86 @@
     }
 
     renderPacks();
+})();
+</script>
+
+<script>
+(function() {
+    // Theme toggle — inject button into nav
+    var nav = document.querySelector('nav');
+    var hamburger = nav.querySelector('.nav-hamburger');
+    var btn = document.createElement('button');
+    btn.className = 'theme-toggle';
+    btn.setAttribute('aria-label', 'Toggle dark/light mode');
+
+    var moonSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    moonSvg.setAttribute('class', 'icon-moon');
+    moonSvg.setAttribute('viewBox', '0 0 24 24');
+    moonSvg.setAttribute('fill', 'none');
+    moonSvg.setAttribute('stroke', 'currentColor');
+    moonSvg.setAttribute('stroke-width', '2');
+    moonSvg.setAttribute('stroke-linecap', 'round');
+    moonSvg.setAttribute('stroke-linejoin', 'round');
+    var moonPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    moonPath.setAttribute('d', 'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+    moonSvg.appendChild(moonPath);
+
+    var sunSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    sunSvg.setAttribute('class', 'icon-sun');
+    sunSvg.setAttribute('viewBox', '0 0 24 24');
+    sunSvg.setAttribute('fill', 'none');
+    sunSvg.setAttribute('stroke', 'currentColor');
+    sunSvg.setAttribute('stroke-width', '2');
+    sunSvg.setAttribute('stroke-linecap', 'round');
+    sunSvg.setAttribute('stroke-linejoin', 'round');
+    var sunCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    sunCircle.setAttribute('cx', '12');
+    sunCircle.setAttribute('cy', '12');
+    sunCircle.setAttribute('r', '5');
+    sunSvg.appendChild(sunCircle);
+    var rays = [
+        ['12','1','12','3'],['12','21','12','23'],
+        ['4.22','4.22','5.64','5.64'],['18.36','18.36','19.78','19.78'],
+        ['1','12','3','12'],['21','12','23','12'],
+        ['4.22','19.78','5.64','18.36'],['18.36','5.64','19.78','4.22']
+    ];
+    rays.forEach(function(r) {
+        var line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', r[0]); line.setAttribute('y1', r[1]);
+        line.setAttribute('x2', r[2]); line.setAttribute('y2', r[3]);
+        sunSvg.appendChild(line);
+    });
+
+    btn.appendChild(moonSvg);
+    btn.appendChild(sunSvg);
+    nav.insertBefore(btn, hamburger);
+
+    function getPreferred() {
+        var saved = localStorage.getItem('horatio-theme');
+        if (saved) return saved;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    function applyTheme(t) {
+        if (t === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.querySelector('meta[name="theme-color"]').setAttribute('content', '#121212');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+            document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F0E6');
+        }
+    }
+    applyTheme(getPreferred());
+    btn.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+        var next = current === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('horatio-theme', next);
+        applyTheme(next);
+    });
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        if (!localStorage.getItem('horatio-theme')) {
+            applyTheme(e.matches ? 'dark' : 'light');
+        }
+    });
 })();
 </script>
 </body>

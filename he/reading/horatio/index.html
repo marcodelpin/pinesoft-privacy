@@ -20,7 +20,7 @@
     <meta name="twitter:description" content="שמרו וקראו טקסטים בשפות נדירות. לגמרי אופליין.">
     <meta name="twitter:image" content="https://pinesoft.dev/images/horatio_icon.png">
 
-    <meta name="theme-color" content="#3E2C1A">
+    <meta name="theme-color" content="#F5F0E6">
     <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
   <link rel="alternate" hreflang="ar" href="https://pinesoft.dev/ar/reading/horatio/">
   <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/reading/horatio/">
@@ -46,26 +46,55 @@
   <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/reading/horatio/">
 
     <style>
+        /* Light mode (parchment) — default */
         :root {
-            --bg: #F5EDDA;
-            --bg2: #EBE0C8;
-            --card: #FDF8EE;
-            --gold: #8B6914;
+            --bg: #F5F0E6;
+            --bg2: #EDE8DD;
+            --card: #FFFDF5;
+            --gold: #FDB913;
+            --accent: #F59E0B;
+            --rubric: #E8544B;
             --green: #5C4033;
             --green-light: #6B4226;
-            --text: #3E2C1A;
-            --text2: #6B5744;
-            --text3: #9A8570;
-            --border: rgba(139, 105, 20, 0.18);
+            --text: #2C2419;
+            --text2: #6B5D4D;
+            --text3: #9A8E7D;
+            --border: rgba(108, 93, 77, 0.18);
             --coming: #7B5B3A;
+            --header-bg: rgba(245,240,230,0.92);
+            --noise-opacity: 0.03;
         }
+        /* Dark mode */
+        [data-theme="dark"] {
+            --bg: #121212;
+            --bg2: #1E1E1E;
+            --card: #262626;
+            --gold: #FDB913;
+            --accent: #F59E0B;
+            --rubric: #E8544B;
+            --green: #F59E0B;
+            --green-light: #F59E0B;
+            --text: #E8E8E8;
+            --text2: #A0A0A0;
+            --text3: #707070;
+            --border: rgba(255,255,255,0.1);
+            --coming: #F59E0B;
+            --header-bg: rgba(18,18,18,0.95);
+            --noise-opacity: 0.02;
+        }
+        [data-theme="dark"] .nav-logo-text .pine { color: #E8E8E8; }
+        [data-theme="dark"] .lang-switcher a.active { background: var(--accent); color: #121212; }
+        [data-theme="dark"] .badge-soon { background: var(--accent); color: #121212; }
+        [data-theme="dark"] .road-done { background: #2E7D32; }
+        [data-theme="dark"] .feedback-box a { background: var(--accent); color: #121212; }
+        [data-theme="dark"] .feedback-box a:hover { background: var(--gold); }
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Georgia', 'Palatino Linotype', 'Book Antiqua', serif; background: var(--bg); color: var(--text); line-height: 1.6; background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E"); }
+        body { font-family: 'Georgia', 'Palatino Linotype', 'Book Antiqua', serif; background: var(--bg); color: var(--text); line-height: 1.6; background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E"); transition: background-color 0.3s, color 0.3s; }
         .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
         .section { padding: 3rem 0; }
 
         /* Nav */
-        header { position: sticky; top: 0; z-index: 100; background: rgba(245,237,218,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+        header { position: sticky; top: 0; z-index: 100; background: var(--header-bg); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
         nav { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; max-width: 1100px; margin: 0 auto; }
         .nav-logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
         .nav-logo svg { width: 36px; height: 36px; }
@@ -74,19 +103,29 @@
         .nav-logo-text .soft { color: var(--gold); }
         .nav-links { display: flex; list-style: none; gap: 1.5rem; }
         .nav-links a { color: var(--text2); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
-        .nav-links a:hover { color: var(--gold); }
-        .lang-switcher { display: flex; flex-wrap: wrap; gap: 0.25rem; justify-content: center; padding: 0.4rem 1.25rem; border-top: 1px solid var(--border); background: rgba(245,237,218,0.92); }
+        .nav-links a:hover { color: var(--accent); }
+        .lang-switcher { display: flex; flex-wrap: wrap; gap: 0.25rem; justify-content: center; padding: 0.4rem 1.25rem; border-top: 1px solid var(--border); background: var(--header-bg); }
         .lang-switcher a { color: var(--text3); text-decoration: none; font-size: 0.7rem; font-weight: 600; padding: 0.15rem 0.35rem; border-radius: 4px; transition: color 0.2s, background 0.2s; }
-        .lang-switcher a:hover { color: var(--gold); }
+        .lang-switcher a:hover { color: var(--accent); }
         .lang-switcher a.active { color: #FDF8EE; background: var(--green); }
         header nav { flex-wrap: wrap; }
         header .lang-switcher { width: 100%; margin-left: 0; order: 10; }
         .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.25rem; }
         .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); margin: 5px 0; transition: all 0.3s; }
 
+        /* Theme toggle */
+        .theme-toggle { background: none; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; padding: 0.35rem 0.5rem; display: flex; align-items: center; justify-content: center; transition: border-color 0.2s, background 0.2s; margin-left: 0.5rem; }
+        .theme-toggle:hover { border-color: var(--accent); background: rgba(245,158,11,0.08); }
+        .theme-toggle svg { width: 20px; height: 20px; color: var(--text2); transition: color 0.2s; }
+        .theme-toggle:hover svg { color: var(--accent); }
+        .theme-toggle .icon-sun { display: none; }
+        .theme-toggle .icon-moon { display: block; }
+        [data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+        [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
         /* Hero */
-        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(139,105,20,0.08), transparent 70%); }
-        .app-icon { width: 128px; height: 128px; border-radius: 28px; overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 8px 32px rgba(62,44,26,0.25); }
+        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(245,158,11,0.08), transparent 70%); }
+        .app-icon { width: 128px; height: 128px; border-radius: 28px; overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.25); }
         .app-icon img { width: 100%; height: 100%; }
         h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
         .subtitle { font-size: 1.15rem; color: var(--text2); margin-bottom: 2rem; max-width: 550px; margin-left: auto; margin-right: auto; }
@@ -124,8 +163,8 @@
         .road-body p { font-size: 0.82rem; color: var(--text2); line-height: 1.5; margin: 0; }
         .feedback-box { background: var(--card); border: 2px dashed var(--gold); border-radius: 14px; padding: 1.5rem 2rem; text-align: center; margin-top: 2rem; }
         .feedback-box p { margin-bottom: 0.75rem; }
-        .feedback-box a { display: inline-block; background: var(--green); color: #F5EDDA; padding: 0.6rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
-        .feedback-box a:hover { background: var(--gold); }
+        .feedback-box a { display: inline-block; background: var(--green); color: #F5F0E6; padding: 0.6rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+        .feedback-box a:hover { background: var(--accent); }
 
         /* Privacy */
         /* Packs */
@@ -159,7 +198,7 @@
             .subtitle { font-size: 1rem; }
             .app-icon { width: 96px; height: 96px; border-radius: 22px; }
             .stats-row { gap: 1.5rem; }
-            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(245,237,218,0.97); flex-direction: column; padding: 1rem 1.25rem; gap: 0.75rem; border-bottom: 1px solid var(--border); }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--header-bg); flex-direction: column; padding: 1rem 1.25rem; gap: 0.75rem; border-bottom: 1px solid var(--border); }
             .nav-links.open { display: flex; }
             .nav-hamburger { display: block; }
             .lang-switcher { display: none; }
@@ -434,7 +473,7 @@
             </div>
             <p class="packs-more">עוד חבילות שפה בקרוב</p>
             <p style="text-align: center; margin-top: 1.25rem;">
-                <a href="/he/reading/horatio/packs/" style="display: inline-block; background: var(--green); color: #F5EDDA; padding: 0.6rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">Browse All Packs &rarr;</a>
+                <a href="/he/reading/horatio/packs/" style="display: inline-block; background: var(--green); color: #F5F0E6; padding: 0.6rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.2s;">Browse All Packs &rarr;</a>
             </p>
             <p class="packs-note">גלשו והתקינו חבילות ממנהל החבילות בתוך האפליקציה. <a href="/he/reading/horatio/content-pack-format/" style="color: var(--green-light); text-decoration: none;">צרו חבילה משלכם →</a></p>
         </div>
@@ -540,5 +579,85 @@
     navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
   </script>
 
+
+<script>
+(function() {
+    // Theme toggle — inject button into nav
+    var nav = document.querySelector('nav');
+    var hamburger = nav.querySelector('.nav-hamburger');
+    var btn = document.createElement('button');
+    btn.className = 'theme-toggle';
+    btn.setAttribute('aria-label', 'Toggle dark/light mode');
+
+    var moonSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    moonSvg.setAttribute('class', 'icon-moon');
+    moonSvg.setAttribute('viewBox', '0 0 24 24');
+    moonSvg.setAttribute('fill', 'none');
+    moonSvg.setAttribute('stroke', 'currentColor');
+    moonSvg.setAttribute('stroke-width', '2');
+    moonSvg.setAttribute('stroke-linecap', 'round');
+    moonSvg.setAttribute('stroke-linejoin', 'round');
+    var moonPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    moonPath.setAttribute('d', 'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+    moonSvg.appendChild(moonPath);
+
+    var sunSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    sunSvg.setAttribute('class', 'icon-sun');
+    sunSvg.setAttribute('viewBox', '0 0 24 24');
+    sunSvg.setAttribute('fill', 'none');
+    sunSvg.setAttribute('stroke', 'currentColor');
+    sunSvg.setAttribute('stroke-width', '2');
+    sunSvg.setAttribute('stroke-linecap', 'round');
+    sunSvg.setAttribute('stroke-linejoin', 'round');
+    var sunCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    sunCircle.setAttribute('cx', '12');
+    sunCircle.setAttribute('cy', '12');
+    sunCircle.setAttribute('r', '5');
+    sunSvg.appendChild(sunCircle);
+    var rays = [
+        ['12','1','12','3'],['12','21','12','23'],
+        ['4.22','4.22','5.64','5.64'],['18.36','18.36','19.78','19.78'],
+        ['1','12','3','12'],['21','12','23','12'],
+        ['4.22','19.78','5.64','18.36'],['18.36','5.64','19.78','4.22']
+    ];
+    rays.forEach(function(r) {
+        var line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', r[0]); line.setAttribute('y1', r[1]);
+        line.setAttribute('x2', r[2]); line.setAttribute('y2', r[3]);
+        sunSvg.appendChild(line);
+    });
+
+    btn.appendChild(moonSvg);
+    btn.appendChild(sunSvg);
+    nav.insertBefore(btn, hamburger);
+
+    function getPreferred() {
+        var saved = localStorage.getItem('horatio-theme');
+        if (saved) return saved;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    function applyTheme(t) {
+        if (t === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.querySelector('meta[name="theme-color"]').setAttribute('content', '#121212');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+            document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F0E6');
+        }
+    }
+    applyTheme(getPreferred());
+    btn.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+        var next = current === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('horatio-theme', next);
+        applyTheme(next);
+    });
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        if (!localStorage.getItem('horatio-theme')) {
+            applyTheme(e.matches ? 'dark' : 'light');
+        }
+    });
+})();
+</script>
 </body>
 </html>
