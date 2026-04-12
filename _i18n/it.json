@@ -276,7 +276,10 @@
       "packs_diff_advanced": "Avanzato",
       "packs_no_results": "Nessun pacchetto corrisponde ai filtri selezionati.",
       "packs_showing": "{n} di {total} pacchetti",
-      "packs_browse_all": "Sfoglia tutti i pacchetti"
+      "packs_browse_all": "Sfoglia tutti i pacchetti",
+      "feedback_title": "Il tuo feedback plasma Horatio",
+      "feedback_body": "Hai idee per nuove funzionalità, trovato un errore nel testo, o vuoi contribuire traduzioni nella tua lingua? Ci piacerebbe sentirti.",
+      "feedback_cta": "Invia feedback"
     }
   },
   "privacy": {

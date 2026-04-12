@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horatio — Catálogo de Pacotes | PineSoft</title>
-    <meta name="description" content="Browse all 41 Horatio content packs: Bibles, lectionaries, breviaries, psalters, and prayers in 19 languages.">
+    <meta name="description" content="Navegue pelos 41 pacotes de conteúdo do Horatio: Bíblias, lecionários, breviários, saltérios e orações em 19 línguas.">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Horatio — Catálogo de Pacotes">
-    <meta property="og:description" content="Browse all 41 Horatio content packs: Bibles, lectionaries, breviaries, psalters, and prayers in 19 languages.">
+    <meta property="og:description" content="Navegue pelos 41 pacotes de conteúdo do Horatio: Bíblias, lecionários, breviários, saltérios e orações em 19 línguas.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pinesoft.dev/reading/horatio/packs/">
     <meta property="og:image" content="https://pinesoft.dev/images/horatio_icon.png">
@@ -347,11 +347,11 @@
 
                 <span class="filter-label" style="margin-left: 1rem;">Qualidade</span>
                 <select class="filter-select" id="qualityFilter">
-                    <option value="all">All Sources</option>
+                    <option value="all">Todas as fontes</option>
                     <option value="original">Original</option>
-                    <option value="humanTranslation">Human Translation</option>
-                    <option value="machineTranslation">Machine Translation</option>
-                    <option value="verifiedTranslation">Verified Translation</option>
+                    <option value="humanTranslation">Tradução humana</option>
+                    <option value="machineTranslation">Tradução automática</option>
+                    <option value="verifiedTranslation">Tradução verificada</option>
                 </select>
             </div>
 
@@ -362,7 +362,7 @@
     <section class="content-card">
         <div>
             <div class="packs-grid" id="packsGrid"></div>
-            <div class="no-results" id="noResults" style="display:none;">No packs match your current filters.</div>
+            <div class="no-results" id="noResults" style="display:none;">Nenhum pacote corresponde aos filtros atuais.</div>
         </div>
     </section>
 
@@ -799,15 +799,15 @@
 
     var qualityLabels = {
         original: 'Original',
-        humanTranslation: 'Human Translation',
-        machineTranslation: 'Machine Translation',
-        verifiedTranslation: 'Verified Translation'
+        humanTranslation: 'Tradução humana',
+        machineTranslation: 'Tradução automática',
+        verifiedTranslation: 'Tradução verificada'
     };
     var preservationLabels = {
-        safe: 'Safe',
-        vulnerable: 'Vulnerable',
-        endangered: 'Endangered',
-        critical: 'Critical'
+        safe: 'Seguro',
+        vulnerable: 'Vulnerável',
+        endangered: 'Ameaçado',
+        critical: 'Crítico'
     };
     var categoryLabels = {
         bible: 'Bíblias',
@@ -817,12 +817,12 @@
         prayers: 'Orações'
     };
     var difficultyLabels = {
-        beginner: 'Beginner',
-        intermediate: 'Intermediate',
-        advanced: 'Advanced'
+        beginner: 'Iniciante',
+        intermediate: 'Intermediário',
+        advanced: 'Avançado'
     };
     // delivery labels removed — not relevant for users
-    var showingText = 'Showing {n} of {total} packs';
+    var showingText = 'Mostrando {n} de {total} pacotes';
 
     // Populate language dropdown
     var langs = {};

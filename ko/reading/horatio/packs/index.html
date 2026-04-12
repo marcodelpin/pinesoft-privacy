@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horatio — Content Pack Catalog | PineSoft</title>
-    <meta name="description" content="Browse all 41 Horatio content packs: Bibles, lectionaries, breviaries, psalters, and prayers in 19 languages.">
+    <title>Horatio — 콘텐츠 팩 카탈로그 | PineSoft</title>
+    <meta name="description" content="Horatio의 41개 콘텐츠 팩 둥러보기: 성경, 독서, 성무일과, 시편, 기도문, 19개 언어.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Horatio — Content Pack Catalog">
-    <meta property="og:description" content="Browse all 41 Horatio content packs: Bibles, lectionaries, breviaries, psalters, and prayers in 19 languages.">
+    <meta property="og:title" content="Horatio — 콘텐츠 팩 카탈로그">
+    <meta property="og:description" content="Horatio의 41개 콘텐츠 팩 둥러보기: 성경, 독서, 성무일과, 시편, 기도문, 19개 언어.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pinesoft.dev/reading/horatio/packs/">
     <meta property="og:image" content="https://pinesoft.dev/images/horatio_icon.png">
@@ -310,12 +310,12 @@
     <section class="hero">
         <div class="container">
             <a href="/ko/reading/horatio/" class="hero-back">&larr; Horatio로 돌아가기</a>
-            <h1>Content Pack <span class="gold">Catalog</span></h1>
-            <p class="subtitle">Browse all available content packs. Filter by category, language, or source quality.</p>
+            <h1>콘텐츠 팩 <span class="gold">카탈로그</span></h1>
+            <p class="subtitle">사용 가능한 모든 팩을 둥러보세요. 카테고리, 언어 또는 출처 품질로 필터링하세요.</p>
             <div class="stats-banner">
                 <div class="stat"><div class="stat-num" id="statPacks">41</div><div class="stat-lbl">팩</div></div>
-                <div class="stat"><div class="stat-num" id="statLangs">19</div><div class="stat-lbl">Languages</div></div>
-                <div class="stat"><div class="stat-num" id="statCats">6</div><div class="stat-lbl">Categories</div></div>
+                <div class="stat"><div class="stat-num" id="statLangs">19</div><div class="stat-lbl">언어</div></div>
+                <div class="stat"><div class="stat-num" id="statCats">6</div><div class="stat-lbl">카테고리</div></div>
             </div>
         </div>
     </section>
@@ -324,34 +324,34 @@
         <div>
             <div class="search-box">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                <input type="text" id="searchInput" placeholder="Search packs by name, language, or description..." autocomplete="off">
+                <input type="text" id="searchInput" placeholder="이름, 언어 또는 설명으로 팩 검색..." autocomplete="off">
             </div>
 
             <div class="filter-row">
-                <span class="filter-label">Category</span>
+                <span class="filter-label">카테고리</span>
                 <div class="chip-group" id="categoryChips">
                     <span class="chip active" data-value="all">모두</span>
-                    <span class="chip" data-value="bible">Bibles</span>
-                    <span class="chip" data-value="lectionary">Lectionaries</span>
-                    <span class="chip" data-value="breviary">Breviary</span>
-                    <span class="chip" data-value="psalter">Psalter</span>
-                    <span class="chip" data-value="prayers">Prayers</span>
+                    <span class="chip" data-value="bible">성경</span>
+                    <span class="chip" data-value="lectionary">독서</span>
+                    <span class="chip" data-value="breviary">성무일과</span>
+                    <span class="chip" data-value="psalter">시편</span>
+                    <span class="chip" data-value="prayers">기도문</span>
                 </div>
             </div>
 
             <div class="filter-row">
-                <span class="filter-label">Language</span>
+                <span class="filter-label">언어</span>
                 <select class="filter-select" id="languageFilter">
-                    <option value="all">All Languages</option>
+                    <option value="all">모든 언어</option>
                 </select>
 
-                <span class="filter-label" style="margin-left: 1rem;">Quality</span>
+                <span class="filter-label" style="margin-left: 1rem;">품질</span>
                 <select class="filter-select" id="qualityFilter">
-                    <option value="all">All Sources</option>
-                    <option value="original">Original</option>
-                    <option value="humanTranslation">Human Translation</option>
-                    <option value="machineTranslation">Machine Translation</option>
-                    <option value="verifiedTranslation">Verified Translation</option>
+                    <option value="all">모든 출처</option>
+                    <option value="original">원문</option>
+                    <option value="humanTranslation">사람 번역</option>
+                    <option value="machineTranslation">기계 번역</option>
+                    <option value="verifiedTranslation">검증된 번역</option>
                 </select>
             </div>
 
@@ -362,7 +362,7 @@
     <section class="content-card">
         <div>
             <div class="packs-grid" id="packsGrid"></div>
-            <div class="no-results" id="noResults" style="display:none;">No packs match your current filters.</div>
+            <div class="no-results" id="noResults" style="display:none;">현재 필터에 일치하는 팩이 없습니다.</div>
         </div>
     </section>
 
@@ -798,31 +798,31 @@
 ];
 
     var qualityLabels = {
-        original: 'Original',
-        humanTranslation: 'Human Translation',
-        machineTranslation: 'Machine Translation',
-        verifiedTranslation: 'Verified Translation'
+        original: '원문',
+        humanTranslation: '사람 번역',
+        machineTranslation: '기계 번역',
+        verifiedTranslation: '검증된 번역'
     };
     var preservationLabels = {
-        safe: 'Safe',
-        vulnerable: 'Vulnerable',
-        endangered: 'Endangered',
-        critical: 'Critical'
+        safe: '안전',
+        vulnerable: '취약',
+        endangered: '멸종위기',
+        critical: '심각'
     };
     var categoryLabels = {
-        bible: 'Bibles',
-        lectionary: 'Lectionaries',
-        breviary: 'Breviary',
-        psalter: 'Psalter',
-        prayers: 'Prayers'
+        bible: '성경',
+        lectionary: '독서',
+        breviary: '성무일과',
+        psalter: '시편',
+        prayers: '기도문'
     };
     var difficultyLabels = {
-        beginner: 'Beginner',
-        intermediate: 'Intermediate',
-        advanced: 'Advanced'
+        beginner: '초급',
+        intermediate: '중급',
+        advanced: '고급'
     };
     // delivery labels removed — not relevant for users
-    var showingText = 'Showing {n} of {total} packs';
+    var showingText = '{total}개 중 {n}개 표시';
 
     // Populate language dropdown
     var langs = {};

@@ -227,7 +227,7 @@
       "packs_in_app": "In-App",
       "packs_note": "Browse and install packs from the Pack Manager inside the app.",
       "packs_more": "More language packs coming soon",
-      "packs_create_link": "Create your own pack \u2192",
+      "packs_create_link": "Create your own pack →",
       "pack_georgian_desc": "Liturgy of the Hours in Georgian script",
       "pack_coptic_desc": "Gospel of Mark in Coptic",
       "pack_syriac_desc": "Peshitta liturgical corpus",
@@ -276,7 +276,10 @@
       "packs_diff_advanced": "Advanced",
       "packs_no_results": "No packs match your current filters.",
       "packs_showing": "Showing {n} of {total} packs",
-      "packs_browse_all": "Browse All Packs"
+      "packs_browse_all": "Browse All Packs",
+      "feedback_title": "Your feedback shapes Horatio",
+      "feedback_body": "Have ideas for features, found a text error, or want to contribute translations in your language? We'd love to hear from you.",
+      "feedback_cta": "Send feedback"
     }
   },
   "privacy": {

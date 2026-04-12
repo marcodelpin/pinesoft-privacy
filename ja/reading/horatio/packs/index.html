@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horatio — Content Pack Catalog | PineSoft</title>
-    <meta name="description" content="Browse all 41 Horatio content packs: Bibles, lectionaries, breviaries, psalters, and prayers in 19 languages.">
+    <title>Horatio — コンテンツパックカタログ | PineSoft</title>
+    <meta name="description" content="Horatio の 41 のコンテンツパックを閲覧: 聖書、読書、聖務日課、詩篇、祈り、19 言語対応。">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Horatio — Content Pack Catalog">
-    <meta property="og:description" content="Browse all 41 Horatio content packs: Bibles, lectionaries, breviaries, psalters, and prayers in 19 languages.">
+    <meta property="og:title" content="Horatio — コンテンツパックカタログ">
+    <meta property="og:description" content="Horatio の 41 のコンテンツパックを閲覧: 聖書、読書、聖務日課、詩篇、祈り、19 言語対応。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pinesoft.dev/reading/horatio/packs/">
     <meta property="og:image" content="https://pinesoft.dev/images/horatio_icon.png">
@@ -310,12 +310,12 @@
     <section class="hero">
         <div class="container">
             <a href="/ja/reading/horatio/" class="hero-back">&larr; Horatioに戻る</a>
-            <h1>Content Pack <span class="gold">Catalog</span></h1>
-            <p class="subtitle">Browse all available content packs. Filter by category, language, or source quality.</p>
+            <h1>コンテンツ <span class="gold">カタログ</span></h1>
+            <p class="subtitle">利用可能なすべてのパックを閲覧。カテゴリ、言語、ソース品質でフィルター。</p>
             <div class="stats-banner">
                 <div class="stat"><div class="stat-num" id="statPacks">41</div><div class="stat-lbl">パック</div></div>
-                <div class="stat"><div class="stat-num" id="statLangs">19</div><div class="stat-lbl">Languages</div></div>
-                <div class="stat"><div class="stat-num" id="statCats">6</div><div class="stat-lbl">Categories</div></div>
+                <div class="stat"><div class="stat-num" id="statLangs">19</div><div class="stat-lbl">言語</div></div>
+                <div class="stat"><div class="stat-num" id="statCats">6</div><div class="stat-lbl">カテゴリ</div></div>
             </div>
         </div>
     </section>
@@ -324,34 +324,34 @@
         <div>
             <div class="search-box">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                <input type="text" id="searchInput" placeholder="Search packs by name, language, or description..." autocomplete="off">
+                <input type="text" id="searchInput" placeholder="名前、言語、説明でパックを検索..." autocomplete="off">
             </div>
 
             <div class="filter-row">
-                <span class="filter-label">Category</span>
+                <span class="filter-label">カテゴリ</span>
                 <div class="chip-group" id="categoryChips">
                     <span class="chip active" data-value="all">すべて</span>
-                    <span class="chip" data-value="bible">Bibles</span>
-                    <span class="chip" data-value="lectionary">Lectionaries</span>
-                    <span class="chip" data-value="breviary">Breviary</span>
-                    <span class="chip" data-value="psalter">Psalter</span>
-                    <span class="chip" data-value="prayers">Prayers</span>
+                    <span class="chip" data-value="bible">聖書</span>
+                    <span class="chip" data-value="lectionary">読書</span>
+                    <span class="chip" data-value="breviary">聖務日課</span>
+                    <span class="chip" data-value="psalter">詩篇</span>
+                    <span class="chip" data-value="prayers">祈り</span>
                 </div>
             </div>
 
             <div class="filter-row">
-                <span class="filter-label">Language</span>
+                <span class="filter-label">言語</span>
                 <select class="filter-select" id="languageFilter">
-                    <option value="all">All Languages</option>
+                    <option value="all">すべての言語</option>
                 </select>
 
-                <span class="filter-label" style="margin-left: 1rem;">Quality</span>
+                <span class="filter-label" style="margin-left: 1rem;">品質</span>
                 <select class="filter-select" id="qualityFilter">
-                    <option value="all">All Sources</option>
-                    <option value="original">Original</option>
-                    <option value="humanTranslation">Human Translation</option>
-                    <option value="machineTranslation">Machine Translation</option>
-                    <option value="verifiedTranslation">Verified Translation</option>
+                    <option value="all">すべてのソース</option>
+                    <option value="original">オリジナル</option>
+                    <option value="humanTranslation">人間翻訳</option>
+                    <option value="machineTranslation">機械翻訳</option>
+                    <option value="verifiedTranslation">検証済み翻訳</option>
                 </select>
             </div>
 
@@ -362,7 +362,7 @@
     <section class="content-card">
         <div>
             <div class="packs-grid" id="packsGrid"></div>
-            <div class="no-results" id="noResults" style="display:none;">No packs match your current filters.</div>
+            <div class="no-results" id="noResults" style="display:none;">現在のフィルターに一致するパックはありません。</div>
         </div>
     </section>
 
@@ -798,31 +798,31 @@
 ];
 
     var qualityLabels = {
-        original: 'Original',
-        humanTranslation: 'Human Translation',
-        machineTranslation: 'Machine Translation',
-        verifiedTranslation: 'Verified Translation'
+        original: 'オリジナル',
+        humanTranslation: '人間翻訳',
+        machineTranslation: '機械翻訳',
+        verifiedTranslation: '検証済み翻訳'
     };
     var preservationLabels = {
-        safe: 'Safe',
-        vulnerable: 'Vulnerable',
-        endangered: 'Endangered',
-        critical: 'Critical'
+        safe: '安全',
+        vulnerable: '脆弱',
+        endangered: '絶滅危惧',
+        critical: '極度危機'
     };
     var categoryLabels = {
-        bible: 'Bibles',
-        lectionary: 'Lectionaries',
-        breviary: 'Breviary',
-        psalter: 'Psalter',
-        prayers: 'Prayers'
+        bible: '聖書',
+        lectionary: '読書',
+        breviary: '聖務日課',
+        psalter: '詩篇',
+        prayers: '祈り'
     };
     var difficultyLabels = {
-        beginner: 'Beginner',
-        intermediate: 'Intermediate',
-        advanced: 'Advanced'
+        beginner: '初級',
+        intermediate: '中級',
+        advanced: '上級'
     };
     // delivery labels removed — not relevant for users
-    var showingText = 'Showing {n} of {total} packs';
+    var showingText = '{total} 中 {n} 件表示';
 
     // Populate language dropdown
     var langs = {};

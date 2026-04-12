@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horatio — Content Pack Catalog | PineSoft</title>
-    <meta name="description" content="Browse all 41 Horatio content packs: Bibles, lectionaries, breviaries, psalters, and prayers in 19 languages.">
+    <title>Horatio — Paketkatalog | PineSoft</title>
+    <meta name="description" content="Bläddra bland alla 41 Horatio-innehållspaket: Biblar, lektionarier, breviarier, psaltare och böner på 19 språk.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Horatio — Content Pack Catalog">
-    <meta property="og:description" content="Browse all 41 Horatio content packs: Bibles, lectionaries, breviaries, psalters, and prayers in 19 languages.">
+    <meta property="og:title" content="Horatio — Paketkatalog">
+    <meta property="og:description" content="Bläddra bland alla 41 Horatio-innehållspaket: Biblar, lektionarier, breviarier, psaltare och böner på 19 språk.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pinesoft.dev/reading/horatio/packs/">
     <meta property="og:image" content="https://pinesoft.dev/images/horatio_icon.png">
@@ -309,13 +309,13 @@
 
     <section class="hero">
         <div class="container">
-            <a href="/sv/reading/horatio/" class="hero-back">&larr; Back to Horatio</a>
-            <h1>Content Pack <span class="gold">Catalog</span></h1>
-            <p class="subtitle">Browse all available content packs. Filter by category, language, or source quality.</p>
+            <a href="/sv/reading/horatio/" class="hero-back">&larr; Tillbaka till Horatio</a>
+            <h1>Paket <span class="gold">katalog</span></h1>
+            <p class="subtitle">Bläddra bland alla tillgängliga paket. Filtrera efter kategori, språk eller källkvalitet.</p>
             <div class="stats-banner">
                 <div class="stat"><div class="stat-num" id="statPacks">41</div><div class="stat-lbl">Paket</div></div>
-                <div class="stat"><div class="stat-num" id="statLangs">19</div><div class="stat-lbl">Languages</div></div>
-                <div class="stat"><div class="stat-num" id="statCats">6</div><div class="stat-lbl">Categories</div></div>
+                <div class="stat"><div class="stat-num" id="statLangs">19</div><div class="stat-lbl">Språk</div></div>
+                <div class="stat"><div class="stat-num" id="statCats">6</div><div class="stat-lbl">Kategorier</div></div>
             </div>
         </div>
     </section>
@@ -324,34 +324,34 @@
         <div>
             <div class="search-box">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                <input type="text" id="searchInput" placeholder="Search packs by name, language, or description..." autocomplete="off">
+                <input type="text" id="searchInput" placeholder="Sök paket efter namn, språk eller beskrivning..." autocomplete="off">
             </div>
 
             <div class="filter-row">
-                <span class="filter-label">Category</span>
+                <span class="filter-label">Kategori</span>
                 <div class="chip-group" id="categoryChips">
-                    <span class="chip active" data-value="all">All</span>
-                    <span class="chip" data-value="bible">Bibles</span>
-                    <span class="chip" data-value="lectionary">Lectionaries</span>
-                    <span class="chip" data-value="breviary">Breviary</span>
-                    <span class="chip" data-value="psalter">Psalter</span>
-                    <span class="chip" data-value="prayers">Prayers</span>
+                    <span class="chip active" data-value="all">Alla</span>
+                    <span class="chip" data-value="bible">Biblar</span>
+                    <span class="chip" data-value="lectionary">Lektionarier</span>
+                    <span class="chip" data-value="breviary">Breviarium</span>
+                    <span class="chip" data-value="psalter">Psaltare</span>
+                    <span class="chip" data-value="prayers">Böner</span>
                 </div>
             </div>
 
             <div class="filter-row">
-                <span class="filter-label">Language</span>
+                <span class="filter-label">Språk</span>
                 <select class="filter-select" id="languageFilter">
-                    <option value="all">All Languages</option>
+                    <option value="all">Alla språk</option>
                 </select>
 
-                <span class="filter-label" style="margin-left: 1rem;">Quality</span>
+                <span class="filter-label" style="margin-left: 1rem;">Kvalitet</span>
                 <select class="filter-select" id="qualityFilter">
-                    <option value="all">All Sources</option>
+                    <option value="all">Alla källor</option>
                     <option value="original">Original</option>
-                    <option value="humanTranslation">Human Translation</option>
-                    <option value="machineTranslation">Machine Translation</option>
-                    <option value="verifiedTranslation">Verified Translation</option>
+                    <option value="humanTranslation">Mänsklig översättning</option>
+                    <option value="machineTranslation">Maskinöversättning</option>
+                    <option value="verifiedTranslation">Verifierad översättning</option>
                 </select>
             </div>
 
@@ -362,7 +362,7 @@
     <section class="content-card">
         <div>
             <div class="packs-grid" id="packsGrid"></div>
-            <div class="no-results" id="noResults" style="display:none;">No packs match your current filters.</div>
+            <div class="no-results" id="noResults" style="display:none;">Inga paket matchar dina aktuella filter.</div>
         </div>
     </section>
 
@@ -799,30 +799,30 @@
 
     var qualityLabels = {
         original: 'Original',
-        humanTranslation: 'Human Translation',
-        machineTranslation: 'Machine Translation',
-        verifiedTranslation: 'Verified Translation'
+        humanTranslation: 'Mänsklig översättning',
+        machineTranslation: 'Maskinöversättning',
+        verifiedTranslation: 'Verifierad översättning'
     };
     var preservationLabels = {
-        safe: 'Safe',
-        vulnerable: 'Vulnerable',
-        endangered: 'Endangered',
-        critical: 'Critical'
+        safe: 'Säker',
+        vulnerable: 'Sårbar',
+        endangered: 'Hotad',
+        critical: 'Kritisk'
     };
     var categoryLabels = {
-        bible: 'Bibles',
-        lectionary: 'Lectionaries',
-        breviary: 'Breviary',
-        psalter: 'Psalter',
-        prayers: 'Prayers'
+        bible: 'Biblar',
+        lectionary: 'Lektionarier',
+        breviary: 'Breviarium',
+        psalter: 'Psaltare',
+        prayers: 'Böner'
     };
     var difficultyLabels = {
-        beginner: 'Beginner',
-        intermediate: 'Intermediate',
-        advanced: 'Advanced'
+        beginner: 'Nybörjare',
+        intermediate: 'Medel',
+        advanced: 'Avancerad'
     };
     // delivery labels removed — not relevant for users
-    var showingText = 'Showing {n} of {total} packs';
+    var showingText = 'Visar {n} av {total} paket';
 
     // Populate language dropdown
     var langs = {};

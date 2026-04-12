@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horatio — Content Pack Catalog | PineSoft</title>
-    <meta name="description" content="Browse all 41 Horatio content packs: Bibles, lectionaries, breviaries, psalters, and prayers in 19 languages.">
+    <title>Horatio — Catalogus Fasciculorum | PineSoft</title>
+    <meta name="description" content="Inspice omnes 41 fasciculos contentorum Horatii: Biblia, lectionaria, breviaria, psalteria et preces in 19 linguis.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Horatio — Content Pack Catalog">
-    <meta property="og:description" content="Browse all 41 Horatio content packs: Bibles, lectionaries, breviaries, psalters, and prayers in 19 languages.">
+    <meta property="og:title" content="Horatio — Catalogus Fasciculorum">
+    <meta property="og:description" content="Inspice omnes 41 fasciculos contentorum Horatii: Biblia, lectionaria, breviaria, psalteria et preces in 19 linguis.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pinesoft.dev/reading/horatio/packs/">
     <meta property="og:image" content="https://pinesoft.dev/images/horatio_icon.png">
@@ -310,12 +310,12 @@
     <section class="hero">
         <div class="container">
             <a href="/la/reading/horatio/" class="hero-back">&larr; Redire ad Horatio</a>
-            <h1>Content Pack <span class="gold">Catalog</span></h1>
-            <p class="subtitle">Browse all available content packs. Filter by category, language, or source quality.</p>
+            <h1>Catalogus <span class="gold">Fasciculorum</span></h1>
+            <p class="subtitle">Inspice omnes fasciculos praesto. Filtra per categoriam, linguam vel qualitatem fontis.</p>
             <div class="stats-banner">
                 <div class="stat"><div class="stat-num" id="statPacks">41</div><div class="stat-lbl">Fasciculi</div></div>
-                <div class="stat"><div class="stat-num" id="statLangs">19</div><div class="stat-lbl">Languages</div></div>
-                <div class="stat"><div class="stat-num" id="statCats">6</div><div class="stat-lbl">Categories</div></div>
+                <div class="stat"><div class="stat-num" id="statLangs">19</div><div class="stat-lbl">Linguae</div></div>
+                <div class="stat"><div class="stat-num" id="statCats">6</div><div class="stat-lbl">Categoriae</div></div>
             </div>
         </div>
     </section>
@@ -324,11 +324,11 @@
         <div>
             <div class="search-box">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                <input type="text" id="searchInput" placeholder="Search packs by name, language, or description..." autocomplete="off">
+                <input type="text" id="searchInput" placeholder="Quaere fasciculos per nomen, linguam vel descriptionem..." autocomplete="off">
             </div>
 
             <div class="filter-row">
-                <span class="filter-label">Category</span>
+                <span class="filter-label">Categoria</span>
                 <div class="chip-group" id="categoryChips">
                     <span class="chip active" data-value="all">Omnia</span>
                     <span class="chip" data-value="bible">Biblia</span>
@@ -340,18 +340,18 @@
             </div>
 
             <div class="filter-row">
-                <span class="filter-label">Language</span>
+                <span class="filter-label">Lingua</span>
                 <select class="filter-select" id="languageFilter">
-                    <option value="all">All Languages</option>
+                    <option value="all">Omnes linguae</option>
                 </select>
 
-                <span class="filter-label" style="margin-left: 1rem;">Quality</span>
+                <span class="filter-label" style="margin-left: 1rem;">Qualitas</span>
                 <select class="filter-select" id="qualityFilter">
-                    <option value="all">All Sources</option>
-                    <option value="original">Original</option>
-                    <option value="humanTranslation">Human Translation</option>
-                    <option value="machineTranslation">Machine Translation</option>
-                    <option value="verifiedTranslation">Verified Translation</option>
+                    <option value="all">Omnes fontes</option>
+                    <option value="original">Originale</option>
+                    <option value="humanTranslation">Translatio humana</option>
+                    <option value="machineTranslation">Translatio machinalis</option>
+                    <option value="verifiedTranslation">Translatio verificata</option>
                 </select>
             </div>
 
@@ -362,7 +362,7 @@
     <section class="content-card">
         <div>
             <div class="packs-grid" id="packsGrid"></div>
-            <div class="no-results" id="noResults" style="display:none;">No packs match your current filters.</div>
+            <div class="no-results" id="noResults" style="display:none;">Nulli fasciculi filtris selectis respondent.</div>
         </div>
     </section>
 
@@ -798,16 +798,16 @@
 ];
 
     var qualityLabels = {
-        original: 'Original',
-        humanTranslation: 'Human Translation',
-        machineTranslation: 'Machine Translation',
-        verifiedTranslation: 'Verified Translation'
+        original: 'Originale',
+        humanTranslation: 'Translatio humana',
+        machineTranslation: 'Translatio machinalis',
+        verifiedTranslation: 'Translatio verificata'
     };
     var preservationLabels = {
-        safe: 'Safe',
-        vulnerable: 'Vulnerable',
-        endangered: 'Endangered',
-        critical: 'Critical'
+        safe: 'Tutum',
+        vulnerable: 'Vulnerabile',
+        endangered: 'Periclitans',
+        critical: 'Criticum'
     };
     var categoryLabels = {
         bible: 'Biblia',
@@ -817,12 +817,12 @@
         prayers: 'Preces'
     };
     var difficultyLabels = {
-        beginner: 'Beginner',
-        intermediate: 'Intermediate',
-        advanced: 'Advanced'
+        beginner: 'Incipiens',
+        intermediate: 'Medius',
+        advanced: 'Provectus'
     };
     // delivery labels removed — not relevant for users
-    var showingText = 'Showing {n} of {total} packs';
+    var showingText = '{n} ex {total} fasciculis monstrantur';
 
     // Populate language dropdown
     var langs = {};
