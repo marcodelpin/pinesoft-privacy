@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horatio — Nadir Literjik Metinler | PineSoft</title>
-    <meta name="description" content="Nadir, tehlike altındaki ve klasik dillerdeki metinlerin dijital koruması. 9 takvim sistemi, 10'dan fazla yazı sistemi, tamamen çevrimdışı. PineSoft tarafından.">
+    <meta name="description" content="Nadir, tehlike altındaki ve klasik dillerdeki metinlerin dijital koruması. 19 takvim sistemi, 10'dan fazla yazı sistemi, tamamen çevrimdışı. PineSoft tarafından.">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Horatio — Nadir Literjik Metinler">
-    <meta property="og:description" content="Nadir, tehlike altındaki ve klasik dillerdeki metinleri koruyun ve okuyun. 9 takvim sistemi, 10'dan fazla yazı sistemi, tamamen çevrimdışı.">
+    <meta property="og:description" content="Nadir, tehlike altındaki ve klasik dillerdeki metinleri koruyun ve okuyun. 19 takvim sistemi, 10'dan fazla yazı sistemi, tamamen çevrimdışı.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pinesoft.dev/reading/horatio/">
     <meta property="og:image" content="https://pinesoft.dev/images/horatio_icon.png">
@@ -113,6 +113,20 @@
         .scripts-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-top: 1rem; }
         .script-tag { background: var(--card); border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; color: var(--text2); }
 
+        /* Roadmap */
+        .roadmap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .road-item { display: flex; align-items: flex-start; gap: 0.75rem; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.25rem; }
+        .road-status { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: #fff; }
+        .road-done { background: #388E3C; }
+        .road-wip { background: #F57C00; }
+        .road-planned { background: #78909C; }
+        .road-body h4 { font-size: 0.92rem; font-weight: 600; margin-bottom: 0.25rem; }
+        .road-body p { font-size: 0.82rem; color: var(--text2); line-height: 1.5; margin: 0; }
+        .feedback-box { background: var(--card); border: 2px dashed var(--gold); border-radius: 14px; padding: 1.5rem 2rem; text-align: center; margin-top: 2rem; }
+        .feedback-box p { margin-bottom: 0.75rem; }
+        .feedback-box a { display: inline-block; background: var(--green); color: #F5EDDA; padding: 0.6rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+        .feedback-box a:hover { background: var(--gold); }
+
         /* Privacy */
         /* Packs */
         .packs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
@@ -195,9 +209,9 @@
     <section class="stats">
         <div class="container">
             <div class="stats-row">
-                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">Takvim Sistemleri</div></div>
+                <div class="stat"><div class="stat-num">19</div><div class="stat-lbl">Takvim Sistemleri</div></div>
                 <div class="stat"><div class="stat-num">12</div><div class="stat-lbl">Yazı Sistemleri</div></div>
-                <div class="stat"><div class="stat-num">11</div><div class="stat-lbl">Paketler</div></div>
+                <div class="stat"><div class="stat-num">41</div><div class="stat-lbl">Paketler</div></div>
                 <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">Çevrimdışı</div></div>
             </div>
         </div>
@@ -214,7 +228,7 @@
                 </div>
                 <div class="feat">
                     <div class="feat-icon">&#128197;</div>
-                    <h3>9 Takvim Sistemi</h3>
+                    <h3>19 Takvim Sistemi</h3>
                     <p>Roma, Kopt, Mozarab, Etiyopya, Yahudi, İslam, Akademik, Dini Tarikatlar ve Piskoposluk takvimleri.</p>
                 </div>
                 <div class="feat">
@@ -246,6 +260,16 @@
                     <div class="feat-icon">&#128274;</div>
                     <h3>Özel ve Çevrimdışı</h3>
                     <p>Hesap yok, izleme yok, reklam yok. Tüm içerik cihazınızda yerel olarak işlenir ve saklanır.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#9203;</div>
+                    <h3>Liturgy of the Hours</h3>
+                    <p>Daily office assembler for Lauds, Vespers, and Compline. Navigate by date, browse the assembled liturgy with proper BMD formatting.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127942;</div>
+                    <h3>Source Quality Badges</h3>
+                    <p>Each content pack displays its source quality: original text, machine translation, or scholarly edition. Know what you are reading.</p>
                 </div>
             </div>
         </div>
@@ -367,9 +391,123 @@
                     </div>
                     <span class="pack-badge inapp">Uygulama İçi</span>
                 </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #3949AB;">12</div>
+                    <div class="pack-body">
+                        <h4>Bible Translations</h4>
+                        <p>KJV, BBE, Reina-Valera, Schlachter, APEE, Almeida, Smith &amp; Van Dyke, Synodal, Cornilescu, CUV, Korean, Greek</p>
+                    </div>
+                    <span class="pack-badge inapp">Uygulama İçi</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #00838F;">13</div>
+                    <div class="pack-body">
+                        <h4>Lectionaries</h4>
+                        <p>Daily Mass readings in 13 languages: Latin, English (KJV &amp; BBE), Spanish, French, Portuguese, German, Arabic, Korean, Chinese, Russian, Greek, Romanian</p>
+                    </div>
+                    <span class="pack-badge inapp">Uygulama İçi</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #4E342E;">LA</div>
+                    <div class="pack-body">
+                        <h4>Breviarium Romanum</h4>
+                        <p>Latin Roman Breviary &mdash; Liturgy of the Hours (Breviarium Romanum 1960)</p>
+                    </div>
+                    <span class="pack-badge inapp">Uygulama İçi</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #5D4037;">LA</div>
+                    <div class="pack-body">
+                        <h4>Common Prayers (Latin)</h4>
+                        <p>Traditional Catholic prayers in Latin: Pater Noster, Ave Maria, Rosary, and more.</p>
+                    </div>
+                    <span class="pack-badge bundled">Dahili</span>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-avatar" style="background: #1B5E20;">IT</div>
+                    <div class="pack-body">
+                        <h4>Common Prayers (Italian)</h4>
+                        <p>Traditional Catholic prayers in Italian: Padre Nostro, Ave Maria, Rosario, and more.</p>
+                    </div>
+                    <span class="pack-badge bundled">Dahili</span>
+                </div>
             </div>
             <p class="packs-more">Daha fazla dil paketi yakında</p>
             <p class="packs-note">Uygulama içindeki Paket Yöneticisi'nden paketlere göz atın ve yükleyin. <a href="/tr/reading/horatio/content-pack-format/" style="color: var(--green-light); text-decoration: none;">Kendi paketinizi oluşturun →</a></p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">Development</span> <span class="gr">Roadmap</span></h2>
+            <p style="color: var(--text2); text-align: center; margin-bottom: 0.5rem;">Horatio is in active development. Some features are complete, others are work in progress.</p>
+
+            <div class="roadmap-grid">
+                <div class="road-item">
+                    <div class="road-status road-done">&check;</div>
+                    <div class="road-body"><h4>Continuous reader</h4><p>Scroll through texts with BMD liturgical formatting, flexa/dagger psalm notation, RTL support.</p></div>
+                </div>
+                <div class="road-item">
+                    <div class="road-status road-done">&check;</div>
+                    <div class="road-body"><h4>41 content packs</h4><p>Bibles in 12 languages, lectionaries in 13, breviaries, common prayers, rare language samples.</p></div>
+                </div>
+                <div class="road-item">
+                    <div class="road-status road-done">&check;</div>
+                    <div class="road-body"><h4>19 liturgical calendars</h4><p>Roman Rite engine with 15 national variants, Ambrosian, Mozarabic (Toledo), and Coptic Catholic rites.</p></div>
+                </div>
+                <div class="road-item">
+                    <div class="road-status road-done">&check;</div>
+                    <div class="road-body"><h4>Pack Manager</h4><p>Install, remove, and download content packs. On-demand delivery via Play Asset Delivery.</p></div>
+                </div>
+                <div class="road-item">
+                    <div class="road-status road-done">&check;</div>
+                    <div class="road-body"><h4>Georgian translation</h4><p>Latin Breviary translated to Georgian with TranslateGemma. Georgian fully functional with Latin fallback for missing translations.</p></div>
+                </div>
+                <div class="road-item">
+                    <div class="road-status road-done">&check;</div>
+                    <div class="road-body"><h4>Source quality badges</h4><p>Pack metadata displays source quality indicators: original text vs machine translation, with language and source attribution.</p></div>
+                </div>
+                <div class="road-item">
+                    <div class="road-status road-wip">&#9998;</div>
+                    <div class="road-body"><h4>Liturgy of the Hours</h4><p>HoursAssembler, Navigator, and Reader infrastructure built. Assembles daily office (Lauds, Vespers, Compline) from breviary packs.</p></div>
+                </div>
+                <div class="road-item">
+                    <div class="road-status road-wip">&#9998;</div>
+                    <div class="road-body"><h4>Full localization</h4><p>UI in 22 languages. BMD section labels translated in 12 languages. Calendar i18n in 22 locales including Georgian, Japanese, Korean, Chinese, Arabic, Coptic, Greek, Hebrew, Syriac.</p></div>
+                </div>
+                <div class="road-item">
+                    <div class="road-status road-wip">&#9998;</div>
+                    <div class="road-body"><h4>Text quality validation</h4><p>Cross-referencing multiple sources to find and fix errors in liturgical texts.</p></div>
+                </div>
+                <div class="road-item">
+                    <div class="road-status road-planned">&hellip;</div>
+                    <div class="road-body"><h4>Biennial lectionary cycle</h4><p>Year I/II weekday readings for the Office of Readings. Content recovered, wiring in progress.</p></div>
+                </div>
+                <div class="road-item">
+                    <div class="road-status road-planned">&hellip;</div>
+                    <div class="road-body"><h4>Bookmarks &amp; notes</h4><p>Save personal annotations on any text fragment. Highlight and share passages.</p></div>
+                </div>
+                <div class="road-item">
+                    <div class="road-status road-planned">&hellip;</div>
+                    <div class="road-body"><h4>Audio recitation</h4><p>TTS or recorded audio for psalm chanting and readings.</p></div>
+                </div>
+                <div class="road-item">
+                    <div class="road-status road-planned">&hellip;</div>
+                    <div class="road-body"><h4>Coptic &amp; Ge'ez full packs</h4><p>Complete liturgical texts in endangered African Christian languages.</p></div>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1rem; font-size: 0.82rem; color: var(--text3);">
+                <span><span class="road-status road-done" style="display: inline-flex; width: 16px; height: 16px; font-size: 0.65rem; vertical-align: middle;">&check;</span> Done</span>
+                <span><span class="road-status road-wip" style="display: inline-flex; width: 16px; height: 16px; font-size: 0.65rem; vertical-align: middle;">&#9998;</span> In progress</span>
+                <span><span class="road-status road-planned" style="display: inline-flex; width: 16px; height: 16px; font-size: 0.65rem; vertical-align: middle;">&hellip;</span> Planned</span>
+            </div>
+
+            <div class="feedback-box">
+                <p style="font-size: 1.1rem; font-weight: 600; color: var(--text);">Your feedback shapes Horatio</p>
+                <p style="color: var(--text2); font-size: 0.92rem;">Have ideas for features, found a text error, or want to contribute translations in your language? We'd love to hear from you.</p>
+                <a href="mailto:support@pinesoft.dev?subject=Horatio%20feedback">Send feedback</a>
+            </div>
         </div>
     </section>
 

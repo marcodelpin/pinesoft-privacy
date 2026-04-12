@@ -25,14 +25,14 @@
     "subtitle": "Conservatio digitalis textuum rarorum et classicorum.",
     "horatio": {
       "category": "Libri et Referentia",
-      "desc": "Conservatio digitalis textuum in linguis raris, periclitantibus et classicis. 9 systemata calendaria, 10+ scripturae, penitus sine rete."
+      "desc": "Conservatio digitalis textuum in linguis raris, periclitantibus et classicis. 19 systemata calendaria, 10+ scripturae, penitus sine rete."
     }
   },
   "landing": {
     "horatio": {
       "tagline": "Textus Liturgici Rari",
-      "meta_description": "Conservatio digitalis textuum in linguis raris, periclitantibus et classicis. 9 systemata calendaria, 10+ scripturae, penitus sine rete. A PineSoft.",
-      "og_description": "Conserva et lege textus in linguis raris, periclitantibus et classicis. 9 systemata calendaria, 10+ scripturae, penitus sine rete.",
+      "meta_description": "Conservatio digitalis textuum in linguis raris, periclitantibus et classicis. 19 systemata calendaria, 12 scripturae, penitus sine rete. A PineSoft.",
+      "og_description": "Conserva et lege textus in linguis raris, periclitantibus et classicis. 19 systemata calendaria, 12 scripturae, penitus sine rete.",
       "twitter_description": "Conserva et lege textus in linguis raris, periclitantibus et classicis. Penitus sine rete.",
       "subtitle": "Conserva et lege textus in linguis raris, periclitantibus et classicis. Penitus sine rete, nulla ratio necessaria.",
       "stat_calendars": "Systemata calendaria",
@@ -44,7 +44,7 @@
       "features_word": "proprietates",
       "feat_texts_title": "Textus linguarum rariorum",
       "feat_texts_desc": "Textus liturgici et classici in linguis quarum productio editorialis decrescit vel cessavit. Conservatio digitalis pro futuris generationibus.",
-      "feat_calendars_title": "9 systemata calendaria",
+      "feat_calendars_title": "19 systemata calendaria",
       "feat_calendars_desc": "Calendarium Romanum, Copticum, Mozarabicum, Aethiopicum, Iudaicum, Islamicum, Academicum, Ordinum Religiosorum et Dioecesanum.",
       "feat_bible_title": "Translationes biblicae",
       "feat_bible_desc": "Vulgata Clementina (Latine), Martini 1781 et Diodati 1607. Per Testamentum, Categoriam, Librum et Caput.",
@@ -70,7 +70,7 @@
       "packs_in_app": "In applicatione",
       "packs_note": "Pervade et installa fasciculos ex Administratore Fasciculorum intra applicationem.",
       "packs_more": "Plures fasciculi linguarum mox venientes",
-      "packs_create_link": "Crea tuum fasciculum \u2192",
+      "packs_create_link": "Crea tuum fasciculum →",
       "pack_georgian_desc": "Liturgia Horarum in scriptura Georgiana",
       "pack_coptic_desc": "Evangelium secundum Marcum Coptice",
       "pack_syriac_desc": "Corpus liturgicum Peshittae",
@@ -85,7 +85,15 @@
       "privacy_your": "Tua",
       "privacy_word": "secretum",
       "privacy_text": "Horatio penitus sine rete operatur. Nulla data colliguntur, transmittuntur vel communicantur. Nulla ratio necessaria, nulla publicitas, nullum vestigium.",
-      "privacy_link": "Plena de secreto norma"
+      "privacy_link": "Plena de secreto norma",
+      "feat_hours_title": "Liturgy of the Hours",
+      "feat_hours_desc": "Daily office assembler for Lauds, Vespers, and Compline. Navigate by date, browse the assembled liturgy with proper BMD formatting.",
+      "feat_quality_title": "Source Quality Badges",
+      "feat_quality_desc": "Each content pack displays its source quality: original text, machine translation, or scholarly edition. Know what you are reading.",
+      "pack_prayers_lat_title": "Common Prayers (Latin)",
+      "pack_prayers_lat_desc": "Traditional Catholic prayers in Latin: Pater Noster, Ave Maria, Rosary, and more.",
+      "pack_prayers_ita_title": "Common Prayers (Italian)",
+      "pack_prayers_ita_desc": "Traditional Catholic prayers in Italian: Padre Nostro, Ave Maria, Rosario, and more."
     }
   }
 }

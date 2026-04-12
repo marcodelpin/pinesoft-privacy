@@ -75,7 +75,7 @@
     "subtitle": "Digital preservation of rare and classical texts.",
     "horatio": {
       "category": "Books & Reference",
-      "desc": "Digital preservation of texts in rare, endangered, and classical languages. 11 content packs, 12 scripts, 9 calendars, fully offline."
+      "desc": "Digital preservation of texts in rare, endangered, and classical languages. 41 content packs, 12 scripts, 19 calendars, fully offline."
     }
   },
   "landing": {
@@ -180,8 +180,8 @@
     },
     "horatio": {
       "tagline": "Rare Liturgical Texts",
-      "meta_description": "Digital preservation of texts in rare, endangered, and classical languages. 9 calendar systems, 10+ scripts, fully offline. By PineSoft.",
-      "og_description": "Preserve and read texts in rare, endangered, and classical languages. 9 calendar systems, 10+ scripts, fully offline.",
+      "meta_description": "Digital preservation of texts in rare, endangered, and classical languages. 19 liturgical calendars, 12 scripts, 41 content packs, fully offline. By PineSoft.",
+      "og_description": "Preserve and read texts in rare, endangered, and classical languages. 19 liturgical calendars, 12 scripts, fully offline.",
       "twitter_description": "Preserve and read texts in rare, endangered, and classical languages. Fully offline.",
       "subtitle": "Preserve and read texts in rare, endangered, and classical languages. Fully offline, no account required.",
       "stat_calendars": "Calendar Systems",
@@ -193,8 +193,8 @@
       "features_word": "Features",
       "feat_texts_title": "Rare Language Texts",
       "feat_texts_desc": "Liturgical and classical texts in languages with declining or halted editorial production. Digital preservation for future generations.",
-      "feat_calendars_title": "9 Calendar Systems",
-      "feat_calendars_desc": "Roman, Coptic, Mozarabic, Ethiopian, Jewish, Islamic, Academic, Religious Orders, and Diocesan calendars.",
+      "feat_calendars_title": "19 Liturgical Calendars",
+      "feat_calendars_desc": "Roman Rite with 15 national variants (Italy, USA, Germany, France, Spain, Portugal, Brazil, and more), plus Ambrosian, Mozarabic (Toledo), and Coptic Catholic rites.",
       "feat_bible_title": "Bible Translations",
       "feat_bible_desc": "Vulgata Clementina (Latin), Martini 1781, and Diodati 1607. Browse by Testament, Category, Book, and Chapter.",
       "feat_multiscript_title": "Multi-Script Support",
@@ -207,6 +207,10 @@
       "feat_dark_desc": "Designed for contemplative reading. Easy on the eyes, day or night.",
       "feat_private_title": "Private & Offline",
       "feat_private_desc": "No account, no tracking, no ads. All content processed and stored locally on your device.",
+      "feat_hours_title": "Liturgy of the Hours",
+      "feat_hours_desc": "Daily office assembler for Lauds, Vespers, and Compline. Navigate by date, browse the assembled liturgy with proper BMD formatting.",
+      "feat_quality_title": "Source Quality Badges",
+      "feat_quality_desc": "Each content pack displays its source quality: original text, machine translation, or scholarly edition. Know what you are reading.",
       "scripts_supported": "Supported",
       "scripts_word": "Scripts",
       "scripts_intro": "Read texts in their original writing systems with bundled Noto Sans fonts.",
@@ -215,7 +219,7 @@
       "privacy_text": "Horatio is completely offline. No data is collected, transmitted, or shared. No account required, no ads, no tracking.",
       "privacy_link": "Full Privacy Policy",
       "languages_title": "Text Languages",
-      "languages_modern": "Latin, Italian, Georgian, Maltese, Arabic, Coptic, Syriac, Hebrew, Ancient Greek, Church Slavonic, and more.",
+      "languages_modern": "Latin, Italian, Georgian, Maltese, Arabic, Coptic, Syriac, Hebrew, Ancient Greek, Japanese, Korean, Chinese, Romanian, Russian, Afrikaans, and more.",
       "packs_available": "Available",
       "packs_word": "Packs",
       "packs_intro": "Install only the languages and texts you need. All packs are free and work completely offline.",
@@ -234,7 +238,11 @@
       "pack_psalter_desc": "Latin Psalms from the Vulgate",
       "pack_vulgata_desc": "Complete Latin Bible",
       "pack_martini_desc": "Catholic Italian Bible (1781)",
-      "pack_diodati_desc": "Protestant Italian Bible (1607)"
+      "pack_diodati_desc": "Protestant Italian Bible (1607)",
+      "pack_prayers_lat_title": "Common Prayers (Latin)",
+      "pack_prayers_lat_desc": "Traditional Catholic prayers in Latin: Pater Noster, Ave Maria, Rosary, and more.",
+      "pack_prayers_ita_title": "Common Prayers (Italian)",
+      "pack_prayers_ita_desc": "Traditional Catholic prayers in Italian: Padre Nostro, Ave Maria, Rosario, and more."
     }
   },
   "privacy": {

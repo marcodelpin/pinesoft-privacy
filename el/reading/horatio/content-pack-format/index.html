@@ -154,6 +154,7 @@
                 <li><a href="#manifest">manifest.json</a></li>
                 <li><a href="#codes-map">codes_map.json</a></li>
                 <li><a href="#bmd">BMD Markup</a></li>
+                <li><a href="#liturgical">Liturgical Structure Markers</a></li>
                 <li><a href="#rpl">RPL Replacement System</a></li>
                 <li><a href="#frontmatter">Fragment Frontmatter</a></li>
                 <li><a href="#languages">Language &amp; Script Codes</a></li>
@@ -350,6 +351,125 @@ Deducit me per semitas iustitiae *
 
 {V.} Gloria Patri et Filio et Spiritui Sancto.
 {R.} Sicut erat in principio et nunc et semper.</code></pre>
+        </section>
+
+        <section class="section" id="liturgical">
+            <h2>Liturgical Structure Markers</h2>
+            <p>For packs containing the Liturgy of the Hours, responsories, or intercessions, BMD provides additional structural markers. These are <strong>backward compatible</strong> &mdash; packs using only basic BMD markup continue to work unchanged.</p>
+
+            <h3>Antiphon Boundaries</h3>
+            <p>Antiphons bracket psalms and canticles. Use <code>{Ant|}</code> / <code>{|Ant}</code> to mark the antiphon text block:</p>
+<pre><code>{Ant|}
+Il Signore &egrave; vicino.
+{|Ant}
+
+Dominus pascit me, et nihil mihi deerit; *
+  in pascuis virentibus me collocat,
+
+{Gloria}
+
+{Ant|}
+Il Signore &egrave; vicino.
+{|Ant}</code></pre>
+
+            <h3>Responsory Structure</h3>
+            <p>Responsories use <code>{Rsp|}</code> / <code>{|Rsp}</code> for block boundaries and <code>{R*}</code> to mark the repeat portion (distinct from the psalm flexa <code>*</code>):</p>
+<pre><code>{Rsp|}
+{R.} Mostraci Signore,
+{R*} la tua misericordia.
+
+{V.} E donaci la tua salvezza,
+{R*} la tua misericordia.
+
+{Gloria}
+
+{R.} Mostraci Signore,
+{R*} la tua misericordia.
+{|Rsp}</code></pre>
+
+            <h3>Gloria Patri</h3>
+            <table>
+                <tr><th>Marker</th><th>Purpose</th></tr>
+                <tr><td><code>{Gloria}</code></td><td>Insert the doxology (locale-specific text inserted by the app)</td></tr>
+                <tr><td><code>{!Gloria}</code></td><td>Suppress the doxology (e.g., Daniel 3:57&ndash;88 which has its own)</td></tr>
+            </table>
+            <p>This avoids duplicating the Gloria Patri text in every psalm file. The app inserts the correct locale-specific doxology automatically.</p>
+
+            <h3>Intercessions with Roles</h3>
+            <p>Intercessions distinguish celebrant, assembly, and petition parts using <code>{Int|}</code> / <code>{|Int}</code> block boundaries and semantic role markers:</p>
+<pre><code>{Int|}
+{C.} Supplichiamo Dio nostro Padre:
+{A.} Custodisci il tuo popolo, Signore.
+
+{C.} Dio, che hai promesso al tuo popolo un germoglio di giustizia,
+{P.} conserva pura e santa la tua Chiesa.
+
+{C.} Apri il nostro cuore all'ascolto della tua parola,
+{P.} rendici forti e irreprensibili nella testimonianza della fede.
+{|Int}</code></pre>
+            <table>
+                <tr><th>Marker</th><th>Role</th><th>Rendering</th></tr>
+                <tr><td><code>{C.}</code></td><td>Celebrant/leader</td><td>Regular text with red prefix</td></tr>
+                <tr><td><code>{A.}</code></td><td>Assembly response (fixed refrain)</td><td>Bold text with red prefix</td></tr>
+                <tr><td><code>{P.}</code></td><td>Petition continuation</td><td>Indented with dash</td></tr>
+            </table>
+
+            <h3>Biblical References</h3>
+            <p>Use <code>{Ref ...}</code> to tag explicit biblical references, rendered in superscript rubric style:</p>
+<pre><code>{Ref Gen 1, 1-3}
+{Ref Sal 62, 2-9}</code></pre>
+
+            <h3>Hour Structure (Composite Documents)</h3>
+            <p>For self-contained documents representing a complete liturgical hour, use <code>{Hour|}</code> / <code>{|Hour}</code> to wrap the entire hour and <code>{Sect|}</code> to mark sections:</p>
+<pre><code>{Hour| Lauds}
+
+{Sect| Introduction}
+{V.} O Dio, vieni a salvarmi.
+{R.} Signore, vieni presto in mio aiuto.
+{Gloria}
+
+{Sect| Psalm 56}
+{Ant|}
+Piet&agrave; di me, o Dio, in te mi rifugio.
+{|Ant}
+Piet&agrave; di me, o Dio, *
+  in te mi rifugio...
+{Gloria}
+{Ant|}
+Piet&agrave; di me, o Dio, in te mi rifugio.
+{|Ant}
+
+{Sect| Reading Is 66, 1-2}
+{Ref Is 66, 1-2}
+Cos&igrave; dice il Signore...
+
+{Sect| Intercessions}
+{Int|}
+{C.} Supplichiamo Dio:
+{A.} Custodisci il tuo popolo.
+{|Int}
+
+{Sect| Prayer}
+O Dio, creatore e redentore...
+
+{|Hour}</code></pre>
+
+            <h3>All Liturgical Markers Reference</h3>
+            <table>
+                <tr><th>Marker</th><th>Purpose</th><th>Category</th></tr>
+                <tr><td><code>{Ant|}</code> / <code>{|Ant}</code></td><td>Antiphon block open/close</td><td>Antiphon</td></tr>
+                <tr><td><code>{Rsp|}</code> / <code>{|Rsp}</code></td><td>Responsory block open/close</td><td>Responsory</td></tr>
+                <tr><td><code>{R*} text</code></td><td>Responsory repeat portion</td><td>Responsory</td></tr>
+                <tr><td><code>{Gloria}</code></td><td>Insert Gloria Patri</td><td>Doxology</td></tr>
+                <tr><td><code>{!Gloria}</code></td><td>Suppress Gloria Patri</td><td>Doxology</td></tr>
+                <tr><td><code>{Int|}</code> / <code>{|Int}</code></td><td>Intercessions block open/close</td><td>Intercessions</td></tr>
+                <tr><td><code>{C.} text</code></td><td>Celebrant/leader part</td><td>Roles</td></tr>
+                <tr><td><code>{A.} text</code></td><td>Assembly response</td><td>Roles</td></tr>
+                <tr><td><code>{P.} text</code></td><td>Petition continuation</td><td>Roles</td></tr>
+                <tr><td><code>{Ref ...}</code></td><td>Biblical reference</td><td>Reference</td></tr>
+                <tr><td><code>{Hour| name}</code> / <code>{|Hour}</code></td><td>Liturgical hour open/close</td><td>Structure</td></tr>
+                <tr><td><code>{Sect| name}</code></td><td>Section within an hour</td><td>Structure</td></tr>
+            </table>
         </section>
 
         <section class="section" id="rpl">

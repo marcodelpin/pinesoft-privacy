@@ -75,7 +75,7 @@
     "subtitle": "Digitale Bewahrung seltener und klassischer Texte.",
     "horatio": {
       "category": "Bücher & Nachschlagewerke",
-      "desc": "Digitale Bewahrung von Texten in seltenen, bedrohten und klassischen Sprachen. 11 Inhaltspakete, 12 Schriftsysteme, vollständig offline."
+      "desc": "Digitale Bewahrung von Texten in seltenen, bedrohten und klassischen Sprachen. 41 Inhaltspakete, 12 Schriftsysteme, vollständig offline."
     }
   },
   "landing": {
@@ -180,8 +180,8 @@
     },
     "horatio": {
       "tagline": "Seltene liturgische Texte",
-      "meta_description": "Digitale Bewahrung von Texten in seltenen, bedrohten und klassischen Sprachen. 9 Kalendersysteme, 10+ Schriftsysteme, vollständig offline. Von PineSoft.",
-      "og_description": "Bewahren und lesen Sie Texte in seltenen, bedrohten und klassischen Sprachen. 9 Kalendersysteme, 10+ Schriftsysteme, vollständig offline.",
+      "meta_description": "Digitale Bewahrung von Texten in seltenen, bedrohten und klassischen Sprachen. 19 Kalendersysteme, 12 Schriftsysteme, vollständig offline. Von PineSoft.",
+      "og_description": "Bewahren und lesen Sie Texte in seltenen, bedrohten und klassischen Sprachen. 19 Kalendersysteme, 12 Schriftsysteme, vollständig offline.",
       "twitter_description": "Bewahren und lesen Sie Texte in seltenen, bedrohten und klassischen Sprachen. Vollständig offline.",
       "subtitle": "Bewahren und lesen Sie Texte in seltenen, bedrohten und klassischen Sprachen. Vollständig offline, kein Konto erforderlich.",
       "stat_calendars": "Kalendersysteme",
@@ -193,7 +193,7 @@
       "features_word": "Funktionen",
       "feat_texts_title": "Texte in seltenen Sprachen",
       "feat_texts_desc": "Liturgische und klassische Texte in Sprachen mit rückläufiger oder eingestellter Verlagsproduktion. Digitale Bewahrung für zukünftige Generationen.",
-      "feat_calendars_title": "9 Kalendersysteme",
+      "feat_calendars_title": "19 Kalendersysteme",
       "feat_calendars_desc": "Römischer, koptischer, mozarabischer, äthiopischer, jüdischer, islamischer, akademischer Kalender, Ordenskalender und Diözesankalender.",
       "feat_bible_title": "Bibelübersetzungen",
       "feat_bible_desc": "Vulgata Clementina (Latein), Martini 1781 und Diodati 1607. Durchsuchen nach Testament, Kategorie, Buch und Kapitel.",
@@ -223,7 +223,7 @@
       "packs_in_app": "In-App",
       "packs_note": "Pakete im Paket-Manager der App durchsuchen und installieren.",
       "packs_more": "Weitere Sprachpakete folgen",
-      "packs_create_link": "Eigenes Paket erstellen \u2192",
+      "packs_create_link": "Eigenes Paket erstellen →",
       "pack_georgian_desc": "Stundengebet in georgischer Schrift",
       "pack_coptic_desc": "Markusevangelium auf Koptisch",
       "pack_syriac_desc": "Liturgischer Peshitta-Korpus",
@@ -234,7 +234,15 @@
       "pack_psalter_desc": "Lateinische Psalmen aus der Vulgata",
       "pack_vulgata_desc": "Vollständige lateinische Bibel",
       "pack_martini_desc": "Katholische italienische Bibel (1781)",
-      "pack_diodati_desc": "Protestantische italienische Bibel (1607)"
+      "pack_diodati_desc": "Protestantische italienische Bibel (1607)",
+      "feat_hours_title": "Liturgy of the Hours",
+      "feat_hours_desc": "Daily office assembler for Lauds, Vespers, and Compline. Navigate by date, browse the assembled liturgy with proper BMD formatting.",
+      "feat_quality_title": "Source Quality Badges",
+      "feat_quality_desc": "Each content pack displays its source quality: original text, machine translation, or scholarly edition. Know what you are reading.",
+      "pack_prayers_lat_title": "Common Prayers (Latin)",
+      "pack_prayers_lat_desc": "Traditional Catholic prayers in Latin: Pater Noster, Ave Maria, Rosary, and more.",
+      "pack_prayers_ita_title": "Common Prayers (Italian)",
+      "pack_prayers_ita_desc": "Traditional Catholic prayers in Italian: Padre Nostro, Ave Maria, Rosario, and more."
     }
   },
   "privacy": {

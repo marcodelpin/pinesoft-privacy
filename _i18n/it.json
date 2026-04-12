@@ -75,7 +75,7 @@
     "subtitle": "Conservazione digitale di testi rari e classici.",
     "horatio": {
       "category": "Libri e Consultazione",
-      "desc": "Conservazione digitale di testi in lingue rare, in via di estinzione e classiche. 11 pacchetti, 12 scritture, 9 calendari, completamente offline."
+      "desc": "Conservazione digitale di testi in lingue rare, in via di estinzione e classiche. 41 pacchetti, 12 scritture, 19 calendari, completamente offline."
     }
   },
   "landing": {
@@ -180,8 +180,8 @@
     },
     "horatio": {
       "tagline": "Testi liturgici rari",
-      "meta_description": "Conservazione digitale di testi in lingue rare, in via di estinzione e classiche. 9 sistemi di calendario, 10+ scritture, completamente offline. Di PineSoft.",
-      "og_description": "Conserva e leggi testi in lingue rare, in via di estinzione e classiche. 9 sistemi di calendario, 10+ scritture, completamente offline.",
+      "meta_description": "Conservazione digitale di testi in lingue rare, in via di estinzione e classiche. 19 calendari liturgici, 12 scritture, 41 pacchetti, completamente offline. Di PineSoft.",
+      "og_description": "Conserva e leggi testi in lingue rare, in via di estinzione e classiche. 19 calendari liturgici, 12 scritture, completamente offline.",
       "twitter_description": "Conserva e leggi testi in lingue rare, in via di estinzione e classiche. Completamente offline.",
       "subtitle": "Conserva e leggi testi in lingue rare, in via di estinzione e classiche. Completamente offline, nessun account richiesto.",
       "stat_calendars": "Sistemi di calendario",
@@ -193,8 +193,8 @@
       "features_word": "principali",
       "feat_texts_title": "Testi in lingue rare",
       "feat_texts_desc": "Testi liturgici e classici in lingue con produzione editoriale in declino o cessata. Conservazione digitale per le generazioni future.",
-      "feat_calendars_title": "9 sistemi di calendario",
-      "feat_calendars_desc": "Calendario romano, copto, mozarabico, etiope, ebraico, islamico, accademico, degli ordini religiosi e diocesano.",
+      "feat_calendars_title": "19 calendari liturgici",
+      "feat_calendars_desc": "Rito romano con 15 varianti nazionali (Italia, USA, Germania, Francia, Spagna, Portogallo, Brasile e altri), più riti ambrosiano, mozarabico (Toledo) e copto cattolico.",
       "feat_bible_title": "Traduzioni bibliche",
       "feat_bible_desc": "Vulgata Clementina (latino), Martini 1781 e Diodati 1607. Sfoglia per Testamento, Categoria, Libro e Capitolo.",
       "feat_multiscript_title": "Supporto multi-scrittura",
@@ -207,6 +207,10 @@
       "feat_dark_desc": "Progettato per la lettura contemplativa. Comodo per gli occhi, giorno e notte.",
       "feat_private_title": "Privato e offline",
       "feat_private_desc": "Nessun account, nessun tracciamento, nessuna pubblicità. Tutti i contenuti vengono elaborati e memorizzati localmente sul dispositivo.",
+      "feat_hours_title": "Liturgia delle Ore",
+      "feat_hours_desc": "Assemblatore dell'ufficio divino per Lodi, Vespri e Compieta. Naviga per data, sfoglia la liturgia assemblata con formattazione BMD.",
+      "feat_quality_title": "Indicatori di qualità",
+      "feat_quality_desc": "Ogni pacchetto mostra la qualità della fonte: testo originale, traduzione automatica o edizione critica. Sai cosa stai leggendo.",
       "scripts_supported": "Scritture",
       "scripts_word": "supportate",
       "scripts_intro": "Leggi i testi nei loro sistemi di scrittura originali con i font Noto Sans inclusi.",
@@ -215,7 +219,7 @@
       "privacy_text": "Horatio è completamente offline. Nessun dato viene raccolto, trasmesso o condiviso. Nessun account richiesto, nessuna pubblicità, nessun tracciamento.",
       "privacy_link": "Privacy Policy completa",
       "languages_title": "Lingue dei testi",
-      "languages_modern": "Latino, italiano, georgiano, maltese, arabo, copto, siriaco, ebraico, greco antico, slavo ecclesiastico e altre.",
+      "languages_modern": "Latino, italiano, georgiano, maltese, arabo, copto, siriaco, ebraico, greco antico, giapponese, coreano, cinese, rumeno, russo, afrikaans e altre.",
       "packs_available": "Pacchetti",
       "packs_word": "disponibili",
       "packs_intro": "Installa solo le lingue e i testi di cui hai bisogno. Tutti i pacchetti sono gratuiti e funzionano completamente offline.",
@@ -234,7 +238,11 @@
       "pack_psalter_desc": "Salmi latini dalla Vulgata",
       "pack_vulgata_desc": "Bibbia latina completa",
       "pack_martini_desc": "Bibbia cattolica italiana (1781)",
-      "pack_diodati_desc": "Bibbia protestante italiana (1607)"
+      "pack_diodati_desc": "Bibbia protestante italiana (1607)",
+      "pack_prayers_lat_title": "Preghiere comuni (Latino)",
+      "pack_prayers_lat_desc": "Preghiere cattoliche tradizionali in latino: Pater Noster, Ave Maria, Rosario e altro.",
+      "pack_prayers_ita_title": "Preghiere comuni (Italiano)",
+      "pack_prayers_ita_desc": "Preghiere cattoliche tradizionali in italiano: Padre Nostro, Ave Maria, Rosario e altro."
     }
   },
   "privacy": {
