@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horatio — Content Pack Catalog | PineSoft</title>
+    <meta name="description" content="Browse all 41 Horatio content packs: Bibles, lectionaries, breviaries, psalters, and prayers in 19 languages.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Horatio — Content Pack Catalog">
+    <meta property="og:description" content="Browse all 41 Horatio content packs: Bibles, lectionaries, breviaries, psalters, and prayers in 19 languages.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinesoft.dev/reading/horatio/packs/">
+    <meta property="og:image" content="https://pinesoft.dev/images/horatio_icon.png">
+    <meta property="og:site_name" content="PineSoft">
+
+    <meta name="theme-color" content="#1A1207">
+    <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="alternate" hreflang="ar" href="https://pinesoft.dev/ar/reading/horatio/packs/">
+  <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/reading/horatio/packs/">
+  <link rel="alternate" hreflang="el" href="https://pinesoft.dev/el/reading/horatio/packs/">
+  <link rel="alternate" hreflang="en" href="https://pinesoft.dev/en/reading/horatio/packs/">
+  <link rel="alternate" hreflang="es" href="https://pinesoft.dev/es/reading/horatio/packs/">
+  <link rel="alternate" hreflang="fr" href="https://pinesoft.dev/fr/reading/horatio/packs/">
+  <link rel="alternate" hreflang="he" href="https://pinesoft.dev/he/reading/horatio/packs/">
+  <link rel="alternate" hreflang="hi" href="https://pinesoft.dev/hi/reading/horatio/packs/">
+  <link rel="alternate" hreflang="it" href="https://pinesoft.dev/it/reading/horatio/packs/">
+  <link rel="alternate" hreflang="ja" href="https://pinesoft.dev/ja/reading/horatio/packs/">
+  <link rel="alternate" hreflang="ka" href="https://pinesoft.dev/ka/reading/horatio/packs/">
+  <link rel="alternate" hreflang="ko" href="https://pinesoft.dev/ko/reading/horatio/packs/">
+  <link rel="alternate" hreflang="la" href="https://pinesoft.dev/la/reading/horatio/packs/">
+  <link rel="alternate" hreflang="mt" href="https://pinesoft.dev/mt/reading/horatio/packs/">
+  <link rel="alternate" hreflang="nl" href="https://pinesoft.dev/nl/reading/horatio/packs/">
+  <link rel="alternate" hreflang="pl" href="https://pinesoft.dev/pl/reading/horatio/packs/">
+  <link rel="alternate" hreflang="pt" href="https://pinesoft.dev/pt/reading/horatio/packs/">
+  <link rel="alternate" hreflang="ru" href="https://pinesoft.dev/ru/reading/horatio/packs/">
+  <link rel="alternate" hreflang="sv" href="https://pinesoft.dev/sv/reading/horatio/packs/">
+  <link rel="alternate" hreflang="tr" href="https://pinesoft.dev/tr/reading/horatio/packs/">
+  <link rel="alternate" hreflang="zh" href="https://pinesoft.dev/zh/reading/horatio/packs/">
+  <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/reading/horatio/packs/">
+
+    <style>
+        :root {
+            --bg: #1A1207;
+            --bg2: #231A0D;
+            --bg3: #2D2213;
+            --card: #2D2213;
+            --card-hover: #3A2C18;
+            --gold: #C9A84C;
+            --gold-dim: #8B6914;
+            --brown: #5C4033;
+            --text: #E8DCC8;
+            --text2: #B8A88E;
+            --text3: #8A7A64;
+            --border: rgba(201, 168, 76, 0.15);
+            --border-hover: rgba(201, 168, 76, 0.35);
+            --green: #4CAF50;
+            --blue: #42A5F5;
+            --orange: #FF9800;
+            --purple: #AB47BC;
+            --amber: #FFB300;
+            --red: #EF5350;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Georgia', 'Palatino Linotype', 'Book Antiqua', serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+
+        /* Nav */
+        header { position: sticky; top: 0; z-index: 100; background: rgba(26,18,7,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+        nav { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; max-width: 1100px; margin: 0 auto; }
+        .nav-logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .nav-logo svg { width: 36px; height: 36px; }
+        .nav-logo-text { font-size: 1.25rem; font-weight: 700; }
+        .nav-logo-text .pine { color: #5C4033; }
+        .nav-logo-text .soft { color: var(--gold); }
+        .nav-links { display: flex; list-style: none; gap: 1.5rem; }
+        .nav-links a { color: var(--text2); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--gold); }
+        .lang-switcher { display: flex; flex-wrap: wrap; gap: 0.25rem; justify-content: center; padding: 0.4rem 1.25rem; border-top: 1px solid var(--border); background: rgba(26,18,7,0.95); }
+        .lang-switcher a { color: var(--text3); text-decoration: none; font-size: 0.7rem; font-weight: 600; padding: 0.15rem 0.35rem; border-radius: 4px; transition: color 0.2s, background 0.2s; }
+        .lang-switcher a:hover { color: var(--gold); }
+        .lang-switcher a.active { color: var(--bg); background: var(--gold); }
+        header nav { flex-wrap: wrap; }
+        header .lang-switcher { width: 100%; margin-left: 0; order: 10; }
+        .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.25rem; }
+        .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); margin: 5px 0; transition: all 0.3s; }
+
+        /* Hero */
+        .hero { text-align: center; padding: 3rem 0 2rem; background: radial-gradient(ellipse at center top, rgba(201,168,76,0.06), transparent 70%); }
+        .hero-back { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--text3); text-decoration: none; font-size: 0.85rem; margin-bottom: 1.5rem; transition: color 0.2s; }
+        .hero-back:hover { color: var(--gold); }
+        h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+        h1 .gold { color: var(--gold); }
+        .subtitle { font-size: 1rem; color: var(--text2); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+        /* Stats banner */
+        .stats-banner {
+            display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;
+            background: var(--bg2); border: 1px solid var(--border); border-radius: 12px;
+            padding: 1rem 2rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;
+        }
+        .stat { text-align: center; }
+        .stat-num { font-size: 1.5rem; font-weight: 700; color: var(--gold); }
+        .stat-lbl { font-size: 0.8rem; color: var(--text3); }
+
+        /* Filters */
+        .filters { padding: 0 0 2rem; }
+        .search-box {
+            display: flex; align-items: center; gap: 0.75rem;
+            background: var(--bg2); border: 1px solid var(--border); border-radius: 10px;
+            padding: 0.6rem 1rem; margin-bottom: 1.25rem; transition: border-color 0.2s;
+        }
+        .search-box:focus-within { border-color: var(--gold); }
+        .search-box svg { flex-shrink: 0; color: var(--text3); }
+        .search-box input {
+            flex: 1; background: none; border: none; outline: none;
+            color: var(--text); font-size: 0.95rem; font-family: inherit;
+        }
+        .search-box input::placeholder { color: var(--text3); }
+
+        .filter-row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; }
+        .filter-label { font-size: 0.8rem; color: var(--text3); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; min-width: 70px; }
+
+        .chip-group { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+        .chip {
+            background: var(--bg2); border: 1px solid var(--border); border-radius: 20px;
+            padding: 0.3rem 0.9rem; font-size: 0.82rem; color: var(--text2);
+            cursor: pointer; transition: all 0.2s; user-select: none; font-family: inherit;
+        }
+        .chip:hover { border-color: var(--gold-dim); color: var(--text); }
+        .chip.active { background: var(--gold-dim); border-color: var(--gold); color: var(--text); font-weight: 600; }
+
+        select.filter-select {
+            background: var(--bg2); border: 1px solid var(--border); border-radius: 8px;
+            padding: 0.35rem 0.75rem; font-size: 0.82rem; color: var(--text2);
+            font-family: inherit; cursor: pointer; outline: none; transition: border-color 0.2s;
+            -webkit-appearance: none; appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238A7A64' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat; background-position: right 0.5rem center;
+            padding-right: 1.75rem;
+        }
+        select.filter-select:focus { border-color: var(--gold); }
+        select.filter-select option { background: var(--bg2); color: var(--text); }
+
+        .results-count { font-size: 0.85rem; color: var(--text3); margin-bottom: 1rem; }
+
+        /* Pack grid */
+        .packs-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .pack-card {
+            background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+            padding: 1.25rem; transition: border-color 0.2s, background 0.2s;
+            display: flex; flex-direction: column; gap: 0.75rem;
+        }
+        .pack-card:hover { border-color: var(--border-hover); background: var(--card-hover); }
+
+        .pack-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem; }
+        .pack-name { font-size: 0.95rem; font-weight: 700; color: var(--text); line-height: 1.3; }
+        .pack-delivery {
+            font-size: 0.65rem; padding: 0.15rem 0.5rem; border-radius: 8px; font-weight: 600;
+            white-space: nowrap; flex-shrink: 0; text-transform: uppercase; letter-spacing: 0.03em;
+        }
+        .pack-delivery.bundled { background: rgba(92,64,51,0.3); color: #A08060; }
+        .pack-delivery.onDemand { background: rgba(201,168,76,0.15); color: var(--gold); }
+
+        .pack-desc { font-size: 0.82rem; color: var(--text2); line-height: 1.5; flex: 1; }
+
+        .pack-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+        .pack-tag {
+            font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 6px;
+            font-weight: 600; white-space: nowrap;
+        }
+        .tag-lang { background: rgba(201,168,76,0.12); color: var(--gold-dim); }
+        .tag-category { background: rgba(92,64,51,0.25); color: #A08060; }
+        .tag-fragments { background: rgba(255,255,255,0.06); color: var(--text3); }
+        .tag-difficulty { background: rgba(255,255,255,0.04); color: var(--text3); }
+
+        /* Quality badge */
+        .badge-quality {
+            font-size: 0.68rem; padding: 0.15rem 0.5rem; border-radius: 6px;
+            font-weight: 700; white-space: nowrap;
+        }
+        .quality-original { background: rgba(76,175,80,0.15); color: var(--green); }
+        .quality-humanTranslation { background: rgba(66,165,245,0.15); color: var(--blue); }
+        .quality-machineTranslation { background: rgba(255,152,0,0.15); color: var(--orange); }
+        .quality-verifiedTranslation { background: rgba(171,71,188,0.15); color: var(--purple); }
+
+        /* Preservation badge */
+        .badge-preservation {
+            font-size: 0.68rem; padding: 0.15rem 0.5rem; border-radius: 6px;
+            font-weight: 700; white-space: nowrap;
+        }
+        .preservation-safe { background: rgba(76,175,80,0.12); color: var(--green); }
+        .preservation-vulnerable { background: rgba(255,179,0,0.15); color: var(--amber); }
+        .preservation-endangered { background: rgba(255,152,0,0.15); color: var(--orange); }
+        .preservation-critical { background: rgba(239,83,80,0.15); color: var(--red); }
+
+        /* No results */
+        .no-results {
+            text-align: center; padding: 3rem 1rem; color: var(--text3);
+            font-size: 1rem; font-style: italic;
+        }
+
+        /* Footer */
+        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+        footer a:hover { color: var(--gold); }
+        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .packs-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .packs-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 1.6rem; }
+            .stats-banner { gap: 1.25rem; padding: 0.75rem 1.25rem; }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(26,18,7,0.97); flex-direction: column; padding: 1rem 1.25rem; gap: 0.75rem; border-bottom: 1px solid var(--border); }
+            .nav-links.open { display: flex; }
+            .nav-hamburger { display: block; }
+            .lang-switcher { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/en/" class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+          <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+          <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+          <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+        </svg>
+        <span class="nav-logo-text"><span class="pine">Pine</span><span class="soft">Soft</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/games/">თამაშები</a></li>
+        <li><a href="/en/tools/">ინსტრუმენტები</a></li>
+        <li><a href="/en/reading/">კითხვა</a></li>
+        <li><a href="/en/#about">ჩვენ შესახებ</a></li>
+      </ul>
+      <div class="lang-switcher" id="langSwitcher">
+        <a href="/en/reading/horatio/packs/">EN</a> <a href="/it/reading/horatio/packs/">IT</a> <a href="/la/reading/horatio/packs/">LA</a> <a href="/es/reading/horatio/packs/">ES</a> <a href="/fr/reading/horatio/packs/">FR</a> <a href="/de/reading/horatio/packs/">DE</a> <a href="/pt/reading/horatio/packs/">PT</a> <a href="/el/reading/horatio/packs/">EL</a> <a href="/ru/reading/horatio/packs/">RU</a> <a href="/pl/reading/horatio/packs/">PL</a> <a href="/nl/reading/horatio/packs/">NL</a> <a href="/sv/reading/horatio/packs/">SV</a> <a href="/tr/reading/horatio/packs/">TR</a> <a href="/ka/reading/horatio/packs/" class="active">KA</a> <a href="/mt/reading/horatio/packs/">MT</a> <a href="/he/reading/horatio/packs/">HE</a> <a href="/zh/reading/horatio/packs/">ZH</a> <a href="/hi/reading/horatio/packs/">HI</a> <a href="/ar/reading/horatio/packs/">AR</a> <a href="/ja/reading/horatio/packs/">JA</a> <a href="/ko/reading/horatio/packs/">KO</a>
+      </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+
+    <section class="hero">
+        <div class="container">
+            <a href="/ka/reading/horatio/" class="hero-back">&larr; Back to Horatio</a>
+            <h1>Content Pack <span class="gold">Catalog</span></h1>
+            <p class="subtitle">Browse all available content packs. Filter by category, language, or source quality.</p>
+            <div class="stats-banner">
+                <div class="stat"><div class="stat-num" id="statPacks">41</div><div class="stat-lbl">პაკეტები</div></div>
+                <div class="stat"><div class="stat-num" id="statLangs">19</div><div class="stat-lbl">Languages</div></div>
+                <div class="stat"><div class="stat-num" id="statCats">6</div><div class="stat-lbl">Categories</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="container">
+            <div class="search-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                <input type="text" id="searchInput" placeholder="Search packs by name, language, or description..." autocomplete="off">
+            </div>
+
+            <div class="filter-row">
+                <span class="filter-label">Category</span>
+                <div class="chip-group" id="categoryChips">
+                    <span class="chip active" data-value="all">All</span>
+                    <span class="chip" data-value="bible">Bibles</span>
+                    <span class="chip" data-value="lectionary">Lectionaries</span>
+                    <span class="chip" data-value="breviary">Breviary</span>
+                    <span class="chip" data-value="psalter">Psalter</span>
+                    <span class="chip" data-value="prayers">Prayers</span>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <span class="filter-label">Language</span>
+                <select class="filter-select" id="languageFilter">
+                    <option value="all">All Languages</option>
+                </select>
+
+                <span class="filter-label" style="margin-left: 1rem;">Quality</span>
+                <select class="filter-select" id="qualityFilter">
+                    <option value="all">All Sources</option>
+                    <option value="original">Original</option>
+                    <option value="humanTranslation">Human Translation</option>
+                    <option value="machineTranslation">Machine Translation</option>
+                    <option value="verifiedTranslation">Verified Translation</option>
+                </select>
+            </div>
+
+            <div class="results-count" id="resultsCount"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="packs-grid" id="packsGrid"></div>
+            <div class="no-results" id="noResults" style="display:none;">No packs match your current filters.</div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="/ka/">PineSoft</a>
+            <a href="/ka/reading/horatio/">Horatio</a>
+            <a href="/ka/reading/horatio/privacy-policy/">კონფიდენციალურობის პოლიტიკა</a>
+            <a href="mailto:support@pinesoft.dev">კონტაქტი</a>
+        </div>
+        <div class="copy">&copy; 2026 PineSoft. ყველა უფლება დაცულია.</div>
+    </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+  </script>
+
+
+<script>
+(function() {
+    var PACKS = [
+  {
+    "id": "vulgata-clementina",
+    "name": "Vulgata Clementina",
+    "language": "lat",
+    "languageName": "Latin",
+    "category": "bible",
+    "fragmentCount": 1327,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "advanced",
+    "description": "Complete Latin Vulgate Bible (Clementine edition)",
+    "delivery": "bundled"
+  },
+  {
+    "id": "martini-bible-1781",
+    "name": "Martini 1781",
+    "language": "ita",
+    "languageName": "Italian",
+    "category": "bible",
+    "fragmentCount": 1328,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Catholic Italian Bible by Antonio Martini (1781)",
+    "delivery": "bundled"
+  },
+  {
+    "id": "martini-psalter",
+    "name": "Martini Psalter",
+    "language": "ita",
+    "languageName": "Italian",
+    "category": "psalter",
+    "fragmentCount": 150,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "150 Psalms from the Martini translation",
+    "delivery": "bundled"
+  },
+  {
+    "id": "breviary-ka",
+    "name": "Georgian Breviary",
+    "language": "kat",
+    "languageName": "Georgian",
+    "category": "breviary",
+    "fragmentCount": 420,
+    "sourceQuality": "machineTranslation",
+    "preservationStatus": "vulnerable",
+    "difficulty": "advanced",
+    "description": "Liturgy of the Hours translated to Georgian via TranslateGemma",
+    "delivery": "bundled"
+  },
+  {
+    "id": "diodati-1607",
+    "name": "Bibbia Diodati (1607)",
+    "language": "ita",
+    "languageName": "Italian",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "First Italian Protestant Bible by Giovanni Diodati",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "bible-en-kjv",
+    "name": "King James Version",
+    "language": "eng",
+    "languageName": "English",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "KJV (1611), foundational English Bible translation",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "bible-en-bbe",
+    "name": "Bible in Basic English",
+    "language": "eng",
+    "languageName": "English",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "beginner",
+    "description": "BBE (1949), simplified English vocabulary Bible",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "bible-es-rvr",
+    "name": "Reina-Valera Revisada",
+    "language": "spa",
+    "languageName": "Spanish",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "RVR, classic Spanish Bible translation",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "bible-fr-apee",
+    "name": "Bible APEE",
+    "language": "fra",
+    "languageName": "French",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "French Bible translation",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "bible-pt-aa",
+    "name": "Almeida Atualizada",
+    "language": "por",
+    "languageName": "Portuguese",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Portuguese Bible, Almeida Atualizada",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "bible-de-schlachter",
+    "name": "Schlachter Bibel",
+    "language": "deu",
+    "languageName": "German",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "German Schlachter Bible translation",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "bible-ar-svd",
+    "name": "Smith & Van Dyke Arabic",
+    "language": "ara",
+    "languageName": "Arabic",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "SVD Arabic Bible (1865), widely used in the Middle East",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "bible-ko-ko",
+    "name": "Korean Bible",
+    "language": "kor",
+    "languageName": "Korean",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Korean Bible translation",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "bible-zh-cuv",
+    "name": "Chinese Union Version",
+    "language": "zho",
+    "languageName": "Chinese",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "CUV (1919), standard Chinese Protestant Bible",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "bible-ru-synodal",
+    "name": "Synodal Russian Bible",
+    "language": "rus",
+    "languageName": "Russian",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Russian Synodal Translation (1876), standard Russian Orthodox Bible",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "bible-el-greek",
+    "name": "Greek Bible",
+    "language": "ell",
+    "languageName": "Greek",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "advanced",
+    "description": "Modern Greek Bible translation",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "bible-ro-cornilescu",
+    "name": "Cornilescu Romanian Bible",
+    "language": "ron",
+    "languageName": "Romanian",
+    "category": "bible",
+    "fragmentCount": 1189,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Cornilescu (1921), standard Romanian Protestant Bible",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "arabic-readings-diego",
+    "name": "Arabic Readings (Diego)",
+    "language": "ara",
+    "languageName": "Arabic",
+    "category": "lectionary",
+    "fragmentCount": 365,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Arabic scriptural readings collection",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-la",
+    "name": "Lectionary (Latin)",
+    "language": "lat",
+    "languageName": "Latin",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "advanced",
+    "description": "Liturgical lectionary readings in Latin",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-en-kjv",
+    "name": "Lectionary (KJV English)",
+    "language": "eng",
+    "languageName": "English",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Liturgical lectionary with KJV text",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-en-bbe",
+    "name": "Lectionary (BBE English)",
+    "language": "eng",
+    "languageName": "English",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "beginner",
+    "description": "Liturgical lectionary with Basic English text",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-es-rvr",
+    "name": "Leccionario (RVR Spanish)",
+    "language": "spa",
+    "languageName": "Spanish",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Liturgical lectionary with Reina-Valera text",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-fr-apee",
+    "name": "Lectionnaire (APEE French)",
+    "language": "fra",
+    "languageName": "French",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Liturgical lectionary with French text",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-pt-aa",
+    "name": "Lecionario (AA Portuguese)",
+    "language": "por",
+    "languageName": "Portuguese",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Liturgical lectionary with Almeida text",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-de-schlachter",
+    "name": "Lektionar (Schlachter German)",
+    "language": "deu",
+    "languageName": "German",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Liturgical lectionary with Schlachter text",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-ar-svd",
+    "name": "Lectionary (SVD Arabic)",
+    "language": "ara",
+    "languageName": "Arabic",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Liturgical lectionary with SVD Arabic text",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-ko-ko",
+    "name": "Lectionary (Korean)",
+    "language": "kor",
+    "languageName": "Korean",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Liturgical lectionary with Korean text",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-zh-cuv",
+    "name": "Lectionary (CUV Chinese)",
+    "language": "zho",
+    "languageName": "Chinese",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Liturgical lectionary with Chinese Union Version text",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-ru-synodal",
+    "name": "Lectionary (Synodal Russian)",
+    "language": "rus",
+    "languageName": "Russian",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Liturgical lectionary with Russian Synodal text",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-el-greek",
+    "name": "Lectionary (Greek)",
+    "language": "ell",
+    "languageName": "Greek",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "advanced",
+    "description": "Liturgical lectionary with Greek text",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "lectionary-ro-cornilescu",
+    "name": "Lectionary (Cornilescu Romanian)",
+    "language": "ron",
+    "languageName": "Romanian",
+    "category": "lectionary",
+    "fragmentCount": 730,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Liturgical lectionary with Cornilescu text",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "breviary-la",
+    "name": "Breviarium Romanum (Latin)",
+    "language": "lat",
+    "languageName": "Latin",
+    "category": "breviary",
+    "fragmentCount": 2400,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "advanced",
+    "description": "Latin Roman Breviary — Liturgy of the Hours (1960)",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "prayers-common-lat",
+    "name": "Preces Communes et Rosarium (Latin)",
+    "language": "lat",
+    "languageName": "Latin",
+    "category": "prayers",
+    "fragmentCount": 25,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "intermediate",
+    "description": "Common Catholic prayers and the Holy Rosary in Latin",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "prayers-common-ita",
+    "name": "Preghiere Comuni e Rosario",
+    "language": "ita",
+    "languageName": "Italian",
+    "category": "prayers",
+    "fragmentCount": 25,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "beginner",
+    "description": "Common Catholic prayers and the Holy Rosary in Italian",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "maltese-prayers-sample",
+    "name": "Maltese Prayers",
+    "language": "mlt",
+    "languageName": "Maltese",
+    "category": "prayers",
+    "fragmentCount": 12,
+    "sourceQuality": "original",
+    "preservationStatus": "vulnerable",
+    "difficulty": "intermediate",
+    "description": "Sample prayers in Maltese, a vulnerable Semitic language",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "hebrew-tanakh-sample",
+    "name": "Hebrew Tanakh (Sample)",
+    "language": "heb",
+    "languageName": "Hebrew",
+    "category": "bible",
+    "fragmentCount": 15,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "advanced",
+    "description": "Sample from the Hebrew Tanakh / Old Testament",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "greek-classical-sample",
+    "name": "Classical Greek (Sample)",
+    "language": "grc",
+    "languageName": "Ancient Greek",
+    "category": "bible",
+    "fragmentCount": 10,
+    "sourceQuality": "original",
+    "preservationStatus": "safe",
+    "difficulty": "advanced",
+    "description": "Sample classical and Biblical Greek texts",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "coptic-mark-sample",
+    "name": "Coptic Gospel of Mark (Sample)",
+    "language": "cop",
+    "languageName": "Coptic",
+    "category": "bible",
+    "fragmentCount": 8,
+    "sourceQuality": "original",
+    "preservationStatus": "endangered",
+    "difficulty": "advanced",
+    "description": "Gospel of Mark in Coptic, an endangered language of Egypt",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "syriac-corpus-sample",
+    "name": "Syriac Corpus (Sample)",
+    "language": "syc",
+    "languageName": "Syriac",
+    "category": "bible",
+    "fragmentCount": 10,
+    "sourceQuality": "original",
+    "preservationStatus": "endangered",
+    "difficulty": "advanced",
+    "description": "Sample Syriac Peshitta texts, an endangered Aramaic language",
+    "delivery": "onDemand"
+  },
+  {
+    "id": "georgian-breviary-sample",
+    "name": "Georgian Breviary (Sample)",
+    "language": "kat",
+    "languageName": "Georgian",
+    "category": "breviary",
+    "fragmentCount": 20,
+    "sourceQuality": "machineTranslation",
+    "preservationStatus": "vulnerable",
+    "difficulty": "advanced",
+    "description": "Sample Georgian liturgical texts translated via TranslateGemma",
+    "delivery": "onDemand"
+  }
+];
+
+    var qualityLabels = {
+        original: 'Original',
+        humanTranslation: 'Human Translation',
+        machineTranslation: 'Machine Translation',
+        verifiedTranslation: 'Verified Translation'
+    };
+    var preservationLabels = {
+        safe: 'Safe',
+        vulnerable: 'Vulnerable',
+        endangered: 'Endangered',
+        critical: 'Critical'
+    };
+    var categoryLabels = {
+        bible: 'Bibles',
+        lectionary: 'Lectionaries',
+        breviary: 'Breviary',
+        psalter: 'Psalter',
+        prayers: 'Prayers'
+    };
+    var difficultyLabels = {
+        beginner: 'Beginner',
+        intermediate: 'Intermediate',
+        advanced: 'Advanced'
+    };
+    var deliveryLabels = {
+        bundled: 'ჩაშენებული',
+        onDemand: 'აპლიკაციაში'
+    };
+    var showingText = 'Showing {n} of {total} packs';
+
+    // Populate language dropdown
+    var langs = {};
+    PACKS.forEach(function(p) { langs[p.language] = p.languageName; });
+    var langSelect = document.getElementById('languageFilter');
+    Object.keys(langs).sort(function(a,b) { return langs[a].localeCompare(langs[b]); }).forEach(function(code) {
+        var opt = document.createElement('option');
+        opt.value = code;
+        opt.textContent = langs[code];
+        langSelect.appendChild(opt);
+    });
+
+    // Category chips
+    var activeCategory = 'all';
+    var chips = document.querySelectorAll('#categoryChips .chip');
+    chips.forEach(function(chip) {
+        chip.addEventListener('click', function() {
+            chips.forEach(function(c) { c.classList.remove('active'); });
+            chip.classList.add('active');
+            activeCategory = chip.getAttribute('data-value');
+            renderPacks();
+        });
+    });
+
+    // Filters
+    document.getElementById('searchInput').addEventListener('input', renderPacks);
+    langSelect.addEventListener('change', renderPacks);
+    document.getElementById('qualityFilter').addEventListener('change', renderPacks);
+
+    function renderPacks() {
+        var query = document.getElementById('searchInput').value.toLowerCase().trim();
+        var langVal = langSelect.value;
+        var qualVal = document.getElementById('qualityFilter').value;
+
+        var filtered = PACKS.filter(function(p) {
+            if (activeCategory !== 'all' && p.category !== activeCategory) return false;
+            if (langVal !== 'all' && p.language !== langVal) return false;
+            if (qualVal !== 'all' && p.sourceQuality !== qualVal) return false;
+            if (query) {
+                var searchable = (p.name + ' ' + p.languageName + ' ' + p.description + ' ' + p.category).toLowerCase();
+                if (searchable.indexOf(query) === -1) return false;
+            }
+            return true;
+        });
+
+        var grid = document.getElementById('packsGrid');
+        var noRes = document.getElementById('noResults');
+        var countEl = document.getElementById('resultsCount');
+
+        countEl.textContent = showingText.replace('{n}', filtered.length).replace('{total}', PACKS.length);
+
+        if (filtered.length === 0) {
+            grid.innerHTML = '';
+            noRes.style.display = 'block';
+            return;
+        }
+        noRes.style.display = 'none';
+
+        var html = '';
+        filtered.forEach(function(p) {
+            html += '<div class="pack-card">';
+            html += '<div class="pack-header">';
+            html += '<span class="pack-name">' + escHtml(p.name) + '</span>';
+            html += '<span class="pack-delivery ' + p.delivery + '">' + (deliveryLabels[p.delivery] || p.delivery) + '</span>';
+            html += '</div>';
+            html += '<div class="pack-desc">' + escHtml(p.description) + '</div>';
+            html += '<div class="pack-meta">';
+            html += '<span class="pack-tag tag-lang">' + escHtml(p.languageName) + '</span>';
+            html += '<span class="pack-tag tag-category">' + (categoryLabels[p.category] || p.category) + '</span>';
+            html += '<span class="badge-quality quality-' + p.sourceQuality + '">' + (qualityLabels[p.sourceQuality] || p.sourceQuality) + '</span>';
+            if (p.preservationStatus !== 'safe') {
+                html += '<span class="badge-preservation preservation-' + p.preservationStatus + '">' + (preservationLabels[p.preservationStatus] || p.preservationStatus) + '</span>';
+            }
+            html += '<span class="pack-tag tag-fragments">' + p.fragmentCount.toLocaleString() + ' fragments</span>';
+            html += '<span class="pack-tag tag-difficulty">' + (difficultyLabels[p.difficulty] || p.difficulty) + '</span>';
+            html += '</div>';
+            html += '</div>';
+        });
+        grid.innerHTML = html;
+    }
+
+    function escHtml(s) {
+        var d = document.createElement('div');
+        d.appendChild(document.createTextNode(s));
+        return d.innerHTML;
+    }
+
+    renderPacks();
+})();
+</script>
+</body>
+</html>

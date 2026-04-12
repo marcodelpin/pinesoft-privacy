@@ -46,6 +46,19 @@ if (fs.existsSync(PARTIALS_DIR)) {
 }
 console.log(`Partials: ${Object.keys(partials).join(', ')}`);
 
+// Load data files from _data/
+const DATA_DIR = path.join(SITE_DIR, '_data');
+const dataFiles = {};
+if (fs.existsSync(DATA_DIR)) {
+  for (const file of fs.readdirSync(DATA_DIR)) {
+    if (file.endsWith('.json')) {
+      const name = file.replace('.json', '');
+      dataFiles[name] = fs.readFileSync(path.join(DATA_DIR, file), 'utf8');
+      console.log(`Data: ${file} loaded`);
+    }
+  }
+}
+
 // Find all template files (excluding _partials)
 function findTemplates(dir, base) {
   const results = [];
@@ -123,6 +136,12 @@ function replaceKeys(html, lang, pagePath) {
     }
     return val;
   });
+
+  // Replace data placeholders: DATANAME_PLACEHOLDER → inline JSON
+  for (const [name, content] of Object.entries(dataFiles)) {
+    const placeholder = name.replace(/-/g, '_').toUpperCase() + '_PLACEHOLDER';
+    html = html.replace(new RegExp(placeholder, 'g'), content.trim());
+  }
 
   // Set html lang attribute
   html = html.replace(/<html lang="[^"]*"/, `<html lang="${lang}"`);
