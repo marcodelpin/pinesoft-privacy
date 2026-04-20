@@ -21,9 +21,9 @@ This privacy policy covers:
 - **2025-01-08**: Initial version for PineSoft 2048
 
 ## 📞 Contact
-- **Developer**: Marco Del Pin
-- **Email**: marco.delpin@gmail.com
+- **Developer**: PineSoft
 - **Support**: support@pinesoft.dev
+- **Privacy**: privacy@pinesoft.dev
 
 ---
 *Auto-deployed via GitHub Pages*
