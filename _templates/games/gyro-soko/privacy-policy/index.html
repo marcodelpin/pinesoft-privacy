@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{privacy.gyrosoko.title}} | PineSoft</title>
+  <meta name="description" content="{{privacy.gyrosoko.meta_description}}">
+  <meta name="theme-color" content="#1B2A1B">
+  <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="stylesheet" href="/style.css">
+{{hreflang}}
+  <style>
+    .privacy-content { max-width: 700px; margin: 0 auto; padding: 2rem 0; }
+    .privacy-content h2 { color: var(--gold); margin-top: 2rem; margin-bottom: 0.75rem; font-size: 1.25rem; }
+    .privacy-content p, .privacy-content ul { color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.8; }
+    .privacy-content ul { padding-left: 1.5rem; }
+    .privacy-content li { margin-bottom: 0.5rem; }
+    .privacy-content a { color: var(--green-light); }
+    .privacy-content a:hover { color: var(--gold); }
+    .privacy-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    .privacy-content th, .privacy-content td { padding: 0.75rem 1rem; text-align: left; border: 1px solid var(--border); font-size: 0.9rem; }
+    .privacy-content th { background: var(--bg-card); font-weight: 600; color: var(--text-primary); }
+    .privacy-content td { color: var(--text-secondary); }
+    .back-link { display: inline-block; margin-bottom: 2rem; color: var(--green-light); text-decoration: none; font-size: 0.9rem; }
+    .back-link:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+{{> nav}}
+
+  <section class="section">
+    <div class="container">
+      <div class="privacy-content">
+        <a href="/{{lang}}/games/gyro-soko/" class="back-link">&larr; {{privacy.gyrosoko.back_link}}</a>
+        <h1 class="section-title"><span class="pine">{{privacy.gyrosoko.heading}}</span></h1>
+        <p><strong>{{privacy.gyrosoko.app_label}}</strong> Gyro Soko<br>
+           <strong>{{privacy.gyrosoko.developer_label}}</strong> PineSoft<br>
+           <strong>{{privacy.gyrosoko.last_updated_label}}</strong> {{privacy.gyrosoko.last_updated_date}}</p>
+
+        <p><strong>Gyro Soko</strong> {{privacy.gyrosoko.intro}}</p>
+
+        <h2>{{privacy.gyrosoko.data_summary_heading}}</h2>
+        <table>
+            <thead>
+                <tr><th>{{privacy.gyrosoko.table_data_type}}</th><th>{{privacy.gyrosoko.table_collected}}</th><th>{{privacy.gyrosoko.table_purpose}}</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>{{privacy.gyrosoko.row_personal_type}}</td><td>{{privacy.gyrosoko.row_personal_collected}}</td><td>{{privacy.gyrosoko.row_personal_purpose}}</td></tr>
+                <tr><td>{{privacy.gyrosoko.row_gyro_type}}</td><td>{{privacy.gyrosoko.row_gyro_collected}}</td><td>{{privacy.gyrosoko.row_gyro_purpose}}</td></tr>
+                <tr><td>{{privacy.gyrosoko.row_progress_type}}</td><td>{{privacy.gyrosoko.row_progress_collected}}</td><td>{{privacy.gyrosoko.row_progress_purpose}}</td></tr>
+                <tr><td>{{privacy.gyrosoko.row_leaderboards_type}}</td><td>{{privacy.gyrosoko.row_leaderboards_collected}}</td><td>{{privacy.gyrosoko.row_leaderboards_purpose}}</td></tr>
+                <tr><td>{{privacy.gyrosoko.row_location_type}}</td><td>{{privacy.gyrosoko.row_location_collected}}</td><td>{{privacy.gyrosoko.row_location_purpose}}</td></tr>
+                <tr><td>{{privacy.gyrosoko.row_audio_type}}</td><td>{{privacy.gyrosoko.row_audio_collected}}</td><td>{{privacy.gyrosoko.row_audio_purpose}}</td></tr>
+                <tr><td>{{privacy.gyrosoko.row_device_id_type}}</td><td>{{privacy.gyrosoko.row_device_id_collected}}</td><td>{{privacy.gyrosoko.row_device_id_purpose}}</td></tr>
+                <tr><td>{{privacy.gyrosoko.row_crash_type}}</td><td>{{privacy.gyrosoko.row_crash_collected}}</td><td>{{privacy.gyrosoko.row_crash_purpose}}</td></tr>
+            </tbody>
+        </table>
+
+        <h2>{{privacy.gyrosoko.gyroscope_heading}}</h2>
+        <p>{{privacy.gyrosoko.gyroscope_intro}}</p>
+        <ul>
+            <li>{{privacy.gyrosoko.gyroscope_on_device}}</li>
+            <li>{{privacy.gyrosoko.gyroscope_never_transmitted}}</li>
+            <li>{{privacy.gyrosoko.gyroscope_tile_movement}}</li>
+            <li>{{privacy.gyrosoko.gyroscope_no_background}}</li>
+        </ul>
+
+        <h2>{{privacy.gyrosoko.leaderboards_heading}}</h2>
+        <p>{{privacy.gyrosoko.leaderboards_intro}}</p>
+        <ul>
+            <li>{{privacy.gyrosoko.leaderboards_scores}}</li>
+            <li>{{privacy.gyrosoko.leaderboards_achievements}}</li>
+            <li>{{privacy.gyrosoko.leaderboards_platform_policy}} (<a href="https://policies.google.com/privacy">Google</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>)</li>
+        </ul>
+        <p>{{privacy.gyrosoko.leaderboards_optional}}</p>
+
+        <h2>{{privacy.gyrosoko.advertising_heading}}</h2>
+        <p>{{privacy.gyrosoko.advertising_text}}</p>
+        <p>{{privacy.gyrosoko.advertising_review}} <a href="https://policies.google.com/technologies/ads">Google AdMob Privacy</a></p>
+
+        <h2>{{privacy.gyrosoko.iap_heading}}</h2>
+        <p>{{privacy.gyrosoko.iap_text}} (<a href="https://policies.google.com/privacy">Google</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>). {{privacy.gyrosoko.iap_no_payment_info}}</p>
+
+        <h2>{{privacy.gyrosoko.data_sharing_heading}}</h2>
+        <p>{{privacy.gyrosoko.data_sharing_text}}</p>
+
+        <h2>{{privacy.gyrosoko.data_retention_heading}}</h2>
+        <p>{{privacy.gyrosoko.data_retention_text}}</p>
+
+        <h2>{{privacy.gyrosoko.children_heading}}</h2>
+        <p>{{privacy.gyrosoko.children_text}}</p>
+
+        <h2>{{privacy.gyrosoko.rights_heading}}</h2>
+        <p>{{privacy.gyrosoko.rights_intro}}</p>
+        <p>{{privacy.gyrosoko.rights_under_law}}</p>
+        <ul>
+            <li>{{privacy.gyrosoko.rights_access}}</li>
+            <li>{{privacy.gyrosoko.rights_opt_out}}</li>
+            <li>{{privacy.gyrosoko.rights_disconnect}}</li>
+            <li>{{privacy.gyrosoko.rights_complaint}}</li>
+        </ul>
+        <p>{{privacy.gyrosoko.rights_exercise}} <a href="mailto:support@pinesoft.dev">support@pinesoft.dev</a>.</p>
+
+        <h2>{{privacy.gyrosoko.third_party_heading}}</h2>
+        <ul>
+            <li><a href="https://policies.google.com/privacy">Google Play Services</a></li>
+            <li><a href="https://policies.google.com/technologies/ads">Google AdMob</a></li>
+            <li><a href="https://policies.google.com/privacy">Google Play Games</a> (Android)</li>
+            <li><a href="https://www.apple.com/legal/privacy/">Apple Game Center</a> (iOS)</li>
+        </ul>
+
+        <h2>{{privacy.gyrosoko.changes_heading}}</h2>
+        <p>{{privacy.gyrosoko.changes_text}}</p>
+
+        <h2>{{privacy.gyrosoko.contact_heading}}</h2>
+        <p>{{privacy.gyrosoko.contact_text}}<br>
+          <a href="mailto:support@pinesoft.dev" style="color: var(--gold);">support@pinesoft.dev</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+{{> footer}}
+{{> nav-script}}
+
+</body>
+</html>
