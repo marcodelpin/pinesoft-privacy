@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyro 15 Puzzle — {{landing.gyro15.tagline}} | PineSoft</title>
+    <meta name="description" content="{{landing.gyro15.meta_description}}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gyro 15 Puzzle — {{landing.gyro15.tagline}}">
+    <meta property="og:description" content="{{landing.gyro15.og_description}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinesoft.dev/games/gyro-15/">
+    <meta property="og:image" content="https://pinesoft.dev/images/gyro_15_feature.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="500">
+    <meta property="og:site_name" content="PineSoft">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gyro 15 Puzzle — {{landing.gyro15.tagline}}">
+    <meta name="twitter:description" content="{{landing.gyro15.og_description}}">
+    <meta name="twitter:image" content="https://pinesoft.dev/images/gyro_15_feature.png">
+
+    <meta name="theme-color" content="#1B2A1B">
+    <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="alternate" hreflang="ar" href="https://pinesoft.dev/ar/games/gyro-15/">
+  <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/games/gyro-15/">
+  <link rel="alternate" hreflang="el" href="https://pinesoft.dev/el/games/gyro-15/">
+  <link rel="alternate" hreflang="en" href="https://pinesoft.dev/en/games/gyro-15/">
+  <link rel="alternate" hreflang="es" href="https://pinesoft.dev/es/games/gyro-15/">
+  <link rel="alternate" hreflang="fr" href="https://pinesoft.dev/fr/games/gyro-15/">
+  <link rel="alternate" hreflang="he" href="https://pinesoft.dev/he/games/gyro-15/">
+  <link rel="alternate" hreflang="hi" href="https://pinesoft.dev/hi/games/gyro-15/">
+  <link rel="alternate" hreflang="it" href="https://pinesoft.dev/it/games/gyro-15/">
+  <link rel="alternate" hreflang="ja" href="https://pinesoft.dev/ja/games/gyro-15/">
+  <link rel="alternate" hreflang="ka" href="https://pinesoft.dev/ka/games/gyro-15/">
+  <link rel="alternate" hreflang="ko" href="https://pinesoft.dev/ko/games/gyro-15/">
+  <link rel="alternate" hreflang="la" href="https://pinesoft.dev/la/games/gyro-15/">
+  <link rel="alternate" hreflang="mt" href="https://pinesoft.dev/mt/games/gyro-15/">
+  <link rel="alternate" hreflang="nl" href="https://pinesoft.dev/nl/games/gyro-15/">
+  <link rel="alternate" hreflang="pl" href="https://pinesoft.dev/pl/games/gyro-15/">
+  <link rel="alternate" hreflang="pt" href="https://pinesoft.dev/pt/games/gyro-15/">
+  <link rel="alternate" hreflang="ru" href="https://pinesoft.dev/ru/games/gyro-15/">
+  <link rel="alternate" hreflang="sv" href="https://pinesoft.dev/sv/games/gyro-15/">
+  <link rel="alternate" hreflang="tr" href="https://pinesoft.dev/tr/games/gyro-15/">
+  <link rel="alternate" hreflang="zh" href="https://pinesoft.dev/zh/games/gyro-15/">
+  <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/games/gyro-15/">
+
+    <style>
+        :root {
+            --bg: #1B2A1B;
+            --bg2: #1E3320;
+            --card: #233A23;
+            --gold: #EDAE49;
+            --green: #2E7D32;
+            --green-light: #4CAF50;
+            --text: #E8E0D0;
+            --text2: #A8B5A0;
+            --text3: #7A8A72;
+            --border: rgba(237, 174, 73, 0.12);
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+        .section { padding: 3rem 0; }
+
+        /* Nav */
+        header { position: sticky; top: 0; z-index: 100; background: rgba(27,42,27,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+        nav { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; max-width: 1100px; margin: 0 auto; }
+        .nav-logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .nav-logo svg { width: 36px; height: 36px; }
+        .nav-logo-text { font-size: 1.25rem; font-weight: 700; }
+        .nav-logo-text .pine { color: var(--green); }
+        .nav-logo-text .soft { color: var(--gold); }
+        .nav-links { display: flex; list-style: none; gap: 1.5rem; }
+        .nav-links a { color: var(--text2); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--gold); }
+        .lang-switcher { display: flex; gap: 0.25rem; align-items: center; margin-left: 1rem; }
+        .lang-switcher a { color: var(--text3); text-decoration: none; font-size: 0.7rem; font-weight: 600; padding: 0.15rem 0.35rem; border-radius: 4px; transition: color 0.2s, background 0.2s; }
+        .lang-switcher a:hover { color: var(--gold); }
+        .lang-switcher a.active { color: var(--bg); background: var(--green); }
+        .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.25rem; }
+        .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); margin: 5px 0; transition: all 0.3s; }
+
+        /* Hero */
+        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(46,125,50,0.1), transparent 70%); }
+        .app-icon { width: 128px; height: 128px; border-radius: 28px; overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+        .app-icon img { width: 100%; height: 100%; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.15rem; color: var(--text2); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .store-btn { display: inline-block; transition: transform 0.2s; }
+        .store-btn:hover { transform: scale(1.05); }
+        .store-btn img { height: 80px; }
+
+        /* Stats */
+        .stats { background: var(--bg2); padding: 2rem 0; }
+        .stats-row { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); }
+        .stat-lbl { font-size: 0.85rem; color: var(--text3); }
+
+        /* Features */
+        .section-title { font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 2rem; }
+        .section-title .g { color: var(--green); }
+        .section-title .gr { color: var(--gold); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+        .feat { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; }
+        .feat-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .feat h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .feat p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; }
+
+        /* Feature graphic */
+        .feature-graphic { max-width: 700px; margin: 0 auto 2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid var(--border); }
+        .feature-graphic img { width: 100%; height: auto; display: block; }
+
+        /* Screenshots */
+        .gallery { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; max-width: 800px; margin: 0 auto; }
+        .gallery-item { border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid var(--border); transition: transform 0.2s; max-width: 260px; }
+        .gallery-item:hover { transform: scale(1.03); }
+        .gallery-item img { width: 100%; height: auto; display: block; }
+        .gallery-caption { padding: 0.75rem 1rem; background: var(--card); font-size: 0.85rem; color: var(--text2); text-align: center; }
+
+        /* Privacy */
+        .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
+        .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
+        .priv a { color: var(--green-light); text-decoration: none; }
+        .priv a:hover { color: var(--gold); }
+
+        /* CTA */
+        .cta { text-align: center; }
+        .cta-store { display: inline-block; transition: transform 0.2s; }
+        .cta-store:hover { transform: scale(1.05); }
+        .cta-store img { height: 72px; }
+
+        /* Footer */
+        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; }
+        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+        footer a:hover { color: var(--gold); }
+        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.85rem; }
+            .subtitle { font-size: 1rem; }
+            .app-icon { width: 96px; height: 96px; border-radius: 22px; }
+            .stats-row { gap: 1.5rem; }
+            .store-btn img { height: 64px; }
+            .cta-store img { height: 60px; }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(27,42,27,0.97); flex-direction: column; padding: 1rem 1.25rem; gap: 0.75rem; border-bottom: 1px solid var(--border); }
+            .nav-links.open { display: flex; }
+            .nav-hamburger { display: block; }
+            .lang-switcher { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/ru/" class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+          <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+          <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+          <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+        </svg>
+        <span class="nav-logo-text"><span class="pine">Pine</span><span class="soft">Soft</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/ru/games/">Игры</a></li>
+        <li><a href="/ru/tools/">Инструменты</a></li>
+        <li><a href="/ru/reading/">Чтение</a></li>
+        <li><a href="/ru/#about">О нас</a></li>
+      </ul>
+      <div class="lang-switcher" id="langSwitcher">
+        <a href="/en/games/gyro-15/">EN</a> <a href="/it/games/gyro-15/">IT</a> <a href="/es/games/gyro-15/">ES</a> <a href="/fr/games/gyro-15/">FR</a> <a href="/de/games/gyro-15/">DE</a> <a href="/pt/games/gyro-15/">PT</a> <a href="/ru/games/gyro-15/" class="active">RU</a> <a href="/pl/games/gyro-15/">PL</a> <a href="/nl/games/gyro-15/">NL</a> <a href="/sv/games/gyro-15/">SV</a> <a href="/tr/games/gyro-15/">TR</a> <a href="/zh/games/gyro-15/">ZH</a> <a href="/hi/games/gyro-15/">HI</a> <a href="/ar/games/gyro-15/">AR</a> <a href="/ja/games/gyro-15/">JA</a> <a href="/ko/games/gyro-15/">KO</a>
+      </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+
+    <section class="hero section">
+        <div class="container">
+            <div class="app-icon">
+                <img src="/images/gyro_2048_icon.png" alt="Gyro 15 Puzzle icon" width="192" height="192">
+            </div>
+            <h1>Gyro 15 Puzzle</h1>
+            <p class="subtitle">{{landing.gyro15.subtitle}}</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.gyro15" target="_blank" rel="noopener" class="store-btn">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Скачать в Google Play">
+            </a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat"><div class="stat-num">2048</div><div class="stat-lbl">{{landing.gyro15.stat_target}}</div></div>
+                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">{{landing.gyro15.stat_languages}}</div></div>
+                <div class="stat"><div class="stat-num">2</div><div class="stat-lbl">{{landing.gyro15.stat_controls}}</div></div>
+                <div class="stat"><div class="stat-num">0</div><div class="stat-lbl">{{landing.gyro15.stat_adult_ads}}</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <div class="feature-graphic">
+                <img src="/images/gyro_15_feature.png" alt="Gyro 15 Puzzle gameplay" width="1024" height="500" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">{{landing.gyro15.features_key}}</span> <span class="gr">{{landing.gyro15.features_word}}</span></h2>
+            <div class="features">
+                <div class="feat">
+                    <div class="feat-icon">&#128241;</div>
+                    <h3>{{landing.gyro15.feat_gyro_title}}</h3>
+                    <p>{{landing.gyro15.feat_gyro_desc}}</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128070;</div>
+                    <h3>{{landing.gyro15.feat_touch_title}}</h3>
+                    <p>{{landing.gyro15.feat_touch_desc}}</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127942;</div>
+                    <h3>Google Play Games</h3>
+                    <p>{{landing.gyro15.feat_gpg_desc}}</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128200;</div>
+                    <h3>{{landing.gyro15.feat_score_title}}</h3>
+                    <p>{{landing.gyro15.feat_score_desc}}</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127760;</div>
+                    <h3>{{landing.gyro15.feat_lang_title}}</h3>
+                    <p>{{landing.gyro15.feat_lang_desc}}</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128106;</div>
+                    <h3>{{landing.gyro15.feat_family_title}}</h3>
+                    <p>{{landing.gyro15.feat_family_desc}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="g">{{landing.gyro15.screenshots_word1}}</span><span class="gr">{{landing.gyro15.screenshots_word2}}</span></h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="/images/gyro_2048_screenshot.png" alt="Gyro 15 Puzzle gameplay screenshot" loading="lazy">
+                    <div class="gallery-caption">{{landing.gyro15.screenshot_gameplay}}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">{{landing.gyro15.privacy_your}}</span> <span class="gr">{{landing.gyro15.privacy_word}}</span></h2>
+            <div class="priv">
+                <p>{{landing.gyro15.privacy_text}}</p>
+                <a href="/ru/games/gyro-15/privacy-policy/">{{landing.gyro15.privacy_link}} &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta">
+        <div class="container">
+            <h2 class="section-title">{{landing.gyro15.cta_play}} <span class="g">Gyro</span> <span class="gr">2048</span></h2>
+            <p style="color: var(--text2); margin-bottom: 2rem;">{{landing.gyro15.cta_free}}</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.gyro15" target="_blank" rel="noopener" class="cta-store">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Скачать в Google Play">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="/ru/">PineSoft</a>
+            <a href="/ru/games/gyro-15/privacy-policy/">Политика конфиденциальности</a>
+            <a href="mailto:support@pinesoft.dev">Контакты</a>
+            <a href="https://play.google.com/store/apps/developer?id=PineSoft+Dev" target="_blank" rel="noopener">Google Play</a>
+        </div>
+        <div class="copy">&copy; 2026 PineSoft. Все права защищены.</div>
+    </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+  </script>
+
+</body>
+</html>
