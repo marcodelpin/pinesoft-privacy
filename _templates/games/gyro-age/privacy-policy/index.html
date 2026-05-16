@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{privacy.gyroage.title}} | PineSoft</title>
+  <meta name="description" content="{{privacy.gyroage.meta_description}}">
+  <meta name="theme-color" content="#1B2A1B">
+  <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="stylesheet" href="/style.css">
+{{hreflang}}
+  <style>
+    .privacy-content { max-width: 700px; margin: 0 auto; padding: 2rem 0; }
+    .privacy-content h2 { color: var(--gold); margin-top: 2rem; margin-bottom: 0.75rem; font-size: 1.25rem; }
+    .privacy-content p, .privacy-content ul { color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.8; }
+    .privacy-content ul { padding-left: 1.5rem; }
+    .privacy-content li { margin-bottom: 0.5rem; }
+    .privacy-content a { color: var(--green-light); }
+    .privacy-content a:hover { color: var(--gold); }
+    .privacy-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    .privacy-content th, .privacy-content td { padding: 0.75rem 1rem; text-align: left; border: 1px solid var(--border); font-size: 0.9rem; }
+    .privacy-content th { background: var(--bg-card); font-weight: 600; color: var(--text-primary); }
+    .privacy-content td { color: var(--text-secondary); }
+    .back-link { display: inline-block; margin-bottom: 2rem; color: var(--green-light); text-decoration: none; font-size: 0.9rem; }
+    .back-link:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+{{> nav}}
+
+  <section class="section">
+    <div class="container">
+      <div class="privacy-content">
+        <a href="/{{lang}}/games/gyro-age/" class="back-link">&larr; {{privacy.gyroage.back_link}}</a>
+        <h1 class="section-title"><span class="pine">{{privacy.gyroage.heading}}</span></h1>
+        <p><strong>{{privacy.gyroage.app_label}}</strong> Gyro Age<br>
+           <strong>{{privacy.gyroage.developer_label}}</strong> PineSoft<br>
+           <strong>{{privacy.gyroage.last_updated_label}}</strong> {{privacy.gyroage.last_updated_date}}</p>
+
+        <p><strong>Gyro Age</strong> {{privacy.gyroage.intro}}</p>
+
+        <h2>{{privacy.gyroage.data_summary_heading}}</h2>
+        <table>
+            <thead>
+                <tr><th>{{privacy.gyroage.table_data_type}}</th><th>{{privacy.gyroage.table_collected}}</th><th>{{privacy.gyroage.table_purpose}}</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>{{privacy.gyroage.row_personal_type}}</td><td>{{privacy.gyroage.row_personal_collected}}</td><td>{{privacy.gyroage.row_personal_purpose}}</td></tr>
+                <tr><td>{{privacy.gyroage.row_gyro_type}}</td><td>{{privacy.gyroage.row_gyro_collected}}</td><td>{{privacy.gyroage.row_gyro_purpose}}</td></tr>
+                <tr><td>{{privacy.gyroage.row_progress_type}}</td><td>{{privacy.gyroage.row_progress_collected}}</td><td>{{privacy.gyroage.row_progress_purpose}}</td></tr>
+                <tr><td>{{privacy.gyroage.row_leaderboards_type}}</td><td>{{privacy.gyroage.row_leaderboards_collected}}</td><td>{{privacy.gyroage.row_leaderboards_purpose}}</td></tr>
+                <tr><td>{{privacy.gyroage.row_location_type}}</td><td>{{privacy.gyroage.row_location_collected}}</td><td>{{privacy.gyroage.row_location_purpose}}</td></tr>
+                <tr><td>{{privacy.gyroage.row_audio_type}}</td><td>{{privacy.gyroage.row_audio_collected}}</td><td>{{privacy.gyroage.row_audio_purpose}}</td></tr>
+                <tr><td>{{privacy.gyroage.row_device_id_type}}</td><td>{{privacy.gyroage.row_device_id_collected}}</td><td>{{privacy.gyroage.row_device_id_purpose}}</td></tr>
+                <tr><td>{{privacy.gyroage.row_crash_type}}</td><td>{{privacy.gyroage.row_crash_collected}}</td><td>{{privacy.gyroage.row_crash_purpose}}</td></tr>
+            </tbody>
+        </table>
+
+        <h2>{{privacy.gyroage.gyroscope_heading}}</h2>
+        <p>{{privacy.gyroage.gyroscope_intro}}</p>
+        <ul>
+            <li>{{privacy.gyroage.gyroscope_on_device}}</li>
+            <li>{{privacy.gyroage.gyroscope_never_transmitted}}</li>
+            <li>{{privacy.gyroage.gyroscope_tile_movement}}</li>
+            <li>{{privacy.gyroage.gyroscope_no_background}}</li>
+        </ul>
+
+        <h2>{{privacy.gyroage.leaderboards_heading}}</h2>
+        <p>{{privacy.gyroage.leaderboards_intro}}</p>
+        <ul>
+            <li>{{privacy.gyroage.leaderboards_scores}}</li>
+            <li>{{privacy.gyroage.leaderboards_achievements}}</li>
+            <li>{{privacy.gyroage.leaderboards_platform_policy}} (<a href="https://policies.google.com/privacy">Google</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>)</li>
+        </ul>
+        <p>{{privacy.gyroage.leaderboards_optional}}</p>
+
+        <h2>{{privacy.gyroage.advertising_heading}}</h2>
+        <p>{{privacy.gyroage.advertising_text}}</p>
+        <p>{{privacy.gyroage.advertising_review}} <a href="https://policies.google.com/technologies/ads">Google AdMob Privacy</a></p>
+
+        <h2>{{privacy.gyroage.iap_heading}}</h2>
+        <p>{{privacy.gyroage.iap_text}} (<a href="https://policies.google.com/privacy">Google</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>). {{privacy.gyroage.iap_no_payment_info}}</p>
+
+        <h2>{{privacy.gyroage.data_sharing_heading}}</h2>
+        <p>{{privacy.gyroage.data_sharing_text}}</p>
+
+        <h2>{{privacy.gyroage.data_retention_heading}}</h2>
+        <p>{{privacy.gyroage.data_retention_text}}</p>
+
+        <h2>{{privacy.gyroage.children_heading}}</h2>
+        <p>{{privacy.gyroage.children_text}}</p>
+
+        <h2>{{privacy.gyroage.rights_heading}}</h2>
+        <p>{{privacy.gyroage.rights_intro}}</p>
+        <p>{{privacy.gyroage.rights_under_law}}</p>
+        <ul>
+            <li>{{privacy.gyroage.rights_access}}</li>
+            <li>{{privacy.gyroage.rights_opt_out}}</li>
+            <li>{{privacy.gyroage.rights_disconnect}}</li>
+            <li>{{privacy.gyroage.rights_complaint}}</li>
+        </ul>
+        <p>{{privacy.gyroage.rights_exercise}} <a href="mailto:support@pinesoft.dev">support@pinesoft.dev</a>.</p>
+
+        <h2>{{privacy.gyroage.third_party_heading}}</h2>
+        <ul>
+            <li><a href="https://policies.google.com/privacy">Google Play Services</a></li>
+            <li><a href="https://policies.google.com/technologies/ads">Google AdMob</a></li>
+            <li><a href="https://policies.google.com/privacy">Google Play Games</a> (Android)</li>
+            <li><a href="https://www.apple.com/legal/privacy/">Apple Game Center</a> (iOS)</li>
+        </ul>
+
+        <h2>{{privacy.gyroage.changes_heading}}</h2>
+        <p>{{privacy.gyroage.changes_text}}</p>
+
+        <h2>{{privacy.gyroage.contact_heading}}</h2>
+        <p>{{privacy.gyroage.contact_text}}<br>
+          <a href="mailto:support@pinesoft.dev" style="color: var(--gold);">support@pinesoft.dev</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+{{> footer}}
+{{> nav-script}}
+
+</body>
+</html>
