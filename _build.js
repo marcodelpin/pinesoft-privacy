@@ -91,6 +91,12 @@ function generateHreflang(pagePath) {
 const CORE_LANGS = ['en', 'it', 'es', 'fr', 'de', 'pt', 'ru', 'pl', 'nl', 'sv', 'tr', 'zh', 'hi', 'ar', 'ja', 'ko'];
 const HORATIO_LANGS = ['en', 'it', 'la', 'es', 'fr', 'de', 'pt', 'el', 'ru', 'pl', 'nl', 'sv', 'tr', 'ka', 'mt', 'he', 'zh', 'hi', 'ar', 'ja', 'ko'];
 const HORATIO_ONLY_LANGS = new Set(['la', 'el', 'ka', 'mt', 'he']);
+// PS-07c: Arabic (and Hebrew, etc.) flow right-to-left. The build sets
+// `dir="rtl"` on <html> for these so the browser flips text direction and
+// CSS that uses [dir=rtl] selectors overrides physical-position
+// properties (badges, absolute-positioned elements). Add new RTL
+// languages here when adding l10n.
+const RTL_LANGS = new Set(['ar', 'he', 'fa', 'ur']);
 
 function generateLangSwitcher(pagePath, currentLang) {
   const isHoratio = pagePath.startsWith('reading/horatio');
@@ -145,6 +151,14 @@ function replaceKeys(html, lang, pagePath) {
 
   // Set html lang attribute
   html = html.replace(/<html lang="[^"]*"/, `<html lang="${lang}"`);
+  // Set dir attribute for RTL languages (PS-07c: Arabic / Hebrew / etc.).
+  // RTL languages require `dir="rtl"` on <html> for the browser to flow
+  // text, lists, and most CSS in the right-to-left direction. We rely on
+  // CSS logical properties and [dir=rtl] overrides in style.css to flip
+  // physical-position properties (e.g. badges positioned with `right:`).
+  if (RTL_LANGS.has(lang)) {
+    html = html.replace(/<html /, '<html dir="rtl" ');
+  }
 
   return html;
 }

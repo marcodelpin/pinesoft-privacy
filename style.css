@@ -768,3 +768,48 @@ footer {
     font-size: 0.8rem;
   }
 }
+
+/* ===== RTL support (PS-07c) =====
+   When the build sets dir="rtl" on <html> for Arabic / Hebrew / etc.,
+   the browser flips text direction natively. The rules below override
+   physical-position properties (.badge-* are positioned with `right:`,
+   the back-to-top arrow uses `right:`) so they appear in the right
+   corner for RTL readers. Kept minimal — most layout uses flex / grid
+   which auto-flips with direction.
+*/
+html[dir="rtl"] body {
+  text-align: right;
+}
+
+html[dir="rtl"] .badge-published,
+html[dir="rtl"] .badge-coming-soon {
+  /* Badge sits in the top-right of cards in LTR; mirror to top-left in RTL. */
+  right: auto;
+  left: 0.5rem;
+}
+
+html[dir="rtl"] .back-to-top {
+  /* Floating back-to-top button: right:0.5rem in LTR -> left:0.5rem in RTL. */
+  right: auto;
+  left: 0.5rem;
+}
+
+html[dir="rtl"] .legal-nav-toggle {
+  /* Hamburger / nav toggle sits at top-right in LTR. */
+  right: auto;
+  left: 0.5rem;
+}
+
+html[dir="rtl"] .nav-lang {
+  /* Lang switcher strip in the footer sits at right:1.25rem. */
+  right: auto;
+  left: 1.25rem;
+  margin-left: 0;
+}
+
+html[dir="rtl"] ul,
+html[dir="rtl"] ol {
+  /* Lists render right-to-left in RTL languages. */
+  padding-left: 0;
+  padding-right: 1.25rem;
+}
