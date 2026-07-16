@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Pagina riservata: player parametrico per snippet audio, non collegata dal sito -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Ascolta</title>
+  <meta name="theme-color" content="#18181b">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{color-scheme:dark}
+    body{
+      font-family:system-ui,-apple-system,'Segoe UI',sans-serif;
+      background:#18181b;color:#eee;min-height:100vh;
+      display:flex;align-items:center;justify-content:center;padding:1.5rem;
+    }
+    .card{
+      background:#232327;border:1px solid #333;border-radius:14px;
+      padding:1.6rem 1.4rem;max-width:26rem;width:100%;
+    }
+    h1{font-size:1.15rem;font-weight:600;margin-bottom:.35rem;line-height:1.35}
+    .meta{color:#999;font-size:.82rem;margin-bottom:1rem}
+    audio{width:100%;margin:.4rem 0 .9rem}
+    .row{display:flex;gap:.5rem}
+    button{
+      border:1px solid #444;background:transparent;color:#bbb;font:inherit;
+      font-size:.82rem;padding:.38rem .85rem;border-radius:999px;cursor:pointer;
+    }
+    button:hover{border-color:#666;color:#eee}
+    .err{color:#e88}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 id="title">Ascolta</h1>
+    <div class="meta" id="meta"></div>
+    <audio id="player" controls preload="metadata"></audio>
+    <div class="row">
+      <button id="replay" type="button" hidden>&#8634; Riascolta</button>
+    </div>
+    <div class="meta err" id="err" hidden></div>
+  </div>
+  <script>
+    (function(){
+      var q = new URLSearchParams(location.search);
+      var src = q.get('src') || '';
+      var t0 = parseFloat(q.get('t0')), t1 = parseFloat(q.get('t1'));
+      var title = (q.get('title') || '').trim();
+      var a = document.getElementById('player');
+      var err = document.getElementById('err');
+      var replay = document.getElementById('replay');
+
+      if (title) { document.getElementById('title').textContent = title; document.title = title; }
+      // only ever load media from RAI's own CDNs - this page is a player, not an open proxy
+      var okSrc = /^https:\/\/[a-z0-9.-]+\.(akamaized\.net|rai\.it)\//i.test(src);
+      if (!okSrc) {
+        a.hidden = true;
+        err.hidden = false;
+        err.textContent = 'Link non valido o incompleto.';
+        return;
+      }
+      var hasSpan = !isNaN(t0) && !isNaN(t1) && t1 > t0;
+      if (hasSpan) {
+        var mm = function(s){ s = Math.floor(s); return Math.floor(s/60) + ':' + String(s%60).padStart(2,'0'); };
+        document.getElementById('meta').textContent = mm(t0) + ' - ' + mm(t1) + ' · audio: RaiPlay Sound';
+      } else {
+        document.getElementById('meta').textContent = 'audio: RaiPlay Sound';
+      }
+      a.src = src + (hasSpan ? '#t=' + t0 + ',' + t1 : '');
+
+      var seekTo = function(t){ try { a.currentTime = t; } catch (e) {} };
+      if (hasSpan) {
+        a.addEventListener('loadedmetadata', function(){ if (a.currentTime < t0) seekTo(t0); });
+        a.addEventListener('timeupdate', function(){
+          if (a.currentTime >= t1) { a.pause(); replay.hidden = false; }
+        });
+        replay.addEventListener('click', function(){ seekTo(t0); a.play(); replay.hidden = true; });
+      }
+      a.addEventListener('error', function(){
+        err.hidden = false;
+        err.textContent = 'Audio non raggiungibile (la fonte potrebbe essere stata rimossa).';
+      });
+    })();
+  </script>
+</body>
+</html>
