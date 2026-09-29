@@ -619,6 +619,38 @@
       "changes_text": "We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.",
       "contact_heading": "Contact",
       "contact_text": "If you have questions about this privacy policy or PolyTuner's data practices, contact us at:"
+    },
+    "girogruppi": {
+      "title": "Privacy Policy — GiroGruppi",
+      "meta_description": "Privacy Policy for GiroGruppi by PineSoft. The app works offline, has no account, no ads and no analytics, and keeps your data on your device.",
+      "back_link": "Back to Tools",
+      "heading": "Privacy Policy",
+      "app_label": "App:",
+      "developer_label": "Developer:",
+      "last_updated_label": "Last updated:",
+      "last_updated_date": "September 29, 2026",
+      "intro": "builds balanced groups from a list of people you enter and rotates them over sessions. It works entirely on your device.",
+      "summary_heading": "Summary",
+      "summary_text": "GiroGruppi does not collect, transmit or sell any personal data. PineSoft receives nothing from your use of the app.",
+      "offline_heading": "Offline, No Account",
+      "offline_text": "The app works fully offline. It has no sign-up or login, and it does not request any permission, including internet access.",
+      "storage_heading": "Data Stored on Your Device",
+      "storage_text": "The names, tags, groups and settings you enter are saved in a local file inside the app's private storage on your device. This data never leaves your device unless you choose to share it. Uninstalling the app or clearing its data deletes it.",
+      "sharing_heading": "Sharing and Backup",
+      "sharing_intro": "GiroGruppi shares data only when you ask for it, through your system's share sheet:",
+      "sharing_backup": "Backup: a JSON file with all your data (girogruppi-backup.json).",
+      "sharing_export": "Export: a CSV file or plain text with the groups you built.",
+      "sharing_choice": "You choose the destination app. That app, not PineSoft, receives the data and handles it under its own privacy policy. A backup is restored by pasting its text into the app.",
+      "noads_heading": "No Ads, No Analytics",
+      "noads_text": "The app contains no advertising, no analytics, no crash reporting and no tracking of any kind.",
+      "children_heading": "Children",
+      "children_text": "GiroGruppi does not collect personal data from anyone, including children.",
+      "control_heading": "Your Control",
+      "control_text": "Because your data stays on your device, you control it completely: edit or delete entries in the app, export a backup, or delete everything by clearing the app data or uninstalling.",
+      "changes_heading": "Changes to This Policy",
+      "changes_text": "If this policy changes, we will update this page and its date.",
+      "contact_heading": "Contact",
+      "contact_text": "Questions about this policy? Write to us:"
     }
   }
 }

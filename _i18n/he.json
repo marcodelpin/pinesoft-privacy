@@ -619,6 +619,38 @@
       "changes_text": "We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.",
       "contact_heading": "Contact",
       "contact_text": "If you have questions about this privacy policy or PolyTuner's data practices, contact us at:"
+    },
+    "girogruppi": {
+      "title": "מדיניות פרטיות — GiroGruppi",
+      "meta_description": "מדיניות הפרטיות של GiroGruppi מבית PineSoft. האפליקציה פועלת ללא חיבור, ללא חשבון, פרסומות או ניתוח נתונים, והנתונים שלך נשארים במכשיר שלך.",
+      "back_link": "חזרה לכלים",
+      "heading": "מדיניות פרטיות",
+      "app_label": "אפליקציה:",
+      "developer_label": "מפתח:",
+      "last_updated_label": "עודכן לאחרונה:",
+      "last_updated_date": "29 בספטמבר 2026",
+      "intro": "יוצרת קבוצות מאוזנות מרשימת אנשים שאתה מזין ומחליפה אותן בין מפגשים. היא פועלת כולה במכשיר שלך.",
+      "summary_heading": "סיכום",
+      "summary_text": "GiroGruppi אינה אוספת, מעבירה או מוכרת נתונים אישיים. PineSoft אינה מקבלת דבר משימושך באפליקציה.",
+      "offline_heading": "ללא חיבור, ללא חשבון",
+      "offline_text": "האפליקציה פועלת במלואה ללא חיבור. אין הרשמה או התחברות, והיא אינה מבקשת שום הרשאה, כולל גישה לאינטרנט.",
+      "storage_heading": "נתונים השמורים במכשיר שלך",
+      "storage_text": "השמות, התגיות, הקבוצות וההגדרות שאתה מזין נשמרים בקובץ מקומי באחסון הפרטי של האפליקציה במכשיר שלך. נתונים אלה אינם עוזבים את המכשיר אלא אם תבחר לשתף אותם. הסרת האפליקציה או ניקוי הנתונים שלה מוחקים אותם.",
+      "sharing_heading": "שיתוף וגיבוי",
+      "sharing_intro": "GiroGruppi משתפת נתונים רק כשאתה מבקש, דרך תפריט השיתוף של המערכת:",
+      "sharing_backup": "גיבוי: קובץ JSON עם כל הנתונים שלך (girogruppi-backup.json).",
+      "sharing_export": "ייצוא: קובץ CSV או טקסט רגיל עם הקבוצות שיצרת.",
+      "sharing_choice": "אתה בוחר את אפליקציית היעד. אותה אפליקציה, ולא PineSoft, מקבלת את הנתונים ומטפלת בהם לפי מדיניות הפרטיות שלה. גיבוי משוחזר על ידי הדבקת הטקסט שלו באפליקציה.",
+      "noads_heading": "ללא פרסומות, ללא ניתוח נתונים",
+      "noads_text": "האפליקציה אינה כוללת פרסומות, ניתוח נתונים, דיווח קריסות או מעקב מכל סוג.",
+      "children_heading": "ילדים",
+      "children_text": "GiroGruppi אינה אוספת נתונים אישיים מאף אחד, כולל ילדים.",
+      "control_heading": "השליטה שלך",
+      "control_text": "מכיוון שהנתונים נשארים במכשיר שלך, השליטה בהם שלך במלואה: ערוך או מחק רשומות באפליקציה, ייצא גיבוי, או מחק הכול על ידי ניקוי נתוני האפליקציה או הסרתה.",
+      "changes_heading": "שינויים במדיניות זו",
+      "changes_text": "אם מדיניות זו תשתנה, נעדכן את הדף הזה ואת התאריך שלו.",
+      "contact_heading": "יצירת קשר",
+      "contact_text": "שאלות על מדיניות זו? כתוב לנו:"
     }
   }
 }

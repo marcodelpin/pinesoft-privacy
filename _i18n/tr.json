@@ -619,6 +619,38 @@
       "changes_text": "We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.",
       "contact_heading": "Contact",
       "contact_text": "If you have questions about this privacy policy or PolyTuner's data practices, contact us at:"
+    },
+    "girogruppi": {
+      "title": "Gizlilik Politikası — GiroGruppi",
+      "meta_description": "PineSoft'un GiroGruppi uygulaması için Gizlilik Politikası. Uygulama çevrimdışı çalışır; hesap, reklam ve analiz yoktur, verileriniz cihazınızda kalır.",
+      "back_link": "Araçlara dön",
+      "heading": "Gizlilik Politikası",
+      "app_label": "Uygulama:",
+      "developer_label": "Geliştirici:",
+      "last_updated_label": "Son güncelleme:",
+      "last_updated_date": "29 Eylül 2026",
+      "intro": "girdiğiniz kişi listesinden dengeli gruplar oluşturur ve oturumlar boyunca bunları döndürür. Tamamen cihazınızda çalışır.",
+      "summary_heading": "Özet",
+      "summary_text": "GiroGruppi hiçbir kişisel veriyi toplamaz, iletmez veya satmaz. PineSoft, uygulamayı kullanmanızdan hiçbir şey almaz.",
+      "offline_heading": "Çevrimdışı, hesapsız",
+      "offline_text": "Uygulama tamamen çevrimdışı çalışır. Kayıt veya oturum açma gerektirmez ve internet erişimi dahil hiçbir izin istemez.",
+      "storage_heading": "Cihazınızda saklanan veriler",
+      "storage_text": "Girdiğiniz adlar, etiketler, gruplar ve ayarlar, cihazınızda uygulamanın özel depolama alanındaki yerel bir dosyaya kaydedilir. Bu veriler, paylaşmayı seçmediğiniz sürece cihazınızdan asla çıkmaz. Uygulamayı kaldırmak veya verilerini temizlemek bunları siler.",
+      "sharing_heading": "Paylaşım ve yedekleme",
+      "sharing_intro": "GiroGruppi verileri yalnızca siz istediğinizde, sisteminizin paylaşım menüsü aracılığıyla paylaşır:",
+      "sharing_backup": "Yedek: tüm verilerinizi içeren bir JSON dosyası (girogruppi-backup.json).",
+      "sharing_export": "Dışa aktarma: oluşturduğunuz gruplarla bir CSV dosyası veya düz metin.",
+      "sharing_choice": "Hedef uygulamayı siz seçersiniz. Verileri PineSoft değil o uygulama alır ve kendi gizlilik politikasına göre işler. Yedek, metni uygulamaya yapıştırılarak geri yüklenir.",
+      "noads_heading": "Reklam yok, analiz yok",
+      "noads_text": "Uygulamada reklam, analiz, çökme raporlama veya herhangi bir izleme bulunmaz.",
+      "children_heading": "Çocuklar",
+      "children_text": "GiroGruppi çocuklar dahil hiç kimseden kişisel veri toplamaz.",
+      "control_heading": "Kontrol sizde",
+      "control_text": "Verileriniz cihazınızda kaldığı için tam kontrol sizdedir: uygulamada girdileri düzenleyin veya silin, yedek dışa aktarın ya da uygulama verilerini temizleyerek veya uygulamayı kaldırarak her şeyi silin.",
+      "changes_heading": "Bu politikadaki değişiklikler",
+      "changes_text": "Bu politika değişirse bu sayfayı ve tarihini güncelleriz.",
+      "contact_heading": "İletişim",
+      "contact_text": "Bu politika hakkında sorularınız mı var? Bize yazın:"
     }
   }
 }

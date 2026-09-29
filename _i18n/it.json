@@ -619,6 +619,38 @@
       "changes_text": "Possiamo aggiornare questa privacy policy di tanto in tanto. Le modifiche saranno pubblicate su questa pagina con una data di revisione aggiornata.",
       "contact_heading": "Contatti",
       "contact_text": "Per domande su questa privacy policy o sulle pratiche sui dati di PolyTuner, contattaci all'indirizzo:"
+    },
+    "girogruppi": {
+      "title": "Informativa sulla privacy — GiroGruppi",
+      "meta_description": "Informativa sulla privacy di GiroGruppi di PineSoft. L'app funziona offline, non ha account, pubblicità né analisi, e conserva i tuoi dati sul dispositivo.",
+      "back_link": "Torna agli strumenti",
+      "heading": "Informativa sulla privacy",
+      "app_label": "App:",
+      "developer_label": "Sviluppatore:",
+      "last_updated_label": "Ultimo aggiornamento:",
+      "last_updated_date": "29 settembre 2026",
+      "intro": "crea gruppi equilibrati a partire da un elenco di persone che inserisci e li fa ruotare nelle varie sessioni. Funziona interamente sul tuo dispositivo.",
+      "summary_heading": "Riepilogo",
+      "summary_text": "GiroGruppi non raccoglie, trasmette né vende alcun dato personale. PineSoft non riceve nulla dal tuo utilizzo dell'app.",
+      "offline_heading": "Offline, senza account",
+      "offline_text": "L'app funziona completamente offline. Non richiede registrazione né accesso e non richiede alcuna autorizzazione, compreso l'accesso a internet.",
+      "storage_heading": "Dati salvati sul tuo dispositivo",
+      "storage_text": "I nomi, le etichette, i gruppi e le impostazioni che inserisci sono salvati in un file locale nell'archivio privato dell'app sul tuo dispositivo. Questi dati non lasciano mai il dispositivo, a meno che tu non scelga di condividerli. Disinstallando l'app o cancellandone i dati vengono eliminati.",
+      "sharing_heading": "Condivisione e backup",
+      "sharing_intro": "GiroGruppi condivide dati solo quando lo chiedi tu, tramite il menu di condivisione del sistema:",
+      "sharing_backup": "Backup: un file JSON con tutti i tuoi dati (girogruppi-backup.json).",
+      "sharing_export": "Esportazione: un file CSV o un testo semplice con i gruppi che hai creato.",
+      "sharing_choice": "Scegli tu l'app di destinazione. È quell'app, non PineSoft, a ricevere i dati e a gestirli secondo la propria informativa sulla privacy. Un backup si ripristina incollandone il testo nell'app.",
+      "noads_heading": "Nessuna pubblicità, nessuna analisi",
+      "noads_text": "L'app non contiene pubblicità, analisi, segnalazione degli arresti anomali né tracciamento di alcun tipo.",
+      "children_heading": "Minori",
+      "children_text": "GiroGruppi non raccoglie dati personali da nessuno, minori compresi.",
+      "control_heading": "Il tuo controllo",
+      "control_text": "Poiché i tuoi dati restano sul dispositivo, li controlli completamente: modifica o elimina le voci nell'app, esporta un backup, oppure elimina tutto cancellando i dati dell'app o disinstallandola.",
+      "changes_heading": "Modifiche a questa informativa",
+      "changes_text": "Se questa informativa cambia, aggiorneremo questa pagina e la sua data.",
+      "contact_heading": "Contatti",
+      "contact_text": "Domande su questa informativa? Scrivici:"
     }
   }
 }

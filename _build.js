@@ -264,7 +264,8 @@ const directRedirects = {
   'soundscope/privacy-policy': 'tools/soundscope/privacy-policy/',
   'gyro-2048/privacy-policy': 'games/gyro-2048/privacy-policy/',
   'horatio/privacy-policy': 'reading/horatio/privacy-policy/',
-  'polytuner/privacy-policy': 'tools/polytuner/privacy-policy/'
+  'polytuner/privacy-policy': 'tools/polytuner/privacy-policy/',
+  'girogruppi/privacy-policy': 'tools/girogruppi/privacy-policy/'
 };
 
 for (const [slug, target] of Object.entries(directRedirects)) {

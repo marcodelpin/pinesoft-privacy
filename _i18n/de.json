@@ -619,6 +619,38 @@
       "changes_text": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderungen werden mit aktualisiertem Datum auf dieser Seite veröffentlicht.",
       "contact_heading": "Kontakt",
       "contact_text": "Bei Fragen zu dieser Datenschutzerklärung oder den Datenpraktiken von PolyTuner kontaktieren Sie uns unter:"
+    },
+    "girogruppi": {
+      "title": "Datenschutzerklärung — GiroGruppi",
+      "meta_description": "Datenschutzerklärung für GiroGruppi von PineSoft. Die App funktioniert offline, hat kein Konto, keine Werbung und keine Analyse und behält Ihre Daten auf Ihrem Gerät.",
+      "back_link": "Zurück zu den Tools",
+      "heading": "Datenschutzerklärung",
+      "app_label": "App:",
+      "developer_label": "Entwickler:",
+      "last_updated_label": "Zuletzt aktualisiert:",
+      "last_updated_date": "29. September 2026",
+      "intro": "bildet aus einer von Ihnen eingegebenen Personenliste ausgewogene Gruppen und wechselt sie über mehrere Sitzungen durch. Sie arbeitet vollständig auf Ihrem Gerät.",
+      "summary_heading": "Zusammenfassung",
+      "summary_text": "GiroGruppi erhebt, überträgt oder verkauft keine personenbezogenen Daten. PineSoft erhält nichts aus Ihrer Nutzung der App.",
+      "offline_heading": "Offline, ohne Konto",
+      "offline_text": "Die App funktioniert vollständig offline. Sie erfordert weder Registrierung noch Anmeldung und fordert keine Berechtigung an, auch keinen Internetzugriff.",
+      "storage_heading": "Auf Ihrem Gerät gespeicherte Daten",
+      "storage_text": "Die von Ihnen eingegebenen Namen, Tags, Gruppen und Einstellungen werden in einer lokalen Datei im privaten Speicher der App auf Ihrem Gerät gespeichert. Diese Daten verlassen Ihr Gerät nicht, es sei denn, Sie entscheiden sich zum Teilen. Beim Deinstallieren der App oder Löschen ihrer Daten werden sie gelöscht.",
+      "sharing_heading": "Teilen und Sicherung",
+      "sharing_intro": "GiroGruppi teilt Daten nur auf Ihre Anforderung, über das Teilen-Menü Ihres Systems:",
+      "sharing_backup": "Sicherung: eine JSON-Datei mit allen Ihren Daten (girogruppi-backup.json).",
+      "sharing_export": "Export: eine CSV-Datei oder ein reiner Text mit den von Ihnen erstellten Gruppen.",
+      "sharing_choice": "Sie wählen die Ziel-App. Diese App, nicht PineSoft, erhält die Daten und verarbeitet sie nach ihrer eigenen Datenschutzerklärung. Eine Sicherung wird wiederhergestellt, indem ihr Text in die App eingefügt wird.",
+      "noads_heading": "Keine Werbung, keine Analyse",
+      "noads_text": "Die App enthält keine Werbung, keine Analyse, keine Absturzberichte und keinerlei Tracking.",
+      "children_heading": "Kinder",
+      "children_text": "GiroGruppi erhebt von niemandem personenbezogene Daten, auch nicht von Kindern.",
+      "control_heading": "Ihre Kontrolle",
+      "control_text": "Da Ihre Daten auf Ihrem Gerät bleiben, haben Sie die volle Kontrolle: Bearbeiten oder löschen Sie Einträge in der App, exportieren Sie eine Sicherung oder löschen Sie alles, indem Sie die App-Daten löschen oder die App deinstallieren.",
+      "changes_heading": "Änderungen dieser Erklärung",
+      "changes_text": "Wenn sich diese Erklärung ändert, aktualisieren wir diese Seite und ihr Datum.",
+      "contact_heading": "Kontakt",
+      "contact_text": "Fragen zu dieser Erklärung? Schreiben Sie uns:"
     }
   }
 }

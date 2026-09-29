@@ -619,6 +619,38 @@
       "changes_text": "We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.",
       "contact_heading": "Contact",
       "contact_text": "If you have questions about this privacy policy or PolyTuner's data practices, contact us at:"
+    },
+    "girogruppi": {
+      "title": "Polityka prywatności — GiroGruppi",
+      "meta_description": "Polityka prywatności GiroGruppi firmy PineSoft. Aplikacja działa offline, nie ma konta, reklam ani analityki i przechowuje Twoje dane na urządzeniu.",
+      "back_link": "Powrót do narzędzi",
+      "heading": "Polityka prywatności",
+      "app_label": "Aplikacja:",
+      "developer_label": "Deweloper:",
+      "last_updated_label": "Ostatnia aktualizacja:",
+      "last_updated_date": "29 września 2026",
+      "intro": "tworzy zrównoważone grupy na podstawie listy osób, które wprowadzasz, i rotuje je w kolejnych sesjach. Działa w całości na Twoim urządzeniu.",
+      "summary_heading": "Podsumowanie",
+      "summary_text": "GiroGruppi nie zbiera, nie przesyła ani nie sprzedaje żadnych danych osobowych. PineSoft nie otrzymuje niczego z Twojego korzystania z aplikacji.",
+      "offline_heading": "Offline, bez konta",
+      "offline_text": "Aplikacja działa w pełni offline. Nie wymaga rejestracji ani logowania i nie żąda żadnych uprawnień, w tym dostępu do internetu.",
+      "storage_heading": "Dane przechowywane na urządzeniu",
+      "storage_text": "Wprowadzone przez Ciebie imiona i nazwiska, tagi, grupy i ustawienia są zapisywane w lokalnym pliku w prywatnej pamięci aplikacji na Twoim urządzeniu. Dane te nigdy nie opuszczają urządzenia, chyba że zdecydujesz się je udostępnić. Odinstalowanie aplikacji lub wyczyszczenie jej danych je usuwa.",
+      "sharing_heading": "Udostępnianie i kopia zapasowa",
+      "sharing_intro": "GiroGruppi udostępnia dane tylko na Twoje żądanie, za pomocą systemowego menu udostępniania:",
+      "sharing_backup": "Kopia zapasowa: plik JSON ze wszystkimi Twoimi danymi (girogruppi-backup.json).",
+      "sharing_export": "Eksport: plik CSV lub zwykły tekst z utworzonymi przez Ciebie grupami.",
+      "sharing_choice": "To Ty wybierasz aplikację docelową. To ona, a nie PineSoft, otrzymuje dane i przetwarza je zgodnie z własną polityką prywatności. Kopię zapasową przywraca się, wklejając jej tekst do aplikacji.",
+      "noads_heading": "Bez reklam, bez analityki",
+      "noads_text": "Aplikacja nie zawiera reklam, analityki, raportowania awarii ani żadnego śledzenia.",
+      "children_heading": "Dzieci",
+      "children_text": "GiroGruppi nie zbiera danych osobowych od nikogo, także od dzieci.",
+      "control_heading": "Twoja kontrola",
+      "control_text": "Ponieważ Twoje dane pozostają na urządzeniu, masz nad nimi pełną kontrolę: edytuj lub usuwaj wpisy w aplikacji, eksportuj kopię zapasową albo usuń wszystko, czyszcząc dane aplikacji lub ją odinstalowując.",
+      "changes_heading": "Zmiany tej polityki",
+      "changes_text": "Jeśli ta polityka ulegnie zmianie, zaktualizujemy tę stronę i jej datę.",
+      "contact_heading": "Kontakt",
+      "contact_text": "Pytania dotyczące polityki? Napisz do nas:"
     }
   }
 }

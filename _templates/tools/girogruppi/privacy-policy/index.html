@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{privacy.girogruppi.title}} | PineSoft</title>
+  <meta name="description" content="{{privacy.girogruppi.meta_description}}">
+  <meta name="theme-color" content="#1B2A1B">
+  <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="stylesheet" href="/style.css">
+{{hreflang}}
+  <style>
+    .privacy-content {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    .privacy-content h2 {
+      color: var(--gold);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+    .privacy-content p, .privacy-content ul {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+    .privacy-content ul {
+      padding-left: 1.5rem;
+    }
+    .privacy-content li {
+      margin-bottom: 0.5rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--green-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .back-link:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+{{> nav}}
+
+  <section class="section">
+    <div class="container">
+      <div class="privacy-content">
+        <a href="/{{lang}}/tools/" class="back-link">&larr; {{privacy.girogruppi.back_link}}</a>
+        <h1 class="section-title"><span class="pine">{{privacy.girogruppi.heading}}</span></h1>
+        <p><strong>{{privacy.girogruppi.app_label}}</strong> GiroGruppi<br>
+           <strong>{{privacy.girogruppi.developer_label}}</strong> PineSoft<br>
+           <strong>{{privacy.girogruppi.last_updated_label}}</strong> {{privacy.girogruppi.last_updated_date}}</p>
+
+        <p><strong>GiroGruppi</strong> {{privacy.girogruppi.intro}}</p>
+
+        <h2>{{privacy.girogruppi.summary_heading}}</h2>
+        <p>{{privacy.girogruppi.summary_text}}</p>
+
+        <h2>{{privacy.girogruppi.offline_heading}}</h2>
+        <p>{{privacy.girogruppi.offline_text}}</p>
+
+        <h2>{{privacy.girogruppi.storage_heading}}</h2>
+        <p>{{privacy.girogruppi.storage_text}}</p>
+
+        <h2>{{privacy.girogruppi.sharing_heading}}</h2>
+        <p>{{privacy.girogruppi.sharing_intro}}</p>
+        <ul>
+            <li>{{privacy.girogruppi.sharing_backup}}</li>
+            <li>{{privacy.girogruppi.sharing_export}}</li>
+        </ul>
+        <p>{{privacy.girogruppi.sharing_choice}}</p>
+
+        <h2>{{privacy.girogruppi.noads_heading}}</h2>
+        <p>{{privacy.girogruppi.noads_text}}</p>
+
+        <h2>{{privacy.girogruppi.children_heading}}</h2>
+        <p>{{privacy.girogruppi.children_text}}</p>
+
+        <h2>{{privacy.girogruppi.control_heading}}</h2>
+        <p>{{privacy.girogruppi.control_text}}</p>
+
+        <h2>{{privacy.girogruppi.changes_heading}}</h2>
+        <p>{{privacy.girogruppi.changes_text}}</p>
+
+        <h2>{{privacy.girogruppi.contact_heading}}</h2>
+        <p>{{privacy.girogruppi.contact_text}}<br>
+          <a href="mailto:support@pinesoft.dev" style="color: var(--gold);">support@pinesoft.dev</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+{{> footer}}
+{{> nav-script}}
+
+</body>
+</html>

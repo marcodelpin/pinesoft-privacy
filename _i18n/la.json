@@ -619,6 +619,38 @@
       "changes_text": "We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.",
       "contact_heading": "Contact",
       "contact_text": "If you have questions about this privacy policy or PolyTuner's data practices, contact us at:"
+    },
+    "girogruppi": {
+      "title": "Consilium de Secreto — GiroGruppi",
+      "meta_description": "Consilium de secreto pro GiroGruppi ab PineSoft. Applicatio sine nexu operatur, rationem, promotiones, analyses non habet, et data tua in instrumento tuo servat.",
+      "back_link": "Ad Instrumenta redire",
+      "heading": "Consilium de Secreto",
+      "app_label": "Applicatio:",
+      "developer_label": "Elaborator:",
+      "last_updated_label": "Ultima renovatio:",
+      "last_updated_date": "a. d. III Kal. Oct. MMXXVI",
+      "intro": "ex indice hominum quem inseris coetus aequatos efficit eosque per sessiones vicissim mutat. Tota in instrumento tuo operatur.",
+      "summary_heading": "Summarium",
+      "summary_text": "GiroGruppi nulla data personalia colligit, transmittit aut vendit. PineSoft ex usu tuo applicationis nihil accipit.",
+      "offline_heading": "Sine nexu, sine ratione",
+      "offline_text": "Applicatio omnino sine nexu operatur. Nec descriptionem nec ingressum requirit, et nullam licentiam petit, ne aditum quidem ad interrete.",
+      "storage_heading": "Data in instrumento tuo servata",
+      "storage_text": "Nomina, notae, coetus et optiones quas inseris in tabella locali intra receptaculum privatum applicationis in instrumento tuo servantur. Haec data numquam instrumentum tuum relinquunt nisi ea communicare elegeris. Applicatione deleta vel datis eius purgatis delentur.",
+      "sharing_heading": "Communicatio et exemplar tutelae",
+      "sharing_intro": "GiroGruppi data communicat tantum cum petis, per indicem communicationis systematis tui:",
+      "sharing_backup": "Exemplar tutelae: tabella JSON cum omnibus datis tuis (girogruppi-backup.json).",
+      "sharing_export": "Exportatio: tabella CSV vel textus simplex cum coetibus quos fecisti.",
+      "sharing_choice": "Tu applicationem destinationis eligis. Illa applicatio, non PineSoft, data accipit eaque secundum suum consilium de secreto tractat. Exemplar tutelae restituitur textu eius in applicationem inserto.",
+      "noads_heading": "Sine promotionibus, sine analysi",
+      "noads_text": "Applicatio nullas promotiones, nullas analyses, nulla nuntia de defectibus, nullum omnino vestigium sequendi continet.",
+      "children_heading": "Pueri",
+      "children_text": "GiroGruppi ab nemine data personalia colligit, ne a pueris quidem.",
+      "control_heading": "Tuum imperium",
+      "control_text": "Quia data tua in instrumento tuo manent, ea plene regis: introitus in applicatione muta vel dele, exemplar tutelae exporta, vel omnia dele data applicationis purgando aut applicationem removendo.",
+      "changes_heading": "Mutationes huius consilii",
+      "changes_text": "Si hoc consilium mutabitur, hanc paginam eiusque diem renovabimus.",
+      "contact_heading": "Contactus",
+      "contact_text": "Quaestiones de hoc consilio? Scribe nobis:"
     }
   }
 }

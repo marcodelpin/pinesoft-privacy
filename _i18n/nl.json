@@ -619,6 +619,38 @@
       "changes_text": "We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.",
       "contact_heading": "Contact",
       "contact_text": "If you have questions about this privacy policy or PolyTuner's data practices, contact us at:"
+    },
+    "girogruppi": {
+      "title": "Privacybeleid — GiroGruppi",
+      "meta_description": "Privacybeleid van GiroGruppi van PineSoft. De app werkt offline, heeft geen account, geen advertenties en geen analyse en houdt je gegevens op je apparaat.",
+      "back_link": "Terug naar Tools",
+      "heading": "Privacybeleid",
+      "app_label": "App:",
+      "developer_label": "Ontwikkelaar:",
+      "last_updated_label": "Laatst bijgewerkt:",
+      "last_updated_date": "29 september 2026",
+      "intro": "maakt evenwichtige groepen op basis van een lijst met personen die je invoert en laat ze over sessies roteren. Alles gebeurt op je eigen apparaat.",
+      "summary_heading": "Samenvatting",
+      "summary_text": "GiroGruppi verzamelt, verzendt of verkoopt geen persoonsgegevens. PineSoft ontvangt niets van je gebruik van de app.",
+      "offline_heading": "Offline, geen account",
+      "offline_text": "De app werkt volledig offline. Er is geen registratie of inlog en de app vraagt geen enkele toestemming, ook geen internettoegang.",
+      "storage_heading": "Gegevens op je apparaat",
+      "storage_text": "De namen, tags, groepen en instellingen die je invoert worden opgeslagen in een lokaal bestand in de privéopslag van de app op je apparaat. Deze gegevens verlaten je apparaat nooit, tenzij jij ervoor kiest ze te delen. Door de app te verwijderen of de gegevens ervan te wissen worden ze verwijderd.",
+      "sharing_heading": "Delen en back-up",
+      "sharing_intro": "GiroGruppi deelt alleen gegevens als jij erom vraagt, via het deelmenu van je systeem:",
+      "sharing_backup": "Back-up: een JSON-bestand met al je gegevens (girogruppi-backup.json).",
+      "sharing_export": "Export: een CSV-bestand of platte tekst met de groepen die je hebt gemaakt.",
+      "sharing_choice": "Jij kiest de doel-app. Die app, niet PineSoft, ontvangt de gegevens en verwerkt ze volgens haar eigen privacybeleid. Een back-up herstel je door de tekst ervan in de app te plakken.",
+      "noads_heading": "Geen advertenties, geen analyse",
+      "noads_text": "De app bevat geen advertenties, geen analyse, geen crashrapportage en geen enkele vorm van tracking.",
+      "children_heading": "Kinderen",
+      "children_text": "GiroGruppi verzamelt van niemand persoonsgegevens, ook niet van kinderen.",
+      "control_heading": "Jouw controle",
+      "control_text": "Omdat je gegevens op je apparaat blijven, heb je er volledige controle over: bewerk of verwijder items in de app, exporteer een back-up, of wis alles door de appgegevens te wissen of de app te verwijderen.",
+      "changes_heading": "Wijzigingen in dit beleid",
+      "changes_text": "Als dit beleid verandert, werken we deze pagina en de datum bij.",
+      "contact_heading": "Contact",
+      "contact_text": "Vragen over dit beleid? Schrijf ons:"
     }
   }
 }
