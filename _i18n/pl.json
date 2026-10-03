@@ -25,7 +25,7 @@
     "find_on_play": "Znajdź nas na Google Play",
     "games_count": "20 gier",
     "games_desc": "Gry sterowane żyroskopem — przechyl telefon, aby grać. Logiczne, zręcznościowe, akcji i inne.",
-    "tools_count": "2 aplikacje",
+    "tools_count": "3 aplikacje",
     "tools_desc": "Analiza dźwięku, strojenie instrumentów i aplikacje użytkowe.",
     "reading_count": "1 aplikacja",
     "reading_desc": "Cyfrowa ochrona rzadkich, zagrożonych i klasycznych języków.",
@@ -57,7 +57,7 @@
   "tools": {
     "title": "Narzędzia",
     "utilities": "Narzędzia",
-    "meta_description": "Narzędzia do analizy dźwięku i muzyki od PineSoft. Spektrogram SoundScope, tuner gitarowy PolyTuner i więcej.",
+    "meta_description": "Narzędzia PineSoft do dźwięku, muzyki i grup. Spektrogram SoundScope, tuner gitarowy PolyTuner, GiroGruppi do tworzenia grup i więcej.",
     "subtitle": "Aplikacje do analizy dźwięku, muzyki i produktywności.",
     "soundscope": {
       "category": "Muzyka i dźwięk",
@@ -66,6 +66,10 @@
     "polytuner": {
       "category": "Muzyka i dźwięk",
       "desc": "Polifoniczny tuner gitarowy z wykrywaniem wysokości dźwięku w czasie rzeczywistym. Uderz we wszystkie struny naraz i natychmiast zobacz strojenie każdej z nich. 9 predefiniowanych strojów, 8 języków."
+    },
+    "girogruppi": {
+      "category": "Produktywność",
+      "desc": "Wyważone grupy, pary razem, sprawiedliwa kolejka. Działa offline."
     }
   },
   "reading": {
@@ -311,6 +315,53 @@
       "privacy_word": "Privacy",
       "privacy_text": "PolyTuner processes microphone audio entirely on your device. Audio is never recorded, saved, or transmitted. Only anonymous tuning history remains on-device.",
       "privacy_link": "Full Privacy Policy"
+    },
+    "girogruppi": {
+      "meta_title": "Tworzenie grup",
+      "meta_description": "Wyważone grupy, pary razem, sprawiedliwa kolejka. Działa offline.",
+      "og_title": "Tworzenie grup",
+      "og_description": "Wyważone grupy, pary razem, sprawiedliwa kolejka. Działa offline.",
+      "twitter_description": "Wyważone grupy, pary razem, sprawiedliwa kolejka. Działa offline.",
+      "subtitle": "GiroGruppi tworzy wyważone grupy z listy osób i pamięta, kto przygotowywał i kiedy. Dla grup parafialnych, kolacji w rotacji, zespołów wolontariuszy, harcerzy i każdej społeczności, która raz po raz dzieli się na grupy.",
+      "stat_languages": "Języki",
+      "stat_demo": "Osób w wersji demo",
+      "stat_account": "Wymaganych kont",
+      "stat_excel": "Eksport do Excela",
+      "features_key": "Kluczowe",
+      "features_word": "Funkcje",
+      "feat_tags_title": "Osoby z etykietami",
+      "feat_tags_desc": "Dodawaj osoby i nadawaj każdej etykiety, takie jak młody, starszy lub ma auto. Twórz własne etykiety. Wklej listę imion, aby zaimportować je za jednym razem.",
+      "feat_couples_title": "Pary zostają razem",
+      "feat_couples_desc": "Połącz dwie osoby jako partnerów: zawsze trafiają do tej samej grupy i liczą się jako jedna jednostka przy przydzielaniu kolejki przygotowań.",
+      "feat_rules_title": "Reguły obowiązkowe i preferowane",
+      "feat_rules_desc": "Wybierz liczbę grup lub liczbę osób w grupie. Dodaj reguły: co najmniej lub co najwyżej N osób z etykietą na grupę, równomierny rozkład etykiety między grupy, para w każdej grupie, trzymanie osób razem lub osobno. Oznacz każdą regułę jako obowiązkową lub preferowaną.",
+      "feat_answers_title": "Jasne odpowiedzi",
+      "feat_answers_desc": "Jeśli reguł nie da się spełnić, aplikacja mówi, która reguła nie jest spełniona i o ile, oraz proponuje jej złagodzenie. Nigdy nie twierdzi, że podział jest niemożliwy tylko dlatego, że skończył się czas wyszukiwania.",
+      "feat_rotation_title": "Kolejka na spotkania",
+      "feat_rotation_desc": "Zaplanuj spotkania w kalendarzu, a aplikacja zaproponuje, kto przygotowuje w każdej grupie, rozdzielając kolejkę sprawiedliwie i zaczynając od osób, które przygotowywały najdawniej.",
+      "feat_repeats_title": "Mniej powtarzanych spotkań",
+      "feat_repeats_desc": "W kolejnych podziałach aplikacja stara się nie łączyć ponownie tych samych osób.",
+      "feat_edit_title": "Edycja i ponowne losowanie",
+      "feat_edit_desc": "Wynik się nie podoba? Wylosuj go ponownie, zablokuj osoby na miejscu lub przenoś je między grupami i od razu zobacz podświetlone naruszenia reguł.",
+      "feat_parallel_title": "Kilka podziałów naraz",
+      "feat_parallel_desc": "Prowadź różne podziały równolegle. Osoby zajęte już w innym podziale w tym samym okresie są automatycznie pomijane.",
+      "feat_export_title": "Eksport i kopia zapasowa",
+      "feat_export_desc": "Udostępnij podział jako tekst lub CSV. Zapisz i przywróć całą listę jako plik.",
+      "feat_whatsapp_title": "Wysyłanie na WhatsApp",
+      "feat_whatsapp_desc": "Wyślij podział prosto na WhatsApp w formacie wiadomości, jaki społeczności piszą ręcznie: jeden numerowany wiersz na grupę, pary zapisane razem, opcjonalna notatka i kto przygotowuje w każdej grupie.",
+      "feat_share_title": "Udostępnianie listy osób",
+      "feat_share_desc": "Udostępnij listę osób z etykietami i parami jako plik, także przez WhatsApp, i zaimportuj ją na innym telefonie. Osoby, które już są na liście, są pomijane. Lista osób lub kopia zapasowa otrzymana na WhatsApp otwiera się bezpośrednio w GiroGruppi.",
+      "feat_excel_title": "Eksport do Excela",
+      "feat_excel_desc": "Wyeksportuj wszystkie podziały do skoroszytu Excel (.xlsx) i udostępnij go.",
+      "feat_try_title": "Wypróbuj w kilka sekund",
+      "feat_try_desc": "Wczytaj z menu dane demo z 40 osobami i poznaj każdą funkcję. Aplikacja jest dostępna w 9 językach: angielskim, włoskim, niemieckim, hiszpańskim, francuskim, japońskim, koreańskim, portugalskim i chińskim. Otwiera się w języku telefonu, jeśli jest obsługiwany; na Androidzie 13 i nowszym możesz wybrać inny język w ustawieniach języka aplikacji.",
+      "screens_title": "Zrzuty ekranu",
+      "privacy_your": "Twoja",
+      "privacy_word": "prywatność",
+      "privacy_text": "GiroGruppi działa offline we wszystkim, co robi: nie potrzebujesz konta. Twoje grupy i osoby pozostają na Twoim urządzeniu. Aplikacja wyświetla jeden baner reklamowy Google AdMob (reklamy niespersonalizowane; w EOG, Wielkiej Brytanii i Szwajcarii wybierasz w formularzu zgody Google). Reklamy wymagają połączenia z internetem, a pakiet SDK AdMob wysyła do Google dane takie jak adres IP, przybliżona lokalizacja, interakcje z reklamami, dane diagnostyczne i identyfikator reklamowy. Jednorazowy zakup w aplikacji, Usuń reklamy, usuwa baner. Udostępnianie i tworzenie kopii zapasowej to zawsze Twój wybór. Szczegóły znajdziesz w polityce prywatności.",
+      "privacy_link": "Pełna polityka prywatności",
+      "cta_try": "Wypróbuj",
+      "cta_free": "Za darmo na Google Play. Nie wymaga konta."
     }
   },
   "privacy": {

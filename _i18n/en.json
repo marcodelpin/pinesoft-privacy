@@ -25,7 +25,7 @@
     "find_on_play": "Find us on Google Play",
     "games_count": "20 games",
     "games_desc": "Gyroscope-controlled tilt-to-play games. Puzzle, skill, action, and more.",
-    "tools_count": "2 apps",
+    "tools_count": "3 apps",
     "tools_desc": "Audio analysis, music tuning, and utility apps.",
     "reading_count": "1 app",
     "reading_desc": "Digital preservation of rare, endangered, and classical languages.",
@@ -57,7 +57,7 @@
   "tools": {
     "title": "Tools",
     "utilities": "Utilities",
-    "meta_description": "Audio analysis and music tools by PineSoft. SoundScope spectrogram, PolyTuner guitar tuner, and more.",
+    "meta_description": "Audio, music and group tools by PineSoft. SoundScope spectrogram, PolyTuner guitar tuner, GiroGruppi group maker, and more.",
     "subtitle": "Audio analysis, music, and productivity apps.",
     "soundscope": {
       "category": "Music & Audio",
@@ -66,6 +66,10 @@
     "polytuner": {
       "category": "Music & Audio",
       "desc": "Polyphonic guitar tuner with real-time pitch detection. Strum all strings at once and see each one's tuning instantly. 9 tuning presets, 8 languages."
+    },
+    "girogruppi": {
+      "category": "Productivity",
+      "desc": "Balanced groups, couples kept together, fair rotation. Works offline."
     }
   },
   "reading": {
@@ -311,6 +315,53 @@
       "privacy_word": "Privacy",
       "privacy_text": "PolyTuner processes microphone audio entirely on your device. Audio is never recorded, saved, or transmitted. Only anonymous tuning history remains on-device.",
       "privacy_link": "Full Privacy Policy"
+    },
+    "girogruppi": {
+      "meta_title": "Group Maker",
+      "meta_description": "Balanced groups, couples kept together, fair rotation. Works offline.",
+      "og_title": "Group Maker",
+      "og_description": "Balanced groups, couples kept together, fair rotation. Works offline.",
+      "twitter_description": "Balanced groups, couples kept together, fair rotation. Works offline.",
+      "subtitle": "GiroGruppi builds balanced groups from a list of people and remembers who prepared and when. Made for parish groups, rotating dinners, volunteer teams, scouts and any community that splits into groups again and again.",
+      "stat_languages": "Languages",
+      "stat_demo": "Demo people",
+      "stat_account": "Accounts needed",
+      "stat_excel": "Excel export",
+      "features_key": "Key",
+      "features_word": "Features",
+      "feat_tags_title": "Tagged people",
+      "feat_tags_desc": "Add people and give each one tags such as young, old or has car. Create your own tags. Paste a list of names to import them in one go.",
+      "feat_couples_title": "Couples stay together",
+      "feat_couples_desc": "Link two people as partners: they always end up in the same group and count as one unit when preparation turns are assigned.",
+      "feat_rules_title": "Hard and soft rules",
+      "feat_rules_desc": "Choose how many groups or how many people per group. Add rules: at least or at most N people with a tag per group, balance a tag across groups, a couple in every group, keep people together or apart. Mark each rule as a must (hard) or a preference (soft).",
+      "feat_answers_title": "Clear answers",
+      "feat_answers_desc": "If the rules cannot be satisfied, the app tells you which rule fails and by how much, and offers to relax it. It never claims a group set is impossible when it simply ran out of search time.",
+      "feat_rotation_title": "Rotation over sessions",
+      "feat_rotation_desc": "Plan sessions over dates and let the app propose who prepares in each group, spreading turns fairly and starting with whoever prepared least recently.",
+      "feat_repeats_title": "Fewer repeated meetings",
+      "feat_repeats_desc": "Across successive groupings, the app tries to avoid putting the same people together again.",
+      "feat_edit_title": "Edit and re-roll",
+      "feat_edit_desc": "Not happy with a result? Re-roll it, lock people in place or move them between groups, and see rule violations highlighted live.",
+      "feat_parallel_title": "Several groupings at once",
+      "feat_parallel_desc": "Run different groupings in parallel. People already busy in another grouping in the same period are left out automatically.",
+      "feat_export_title": "Export and backup",
+      "feat_export_desc": "Share a grouping as text or CSV. Back up and restore your whole list as a file.",
+      "feat_whatsapp_title": "Send to WhatsApp",
+      "feat_whatsapp_desc": "Send a grouping straight to WhatsApp in the message format communities write by hand: one numbered line per group, couples written together, an optional note and who prepares in each group.",
+      "feat_share_title": "Share the people list",
+      "feat_share_desc": "Share your people list, with tags and couples, as a file, also through WhatsApp, and import it on another phone. People already on the list are skipped. A people list or backup received in WhatsApp opens directly with GiroGruppi.",
+      "feat_excel_title": "Excel export",
+      "feat_excel_desc": "Export all your groupings to an Excel (.xlsx) workbook and share it.",
+      "feat_try_title": "Try it in seconds",
+      "feat_try_desc": "Load the demo pool of 40 people from the menu and explore every feature. Available in 9 languages: English, Italian, German, Spanish, French, Japanese, Korean, Portuguese and Chinese. The app opens in your phone's language; on Android 13 and later you can choose another one in the app's language setting.",
+      "screens_title": "Screenshots",
+      "privacy_your": "Your",
+      "privacy_word": "Privacy",
+      "privacy_text": "GiroGruppi works offline for everything it does: no account needed. Your groups and people stay on your device. The app shows one banner ad from Google AdMob (non-personalized ads; in the EEA, UK and Switzerland you choose through Google's consent form). Ads need an internet connection, and the AdMob SDK sends data such as IP address, approximate location, ad interactions, diagnostics and the advertising ID to Google. A one-time in-app purchase, Remove ads, removes the ad. Sharing or backing up is always your choice. See the privacy policy for details.",
+      "privacy_link": "Full Privacy Policy",
+      "cta_try": "Try",
+      "cta_free": "Free on Google Play. No account required."
     }
   },
   "privacy": {

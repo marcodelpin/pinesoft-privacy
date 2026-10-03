@@ -25,7 +25,7 @@
     "find_on_play": "Encontre-nos no Google Play",
     "games_count": "20 jogos",
     "games_desc": "Jogos de inclinação controlados por giroscópio. Quebra-cabeças, habilidade, ação e mais.",
-    "tools_count": "2 apps",
+    "tools_count": "3 apps",
     "tools_desc": "Análise de áudio, afinação musical e apps utilitários.",
     "reading_count": "1 app",
     "reading_desc": "Preservação digital de línguas raras, ameaçadas e clássicas.",
@@ -57,7 +57,7 @@
   "tools": {
     "title": "Ferramentas",
     "utilities": "Utilitários",
-    "meta_description": "Ferramentas de análise de áudio e música da PineSoft. Espectrograma SoundScope, afinador de guitarra PolyTuner e mais.",
+    "meta_description": "Ferramentas de áudio, música e grupos da PineSoft. Espectrograma SoundScope, afinador de guitarra PolyTuner, criador de grupos GiroGruppi e mais.",
     "subtitle": "Apps de análise de áudio, música e produtividade.",
     "soundscope": {
       "category": "Música e áudio",
@@ -66,6 +66,10 @@
     "polytuner": {
       "category": "Música e áudio",
       "desc": "Afinador de guitarra polifônico com detecção de tom em tempo real. Toque todas as cordas de uma vez e veja a afinação de cada uma instantaneamente. 9 predefinições de afinação, 8 idiomas."
+    },
+    "girogruppi": {
+      "category": "Produtividade",
+      "desc": "Grupos equilibrados, casais juntos, rodízio justo. Funciona offline."
     }
   },
   "reading": {
@@ -311,6 +315,53 @@
       "privacy_word": "Privacidade",
       "privacy_text": "PolyTuner processa o áudio do microfone inteiramente no seu dispositivo. O áudio nunca é gravado, salvo ou transmitido. Apenas o histórico de afinação anônimo permanece no dispositivo.",
       "privacy_link": "Política de privacidade completa"
+    },
+    "girogruppi": {
+      "meta_title": "Criar grupos",
+      "meta_description": "Grupos equilibrados, casais juntos, rodízio justo. Funciona offline.",
+      "og_title": "Criar grupos",
+      "og_description": "Grupos equilibrados, casais juntos, rodízio justo. Funciona offline.",
+      "twitter_description": "Grupos equilibrados, casais juntos, rodízio justo. Funciona offline.",
+      "subtitle": "O GiroGruppi monta grupos equilibrados a partir de uma lista de pessoas e lembra quem preparou e quando. Feito para grupos de paróquia, jantares em rodízio, equipes de voluntários, escoteiros e qualquer comunidade que se divide em grupos sempre de novo.",
+      "stat_languages": "Idiomas",
+      "stat_demo": "Pessoas na demo",
+      "stat_account": "Contas necessárias",
+      "stat_excel": "Exportar para Excel",
+      "features_key": "Recursos",
+      "features_word": "principais",
+      "feat_tags_title": "Pessoas com etiquetas",
+      "feat_tags_desc": "Adicione pessoas e dê etiquetas como jovem, idoso ou tem carro. Crie suas próprias etiquetas. Cole uma lista de nomes para importar tudo de uma vez.",
+      "feat_couples_title": "Casais ficam juntos",
+      "feat_couples_desc": "Ligue duas pessoas como parceiros: elas sempre ficam no mesmo grupo e contam como uma única unidade na distribuição dos turnos de preparo.",
+      "feat_rules_title": "Regras obrigatórias e preferidas",
+      "feat_rules_desc": "Escolha quantos grupos ou quantas pessoas por grupo. Adicione regras: pelo menos ou no máximo N pessoas com uma etiqueta por grupo, equilibrar uma etiqueta entre os grupos, um casal em cada grupo, manter pessoas juntas ou separadas. Cada regra pode ser obrigatória ou apenas preferida.",
+      "feat_answers_title": "Respostas claras",
+      "feat_answers_desc": "Se as regras não puderem ser cumpridas, o app mostra qual falha e por quanto, e oferece flexibilizá-la. Ele nunca diz que é impossível apenas porque o tempo de busca acabou.",
+      "feat_rotation_title": "Rodízio por sessões",
+      "feat_rotation_desc": "Planeje sessões por data e deixe o app sugerir quem prepara em cada grupo, distribuindo os turnos de forma justa e começando por quem preparou há mais tempo.",
+      "feat_repeats_title": "Menos encontros repetidos",
+      "feat_repeats_desc": "Entre agrupamentos sucessivos, o app evita juntar de novo as mesmas pessoas.",
+      "feat_edit_title": "Edite e sorteie de novo",
+      "feat_edit_desc": "Não gostou do resultado? Sorteie de novo, fixe pessoas no lugar ou mova entre grupos e veja na hora as regras violadas.",
+      "feat_parallel_title": "Vários agrupamentos ao mesmo tempo",
+      "feat_parallel_desc": "Gerencie agrupamentos diferentes em paralelo. Quem já está ocupado em outro agrupamento no mesmo período fica de fora automaticamente.",
+      "feat_export_title": "Exportar e fazer backup",
+      "feat_export_desc": "Compartilhe um agrupamento como texto ou CSV. Faça backup e restaure a lista inteira como arquivo.",
+      "feat_whatsapp_title": "Enviar pelo WhatsApp",
+      "feat_whatsapp_desc": "Envie um agrupamento direto para o WhatsApp no formato de mensagem que a comunidade escreve à mão: uma linha numerada por grupo, os casais escritos juntos, uma nota opcional e quem prepara em cada grupo.",
+      "feat_share_title": "Compartilhar a lista de pessoas",
+      "feat_share_desc": "Compartilhe sua lista de pessoas, com etiquetas e casais, como arquivo, inclusive pelo WhatsApp, e importe em outro celular. Pessoas que já estão na lista são ignoradas. Uma lista de pessoas ou um backup recebido no WhatsApp abre direto no GiroGruppi.",
+      "feat_excel_title": "Exportar para Excel",
+      "feat_excel_desc": "Exporte todos os seus agrupamentos para uma pasta de trabalho do Excel (.xlsx) e compartilhe.",
+      "feat_try_title": "Experimente em segundos",
+      "feat_try_desc": "Carregue pelo menu os dados de demonstração com 40 pessoas e explore todos os recursos. Disponível em 9 idiomas: português, inglês, italiano, alemão, espanhol, francês, japonês, coreano e chinês. O app abre no idioma do seu celular; a partir do Android 13 você pode escolher outro na configuração de idioma do app.",
+      "screens_title": "Capturas de tela",
+      "privacy_your": "Sua",
+      "privacy_word": "Privacidade",
+      "privacy_text": "O GiroGruppi funciona offline em tudo o que faz: não precisa de conta. Seus grupos e pessoas ficam no seu aparelho. O app mostra um banner de anúncio do Google AdMob (anúncios não personalizados; no EEE, no Reino Unido e na Suíça você escolhe pelo formulário de consentimento do Google). Os anúncios precisam de conexão com a internet, e o SDK do AdMob envia ao Google dados como endereço IP, localização aproximada, interações com anúncios, diagnósticos e o ID de publicidade. Uma compra única no app, Remover anúncios, tira o banner. Compartilhar ou fazer backup é sempre escolha sua. Veja a política de privacidade para mais detalhes.",
+      "privacy_link": "Política de privacidade completa",
+      "cta_try": "Experimentar",
+      "cta_free": "Grátis no Google Play. Nenhuma conta necessária."
     }
   },
   "privacy": {

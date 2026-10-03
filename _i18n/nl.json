@@ -25,7 +25,7 @@
     "find_on_play": "Vind ons op Google Play",
     "games_count": "20 games",
     "games_desc": "Games met gyroscoopbesturing: kantel om te spelen. Puzzel, vaardigheid, actie en meer.",
-    "tools_count": "2 apps",
+    "tools_count": "3 apps",
     "tools_desc": "Audio-analyse, muziekafstemming en hulpprogramma's.",
     "reading_count": "1 app",
     "reading_desc": "Digitaal behoud van zeldzame, bedreigde en klassieke talen.",
@@ -57,7 +57,7 @@
   "tools": {
     "title": "Tools",
     "utilities": "Hulpprogramma's",
-    "meta_description": "Audio-analyse en muziektools van PineSoft. SoundScope-spectrogram, PolyTuner-gitaarstemmer en meer.",
+    "meta_description": "Audio-, muziek- en groepstools van PineSoft. SoundScope-spectrogram, PolyTuner-gitaarstemmer, GiroGruppi-groepenmaker en meer.",
     "subtitle": "Apps voor audio-analyse, muziek en productiviteit.",
     "soundscope": {
       "category": "Muziek en audio",
@@ -66,6 +66,10 @@
     "polytuner": {
       "category": "Muziek en audio",
       "desc": "Polyfonische gitaarstemmer met realtime toonhoogtedetectie. Sla alle snaren tegelijk aan en zie de stemming van elke snaar direct. 9 stemmingspresets, 8 talen."
+    },
+    "girogruppi": {
+      "category": "Productiviteit",
+      "desc": "Evenwichtige groepen, koppels samen, eerlijke beurten. Werkt offline."
     }
   },
   "reading": {
@@ -311,6 +315,53 @@
       "privacy_word": "Privacy",
       "privacy_text": "PolyTuner processes microphone audio entirely on your device. Audio is never recorded, saved, or transmitted. Only anonymous tuning history remains on-device.",
       "privacy_link": "Full Privacy Policy"
+    },
+    "girogruppi": {
+      "meta_title": "Groepen maken",
+      "meta_description": "Evenwichtige groepen, koppels samen, eerlijke beurten. Werkt offline.",
+      "og_title": "Groepen maken",
+      "og_description": "Evenwichtige groepen, koppels samen, eerlijke beurten. Werkt offline.",
+      "twitter_description": "Evenwichtige groepen, koppels samen, eerlijke beurten. Werkt offline.",
+      "subtitle": "GiroGruppi maakt evenwichtige groepen uit een lijst met mensen en onthoudt wie wanneer heeft voorbereid. Voor parochiegroepen, rouleerdiners, vrijwilligersteams, scouting en elke gemeenschap die zich steeds opnieuw in groepen verdeelt.",
+      "stat_languages": "Talen",
+      "stat_demo": "Mensen in de demo",
+      "stat_account": "Accounts nodig",
+      "stat_excel": "Excel-export",
+      "features_key": "Belangrijkste",
+      "features_word": "Functies",
+      "feat_tags_title": "Mensen met labels",
+      "feat_tags_desc": "Voeg mensen toe en geef elk labels zoals jong, oud of heeft auto. Maak je eigen labels. Plak een lijst met namen om ze in een keer te importeren.",
+      "feat_couples_title": "Koppels blijven samen",
+      "feat_couples_desc": "Koppel twee mensen als partners: ze komen altijd in dezelfde groep en tellen als een eenheid bij het verdelen van de voorbereidingsbeurten.",
+      "feat_rules_title": "Verplichte en gewenste regels",
+      "feat_rules_desc": "Kies hoeveel groepen of hoeveel mensen per groep. Voeg regels toe: minstens of hoogstens N mensen met een label per groep, een label gelijk over de groepen verdelen, een koppel in elke groep, mensen bij elkaar of uit elkaar houden. Markeer elke regel als verplicht of als voorkeur.",
+      "feat_answers_title": "Duidelijke antwoorden",
+      "feat_answers_desc": "Als de regels niet haalbaar zijn, vertelt de app welke regel faalt en met hoeveel, en biedt aan die te versoepelen. De app zegt nooit dat een indeling onmogelijk is als alleen de zoektijd op was.",
+      "feat_rotation_title": "Beurten over bijeenkomsten",
+      "feat_rotation_desc": "Plan bijeenkomsten op datum en laat de app voorstellen wie in elke groep voorbereidt, met eerlijk verdeelde beurten, te beginnen bij wie het langst geleden heeft voorbereid.",
+      "feat_repeats_title": "Minder herhaalde ontmoetingen",
+      "feat_repeats_desc": "Over opeenvolgende indelingen probeert de app dezelfde mensen niet opnieuw samen te zetten.",
+      "feat_edit_title": "Bewerken en opnieuw indelen",
+      "feat_edit_desc": "Niet blij met een resultaat? Deel opnieuw in, zet mensen vast of verplaats ze tussen groepen en zie overtreden regels direct gemarkeerd.",
+      "feat_parallel_title": "Meerdere indelingen tegelijk",
+      "feat_parallel_desc": "Beheer verschillende indelingen naast elkaar. Mensen die in dezelfde periode al in een andere indeling zitten, worden automatisch overgeslagen.",
+      "feat_export_title": "Export en back-up",
+      "feat_export_desc": "Deel een indeling als tekst of CSV. Maak een back-up van je hele lijst als bestand en zet die terug.",
+      "feat_whatsapp_title": "Naar WhatsApp sturen",
+      "feat_whatsapp_desc": "Stuur een indeling direct naar WhatsApp in het berichtformaat dat gemeenschappen met de hand schrijven: een genummerde regel per groep, koppels samen geschreven, een optionele notitie en wie in elke groep voorbereidt.",
+      "feat_share_title": "De lijst met mensen delen",
+      "feat_share_desc": "Deel je lijst met mensen, met labels en koppels, als bestand, ook via WhatsApp, en importeer hem op een andere telefoon. Mensen die al op de lijst staan, worden overgeslagen. Een lijst met mensen of een back-up die je via WhatsApp ontvangt, opent direct in GiroGruppi.",
+      "feat_excel_title": "Excel-export",
+      "feat_excel_desc": "Exporteer al je indelingen naar een Excel-werkmap (.xlsx) en deel die.",
+      "feat_try_title": "Probeer het in seconden",
+      "feat_try_desc": "Laad via het menu de demo met 40 mensen en ontdek elke functie. Beschikbaar in 9 talen: Engels, Italiaans, Duits, Spaans, Frans, Japans, Koreaans, Portugees en Chinees. De app opent in de taal van je telefoon als die wordt ondersteund; vanaf Android 13 kun je een andere kiezen in de taalinstelling van de app.",
+      "screens_title": "Schermafbeeldingen",
+      "privacy_your": "Je",
+      "privacy_word": "privacy",
+      "privacy_text": "GiroGruppi werkt offline voor alles wat de app doet: geen account nodig. Je groepen en mensen blijven op je apparaat. De app toont een banneradvertentie van Google AdMob (niet-gepersonaliseerde advertenties; in de EER, het VK en Zwitserland kies je via het toestemmingsformulier van Google). Advertenties hebben een internetverbinding nodig en de AdMob-SDK stuurt gegevens zoals IP-adres, geschatte locatie, interacties met advertenties, diagnostiek en de advertentie-ID naar Google. Een eenmalige aankoop in de app, Advertenties verwijderen, haalt de banner weg. Delen of een back-up maken is altijd jouw keuze. Zie het privacybeleid voor details.",
+      "privacy_link": "Volledig privacybeleid",
+      "cta_try": "Probeer",
+      "cta_free": "Gratis op Google Play. Geen account vereist."
     }
   },
   "privacy": {

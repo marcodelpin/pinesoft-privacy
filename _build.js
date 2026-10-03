@@ -261,6 +261,7 @@ const directRedirects = {
   'gyro-2048': 'games/gyro-2048/',
   'horatio': 'reading/horatio/',
   'polytuner': 'tools/polytuner/',
+  'girogruppi': 'tools/girogruppi/',
   'soundscope/privacy-policy': 'tools/soundscope/privacy-policy/',
   'gyro-2048/privacy-policy': 'games/gyro-2048/privacy-policy/',
   'horatio/privacy-policy': 'reading/horatio/privacy-policy/',

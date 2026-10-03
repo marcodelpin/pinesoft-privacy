@@ -25,7 +25,7 @@
     "find_on_play": "Google Play에서 만나보세요",
     "games_count": "20개 게임",
     "games_desc": "자이로스코프로 조작하는 기울기 게임. 퍼즐, 스킬, 액션 등.",
-    "tools_count": "2개 앱",
+    "tools_count": "3개 앱",
     "tools_desc": "오디오 분석, 음악 튜닝 및 유틸리티 앱.",
     "reading_count": "1개 앱",
     "reading_desc": "희귀 언어, 위기 언어 및 고전 언어의 디지털 보존.",
@@ -57,7 +57,7 @@
   "tools": {
     "title": "도구",
     "utilities": "유틸리티",
-    "meta_description": "PineSoft의 오디오 분석 및 음악 도구. SoundScope 스펙트로그램, PolyTuner 기타 튜너 등.",
+    "meta_description": "PineSoft의 오디오, 음악 및 그룹 도구. SoundScope 스펙트로그램, PolyTuner 기타 튜너, GiroGruppi 그룹 나누기 등.",
     "subtitle": "오디오 분석, 음악 및 생산성 앱.",
     "soundscope": {
       "category": "음악 & 오디오",
@@ -66,6 +66,10 @@
     "polytuner": {
       "category": "음악 & 오디오",
       "desc": "실시간 피치 감지 기능이 있는 폴리포닉 기타 튜너. 모든 현을 한 번에 스트럼하고 각 현의 튜닝을 즉시 확인하세요. 9가지 튜닝 프리셋, 8개 언어 지원."
+    },
+    "girogruppi": {
+      "category": "생산성",
+      "desc": "균형 잡힌 그룹, 부부는 함께, 공평한 준비 순번. 오프라인 지원."
     }
   },
   "reading": {
@@ -311,6 +315,53 @@
       "privacy_word": "개인정보",
       "privacy_text": "PolyTuner는 마이크 오디오를 장치에서 완전히 처리합니다. 오디오는 절대 기록, 저장 또는 전송되지 않습니다. 익명 튜닝 기록만 장치에 남아 있습니다.",
       "privacy_link": "전체 개인정보 처리방침"
+    },
+    "girogruppi": {
+      "meta_title": "그룹 나누기",
+      "meta_description": "균형 잡힌 그룹, 부부는 함께, 공평한 준비 순번. 오프라인 지원.",
+      "og_title": "그룹 나누기",
+      "og_description": "균형 잡힌 그룹, 부부는 함께, 공평한 준비 순번. 오프라인 지원.",
+      "twitter_description": "균형 잡힌 그룹, 부부는 함께, 공평한 준비 순번. 오프라인 지원.",
+      "subtitle": "GiroGruppi는 사람 목록에서 균형 잡힌 그룹을 만들고, 누가 언제 준비를 맡았는지 기억합니다. 교회 모임, 돌아가며 하는 식사 모임, 자원봉사 팀, 스카우트 등 자주 그룹을 새로 나누는 모든 공동체를 위한 앱입니다.",
+      "stat_languages": "언어",
+      "stat_demo": "데모 인원",
+      "stat_account": "필요한 계정",
+      "stat_excel": "Excel 내보내기",
+      "features_key": "주요",
+      "features_word": "기능",
+      "feat_tags_title": "태그가 있는 사람들",
+      "feat_tags_desc": "사람을 추가하고 젊음, 연장자, 차량 보유 같은 태그를 붙이세요. 태그는 직접 만들 수 있고, 이름 목록을 붙여넣어 한 번에 가져올 수도 있습니다.",
+      "feat_couples_title": "부부는 항상 함께",
+      "feat_couples_desc": "두 사람을 파트너로 연결하면 항상 같은 그룹에 배정되며, 준비 순번을 정할 때는 한 단위로 계산됩니다.",
+      "feat_rules_title": "필수 규칙과 선호 규칙",
+      "feat_rules_desc": "그룹 수 또는 그룹당 인원을 정하세요. 규칙도 추가할 수 있습니다: 그룹마다 특정 태그를 가진 사람이 최소 또는 최대 N명, 태그 균등 배분, 그룹마다 부부 한 쌍, 특정 사람끼리 같은 그룹 또는 다른 그룹. 각 규칙은 필수 또는 선호로 지정합니다.",
+      "feat_answers_title": "명확한 결과",
+      "feat_answers_desc": "규칙을 지킬 수 없으면 어떤 규칙이 얼마나 부족한지 알려 주고 완화를 제안합니다. 검색 시간이 끝났다는 이유만으로 불가능하다고 말하지 않습니다.",
+      "feat_rotation_title": "회차별 순번",
+      "feat_rotation_desc": "날짜별로 모임을 계획하면 각 그룹의 준비 담당자를 제안합니다. 순번은 공평하게 나누어지고, 가장 오래 준비하지 않은 사람이 먼저입니다.",
+      "feat_repeats_title": "반복 만남 줄이기",
+      "feat_repeats_desc": "연속해서 그룹을 나눌 때 같은 사람들이 다시 한 그룹이 되지 않도록 합니다.",
+      "feat_edit_title": "수정과 다시 섞기",
+      "feat_edit_desc": "결과가 마음에 들지 않으면 다시 섞거나, 사람을 고정하거나 다른 그룹으로 옮길 수 있습니다. 규칙 위반은 바로 표시됩니다.",
+      "feat_parallel_title": "여러 그룹 나누기를 동시에",
+      "feat_parallel_desc": "여러 그룹 나누기를 동시에 관리하세요. 같은 기간에 다른 그룹 나누기에 이미 배정된 사람은 자동으로 제외됩니다.",
+      "feat_export_title": "내보내기와 백업",
+      "feat_export_desc": "그룹 나누기를 텍스트 또는 CSV로 공유하고, 전체 명단을 파일로 백업하고 복원할 수 있습니다.",
+      "feat_whatsapp_title": "WhatsApp으로 보내기",
+      "feat_whatsapp_desc": "공동체에서 손으로 쓰던 메시지 형식 그대로 그룹 나누기를 WhatsApp으로 바로 보낼 수 있습니다. 그룹마다 번호가 붙은 한 줄, 부부는 함께 표기, 선택 메모, 그룹별 준비 담당자가 들어갑니다.",
+      "feat_share_title": "명단 공유",
+      "feat_share_desc": "태그와 부부 정보가 담긴 명단을 파일로 공유하고(WhatsApp도 가능) 다른 휴대폰에서 가져올 수 있습니다. 이미 있는 사람은 건너뜁니다. WhatsApp으로 받은 명단이나 백업은 GiroGruppi로 바로 열 수 있습니다.",
+      "feat_excel_title": "Excel 내보내기",
+      "feat_excel_desc": "모든 그룹 나누기를 Excel(.xlsx) 통합 문서로 내보내 공유할 수 있습니다.",
+      "feat_try_title": "몇 초 만에 체험",
+      "feat_try_desc": "메뉴에서 40명의 데모 데이터를 불러와 모든 기능을 체험해 보세요. 한국어, 영어, 이탈리아어, 독일어, 스페인어, 프랑스어, 일본어, 포르투갈어, 중국어의 9개 언어를 지원합니다. 앱은 휴대폰 언어로 열리며, Android 13 이상에서는 앱 언어 설정에서 다른 언어를 선택할 수 있습니다.",
+      "screens_title": "스크린샷",
+      "privacy_your": "당신의",
+      "privacy_word": "개인정보",
+      "privacy_text": "GiroGruppi의 모든 기능은 오프라인으로 동작하며 계정이 필요 없습니다. 그룹과 사람 정보는 기기에 저장됩니다. 앱에는 Google AdMob 배너 광고가 하나 표시됩니다(맞춤 설정되지 않은 광고이며, EEA·영국·스위스에서는 Google 동의 양식으로 선택합니다). 광고에는 인터넷 연결이 필요하며, AdMob SDK는 IP 주소, 대략적인 위치, 광고 상호작용, 진단 정보, 광고 ID 등의 데이터를 Google에 전송합니다. 일회성 인앱 구매인 광고 제거로 광고를 없앨 수 있습니다. 공유와 백업은 언제나 사용자의 선택입니다. 자세한 내용은 개인정보 처리방침을 확인하세요.",
+      "privacy_link": "전체 개인정보 처리방침",
+      "cta_try": "사용해 보기",
+      "cta_free": "Google Play에서 무료. 계정 불필요."
     }
   },
   "privacy": {

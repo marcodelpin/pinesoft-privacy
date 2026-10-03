@@ -25,7 +25,7 @@
     "find_on_play": "Hitta oss på Google Play",
     "games_count": "20 spel",
     "games_desc": "Gyroskopstyrda lutningsspel. Pussel, skicklighet, action och mer.",
-    "tools_count": "2 appar",
+    "tools_count": "3 appar",
     "tools_desc": "Ljudanalys, musikstämning och verktygsappar.",
     "reading_count": "1 app",
     "reading_desc": "Digitalt bevarande av sällsynta, hotade och klassiska språk.",
@@ -57,7 +57,7 @@
   "tools": {
     "title": "Verktyg",
     "utilities": "Verktyg",
-    "meta_description": "Ljudanalys- och musikverktyg från PineSoft. SoundScope-spektrogram, PolyTuner-gitarrstämare och mer.",
+    "meta_description": "Ljud-, musik- och gruppverktyg från PineSoft. SoundScope-spektrogram, PolyTuner-gitarrstämare, GiroGruppi-gruppindelare och mer.",
     "subtitle": "Appar för ljudanalys, musik och produktivitet.",
     "soundscope": {
       "category": "Musik och ljud",
@@ -66,6 +66,10 @@
     "polytuner": {
       "category": "Musik och ljud",
       "desc": "Polyfonisk gitarrstämare med tonhöjdsdetektering i realtid. Spela alla strängar samtidigt och se varje strängs stämning direkt. 9 stämningsförinställningar, 8 språk."
+    },
+    "girogruppi": {
+      "category": "Produktivitet",
+      "desc": "Balanserade grupper, par tillsammans, rättvis turordning. Fungerar offline."
     }
   },
   "reading": {
@@ -311,6 +315,53 @@
       "privacy_word": "Privacy",
       "privacy_text": "PolyTuner processes microphone audio entirely on your device. Audio is never recorded, saved, or transmitted. Only anonymous tuning history remains on-device.",
       "privacy_link": "Full Privacy Policy"
+    },
+    "girogruppi": {
+      "meta_title": "Gruppindelning",
+      "meta_description": "Balanserade grupper, par tillsammans, rättvis turordning. Fungerar offline.",
+      "og_title": "Gruppindelning",
+      "og_description": "Balanserade grupper, par tillsammans, rättvis turordning. Fungerar offline.",
+      "twitter_description": "Balanserade grupper, par tillsammans, rättvis turordning. Fungerar offline.",
+      "subtitle": "GiroGruppi skapar balanserade grupper från en lista med personer och minns vem som förberedde och när. För församlingsgrupper, rullande middagar, volontärlag, scouter och alla gemenskaper som delar in sig i grupper om och om igen.",
+      "stat_languages": "Språk",
+      "stat_demo": "Personer i demon",
+      "stat_account": "Konton som krävs",
+      "stat_excel": "Excel-export",
+      "features_key": "Viktiga",
+      "features_word": "Funktioner",
+      "feat_tags_title": "Personer med taggar",
+      "feat_tags_desc": "Lägg till personer och ge var och en taggar som ung, äldre eller har bil. Skapa egna taggar. Klistra in en lista med namn för att importera dem i ett svep.",
+      "feat_couples_title": "Par hålls ihop",
+      "feat_couples_desc": "Koppla ihop två personer som partner: de hamnar alltid i samma grupp och räknas som en enhet när förberedelseturer fördelas.",
+      "feat_rules_title": "Obligatoriska och önskade regler",
+      "feat_rules_desc": "Välj hur många grupper eller hur många personer per grupp. Lägg till regler: minst eller högst N personer med en tagg per grupp, jämn fördelning av en tagg mellan grupperna, ett par i varje grupp, håll personer ihop eller isär. Markera varje regel som ett krav eller en önskan.",
+      "feat_answers_title": "Tydliga svar",
+      "feat_answers_desc": "Om reglerna inte går att uppfylla talar appen om vilken regel som inte håller och med hur mycket, och erbjuder att lätta på den. Den påstår aldrig att en indelning är omöjlig bara för att söktiden tog slut.",
+      "feat_rotation_title": "Turordning över träffar",
+      "feat_rotation_desc": "Planera träffar efter datum och låt appen föreslå vem som förbereder i varje grupp, med rättvist fördelade turer och med start hos den som förberedde för längst tid sedan.",
+      "feat_repeats_title": "Färre upprepade möten",
+      "feat_repeats_desc": "Över flera indelningar försöker appen undvika att sätta samma personer tillsammans igen.",
+      "feat_edit_title": "Redigera och slumpa om",
+      "feat_edit_desc": "Inte nöjd med resultatet? Slumpa om, lås personer på plats eller flytta dem mellan grupper och se regelbrott markerade direkt.",
+      "feat_parallel_title": "Flera indelningar samtidigt",
+      "feat_parallel_desc": "Kör olika indelningar parallellt. Personer som redan är upptagna i en annan indelning under samma period utesluts automatiskt.",
+      "feat_export_title": "Export och säkerhetskopia",
+      "feat_export_desc": "Dela en indelning som text eller CSV. Säkerhetskopiera och återställ hela listan som en fil.",
+      "feat_whatsapp_title": "Skicka till WhatsApp",
+      "feat_whatsapp_desc": "Skicka en indelning direkt till WhatsApp i det meddelandeformat som gemenskaper skriver för hand: en numrerad rad per grupp, par skrivna tillsammans, en valfri anteckning och vem som förbereder i varje grupp.",
+      "feat_share_title": "Dela personlistan",
+      "feat_share_desc": "Dela din personlista, med taggar och par, som en fil, även via WhatsApp, och importera den på en annan telefon. Personer som redan finns i listan hoppas över. En personlista eller säkerhetskopia som du får i WhatsApp öppnas direkt i GiroGruppi.",
+      "feat_excel_title": "Excel-export",
+      "feat_excel_desc": "Exportera alla dina indelningar till en Excel-arbetsbok (.xlsx) och dela den.",
+      "feat_try_title": "Prova på några sekunder",
+      "feat_try_desc": "Läs in demon med 40 personer från menyn och utforska alla funktioner. Finns på 9 språk: engelska, italienska, tyska, spanska, franska, japanska, koreanska, portugisiska och kinesiska. Appen öppnas på telefonens språk om det stöds; på Android 13 och senare kan du välja ett annat i appens språkinställning.",
+      "screens_title": "Skärmbilder",
+      "privacy_your": "Din",
+      "privacy_word": "integritet",
+      "privacy_text": "GiroGruppi fungerar offline för allt den gör: inget konto behövs. Dina grupper och personer stannar på din enhet. Appen visar en bannerannons från Google AdMob (icke-personanpassade annonser; i EES, Storbritannien och Schweiz väljer du via Googles samtyckesformulär). Annonser kräver internetanslutning, och AdMob-SDK:n skickar data som IP-adress, ungefärlig plats, annonsinteraktioner, diagnostik och annons-ID till Google. Ett engångsköp i appen, Ta bort annonser, tar bort bannern. Att dela eller säkerhetskopiera är alltid ditt val. Se integritetspolicyn för mer information.",
+      "privacy_link": "Fullständig integritetspolicy",
+      "cta_try": "Prova",
+      "cta_free": "Gratis på Google Play. Inget konto krävs."
     }
   },
   "privacy": {

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiroGruppi &mdash; समूह बनाने वाला ऐप</title>
+    <meta name="description" content="संतुलित समूह, जोड़े साथ, बारी का निष्पक्ष बँटवारा. ऑफ़लाइन चलता है.">
+
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:title" content="GiroGruppi &mdash; समूह बनाने वाला ऐप">
+    <meta property="og:description" content="संतुलित समूह, जोड़े साथ, बारी का निष्पक्ष बँटवारा. ऑफ़लाइन चलता है.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinesoft.dev/tools/girogruppi/">
+    <meta property="og:image" content="https://pinesoft.dev/images/girogruppi_feature.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="500">
+    <meta property="og:site_name" content="PineSoft">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GiroGruppi &mdash; समूह बनाने वाला ऐप">
+    <meta name="twitter:description" content="संतुलित समूह, जोड़े साथ, बारी का निष्पक्ष बँटवारा. ऑफ़लाइन चलता है.">
+    <meta name="twitter:image" content="https://pinesoft.dev/images/girogruppi_feature.png">
+
+    <meta name="theme-color" content="#1B2A1B">
+    <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="alternate" hreflang="ar" href="https://pinesoft.dev/ar/tools/girogruppi/">
+  <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/tools/girogruppi/">
+  <link rel="alternate" hreflang="el" href="https://pinesoft.dev/el/tools/girogruppi/">
+  <link rel="alternate" hreflang="en" href="https://pinesoft.dev/en/tools/girogruppi/">
+  <link rel="alternate" hreflang="es" href="https://pinesoft.dev/es/tools/girogruppi/">
+  <link rel="alternate" hreflang="fr" href="https://pinesoft.dev/fr/tools/girogruppi/">
+  <link rel="alternate" hreflang="he" href="https://pinesoft.dev/he/tools/girogruppi/">
+  <link rel="alternate" hreflang="hi" href="https://pinesoft.dev/hi/tools/girogruppi/">
+  <link rel="alternate" hreflang="it" href="https://pinesoft.dev/it/tools/girogruppi/">
+  <link rel="alternate" hreflang="ja" href="https://pinesoft.dev/ja/tools/girogruppi/">
+  <link rel="alternate" hreflang="ka" href="https://pinesoft.dev/ka/tools/girogruppi/">
+  <link rel="alternate" hreflang="ko" href="https://pinesoft.dev/ko/tools/girogruppi/">
+  <link rel="alternate" hreflang="la" href="https://pinesoft.dev/la/tools/girogruppi/">
+  <link rel="alternate" hreflang="mt" href="https://pinesoft.dev/mt/tools/girogruppi/">
+  <link rel="alternate" hreflang="nl" href="https://pinesoft.dev/nl/tools/girogruppi/">
+  <link rel="alternate" hreflang="pl" href="https://pinesoft.dev/pl/tools/girogruppi/">
+  <link rel="alternate" hreflang="pt" href="https://pinesoft.dev/pt/tools/girogruppi/">
+  <link rel="alternate" hreflang="ru" href="https://pinesoft.dev/ru/tools/girogruppi/">
+  <link rel="alternate" hreflang="sv" href="https://pinesoft.dev/sv/tools/girogruppi/">
+  <link rel="alternate" hreflang="tr" href="https://pinesoft.dev/tr/tools/girogruppi/">
+  <link rel="alternate" hreflang="zh" href="https://pinesoft.dev/zh/tools/girogruppi/">
+  <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/tools/girogruppi/">
+
+    <style>
+        :root {
+            --bg: #1B2A1B;
+            --bg2: #1E3320;
+            --card: #233A23;
+            --gold: #EDAE49;
+            --green: #2E7D32;
+            --green-light: #4CAF50;
+            --text: #E8E0D0;
+            --text2: #A8B5A0;
+            --text3: #7A8A72;
+            --border: rgba(237, 174, 73, 0.12);
+            --coming: #5C6BC0;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+        .section { padding: 3rem 0; }
+
+        /* Nav */
+        header { position: sticky; top: 0; z-index: 100; background: rgba(27,42,27,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+        nav { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; max-width: 1100px; margin: 0 auto; }
+        .nav-logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .nav-logo svg { width: 36px; height: 36px; }
+        .nav-logo-text { font-size: 1.25rem; font-weight: 700; }
+        .nav-logo-text .pine { color: var(--green); }
+        .nav-logo-text .soft { color: var(--gold); }
+        .nav-links { display: flex; list-style: none; gap: 1.5rem; }
+        .nav-links a { color: var(--text2); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--gold); }
+        .lang-switcher { display: flex; gap: 0.25rem; align-items: center; margin-left: 1rem; }
+        .lang-switcher a { color: var(--text3); text-decoration: none; font-size: 0.7rem; font-weight: 600; padding: 0.15rem 0.35rem; border-radius: 4px; transition: color 0.2s, background 0.2s; }
+        .lang-switcher a:hover { color: var(--gold); }
+        .lang-switcher a.active { color: var(--bg); background: var(--green); }
+        .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.25rem; }
+        .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); margin: 5px 0; transition: all 0.3s; }
+
+        /* Hero */
+        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(46,125,50,0.1), transparent 70%); }
+        .app-icon { width: 128px; height: 128px; border-radius: 28px; overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+        .app-icon img { width: 100%; height: 100%; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.15rem; color: var(--text2); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .store-btn { display: inline-block; transition: transform 0.2s; }
+        .store-btn:hover { transform: scale(1.05); }
+        .store-btn img { height: 80px; }
+
+        /* Stats */
+        .stats { background: var(--bg2); padding: 2rem 0; }
+        .stats-row { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); }
+        .stat-lbl { font-size: 0.85rem; color: var(--text3); }
+
+        /* Features */
+        .section-title { font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 2rem; }
+        .section-title .g { color: var(--green); }
+        .section-title .gr { color: var(--gold); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+        .feat { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; }
+        .feat-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .feat h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .feat p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; }
+
+        /* Screenshots */
+        .feature-graphic { max-width: 800px; margin: 0 auto 2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid var(--border); }
+        .feature-graphic img { width: 100%; height: auto; display: block; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto; }
+        .gallery-item { border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid var(--border); transition: transform 0.2s; }
+        .gallery-item:hover { transform: scale(1.03); }
+        .gallery-item img { width: 100%; height: auto; display: block; }
+        .gallery-caption { padding: 0.75rem 1rem; background: var(--card); font-size: 0.85rem; color: var(--text2); text-align: center; }
+
+        /* Privacy */
+        .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
+        .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
+        .priv a { color: var(--green-light); text-decoration: none; }
+        .priv a:hover { color: var(--gold); }
+
+        /* CTA */
+        .cta { text-align: center; }
+        .cta-store { display: inline-block; transition: transform 0.2s; }
+        .cta-store:hover { transform: scale(1.05); }
+        .cta-store img { height: 72px; }
+
+        /* Footer */
+        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; }
+        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+        footer a:hover { color: var(--gold); }
+        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.85rem; }
+            .subtitle { font-size: 1rem; }
+            .app-icon { width: 96px; height: 96px; border-radius: 22px; }
+            .stats-row { gap: 1.5rem; }
+            .store-btn img { height: 64px; }
+            .cta-store img { height: 60px; }
+            .gallery { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(27,42,27,0.97); flex-direction: column; padding: 1rem 1.25rem; gap: 0.75rem; border-bottom: 1px solid var(--border); }
+            .nav-links.open { display: flex; }
+            .nav-hamburger { display: block; }
+            .lang-switcher { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/hi/" class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+          <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+          <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+          <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+        </svg>
+        <span class="nav-logo-text"><span class="pine">Pine</span><span class="soft">Soft</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/hi/games/">गेम्स</a></li>
+        <li><a href="/hi/tools/">टूल्स</a></li>
+        <li><a href="/hi/reading/">पठन</a></li>
+        <li><a href="/hi/#about">हमاरे बاरे में</a></li>
+      </ul>
+      <div class="lang-switcher" id="langSwitcher">
+        <a href="/en/tools/girogruppi/">EN</a> <a href="/it/tools/girogruppi/">IT</a> <a href="/es/tools/girogruppi/">ES</a> <a href="/fr/tools/girogruppi/">FR</a> <a href="/de/tools/girogruppi/">DE</a> <a href="/pt/tools/girogruppi/">PT</a> <a href="/ru/tools/girogruppi/">RU</a> <a href="/pl/tools/girogruppi/">PL</a> <a href="/nl/tools/girogruppi/">NL</a> <a href="/sv/tools/girogruppi/">SV</a> <a href="/tr/tools/girogruppi/">TR</a> <a href="/zh/tools/girogruppi/">ZH</a> <a href="/hi/tools/girogruppi/" class="active">HI</a> <a href="/ar/tools/girogruppi/">AR</a> <a href="/ja/tools/girogruppi/">JA</a> <a href="/ko/tools/girogruppi/">KO</a>
+      </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+
+    <section class="hero section">
+        <div class="container">
+            <div class="app-icon">
+                <img src="/images/girogruppi_icon.png" alt="GiroGruppi icon" width="192" height="192">
+            </div>
+            <h1>GiroGruppi</h1>
+            <p class="subtitle">GiroGruppi लोगों की सूची से संतुलित समूह बनाता है और याद रखता है कि किसने कब तैयारी की. पैरिश समूहों, बारी-बारी से होने वाले डिनर, स्वयंसेवक टीमों, स्काउट्स और हर उस समुदाय के लिए जो बार-बार समूहों में बँटता है.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.gruppi" target="_blank" rel="noopener" class="store-btn">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Play से पाएं">
+            </a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">भाषाएँ</div></div>
+                <div class="stat"><div class="stat-num">40</div><div class="stat-lbl">डेमो में लोग</div></div>
+                <div class="stat"><div class="stat-num">0</div><div class="stat-lbl">ज़रूरी खाते</div></div>
+                <div class="stat"><div class="stat-num" dir="ltr">.xlsx</div><div class="stat-lbl">Excel एक्सपोर्ट</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">मुख्य</span> <span class="gr">विशेषताएँ</span></h2>
+            <div class="features">
+                <div class="feat">
+                    <div class="feat-icon">&#127991;</div>
+                    <h3>टैग वाले लोग</h3>
+                    <p>लोगों को जोड़ें और हर किसी को युवा, बुज़ुर्ग या कार है जैसे टैग दें. अपने टैग बनाएँ. नामों की सूची पेस्ट करके सबको एक साथ इम्पोर्ट करें.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#10084;</div>
+                    <h3>जोड़े साथ रहते हैं</h3>
+                    <p>दो लोगों को पार्टनर के रूप में जोड़ें: वे हमेशा एक ही समूह में आते हैं और तैयारी की बारी बाँटते समय एक इकाई गिने जाते हैं.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#9878;</div>
+                    <h3>अनिवार्य और पसंदीदा नियम</h3>
+                    <p>चुनें कि कितने समूह हों या हर समूह में कितने लोग. नियम जोड़ें: हर समूह में किसी टैग वाले कम से कम या अधिक से अधिक N लोग, किसी टैग को समूहों में बराबर बाँटना, हर समूह में एक जोड़ा, लोगों को साथ या अलग रखना. हर नियम को अनिवार्य या पसंद के रूप में चिह्नित करें.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128161;</div>
+                    <h3>साफ़ जवाब</h3>
+                    <p>अगर नियम पूरे नहीं हो सकते, तो ऐप बताता है कि कौन सा नियम कितना टूट रहा है और उसे ढीला करने का सुझाव देता है. खोज का समय खत्म होने भर से वह कभी किसी समूह-व्यवस्था को असंभव नहीं बताता.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128260;</div>
+                    <h3>बैठकों में बारी</h3>
+                    <p>तारीखों पर बैठकें तय करें और ऐप सुझाएगा कि हर समूह में कौन तैयारी करेगा, बारी को निष्पक्ष रूप से बाँटते हुए और उससे शुरू करते हुए जिसने सबसे पहले तैयारी की थी.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128256;</div>
+                    <h3>कम दोहराई जाने वाली मुलाक़ातें</h3>
+                    <p>लगातार समूह-विभाजनों में ऐप कोशिश करता है कि वही लोग फिर से एक साथ न आएँ.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127922;</div>
+                    <h3>बदलें और फिर से बनाएँ</h3>
+                    <p>नतीजा पसंद नहीं आया? उसे फिर से बनाएँ, लोगों को उनकी जगह पर लॉक करें या समूहों के बीच ले जाएँ, और नियमों के उल्लंघन तुरंत हाइलाइट होते देखें.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128450;</div>
+                    <h3>एक साथ कई समूह-विभाजन</h3>
+                    <p>अलग-अलग समूह-विभाजन साथ-साथ चलाएँ. जो लोग उसी अवधि में किसी दूसरे विभाजन में पहले से हैं, उन्हें अपने आप छोड़ दिया जाता है.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128190;</div>
+                    <h3>एक्सपोर्ट और बैकअप</h3>
+                    <p>किसी समूह-विभाजन को टेक्स्ट या CSV के रूप में शेयर करें. पूरी सूची का फ़ाइल के रूप में बैकअप लें और उसे रीस्टोर करें.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128172;</div>
+                    <h3>WhatsApp पर भेजें</h3>
+                    <p>किसी समूह-विभाजन को सीधे WhatsApp पर उसी संदेश फ़ॉर्मैट में भेजें जिसमें समुदाय हाथ से लिखते हैं: हर समूह की एक क्रमांकित पंक्ति, जोड़े साथ लिखे हुए, एक वैकल्पिक नोट और हर समूह में कौन तैयारी करेगा.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128228;</div>
+                    <h3>लोगों की सूची शेयर करें</h3>
+                    <p>टैग और जोड़ों सहित अपनी लोगों की सूची फ़ाइल के रूप में शेयर करें, WhatsApp से भी, और उसे दूसरे फ़ोन पर इम्पोर्ट करें. जो लोग पहले से सूची में हैं, उन्हें छोड़ दिया जाता है. WhatsApp पर मिली लोगों की सूची या बैकअप सीधे GiroGruppi में खुलता है.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128202;</div>
+                    <h3>Excel एक्सपोर्ट</h3>
+                    <p>अपने सभी समूह-विभाजनों को Excel (.xlsx) वर्कबुक में एक्सपोर्ट करें और शेयर करें.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127760;</div>
+                    <h3>कुछ सेकंड में आज़माएँ</h3>
+                    <p>मेन्यू से 40 लोगों का डेमो लोड करें और हर सुविधा देखें. 9 भाषाओं में उपलब्ध: अंग्रेज़ी, इतालवी, जर्मन, स्पेनिश, फ़्रेंच, जापानी, कोरियाई, पुर्तगाली और चीनी. अगर आपके फ़ोन की भाषा समर्थित है तो ऐप उसी में खुलता है; Android 13 और बाद के वर्शन पर आप ऐप की भाषा सेटिंग में दूसरी भाषा चुन सकते हैं.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="gr">स्क्रीनशॉट</span></h2>
+            <div class="feature-graphic">
+                <img src="/images/girogruppi_feature.png" alt="GiroGruppi" width="1024" height="500" loading="lazy">
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="/images/girogruppi/01_candidates.png" alt="टैग वाले लोग" width="1080" height="2220" loading="lazy">
+                    <div class="gallery-caption">टैग वाले लोग</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/girogruppi/02_tag_editor.png" alt="जोड़े साथ रहते हैं" width="1080" height="2220" loading="lazy">
+                    <div class="gallery-caption">जोड़े साथ रहते हैं</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/girogruppi/04_rules.png" alt="अनिवार्य और पसंदीदा नियम" width="1080" height="2220" loading="lazy">
+                    <div class="gallery-caption">अनिवार्य और पसंदीदा नियम</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/girogruppi/05_result_groups.png" alt="कम दोहराई जाने वाली मुलाक़ातें" width="1080" height="2220" loading="lazy">
+                    <div class="gallery-caption">कम दोहराई जाने वाली मुलाक़ातें</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/girogruppi/06_sessions_rotation.png" alt="बैठकों में बारी" width="1080" height="2220" loading="lazy">
+                    <div class="gallery-caption">बैठकों में बारी</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/girogruppi/07_groupings_backup_menu.png" alt="एक्सपोर्ट और बैकअप" width="1080" height="2220" loading="lazy">
+                    <div class="gallery-caption">एक्सपोर्ट और बैकअप</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">आपकी</span> <span class="gr">गोपनीयता</span></h2>
+            <div class="priv">
+                <p>GiroGruppi अपने सारे काम ऑफ़लाइन करता है: किसी खाते की ज़रूरत नहीं. आपके समूह और लोग आपके डिवाइस पर ही रहते हैं. ऐप Google AdMob का एक बैनर विज्ञापन दिखाता है (गैर-व्यक्तिगत विज्ञापन; EEA, UK और स्विट्ज़रलैंड में आप Google के सहमति फ़ॉर्म से चुनते हैं). विज्ञापनों के लिए इंटरनेट कनेक्शन चाहिए, और AdMob SDK Google को IP पता, अनुमानित स्थान, विज्ञापन इंटरैक्शन, डायग्नोस्टिक्स और विज्ञापन ID जैसा डेटा भेजता है. ऐप में एक बार की खरीद, विज्ञापन हटाएँ, बैनर हटा देती है. शेयर करना या बैकअप लेना हमेशा आपकी मर्ज़ी है. विवरण के लिए गोपनीयता नीति देखें.</p>
+                <a href="/hi/tools/girogruppi/privacy-policy/">पूरी गोपनीयता नीति &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta">
+        <div class="container">
+            <h2 class="section-title">आज़माएँ <span class="g">Giro</span><span class="gr">Gruppi</span></h2>
+            <p style="color: var(--text2); margin-bottom: 2rem;">Google Play पर मुफ़्त। किसी खाते की ज़रूरत नहीं।</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.gruppi" target="_blank" rel="noopener" class="cta-store">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Play से पाएं">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="/hi/">PineSoft</a>
+            <a href="/hi/tools/girogruppi/privacy-policy/">गोपनीयता नीति</a>
+            <a href="mailto:support@pinesoft.dev">संपर्क</a>
+            <a href="https://play.google.com/store/apps/developer?id=PineSoft+Dev" target="_blank" rel="noopener">Google Play</a>
+        </div>
+        <div class="copy">&copy; 2026 PineSoft. सर्वाधिकार सुरक्षित.</div>
+    </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+  </script>
+
+</body>
+</html>

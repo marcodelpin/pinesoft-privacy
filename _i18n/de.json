@@ -25,7 +25,7 @@
     "find_on_play": "Finden Sie uns auf Google Play",
     "games_count": "20 Spiele",
     "games_desc": "Gyroskopgesteuerte Neigungsspiele. Rätsel, Geschicklichkeit, Action und mehr.",
-    "tools_count": "2 Apps",
+    "tools_count": "3 Apps",
     "tools_desc": "Audioanalyse, Musikstimmung und Dienstprogramme.",
     "reading_count": "1 App",
     "reading_desc": "Digitale Bewahrung seltener, bedrohter und klassischer Sprachen.",
@@ -57,7 +57,7 @@
   "tools": {
     "title": "Tools",
     "utilities": "Dienstprogramme",
-    "meta_description": "Audioanalyse- und Musik-Tools von PineSoft. SoundScope Spektrogramm, PolyTuner Gitarrenstimmgerät und mehr.",
+    "meta_description": "Audio-, Musik- und Gruppen-Tools von PineSoft. SoundScope Spektrogramm, PolyTuner Gitarrenstimmgerät, GiroGruppi Gruppenbildung und mehr.",
     "subtitle": "Audioanalyse-, Musik- und Produktivitäts-Apps.",
     "soundscope": {
       "category": "Musik & Audio",
@@ -66,6 +66,10 @@
     "polytuner": {
       "category": "Musik & Audio",
       "desc": "Polyphoner Gitarrenstimmer mit Echtzeit-Tonhöhenerkennung. Schlagen Sie alle Saiten gleichzeitig an und sehen Sie sofort die Stimmung jeder einzelnen. 9 Stimmungsvoreinstellungen, 8 Sprachen."
+    },
+    "girogruppi": {
+      "category": "Produktivität",
+      "desc": "Ausgewogene Gruppen, Paare zusammen, faire Reihenfolge. Auch offline."
     }
   },
   "reading": {
@@ -311,6 +315,53 @@
       "privacy_word": "Privatsphäre",
       "privacy_text": "PolyTuner verarbeitet Mikrofonaudio vollständig auf Ihrem Gerät. Audio wird niemals aufgenommen, gespeichert oder übertragen. Nur die anonyme Stimmungshistorie bleibt auf dem Gerät.",
       "privacy_link": "Vollständige Datenschutzerklärung"
+    },
+    "girogruppi": {
+      "meta_title": "Gruppen bilden",
+      "meta_description": "Ausgewogene Gruppen, Paare zusammen, faire Reihenfolge. Auch offline.",
+      "og_title": "Gruppen bilden",
+      "og_description": "Ausgewogene Gruppen, Paare zusammen, faire Reihenfolge. Auch offline.",
+      "twitter_description": "Ausgewogene Gruppen, Paare zusammen, faire Reihenfolge. Auch offline.",
+      "subtitle": "GiroGruppi bildet aus einer Liste von Personen ausgewogene Gruppen und merkt sich, wer wann vorbereitet hat. Gedacht für Pfarrgruppen, Reihum-Abendessen, Helferteams, Pfadfinder und jede Gemeinschaft, die sich immer wieder neu in Gruppen aufteilt.",
+      "stat_languages": "Sprachen",
+      "stat_demo": "Personen in der Demo",
+      "stat_account": "Konten nötig",
+      "stat_excel": "Excel-Export",
+      "features_key": "Wichtige",
+      "features_word": "Funktionen",
+      "feat_tags_title": "Personen mit Merkmalen",
+      "feat_tags_desc": "Füge Personen hinzu und gib ihnen Merkmale wie jung, alt oder hat Auto. Eigene Merkmale sind möglich. Eine Namensliste einfügen und auf einmal importieren.",
+      "feat_couples_title": "Paare bleiben zusammen",
+      "feat_couples_desc": "Verbinde zwei Personen als Partner: Sie landen immer in derselben Gruppe und zählen bei der Vergabe der Vorbereitungsdienste als eine Einheit.",
+      "feat_rules_title": "Feste und weiche Regeln",
+      "feat_rules_desc": "Wähle die Anzahl der Gruppen oder die Personen pro Gruppe. Füge Regeln hinzu: mindestens oder höchstens N Personen mit einem Merkmal pro Gruppe, ein Merkmal ausgleichen, ein Paar in jeder Gruppe, Personen zusammen oder getrennt halten. Jede Regel ist entweder Pflicht oder nur Wunsch.",
+      "feat_answers_title": "Klare Antworten",
+      "feat_answers_desc": "Lassen sich die Regeln nicht erfüllen, zeigt die App, welche Regel um wie viel scheitert, und bietet an, sie zu lockern. Sie behauptet nie, es gehe nicht, nur weil die Suchzeit abgelaufen ist.",
+      "feat_rotation_title": "Reihenfolge über mehrere Termine",
+      "feat_rotation_desc": "Plane Termine nach Datum und lass die App vorschlagen, wer in jeder Gruppe vorbereitet. Die Dienste werden fair verteilt, zuerst kommt, wer am längsten nicht an der Reihe war.",
+      "feat_repeats_title": "Weniger Wiederholungen",
+      "feat_repeats_desc": "Über aufeinanderfolgende Gruppeneinteilungen versucht die App, dieselben Personen nicht erneut zusammenzubringen.",
+      "feat_edit_title": "Bearbeiten und neu würfeln",
+      "feat_edit_desc": "Ergebnis nicht passend? Neu würfeln, Personen fixieren oder zwischen Gruppen verschieben, Regelverstöße werden sofort markiert.",
+      "feat_parallel_title": "Mehrere Einteilungen gleichzeitig",
+      "feat_parallel_desc": "Führe verschiedene Einteilungen parallel. Wer im selben Zeitraum schon in einer anderen Einteilung eingeplant ist, wird automatisch ausgelassen.",
+      "feat_export_title": "Export und Sicherung",
+      "feat_export_desc": "Teile eine Einteilung als Text oder CSV. Sichere und stelle die ganze Liste als Datei wieder her.",
+      "feat_whatsapp_title": "Per WhatsApp senden",
+      "feat_whatsapp_desc": "Sende eine Einteilung direkt per WhatsApp im Nachrichtenformat, das Gemeinschaften von Hand schreiben: eine nummerierte Zeile pro Gruppe, Paare zusammen genannt, eine optionale Notiz und wer in jeder Gruppe vorbereitet.",
+      "feat_share_title": "Personenliste teilen",
+      "feat_share_desc": "Teile deine Personenliste mit Merkmalen und Paaren als Datei, auch per WhatsApp, und importiere sie auf einem anderen Handy. Bereits vorhandene Personen werden übersprungen. Eine in WhatsApp empfangene Personenliste oder Sicherung öffnet sich direkt mit GiroGruppi.",
+      "feat_excel_title": "Excel-Export",
+      "feat_excel_desc": "Exportiere alle Einteilungen in eine Excel-Arbeitsmappe (.xlsx) und teile sie.",
+      "feat_try_title": "In Sekunden ausprobieren",
+      "feat_try_desc": "Lade im Menü den Demo-Bestand mit 40 Personen und probiere alle Funktionen aus. Verfügbar in 9 Sprachen: Deutsch, Englisch, Italienisch, Spanisch, Französisch, Japanisch, Koreanisch, Portugiesisch und Chinesisch. Die App startet in der Sprache deines Handys; ab Android 13 kannst du in der Spracheinstellung der App eine andere wählen.",
+      "screens_title": "Screenshots",
+      "privacy_your": "Ihr",
+      "privacy_word": "Datenschutz",
+      "privacy_text": "GiroGruppi funktioniert für alles, was es tut, offline: kein Konto nötig. Deine Gruppen und Personen bleiben auf deinem Gerät. Die App zeigt ein Werbebanner von Google AdMob (nicht personalisierte Werbung; im EWR, im Vereinigten Königreich und in der Schweiz entscheidest du über das Einwilligungsformular von Google). Werbung braucht eine Internetverbindung, und das AdMob-SDK sendet Daten wie IP-Adresse, ungefähren Standort, Anzeigeninteraktionen, Diagnosedaten und die Werbe-ID an Google. Mit dem einmaligen In-App-Kauf Werbung entfernen verschwindet das Banner. Teilen und Sichern liegt immer bei dir. Details stehen in der Datenschutzerklärung.",
+      "privacy_link": "Vollständige Datenschutzerklärung",
+      "cta_try": "Ausprobieren",
+      "cta_free": "Kostenlos bei Google Play. Kein Konto erforderlich."
     }
   },
   "privacy": {

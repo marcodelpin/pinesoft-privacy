@@ -25,7 +25,7 @@
     "find_on_play": "Trovaci su Google Play",
     "games_count": "20 giochi",
     "games_desc": "Giochi controllati dal giroscopio. Puzzle, abilità, azione e altro.",
-    "tools_count": "2 app",
+    "tools_count": "3 app",
     "tools_desc": "Analisi audio, accordatura e app di utilità.",
     "reading_count": "1 app",
     "reading_desc": "Conservazione digitale di lingue rare, in via di estinzione e classiche.",
@@ -57,7 +57,7 @@
   "tools": {
     "title": "Strumenti",
     "utilities": "Utilità",
-    "meta_description": "Strumenti di analisi audio e musica di PineSoft. Spettrogramma SoundScope, accordatore PolyTuner e altro.",
+    "meta_description": "Strumenti di PineSoft per audio, musica e gruppi. Spettrogramma SoundScope, accordatore PolyTuner, GiroGruppi per creare gruppi e altro.",
     "subtitle": "App di analisi audio, musica e produttività.",
     "soundscope": {
       "category": "Musica e Audio",
@@ -66,6 +66,10 @@
     "polytuner": {
       "category": "Musica e Audio",
       "desc": "Accordatore polifonico per chitarra con rilevamento pitch in tempo reale. Suona tutte le corde insieme e vedi l'accordatura di ciascuna. 9 preset, 8 lingue."
+    },
+    "girogruppi": {
+      "category": "Produttività",
+      "desc": "Gruppi bilanciati, coppie unite, turni equi. Funziona offline."
     }
   },
   "reading": {
@@ -311,6 +315,53 @@
       "privacy_word": "Privacy",
       "privacy_text": "PolyTuner elabora l'audio del microfono interamente sul tuo dispositivo. L'audio non viene mai registrato, salvato o trasmesso. Solo la cronologia di accordatura anonima rimane sul dispositivo.",
       "privacy_link": "Privacy Policy completa"
+    },
+    "girogruppi": {
+      "meta_title": "Crea Gruppi",
+      "meta_description": "Gruppi bilanciati, coppie unite, turni equi. Funziona offline.",
+      "og_title": "Crea Gruppi",
+      "og_description": "Gruppi bilanciati, coppie unite, turni equi. Funziona offline.",
+      "twitter_description": "Gruppi bilanciati, coppie unite, turni equi. Funziona offline.",
+      "subtitle": "GiroGruppi crea gruppi bilanciati da un elenco di persone e ricorda chi ha preparato e quando. Pensata per gruppi parrocchiali, cene a rotazione, squadre di volontari, scout e ogni comunità che si divide spesso in gruppi.",
+      "stat_languages": "Lingue",
+      "stat_demo": "Persone nella demo",
+      "stat_account": "Account richiesti",
+      "stat_excel": "Esportazione Excel",
+      "features_key": "Funzionalità",
+      "features_word": "principali",
+      "feat_tags_title": "Persone con etichette",
+      "feat_tags_desc": "Aggiungi le persone e assegna etichette come giovane, anziano o ha auto. Crea le tue etichette. Incolla un elenco di nomi per importarli in un colpo solo.",
+      "feat_couples_title": "Le coppie restano unite",
+      "feat_couples_desc": "Collega due persone come partner: finiscono sempre nello stesso gruppo e contano come una sola unità nell'assegnazione dei turni di preparazione.",
+      "feat_rules_title": "Regole obbligatorie e preferite",
+      "feat_rules_desc": "Scegli quanti gruppi o quante persone per gruppo. Aggiungi regole: almeno o al massimo N persone con un'etichetta per gruppo, bilanciare un'etichetta tra i gruppi, una coppia in ogni gruppo, tenere insieme o separate alcune persone. Ogni regola può essere obbligatoria o solo preferita.",
+      "feat_answers_title": "Risposte chiare",
+      "feat_answers_desc": "Se le regole non si possono rispettare, l'app dice quale regola fallisce e di quanto, e propone di renderla una preferenza. Non dichiara mai impossibile un gruppo solo perché il tempo di ricerca è finito.",
+      "feat_rotation_title": "Rotazione nelle sessioni",
+      "feat_rotation_desc": "Pianifica le sessioni sulle date e lascia che l'app proponga chi prepara in ogni gruppo, distribuendo i turni in modo equo e partendo da chi ha preparato meno di recente.",
+      "feat_repeats_title": "Meno incontri ripetuti",
+      "feat_repeats_desc": "Tra un raggruppamento e il successivo, l'app cerca di non rimettere insieme le stesse persone.",
+      "feat_edit_title": "Modifica e rilancia",
+      "feat_edit_desc": "Il risultato non ti convince? Rilancialo, blocca le persone al loro posto o spostale tra i gruppi e vedi subito le regole violate.",
+      "feat_parallel_title": "Più raggruppamenti insieme",
+      "feat_parallel_desc": "Gestisci raggruppamenti diversi in parallelo. Chi è già impegnato in un altro raggruppamento nello stesso periodo viene escluso in automatico.",
+      "feat_export_title": "Esporta e backup",
+      "feat_export_desc": "Condividi un raggruppamento come testo o CSV. Salva e ripristina l'intero elenco come file.",
+      "feat_whatsapp_title": "Invia su WhatsApp",
+      "feat_whatsapp_desc": "Invia un raggruppamento direttamente su WhatsApp nel formato del messaggio che la comunità scrive a mano: una riga numerata per gruppo, le coppie scritte insieme, una nota facoltativa e chi prepara in ogni gruppo.",
+      "feat_share_title": "Condividi l'elenco persone",
+      "feat_share_desc": "Condividi l'elenco delle persone, con etichette e coppie, come file, anche su WhatsApp, e importalo su un altro telefono. Le persone già presenti vengono saltate. Un elenco persone o un backup ricevuto su WhatsApp si apre direttamente con GiroGruppi.",
+      "feat_excel_title": "Esportazione Excel",
+      "feat_excel_desc": "Esporta tutti i raggruppamenti in una cartella di lavoro Excel (.xlsx) e condividila.",
+      "feat_try_title": "Provala in pochi secondi",
+      "feat_try_desc": "Carica dal menu i dati demo con 40 persone ed esplora ogni funzione. Disponibile in 9 lingue: italiano, inglese, tedesco, spagnolo, francese, giapponese, coreano, portoghese e cinese. L'app si apre nella lingua del telefono; da Android 13 puoi sceglierne un'altra nelle impostazioni della lingua dell'app.",
+      "screens_title": "Schermate",
+      "privacy_your": "La tua",
+      "privacy_word": "Privacy",
+      "privacy_text": "GiroGruppi funziona offline per tutto ciò che fa: nessun account. Gruppi e persone restano sul tuo dispositivo. L'app mostra un banner pubblicitario di Google AdMob (annunci non personalizzati; nello SEE, nel Regno Unito e in Svizzera scegli tramite il modulo di consenso di Google). Gli annunci richiedono una connessione a internet e l'SDK AdMob invia a Google dati come indirizzo IP, posizione approssimativa, interazioni con gli annunci, diagnostica e ID pubblicitario. Un acquisto una tantum nell'app, Rimuovi pubblicità, elimina il banner. Condividere o fare un backup è sempre una tua scelta. Per i dettagli vedi l'informativa sulla privacy.",
+      "privacy_link": "Privacy Policy completa",
+      "cta_try": "Prova",
+      "cta_free": "Gratis su Google Play. Nessun account richiesto."
     }
   },
   "privacy": {

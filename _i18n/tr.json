@@ -25,7 +25,7 @@
     "find_on_play": "Bizi Google Play'de bulun",
     "games_count": "20 oyun",
     "games_desc": "Jiroskop kontrollü eğme oyunları. Bulmaca, beceri, aksiyon ve daha fazlası.",
-    "tools_count": "2 uygulama",
+    "tools_count": "3 uygulama",
     "tools_desc": "Ses analizi, müzik akürdü ve yardimci uygulamalar.",
     "reading_count": "1 uygulama",
     "reading_desc": "Nadir, tehlike altındaki ve klasik dillerin dijital koruması.",
@@ -57,7 +57,7 @@
   "tools": {
     "title": "Araçlar",
     "utilities": "Yardimci Programlar",
-    "meta_description": "PineSoft'tan ses analizi ve müzik araçları. SoundScope spektrogram, PolyTuner gitar akördü ve daha fazlası.",
+    "meta_description": "PineSoft'tan ses, müzik ve grup araçları. SoundScope spektrogram, PolyTuner gitar akördü, GiroGruppi grup oluşturucu ve daha fazlası.",
     "subtitle": "Ses analizi, müzik ve verimlilik uygulamaları.",
     "soundscope": {
       "category": "Müzik ve Ses",
@@ -66,6 +66,10 @@
     "polytuner": {
       "category": "Müzik ve Ses",
       "desc": "Gerçek zamanlı perde algılamalı polifonik gitar akördü. Tüm tellere aynı anda vurun ve her birinin akördünü anında görün. 9 akört ayarı, 8 dil."
+    },
+    "girogruppi": {
+      "category": "Verimlilik",
+      "desc": "Dengeli gruplar, çiftler bir arada, adil sıra. Çevrimdışı çalışır."
     }
   },
   "reading": {
@@ -311,6 +315,53 @@
       "privacy_word": "Privacy",
       "privacy_text": "PolyTuner processes microphone audio entirely on your device. Audio is never recorded, saved, or transmitted. Only anonymous tuning history remains on-device.",
       "privacy_link": "Full Privacy Policy"
+    },
+    "girogruppi": {
+      "meta_title": "Grup Oluşturucu",
+      "meta_description": "Dengeli gruplar, çiftler bir arada, adil sıra. Çevrimdışı çalışır.",
+      "og_title": "Grup Oluşturucu",
+      "og_description": "Dengeli gruplar, çiftler bir arada, adil sıra. Çevrimdışı çalışır.",
+      "twitter_description": "Dengeli gruplar, çiftler bir arada, adil sıra. Çevrimdışı çalışır.",
+      "subtitle": "GiroGruppi bir kişi listesinden dengeli gruplar oluşturur ve kimin ne zaman hazırlık yaptığını hatırlar. Cemaat grupları, sırayla verilen akşam yemekleri, gönüllü ekipleri, izciler ve tekrar tekrar gruplara ayrılan her topluluk için.",
+      "stat_languages": "Diller",
+      "stat_demo": "Demodaki kişi",
+      "stat_account": "Gereken hesap",
+      "stat_excel": "Excel'e aktarma",
+      "features_key": "Ana",
+      "features_word": "Özellikler",
+      "feat_tags_title": "Etiketli kişiler",
+      "feat_tags_desc": "Kişileri ekleyin ve her birine genç, yaşlı veya arabası var gibi etiketler verin. Kendi etiketlerinizi oluşturun. Bir isim listesini yapıştırarak hepsini tek seferde içe aktarın.",
+      "feat_couples_title": "Çiftler bir arada kalır",
+      "feat_couples_desc": "İki kişiyi partner olarak bağlayın: her zaman aynı gruba düşerler ve hazırlık sırası dağıtılırken tek birim sayılırlar.",
+      "feat_rules_title": "Zorunlu ve tercihli kurallar",
+      "feat_rules_desc": "Grup sayısını veya grup başına kişi sayısını seçin. Kural ekleyin: grup başına bir etikete sahip en az veya en fazla N kişi, bir etiketi gruplara dengeli dağıtmak, her grupta bir çift, kişileri birlikte veya ayrı tutmak. Her kuralı zorunlu veya tercih olarak işaretleyin.",
+      "feat_answers_title": "Net yanıtlar",
+      "feat_answers_desc": "Kurallar karşılanamıyorsa uygulama hangi kuralın ne kadar sağlanamadığını söyler ve onu gevşetmeyi önerir. Yalnızca arama süresi dolduğu için bir grup düzenini asla imkansız ilan etmez.",
+      "feat_rotation_title": "Buluşmalar boyunca sıra",
+      "feat_rotation_desc": "Buluşmaları tarihlere göre planlayın; uygulama her grupta kimin hazırlık yapacağını önerir, sırayı adil dağıtır ve en uzun süredir hazırlık yapmamış kişiden başlar.",
+      "feat_repeats_title": "Daha az tekrarlanan buluşma",
+      "feat_repeats_desc": "Art arda gelen gruplamalarda uygulama aynı kişileri yeniden bir araya getirmemeye çalışır.",
+      "feat_edit_title": "Düzenle ve yeniden karıştır",
+      "feat_edit_desc": "Sonuçtan memnun değil misiniz? Yeniden karıştırın, kişileri yerinde sabitleyin veya gruplar arasında taşıyın ve kural ihlallerini anında vurgulanmış görün.",
+      "feat_parallel_title": "Aynı anda birden çok gruplama",
+      "feat_parallel_desc": "Farklı gruplamaları paralel yürütün. Aynı dönemde başka bir gruplamada zaten yer alan kişiler otomatik olarak dışarıda bırakılır.",
+      "feat_export_title": "Dışa aktarma ve yedekleme",
+      "feat_export_desc": "Bir gruplamayı metin veya CSV olarak paylaşın. Tüm listenizi dosya olarak yedekleyin ve geri yükleyin.",
+      "feat_whatsapp_title": "WhatsApp'a gönder",
+      "feat_whatsapp_desc": "Bir gruplamayı, toplulukların elle yazdığı mesaj biçiminde doğrudan WhatsApp'a gönderin: grup başına numaralı bir satır, birlikte yazılmış çiftler, isteğe bağlı bir not ve her grupta kimin hazırlık yapacağı.",
+      "feat_share_title": "Kişi listesini paylaş",
+      "feat_share_desc": "Kişi listenizi etiketleri ve çiftleriyle birlikte dosya olarak, WhatsApp üzerinden de paylaşın ve başka bir telefona aktarın. Listede zaten olan kişiler atlanır. WhatsApp'ta alınan bir kişi listesi veya yedek doğrudan GiroGruppi ile açılır.",
+      "feat_excel_title": "Excel'e aktarma",
+      "feat_excel_desc": "Tüm gruplamalarınızı bir Excel çalışma kitabına (.xlsx) aktarın ve paylaşın.",
+      "feat_try_title": "Saniyeler içinde deneyin",
+      "feat_try_desc": "Menüden 40 kişilik demo verisini yükleyin ve her özelliği keşfedin. 9 dilde kullanılabilir: İngilizce, İtalyanca, Almanca, İspanyolca, Fransızca, Japonca, Korece, Portekizce ve Çince. Uygulama, destekleniyorsa telefonunuzun dilinde açılır; Android 13 ve sonrasında uygulamanın dil ayarından başka bir dil seçebilirsiniz.",
+      "screens_title": "Ekran görüntüleri",
+      "privacy_your": "Gizliliğiniz",
+      "privacy_word": "Gizlilik",
+      "privacy_text": "GiroGruppi yaptığı her şeyde çevrimdışı çalışır: hesap gerekmez. Gruplarınız ve kişileriniz cihazınızda kalır. Uygulama Google AdMob'dan tek bir banner reklam gösterir (kişiselleştirilmemiş reklamlar; AEA, Birleşik Krallık ve İsviçre'de seçiminizi Google'ın onay formuyla yaparsınız). Reklamlar internet bağlantısı gerektirir ve AdMob SDK'sı IP adresi, yaklaşık konum, reklam etkileşimleri, tanılama verileri ve reklam kimliği gibi verileri Google'a gönderir. Uygulama içi tek seferlik bir satın alma olan Reklamları kaldır, banner'ı kaldırır. Paylaşmak veya yedeklemek her zaman sizin seçiminizdir. Ayrıntılar için gizlilik politikasına bakın.",
+      "privacy_link": "Tam Gizlilik Politikası",
+      "cta_try": "Deneyin",
+      "cta_free": "Google Play'de ücretsiz. Hesap gerekmez."
     }
   },
   "privacy": {

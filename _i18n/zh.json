@@ -25,7 +25,7 @@
     "find_on_play": "在Google Play上找到我们",
     "games_count": "20款游戏",
     "games_desc": "陀螺仪操控的倾斜游戏。益智、技巧、动作等多种类型。",
-    "tools_count": "2款应用",
+    "tools_count": "3款应用",
     "tools_desc": "音频分析、音乐调音及实用工具应用。",
     "reading_count": "1款应用",
     "reading_desc": "稀有语言、濒危语言和古典语言的数字化保护。",
@@ -57,7 +57,7 @@
   "tools": {
     "title": "工具",
     "utilities": "实用工具",
-    "meta_description": "PineSoft的音频分析和音乐工具。SoundScope频谱图、PolyTuner吉他调音器等。",
+    "meta_description": "PineSoft的音频、音乐和分组工具。SoundScope频谱图、PolyTuner吉他调音器、GiroGruppi智能分组等。",
     "subtitle": "音频分析、音乐及生产力应用。",
     "soundscope": {
       "category": "音乐与音频",
@@ -66,6 +66,10 @@
     "polytuner": {
       "category": "音乐与音频",
       "desc": "具备实时音高检测的复音吉他调音器。同时拨动所有琴弦，即时查看每根弦的调音状态。9种调音预设，支持8种语言。"
+    },
+    "girogruppi": {
+      "category": "效率",
+      "desc": "均衡分组，夫妻同组，轮值公平。支持离线使用。"
     }
   },
   "reading": {
@@ -311,6 +315,53 @@
       "privacy_word": "隐私",
       "privacy_text": "PolyTuner 在您的设备上完全本地处理麦克风音频。音频永不被录制、保存或传输。只有匿名的调音历史保留在设备上。",
       "privacy_link": "完整隐私政策"
+    },
+    "girogruppi": {
+      "meta_title": "智能分组",
+      "meta_description": "均衡分组，夫妻同组，轮值公平。支持离线使用。",
+      "og_title": "智能分组",
+      "og_description": "均衡分组，夫妻同组，轮值公平。支持离线使用。",
+      "twitter_description": "均衡分组，夫妻同组，轮值公平。支持离线使用。",
+      "subtitle": "GiroGruppi 根据人员名单生成均衡的分组，并记录谁在何时负责筹备。适用于教区小组、轮流聚餐、志愿者团队、童军，以及所有需要反复分组的团体。",
+      "stat_languages": "语言",
+      "stat_demo": "演示人数",
+      "stat_account": "所需账户",
+      "stat_excel": "导出 Excel",
+      "features_key": "主要",
+      "features_word": "功能",
+      "feat_tags_title": "带标签的成员",
+      "feat_tags_desc": "添加成员并为其设置标签，例如年轻、年长、有车。标签可自定义。粘贴姓名列表即可一次导入。",
+      "feat_couples_title": "夫妻始终同组",
+      "feat_couples_desc": "将两人设为伴侣后，他们总会分在同一组，并且在分配筹备轮值时算作一个单位。",
+      "feat_rules_title": "硬性规则与偏好规则",
+      "feat_rules_desc": "可选择分组数量或每组人数，并添加规则：每组至少或至多 N 人带有某标签、在各组间均衡某标签、每组有一对夫妻、让某些人同组或分开。每条规则可设为必须或偏好。",
+      "feat_answers_title": "结果清晰",
+      "feat_answers_desc": "如果规则无法满足，应用会指出哪条规则不满足、差多少，并建议放宽。它不会仅因搜索时间用完就断言无解。",
+      "feat_rotation_title": "按场次轮值",
+      "feat_rotation_desc": "按日期安排场次，应用会为每个小组推荐筹备人，公平分配轮值，并优先安排最久没有筹备的人。",
+      "feat_repeats_title": "减少重复相遇",
+      "feat_repeats_desc": "连续多次分组时，应用会尽量避免让相同的人再次分到一起。",
+      "feat_edit_title": "编辑与重新分组",
+      "feat_edit_desc": "对结果不满意？可以重新分组、固定成员，或在小组之间移动成员，违反规则会即时高亮显示。",
+      "feat_parallel_title": "同时管理多个分组",
+      "feat_parallel_desc": "可并行管理多个分组。同一时期已在其他分组中安排的人会被自动排除。",
+      "feat_export_title": "导出与备份",
+      "feat_export_desc": "可将分组以文本或 CSV 形式分享，并将整份名单备份为文件和恢复。",
+      "feat_whatsapp_title": "发送到 WhatsApp",
+      "feat_whatsapp_desc": "可将分组直接发送到 WhatsApp，采用团体平时手写的消息格式：每组一行并带编号，夫妻写在一起，附可选备注以及各组的筹备人。",
+      "feat_share_title": "分享人员名单",
+      "feat_share_desc": "可将包含标签和夫妻关系的人员名单作为文件分享（也可通过 WhatsApp），并在另一部手机上导入。名单中已有的人会被跳过。在 WhatsApp 中收到的人员名单或备份可直接用 GiroGruppi 打开。",
+      "feat_excel_title": "导出 Excel",
+      "feat_excel_desc": "可将所有分组导出为 Excel（.xlsx）工作簿并分享。",
+      "feat_try_title": "几秒钟即可体验",
+      "feat_try_desc": "从菜单载入 40 人的演示数据，体验所有功能。支持 9 种语言：简体中文、英语、意大利语、德语、西班牙语、法语、日语、韩语和葡萄牙语。应用会以手机语言打开；在 Android 13 及以上版本中，可在应用的语言设置中选择其他语言。",
+      "screens_title": "截图",
+      "privacy_your": "您的",
+      "privacy_word": "隐私",
+      "privacy_text": "GiroGruppi 的全部功能都可离线使用，无需账号。您的分组和成员信息保存在设备上。应用会显示一条 Google AdMob 横幅广告（非个性化广告；在欧洲经济区、英国和瑞士，您可通过 Google 同意表单进行选择）。广告需要网络连接，AdMob SDK 会向 Google 发送 IP 地址、大致位置、广告互动、诊断信息和广告 ID 等数据。一次性应用内购买“移除广告”可去掉广告。是否分享或备份始终由您决定。详情请查看隐私政策。",
+      "privacy_link": "完整隐私政策",
+      "cta_try": "试用",
+      "cta_free": "Google Play免费下载。无需账户。"
     }
   },
   "privacy": {

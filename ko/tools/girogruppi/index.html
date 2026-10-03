@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiroGruppi &mdash; 그룹 나누기</title>
+    <meta name="description" content="균형 잡힌 그룹, 부부는 함께, 공평한 준비 순번. 오프라인 지원.">
+
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:title" content="GiroGruppi &mdash; 그룹 나누기">
+    <meta property="og:description" content="균형 잡힌 그룹, 부부는 함께, 공평한 준비 순번. 오프라인 지원.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pinesoft.dev/tools/girogruppi/">
+    <meta property="og:image" content="https://pinesoft.dev/images/girogruppi_feature.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="500">
+    <meta property="og:site_name" content="PineSoft">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GiroGruppi &mdash; 그룹 나누기">
+    <meta name="twitter:description" content="균형 잡힌 그룹, 부부는 함께, 공평한 준비 순번. 오프라인 지원.">
+    <meta name="twitter:image" content="https://pinesoft.dev/images/girogruppi_feature.png">
+
+    <meta name="theme-color" content="#1B2A1B">
+    <link rel="icon" type="image/svg+xml" href="/images/pinesoft_logo.svg">
+  <link rel="alternate" hreflang="ar" href="https://pinesoft.dev/ar/tools/girogruppi/">
+  <link rel="alternate" hreflang="de" href="https://pinesoft.dev/de/tools/girogruppi/">
+  <link rel="alternate" hreflang="el" href="https://pinesoft.dev/el/tools/girogruppi/">
+  <link rel="alternate" hreflang="en" href="https://pinesoft.dev/en/tools/girogruppi/">
+  <link rel="alternate" hreflang="es" href="https://pinesoft.dev/es/tools/girogruppi/">
+  <link rel="alternate" hreflang="fr" href="https://pinesoft.dev/fr/tools/girogruppi/">
+  <link rel="alternate" hreflang="he" href="https://pinesoft.dev/he/tools/girogruppi/">
+  <link rel="alternate" hreflang="hi" href="https://pinesoft.dev/hi/tools/girogruppi/">
+  <link rel="alternate" hreflang="it" href="https://pinesoft.dev/it/tools/girogruppi/">
+  <link rel="alternate" hreflang="ja" href="https://pinesoft.dev/ja/tools/girogruppi/">
+  <link rel="alternate" hreflang="ka" href="https://pinesoft.dev/ka/tools/girogruppi/">
+  <link rel="alternate" hreflang="ko" href="https://pinesoft.dev/ko/tools/girogruppi/">
+  <link rel="alternate" hreflang="la" href="https://pinesoft.dev/la/tools/girogruppi/">
+  <link rel="alternate" hreflang="mt" href="https://pinesoft.dev/mt/tools/girogruppi/">
+  <link rel="alternate" hreflang="nl" href="https://pinesoft.dev/nl/tools/girogruppi/">
+  <link rel="alternate" hreflang="pl" href="https://pinesoft.dev/pl/tools/girogruppi/">
+  <link rel="alternate" hreflang="pt" href="https://pinesoft.dev/pt/tools/girogruppi/">
+  <link rel="alternate" hreflang="ru" href="https://pinesoft.dev/ru/tools/girogruppi/">
+  <link rel="alternate" hreflang="sv" href="https://pinesoft.dev/sv/tools/girogruppi/">
+  <link rel="alternate" hreflang="tr" href="https://pinesoft.dev/tr/tools/girogruppi/">
+  <link rel="alternate" hreflang="zh" href="https://pinesoft.dev/zh/tools/girogruppi/">
+  <link rel="alternate" hreflang="x-default" href="https://pinesoft.dev/en/tools/girogruppi/">
+
+    <style>
+        :root {
+            --bg: #1B2A1B;
+            --bg2: #1E3320;
+            --card: #233A23;
+            --gold: #EDAE49;
+            --green: #2E7D32;
+            --green-light: #4CAF50;
+            --text: #E8E0D0;
+            --text2: #A8B5A0;
+            --text3: #7A8A72;
+            --border: rgba(237, 174, 73, 0.12);
+            --coming: #5C6BC0;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+        .section { padding: 3rem 0; }
+
+        /* Nav */
+        header { position: sticky; top: 0; z-index: 100; background: rgba(27,42,27,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+        nav { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; max-width: 1100px; margin: 0 auto; }
+        .nav-logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .nav-logo svg { width: 36px; height: 36px; }
+        .nav-logo-text { font-size: 1.25rem; font-weight: 700; }
+        .nav-logo-text .pine { color: var(--green); }
+        .nav-logo-text .soft { color: var(--gold); }
+        .nav-links { display: flex; list-style: none; gap: 1.5rem; }
+        .nav-links a { color: var(--text2); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--gold); }
+        .lang-switcher { display: flex; gap: 0.25rem; align-items: center; margin-left: 1rem; }
+        .lang-switcher a { color: var(--text3); text-decoration: none; font-size: 0.7rem; font-weight: 600; padding: 0.15rem 0.35rem; border-radius: 4px; transition: color 0.2s, background 0.2s; }
+        .lang-switcher a:hover { color: var(--gold); }
+        .lang-switcher a.active { color: var(--bg); background: var(--green); }
+        .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.25rem; }
+        .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); margin: 5px 0; transition: all 0.3s; }
+
+        /* Hero */
+        .hero { text-align: center; padding: 4rem 0 3rem; background: radial-gradient(ellipse at center top, rgba(46,125,50,0.1), transparent 70%); }
+        .app-icon { width: 128px; height: 128px; border-radius: 28px; overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+        .app-icon img { width: 100%; height: 100%; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.15rem; color: var(--text2); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .store-btn { display: inline-block; transition: transform 0.2s; }
+        .store-btn:hover { transform: scale(1.05); }
+        .store-btn img { height: 80px; }
+
+        /* Stats */
+        .stats { background: var(--bg2); padding: 2rem 0; }
+        .stats-row { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 2rem; font-weight: 700; color: var(--gold); }
+        .stat-lbl { font-size: 0.85rem; color: var(--text3); }
+
+        /* Features */
+        .section-title { font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 2rem; }
+        .section-title .g { color: var(--green); }
+        .section-title .gr { color: var(--gold); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+        .feat { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; }
+        .feat-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+        .feat h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .feat p { font-size: 0.9rem; color: var(--text2); line-height: 1.7; }
+
+        /* Screenshots */
+        .feature-graphic { max-width: 800px; margin: 0 auto 2rem; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid var(--border); }
+        .feature-graphic img { width: 100%; height: auto; display: block; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto; }
+        .gallery-item { border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.4); border: 1px solid var(--border); transition: transform 0.2s; }
+        .gallery-item:hover { transform: scale(1.03); }
+        .gallery-item img { width: 100%; height: auto; display: block; }
+        .gallery-caption { padding: 0.75rem 1rem; background: var(--card); font-size: 0.85rem; color: var(--text2); text-align: center; }
+
+        /* Privacy */
+        .priv { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center; }
+        .priv p { color: var(--text2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
+        .priv a { color: var(--green-light); text-decoration: none; }
+        .priv a:hover { color: var(--gold); }
+
+        /* CTA */
+        .cta { text-align: center; }
+        .cta-store { display: inline-block; transition: transform 0.2s; }
+        .cta-store:hover { transform: scale(1.05); }
+        .cta-store img { height: 72px; }
+
+        /* Footer */
+        footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; }
+        footer a { color: var(--text3); text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+        footer a:hover { color: var(--gold); }
+        .copy { color: var(--text3); font-size: 0.8rem; margin-top: 0.75rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.85rem; }
+            .subtitle { font-size: 1rem; }
+            .app-icon { width: 96px; height: 96px; border-radius: 22px; }
+            .stats-row { gap: 1.5rem; }
+            .store-btn img { height: 64px; }
+            .cta-store img { height: 60px; }
+            .gallery { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(27,42,27,0.97); flex-direction: column; padding: 1rem 1.25rem; gap: 0.75rem; border-bottom: 1px solid var(--border); }
+            .nav-links.open { display: flex; }
+            .nav-hamburger { display: block; }
+            .lang-switcher { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/ko/" class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <rect x="232" y="390" width="48" height="72" rx="6" fill="#776E65"/>
+          <polygon points="80,395 432,395 256,215" fill="#2E7D32"/>
+          <polygon points="120,280 392,280 256,120" fill="#2E7D32"/>
+          <polygon points="160,180 352,180 256,40" fill="#2E7D32"/>
+        </svg>
+        <span class="nav-logo-text"><span class="pine">Pine</span><span class="soft">Soft</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/ko/games/">게임</a></li>
+        <li><a href="/ko/tools/">도구</a></li>
+        <li><a href="/ko/reading/">독서</a></li>
+        <li><a href="/ko/#about">소개</a></li>
+      </ul>
+      <div class="lang-switcher" id="langSwitcher">
+        <a href="/en/tools/girogruppi/">EN</a> <a href="/it/tools/girogruppi/">IT</a> <a href="/es/tools/girogruppi/">ES</a> <a href="/fr/tools/girogruppi/">FR</a> <a href="/de/tools/girogruppi/">DE</a> <a href="/pt/tools/girogruppi/">PT</a> <a href="/ru/tools/girogruppi/">RU</a> <a href="/pl/tools/girogruppi/">PL</a> <a href="/nl/tools/girogruppi/">NL</a> <a href="/sv/tools/girogruppi/">SV</a> <a href="/tr/tools/girogruppi/">TR</a> <a href="/zh/tools/girogruppi/">ZH</a> <a href="/hi/tools/girogruppi/">HI</a> <a href="/ar/tools/girogruppi/">AR</a> <a href="/ja/tools/girogruppi/">JA</a> <a href="/ko/tools/girogruppi/" class="active">KO</a>
+      </div>
+      <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+
+    <section class="hero section">
+        <div class="container">
+            <div class="app-icon">
+                <img src="/images/girogruppi_icon.png" alt="GiroGruppi icon" width="192" height="192">
+            </div>
+            <h1>GiroGruppi</h1>
+            <p class="subtitle">GiroGruppi는 사람 목록에서 균형 잡힌 그룹을 만들고, 누가 언제 준비를 맡았는지 기억합니다. 교회 모임, 돌아가며 하는 식사 모임, 자원봉사 팀, 스카우트 등 자주 그룹을 새로 나누는 모든 공동체를 위한 앱입니다.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.gruppi" target="_blank" rel="noopener" class="store-btn">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Play에서 다운로드">
+            </a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat"><div class="stat-num">9</div><div class="stat-lbl">언어</div></div>
+                <div class="stat"><div class="stat-num">40</div><div class="stat-lbl">데모 인원</div></div>
+                <div class="stat"><div class="stat-num">0</div><div class="stat-lbl">필요한 계정</div></div>
+                <div class="stat"><div class="stat-num" dir="ltr">.xlsx</div><div class="stat-lbl">Excel 내보내기</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">주요</span> <span class="gr">기능</span></h2>
+            <div class="features">
+                <div class="feat">
+                    <div class="feat-icon">&#127991;</div>
+                    <h3>태그가 있는 사람들</h3>
+                    <p>사람을 추가하고 젊음, 연장자, 차량 보유 같은 태그를 붙이세요. 태그는 직접 만들 수 있고, 이름 목록을 붙여넣어 한 번에 가져올 수도 있습니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#10084;</div>
+                    <h3>부부는 항상 함께</h3>
+                    <p>두 사람을 파트너로 연결하면 항상 같은 그룹에 배정되며, 준비 순번을 정할 때는 한 단위로 계산됩니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#9878;</div>
+                    <h3>필수 규칙과 선호 규칙</h3>
+                    <p>그룹 수 또는 그룹당 인원을 정하세요. 규칙도 추가할 수 있습니다: 그룹마다 특정 태그를 가진 사람이 최소 또는 최대 N명, 태그 균등 배분, 그룹마다 부부 한 쌍, 특정 사람끼리 같은 그룹 또는 다른 그룹. 각 규칙은 필수 또는 선호로 지정합니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128161;</div>
+                    <h3>명확한 결과</h3>
+                    <p>규칙을 지킬 수 없으면 어떤 규칙이 얼마나 부족한지 알려 주고 완화를 제안합니다. 검색 시간이 끝났다는 이유만으로 불가능하다고 말하지 않습니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128260;</div>
+                    <h3>회차별 순번</h3>
+                    <p>날짜별로 모임을 계획하면 각 그룹의 준비 담당자를 제안합니다. 순번은 공평하게 나누어지고, 가장 오래 준비하지 않은 사람이 먼저입니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128256;</div>
+                    <h3>반복 만남 줄이기</h3>
+                    <p>연속해서 그룹을 나눌 때 같은 사람들이 다시 한 그룹이 되지 않도록 합니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127922;</div>
+                    <h3>수정과 다시 섞기</h3>
+                    <p>결과가 마음에 들지 않으면 다시 섞거나, 사람을 고정하거나 다른 그룹으로 옮길 수 있습니다. 규칙 위반은 바로 표시됩니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128450;</div>
+                    <h3>여러 그룹 나누기를 동시에</h3>
+                    <p>여러 그룹 나누기를 동시에 관리하세요. 같은 기간에 다른 그룹 나누기에 이미 배정된 사람은 자동으로 제외됩니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128190;</div>
+                    <h3>내보내기와 백업</h3>
+                    <p>그룹 나누기를 텍스트 또는 CSV로 공유하고, 전체 명단을 파일로 백업하고 복원할 수 있습니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128172;</div>
+                    <h3>WhatsApp으로 보내기</h3>
+                    <p>공동체에서 손으로 쓰던 메시지 형식 그대로 그룹 나누기를 WhatsApp으로 바로 보낼 수 있습니다. 그룹마다 번호가 붙은 한 줄, 부부는 함께 표기, 선택 메모, 그룹별 준비 담당자가 들어갑니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128228;</div>
+                    <h3>명단 공유</h3>
+                    <p>태그와 부부 정보가 담긴 명단을 파일로 공유하고(WhatsApp도 가능) 다른 휴대폰에서 가져올 수 있습니다. 이미 있는 사람은 건너뜁니다. WhatsApp으로 받은 명단이나 백업은 GiroGruppi로 바로 열 수 있습니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128202;</div>
+                    <h3>Excel 내보내기</h3>
+                    <p>모든 그룹 나누기를 Excel(.xlsx) 통합 문서로 내보내 공유할 수 있습니다.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#127760;</div>
+                    <h3>몇 초 만에 체험</h3>
+                    <p>메뉴에서 40명의 데모 데이터를 불러와 모든 기능을 체험해 보세요. 한국어, 영어, 이탈리아어, 독일어, 스페인어, 프랑스어, 일본어, 포르투갈어, 중국어의 9개 언어를 지원합니다. 앱은 휴대폰 언어로 열리며, Android 13 이상에서는 앱 언어 설정에서 다른 언어를 선택할 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg2);">
+        <div class="container">
+            <h2 class="section-title"><span class="gr">스크린샷</span></h2>
+            <div class="feature-graphic">
+                <img src="/images/girogruppi_feature.png" alt="GiroGruppi" width="1024" height="500" loading="lazy">
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="/images/girogruppi/01_candidates.png" alt="태그가 있는 사람들" width="1080" height="2220" loading="lazy">
+                    <div class="gallery-caption">태그가 있는 사람들</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/girogruppi/02_tag_editor.png" alt="부부는 항상 함께" width="1080" height="2220" loading="lazy">
+                    <div class="gallery-caption">부부는 항상 함께</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/girogruppi/04_rules.png" alt="필수 규칙과 선호 규칙" width="1080" height="2220" loading="lazy">
+                    <div class="gallery-caption">필수 규칙과 선호 규칙</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/girogruppi/05_result_groups.png" alt="반복 만남 줄이기" width="1080" height="2220" loading="lazy">
+                    <div class="gallery-caption">반복 만남 줄이기</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/girogruppi/06_sessions_rotation.png" alt="회차별 순번" width="1080" height="2220" loading="lazy">
+                    <div class="gallery-caption">회차별 순번</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/girogruppi/07_groupings_backup_menu.png" alt="내보내기와 백업" width="1080" height="2220" loading="lazy">
+                    <div class="gallery-caption">내보내기와 백업</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="g">당신의</span> <span class="gr">개인정보</span></h2>
+            <div class="priv">
+                <p>GiroGruppi의 모든 기능은 오프라인으로 동작하며 계정이 필요 없습니다. 그룹과 사람 정보는 기기에 저장됩니다. 앱에는 Google AdMob 배너 광고가 하나 표시됩니다(맞춤 설정되지 않은 광고이며, EEA·영국·스위스에서는 Google 동의 양식으로 선택합니다). 광고에는 인터넷 연결이 필요하며, AdMob SDK는 IP 주소, 대략적인 위치, 광고 상호작용, 진단 정보, 광고 ID 등의 데이터를 Google에 전송합니다. 일회성 인앱 구매인 광고 제거로 광고를 없앨 수 있습니다. 공유와 백업은 언제나 사용자의 선택입니다. 자세한 내용은 개인정보 처리방침을 확인하세요.</p>
+                <a href="/ko/tools/girogruppi/privacy-policy/">전체 개인정보 처리방침 &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta">
+        <div class="container">
+            <h2 class="section-title">사용해 보기 <span class="g">Giro</span><span class="gr">Gruppi</span></h2>
+            <p style="color: var(--text2); margin-bottom: 2rem;">Google Play에서 무료. 계정 불필요.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.pinesoft.gruppi" target="_blank" rel="noopener" class="cta-store">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Play에서 다운로드">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="/ko/">PineSoft</a>
+            <a href="/ko/tools/girogruppi/privacy-policy/">개인정보 처리방침</a>
+            <a href="mailto:support@pinesoft.dev">문의</a>
+            <a href="https://play.google.com/store/apps/developer?id=PineSoft+Dev" target="_blank" rel="noopener">Google Play</a>
+        </div>
+        <div class="copy">&copy; 2026 PineSoft. All rights reserved.</div>
+    </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+  </script>
+
+</body>
+</html>

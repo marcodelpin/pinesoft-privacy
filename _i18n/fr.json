@@ -25,7 +25,7 @@
     "find_on_play": "Retrouvez-nous sur Google Play",
     "games_count": "20 jeux",
     "games_desc": "Jeux à inclinaison contrôlés par gyroscope. Réflexion, adresse, action et plus encore.",
-    "tools_count": "2 apps",
+    "tools_count": "3 apps",
     "tools_desc": "Analyse audio, accordage musical et applications utilitaires.",
     "reading_count": "1 app",
     "reading_desc": "Préservation numérique de langues rares, menacées et classiques.",
@@ -57,7 +57,7 @@
   "tools": {
     "title": "Outils",
     "utilities": "Utilitaires",
-    "meta_description": "Outils d'analyse audio et musicaux par PineSoft. Spectrogramme SoundScope, accordeur de guitare PolyTuner et plus encore.",
+    "meta_description": "Outils audio, musique et groupes par PineSoft. Spectrogramme SoundScope, accordeur de guitare PolyTuner, créateur de groupes GiroGruppi et plus encore.",
     "subtitle": "Applications d'analyse audio, de musique et de productivité.",
     "soundscope": {
       "category": "Musique et audio",
@@ -66,6 +66,10 @@
     "polytuner": {
       "category": "Musique et audio",
       "desc": "Accordeur de guitare polyphonique avec détection de hauteur en temps réel. Grattez toutes les cordes en même temps et voyez l'accordage de chacune instantanément. 9 préréglages d'accordage, 8 langues."
+    },
+    "girogruppi": {
+      "category": "Productivité",
+      "desc": "Groupes équilibrés, couples ensemble, tours équitables. Hors ligne."
     }
   },
   "reading": {
@@ -311,6 +315,53 @@
       "privacy_word": "Vie Privée",
       "privacy_text": "PolyTuner traite l'audio du microphone entièrement sur ton appareil. L'audio n'est jamais enregistré, sauvegardé ni transmis. Seul l'historique d'accordage anonyme reste sur l'appareil.",
       "privacy_link": "Politique de confidentialité complète"
+    },
+    "girogruppi": {
+      "meta_title": "Créer des groupes",
+      "meta_description": "Groupes équilibrés, couples ensemble, tours équitables. Hors ligne.",
+      "og_title": "Créer des groupes",
+      "og_description": "Groupes équilibrés, couples ensemble, tours équitables. Hors ligne.",
+      "twitter_description": "Groupes équilibrés, couples ensemble, tours équitables. Hors ligne.",
+      "subtitle": "GiroGruppi crée des groupes équilibrés à partir d'une liste de personnes et se souvient de qui a préparé et quand. Conçu pour les groupes paroissiaux, les dîners tournants, les équipes de bénévoles, les scouts et toute communauté qui se répartit sans cesse en groupes.",
+      "stat_languages": "Langues",
+      "stat_demo": "Personnes dans la démo",
+      "stat_account": "Compte requis",
+      "stat_excel": "Export Excel",
+      "features_key": "Fonctionnalités",
+      "features_word": "clés",
+      "feat_tags_title": "Personnes avec étiquettes",
+      "feat_tags_desc": "Ajoutez des personnes et donnez-leur des étiquettes comme jeune, âgé ou a une voiture. Créez vos propres étiquettes. Collez une liste de noms pour les importer d'un coup.",
+      "feat_couples_title": "Les couples restent ensemble",
+      "feat_couples_desc": "Reliez deux personnes comme partenaires : elles se retrouvent toujours dans le même groupe et comptent comme une seule unité pour l'attribution des tours de préparation.",
+      "feat_rules_title": "Règles strictes et souples",
+      "feat_rules_desc": "Choisissez le nombre de groupes ou de personnes par groupe. Ajoutez des règles : au moins ou au plus N personnes avec une étiquette par groupe, équilibrer une étiquette entre les groupes, un couple dans chaque groupe, garder des personnes ensemble ou séparées. Chaque règle est obligatoire ou simplement souhaitée.",
+      "feat_answers_title": "Réponses claires",
+      "feat_answers_desc": "Si les règles ne peuvent pas être respectées, l'application indique laquelle échoue et de combien, et propose de l'assouplir. Elle ne déclare jamais l'impossible simplement parce que le temps de recherche est écoulé.",
+      "feat_rotation_title": "Rotation sur les séances",
+      "feat_rotation_desc": "Planifiez des séances par dates et laissez l'application proposer qui prépare dans chaque groupe, en répartissant les tours équitablement et en commençant par celui qui a préparé le moins récemment.",
+      "feat_repeats_title": "Moins de rencontres répétées",
+      "feat_repeats_desc": "D'un regroupement à l'autre, l'application évite de remettre ensemble les mêmes personnes.",
+      "feat_edit_title": "Modifier et relancer",
+      "feat_edit_desc": "Le résultat ne vous convient pas ? Relancez-le, verrouillez des personnes ou déplacez-les entre groupes, et voyez tout de suite les règles enfreintes.",
+      "feat_parallel_title": "Plusieurs regroupements à la fois",
+      "feat_parallel_desc": "Gérez plusieurs regroupements en parallèle. Une personne déjà prise dans un autre regroupement sur la même période est exclue automatiquement.",
+      "feat_export_title": "Export et sauvegarde",
+      "feat_export_desc": "Partagez un regroupement en texte ou CSV. Sauvegardez et restaurez toute votre liste sous forme de fichier.",
+      "feat_whatsapp_title": "Envoyer sur WhatsApp",
+      "feat_whatsapp_desc": "Envoyez un regroupement directement sur WhatsApp au format de message que les communautés écrivent à la main : une ligne numérotée par groupe, les couples écrits ensemble, une note facultative et qui prépare dans chaque groupe.",
+      "feat_share_title": "Partager la liste des personnes",
+      "feat_share_desc": "Partagez votre liste de personnes, avec étiquettes et couples, sous forme de fichier, y compris via WhatsApp, et importez-la sur un autre téléphone. Les personnes déjà présentes sont ignorées. Une liste de personnes ou une sauvegarde reçue dans WhatsApp s'ouvre directement avec GiroGruppi.",
+      "feat_excel_title": "Export Excel",
+      "feat_excel_desc": "Exportez tous vos regroupements dans un classeur Excel (.xlsx) et partagez-le.",
+      "feat_try_title": "Essayez en quelques secondes",
+      "feat_try_desc": "Chargez depuis le menu les données de démonstration de 40 personnes et explorez toutes les fonctions. Disponible en 9 langues : français, anglais, italien, allemand, espagnol, japonais, coréen, portugais et chinois. L'application s'ouvre dans la langue de votre téléphone ; à partir d'Android 13, vous pouvez en choisir une autre dans le réglage de langue de l'application.",
+      "screens_title": "Captures d'écran",
+      "privacy_your": "Votre",
+      "privacy_word": "Confidentialité",
+      "privacy_text": "GiroGruppi fonctionne hors ligne pour tout ce qu'il fait : aucun compte requis. Vos groupes et personnes restent sur votre appareil. L'application affiche une bannière publicitaire de Google AdMob (annonces non personnalisées ; dans l'EEE, au Royaume-Uni et en Suisse, vous choisissez via le formulaire de consentement de Google). Les annonces nécessitent une connexion internet, et le SDK AdMob envoie à Google des données comme l'adresse IP, la position approximative, les interactions avec les annonces, des diagnostics et l'identifiant publicitaire. Un achat unique dans l'application, Supprimer les publicités, retire la bannière. Partager ou sauvegarder reste toujours votre choix. Voir la politique de confidentialité pour les détails.",
+      "privacy_link": "Politique de confidentialité complète",
+      "cta_try": "Essayer",
+      "cta_free": "Gratuit sur Google Play. Aucun compte requis."
     }
   },
   "privacy": {
