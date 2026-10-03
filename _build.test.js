@@ -25,8 +25,22 @@ for (const lang of langs) {
   assert(fs.existsSync(path.join(SITE_DIR, lang)), `/${lang}/ exists`);
 }
 
-// --- Test 2: Each language has 11 pages ---
+// --- Test 2: Each language has one page per template ---
+// Expected pages are derived from _templates/ (same rules as _build.js:
+// skip entries starting with '_', every *.html is one page). Hand-made
+// pages outside the templates (e.g. en/games/gyro-soko/privacy/) are allowed.
 console.log('\n=== Page count per language ===');
+function findTemplates(dir, base) {
+  const results = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.name.startsWith('_')) continue;
+    const relPath = path.join(base, entry.name);
+    if (entry.isDirectory()) results.push(...findTemplates(path.join(dir, entry.name), relPath));
+    else if (entry.name.endsWith('.html')) results.push(relPath);
+  }
+  return results;
+}
+const templates = findTemplates(path.join(SITE_DIR, '_templates'), '');
 function countHtml(dir) {
   let count = 0;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -38,7 +52,11 @@ function countHtml(dir) {
 }
 for (const lang of langs) {
   const count = countHtml(path.join(SITE_DIR, lang));
-  assert(count === 11, `/${lang}/ has ${count}/11 pages`);
+  const missing = templates.filter(t =>
+    !fs.existsSync(path.join(SITE_DIR, lang, path.dirname(t), 'index.html')));
+  assert(templates.length > 0 && missing.length === 0 && count >= templates.length,
+    `/${lang}/ has ${count} pages for ${templates.length} templates` +
+    (missing.length ? ` (missing: ${missing.join(', ')})` : ''));
 }
 
 // --- Test 3: HTML lang attribute matches language ---
