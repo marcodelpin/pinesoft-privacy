@@ -265,6 +265,9 @@ const directRedirects = {
   'soundscope/privacy-policy': 'tools/soundscope/privacy-policy/',
   'gyro-2048/privacy-policy': 'games/gyro-2048/privacy-policy/',
   'horatio/privacy-policy': 'reading/horatio/privacy-policy/',
+  // The Horatio app's pack manager links these two paths (PS-mqc3).
+  'horatio/packs': 'reading/horatio/packs/',
+  'horatio/create-pack': 'reading/horatio/content-pack-format/',
   'polytuner/privacy-policy': 'tools/polytuner/privacy-policy/',
   'girogruppi/privacy-policy': 'tools/girogruppi/privacy-policy/'
 };
