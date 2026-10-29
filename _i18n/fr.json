@@ -395,11 +395,11 @@
       "f4_title": "Progression de niveaux",
       "f4_desc": "Faciles au début, corsés ensuite.",
       "f5_title": "Annuler + Recommencer à tout moment",
-      "f5_desc": "",
+      "f5_desc": "Mauvais coup ? Annulez-le. Bloqué ? Recommencez le niveau.",
       "f6_title": "Jeu hors ligne",
-      "f6_desc": "",
+      "f6_desc": "Pas besoin d'internet. Jouez partout.",
       "f7_title": "Design minimaliste",
-      "f7_desc": ""
+      "f7_desc": "Grille épurée. Ni fouillis, ni distraction."
     }
   },
   "privacy": {

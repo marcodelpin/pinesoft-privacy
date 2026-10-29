@@ -395,11 +395,11 @@
       "f4_title": "Progresión de niveles",
       "f4_desc": "Fáciles al principio, complicados después.",
       "f5_title": "Deshacer + Reiniciar cuando quieras",
-      "f5_desc": "",
+      "f5_desc": "¿Movimiento equivocado? Deshazlo. ¿Atascado? Reinicia el nivel.",
       "f6_title": "Juego sin conexión",
-      "f6_desc": "",
+      "f6_desc": "Sin internet. Juega donde quieras.",
       "f7_title": "Diseño minimalista",
-      "f7_desc": ""
+      "f7_desc": "Cuadrícula limpia. Sin ruido ni distracciones."
     }
   },
   "privacy": {

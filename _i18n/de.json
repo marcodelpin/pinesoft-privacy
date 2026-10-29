@@ -395,11 +395,11 @@
       "f4_title": "Level-Fortschritt",
       "f4_desc": "Einfache Aufwärmer, später knifflige Rätsel.",
       "f5_title": "Undo + Neustart jederzeit",
-      "f5_desc": "",
+      "f5_desc": "Falscher Zug? Rückgängig. Festgefahren? Level neu starten.",
       "f6_title": "Offline spielbar",
-      "f6_desc": "",
+      "f6_desc": "Kein Internet nötig. Überall spielen.",
       "f7_title": "Minimalistisches Design",
-      "f7_desc": ""
+      "f7_desc": "Klares Raster. Kein Ballast, keine Ablenkung."
     }
   },
   "privacy": {
